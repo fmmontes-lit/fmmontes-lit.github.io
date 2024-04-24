@@ -1,0 +1,121 @@
+Learn the Astro Web Framework
+https://www.freecodecamp.org/news/learn-the-astro-web-framework/
+
+Introducing freeCodeCamp Press – Free Books for Developers
+https://www.freecodecamp.org/news/freecodecamp-press-books-handbooks/
+
+----------
+JavaScript
+----------
+
+10 Github repositories to achieve Javascript mastery
+https://dev.to/novu/10-github-repositories-to-achieve-javascript-mastery-50hk
+
+Eloquent JavaScript
+https://eloquentjavascript.net/
+
+You-Dont-Know-JS
+https://github.com/getify/You-Dont-Know-JS
+https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/get-started/ch1.md
+
+JavaScript Concepts to Know Before Learning Node.js
+https://www.freecodecamp.org/news/javascript-concepts-to-know-before-learning-node-js/
+
+An AI / neural network...in vanilla JS!
+https://dev.to/grahamthedev/a-noob-learns-ai-my-first-neural-networkin-vanilla-jswith-no-libraries-1f92
+
+Creating a 13kb Game in JavaScript
+https://dev.to/justaguyfrombr/creating-a-13kb-game-in-javascript-42g5
+
+Clocks & Countdowns: Timing in CSS and JavaScript
+https://dev.to/madsstoumann/clocks-countdowns-timing-in-css-and-javascript-554n
+
+Async and Await in Vanilla JavaScript
+https://dev.to/this-is-learning/async-and-await-in-vanilla-javascript-2mep
+
+Observer Pattern
+https://javascriptpatterns.vercel.app/patterns/design-patterns/observer-pattern
+
+How to Build a Recipe App with Vanilla JavaScript 
+https://dev.to/codewithsadee/how-to-build-a-recipe-app-with-vanilla-javascript-1ogm
+
+How to Unleash the Power of Multithreading in JavaScript with Web Workers 
+https://dev.to/this-is-learning/how-to-unleash-the-power-of-multithreading-in-javascript-with-web-workers-20m5
+
+---
+CSS
+---
+
+CSS trig functions: Practical applications
+https://blog.logrocket.com/css-trig-functions-practical-applications/
+
+Mastering Frontend Development: Essential Skills and Best Practices
+https://dev.to/akshu3011/mastering-frontend-development-essential-skills-and-best-practices-2741
+
+Top 5 must-know CSS layout techniques
+https://zoaibkhan.com/blog/top-5-must-know-css-layout-techniques/
+
+10 Sites to Level Up Your UI Skills
+https://dev.to/keracudmore/10-sites-to-level-up-your-ui-skills-3e9m
+
+Modern CSS in Real Life
+https://chriscoyier.net/2023/06/06/modern-css-in-real-life/
+
+CSS Tip
+https://css-tip.com/
+
+Mastering Flexbox in 2023: A Comprehensive Guide to Responsive Web Design
+https://levelup.gitconnected.com/mastering-flexbox-in-2023-a-comprehensive-guide-to-responsive-web-design-15ce20ec00c7
+
+Penpot’s Flex Layout: Building CSS Layouts In A Design Tool
+https://www.smashingmagazine.com/2023/06/penpot-flex-layout-building-css-layouts-design-tool/
+
+Flexbox & Grid - 15 Visual Aids (requested)
+https://www.reddit.com/r/webdev/comments/163wer1/flexbox_grid_15_visual_aids_requested/
+
+Grid & Flexbox - 4 Visual Aids 
+https://www.reddit.com/r/webdev/comments/163dxpx/grid_flexbox_4_visual_aids/?utm_source=share&utm_medium=ios_app&utm_name=ioscss&utm_content=2&utm_term=1
+
+Demystifying CSS Container Queries
+https://www.learnwithjason.dev/demystifying-css-container-queries
+
+Say Hello To CSS Container Queries
+https://ishadeed.com/article/say-hello-to-css-container-queries/
+
+Future CSS: State Container Queries
+https://ishadeed.com/article/css-state-queries/
+
+Responsive CSS Layout Grids without Media Queries
+https://www.sitepoint.com/responsive-css-layout-grids-without-media-queries/
+
+How do you define the main sections of a web page using HTML
+https://dev.to/matheushchaves/how-do-you-define-the-main-sections-of-a-web-page-using-html-253j
+
+07 Website's you will love as a dev
+https://dev.to/er_saifullah/10-websites-you-will-love-as-a-dev-24p7
+
+------
+DotNet
+------
+
+Get started with ASP.NET Core MVC
+https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-7.0&tabs=visual-studio-code
+
+Web API Return Types in ASP.NET Core
+https://code-maze.com/aspnetcore-web-api-return-types/
+
+Blazor Components Library: Everything Developers Need to Know
+https://gleexa.com/web/blazor-components-library/
+
+Razor Syntax
+https://www.tutorialsteacher.com/mvc/razor-syntax
+
+
+VS Code Explains - Ep3: LINQ in C#
+https://www.youtube.com/watch?v=dgojme5tvBM
+
+Learn LINQ (Language-Integrated Query)
+https://www.tutorialsteacher.com/linq
+
+LINQ Basic Concepts in C#
+https://code-maze.com/linq-csharp-basic-concepts/

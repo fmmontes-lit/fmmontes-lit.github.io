@@ -1,0 +1,1887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News - Lamar Institute of Technology </title>
+
+    <!--stylesheets-->
+    <link rel="stylesheet" href="content/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="content/css/custom.css?07292021">
+    <link defer rel="stylesheet" href="content/css/site-allscreens.css?07292021">
+    <link rel="stylesheet" href="Content/css/responsive_tables_side_by_side.css" />
+    <link rel="stylesheet" href="Content/css/font-awesome/css/font-awesome.min.css">
+    <link rel="preload" as="style" type="text/css" href="https://webbot.admithub.com/static/css/webchat.css" onload="this.onload=null;this.rel='stylesheet'">
+
+    
+    
+    <style>
+    </style>
+
+
+</head>
+<body>
+    <!-- End Google Tag Manager (noscript) -->
+    <header>
+        <input id="documentLastPublished" name="documentLastPublished" type="hidden" value="10092023054019" />
+<input id="topAlertExpires" name="topAlertExpires" type="hidden" value="10092023054009" />
+<input id="timeNow" name="timeNow" type="hidden" value="10212023115428" />
+
+
+
+<!--
+    lg:
+        logo, quick menu expanded, CTA
+        main menu expanded, search
+    md:
+        logo, quick menu expanded, toggler
+        toggler: CTA, main menu, search
+    sm:
+        logo, toggler
+        toggler: CTA, quick menu, main menu, search
+-->
+
+<header>
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container">
+            <a class="navbar-brand mx-auto" href="https://www.lit.edu/">
+                <img style="min-width:230px; max-width: 260px;" src="media/LIT/MediaLibrary/logo_small.png" class="img-fluid brand-logo-img" alt="Lamar Institute of Technology" />
+                <!--<img src="/media/LIT/MediaLibrary/logo.png" class="img-fluid brand-logo-img" width="260" height="40" alt="Lamar Institute of Technology" />-->
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="cta-menu cta-menu1 my-2 my-lg-0 mr-0 mr-lg-0 d-md-none">
+                    <a href="https://www.lit.edu/academic-calendar" class="text-dark border-bottom border-danger text-decoration-none text-white my-2 my-sm-0 mr-3">Academic Calendar</a>
+                    <a href="https://www.goapplytexas.org/" class="btn btn-apply btn-danger text-white text-uppercase font-weight-bold my-2 my-sm-0 px-lg-4 py-lg-2">Apply</a>
+                </div>
+                <ul class="quick-menu navbar-nav mr-auto quickmenu1">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href='https://my.lit.edu/'>myLIT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href='https://www.lit.edu/information/current-students'>Students</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href='https://www.lit.edu/information/faculty-and-staff'>Employees</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href='https://www.lit.edu/directory'>Directory</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href='https://reg-prod.ec.lit.edu/StudentRegistrationSsb/ssb/term/termSelection?mode=search' target="_blank">Class Schedule</a>
+                        
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href='https://www.lit.edu/contact-us'>Contact</a>
+                    </li>
+                </ul>
+                <div class="cta-menu cta-menu2 my-2 my-lg-0 mr-0 mr-lg-0 d-none d-lg-block">
+                    <a href="https://www.lit.edu/academic-calendar" class="text-dark border-bottom border-danger text-decoration-none my-2 my-sm-0 mr-3">Academic Calendar</a>
+                    <a href="https://www.goapplytexas.org/" class="btn btn-apply btn-danger text-white text-uppercase font-weight-bold my-2 my-sm-0 px-lg-4 py-lg-2">Apply NOW</a>
+                </div>
+                <!--show on screens smaller than md-->
+                <div class="d-flex d-md-none flex-column-reverse flex-wrap menubar position-relative">
+                    <form action="https://www.lit.edu/site-search/" class="search1 google-lit-search form-inline my-2 my-lg-0">
+                        <input id="q" name="q" class="search-input form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button aria-label="Search" class="btn btn-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg>
+                        </button>
+                    </form>
+                    
+
+<ul class="navbar-nav navbar-nav-main mr-auto">
+            <li class="nav-item nav-item-main dropdown has-megamenu">
+                <a class="nav-link nav-link-main py-lg-3 p-md-2" href="https://www.lit.edu/programs"><span>Programs</span></a>
+                <span class="dropdown-toggle megamenu-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></span>
+                <div class="dropdown-menu megamenu my-0" role="menu" aria-labelledby="navbarDropdownMenuLink">
+                    <div class="row">
+
+                            <div class="col-md-3">
+                                <div class="col-megamenu">
+                                    <ul class="list-unstyled">
+
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/programs/business">
+                                                        <span class="megamenu-navlinktext">Business</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/dual-credit">
+                                                        <span class="megamenu-navlinktext">Dual Credit</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/programs/general-education">
+                                                        <span class="megamenu-navlinktext">General Education</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/programs/healthcare-and-sciences">
+                                                        <span class="megamenu-navlinktext">Healthcare and Sciences</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/programs/public-service-and-safety">
+                                                        <span class="megamenu-navlinktext">Public Service and Safety</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/programs/technology">
+                                                        <span class="megamenu-navlinktext">Technology</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/workforce-continuing-education">
+                                                        <span class="megamenu-navlinktext">Workforce Training and Continuing Education</span>
+                                                    </a>
+                                                </li>
+                                    </ul>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item nav-item-main dropdown has-megamenu">
+                <a class="nav-link nav-link-main py-lg-3 p-md-2" href="https://www.lit.edu/admissions"><span>Admissions</span></a>
+                <span class="dropdown-toggle megamenu-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></span>
+                <div class="dropdown-menu megamenu my-0" role="menu" aria-labelledby="navbarDropdownMenuLink">
+                    <div class="row">
+
+                            <div class="col-md-3">
+                                <div class="col-megamenu">
+                                    <ul class="list-unstyled">
+
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/admissions/bacterial-meningitis-vaccination">
+                                                        <span class="megamenu-navlinktext">Bacterial Meningitis Vaccination</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu//student-success/catalog-and-handbook-(2)">
+                                                        <span class="megamenu-navlinktext">Catalog and Handbook</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/dual-credit">
+                                                        <span class="megamenu-navlinktext">Dual Credit</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/admissions/future-students">
+                                                        <span class="megamenu-navlinktext">Future Students</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/admissions/ged-certificate-holders">
+                                                        <span class="megamenu-navlinktext">GED or HiSET Certificate Holders</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/admissions/high-school-graduates">
+                                                        <span class="megamenu-navlinktext">High School Graduates</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/admissions/international-students">
+                                                        <span class="megamenu-navlinktext">International Students</span>
+                                                    </a>
+                                                </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="col-megamenu">
+                                    <ul class="list-unstyled">
+
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/admissions/non-high-school-graduates">
+                                                        <span class="megamenu-navlinktext">Non-High School Graduates</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/admissions/readmission-of-students">
+                                                        <span class="megamenu-navlinktext">Readmission of Students</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/admissions/registration">
+                                                        <span class="megamenu-navlinktext">Registration</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/admissions/senior-citizen-enrollment">
+                                                        <span class="megamenu-navlinktext">Senior Citizen Enrollment</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/testing-center">
+                                                        <span class="megamenu-navlinktext">Testing Center</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/admissions/transfer-students">
+                                                        <span class="megamenu-navlinktext">Transfer Students</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/admissions/tuition-and-fees">
+                                                        <span class="megamenu-navlinktext">Tuition and Fees</span>
+                                                    </a>
+                                                </li>
+                                    </ul>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item nav-item-main dropdown has-megamenu">
+                <a class="nav-link nav-link-main py-lg-3 p-md-2" href="https://www.lit.edu/financial-aid"><span>Financial Aid</span></a>
+                <span class="dropdown-toggle megamenu-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></span>
+                <div class="dropdown-menu megamenu my-0" role="menu" aria-labelledby="navbarDropdownMenuLink">
+                    <div class="row">
+
+                            <div class="col-md-3">
+                                <div class="col-megamenu">
+                                    <ul class="list-unstyled">
+
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/financial-aid/appeal-process">
+                                                        <span class="megamenu-navlinktext">Appeal Process</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/financial-aid/apply-for-financial-aid">
+                                                        <span class="megamenu-navlinktext">Apply</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/financial-aid/cares-act-30-day-reporting">
+                                                        <span class="megamenu-navlinktext">CARES Act Reporting</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/financial-aid/contact-us">
+                                                        <span class="megamenu-navlinktext">Contact Us</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/financial-aid/cares-act-funding-and-assistance">
+                                                        <span class="megamenu-navlinktext">COVID-19 Emergency Aid (HEERF)</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/financial-aid/federal-verification-process">
+                                                        <span class="megamenu-navlinktext">Federal Verification Process</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/financial-aid/forms">
+                                                        <span class="megamenu-navlinktext">Forms</span>
+                                                    </a>
+                                                </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="col-megamenu">
+                                    <ul class="list-unstyled">
+
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/financial-aid/funding-options">
+                                                        <span class="megamenu-navlinktext">Funding Options</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="http://www.collegeforalltexans.com/index.cfm?objectid=8f88f7f2-a11a-b69f-5e25d9d6f972dae4&amp;audience=student">
+                                                        <span class="megamenu-navlinktext">Net Price Calculator</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/financial-aid/return-of-title-iv-funds">
+                                                        <span class="megamenu-navlinktext">Return of Title IV Funds</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/financial-aid/satisfactory-academic-progress">
+                                                        <span class="megamenu-navlinktext">Satisfactory Academic Progress</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/financial-aid/special-circumstances">
+                                                        <span class="megamenu-navlinktext">Special Circumstances</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/financial-aid/student-worker-application">
+                                                        <span class="megamenu-navlinktext">Student Worker Application</span>
+                                                    </a>
+                                                </li>
+                                    </ul>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item nav-item-main dropdown has-megamenu">
+                <a class="nav-link nav-link-main py-lg-3 p-md-2" href="https://www.lit.edu/student-success"><span>Student Success</span></a>
+                <span class="dropdown-toggle megamenu-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></span>
+                <div class="dropdown-menu megamenu my-0" role="menu" aria-labelledby="navbarDropdownMenuLink">
+                    <div class="row">
+
+                            <div class="col-md-3">
+                                <div class="col-megamenu">
+                                    <ul class="list-unstyled">
+
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/student-success/instructional-calendar-2022-2023-pdf">
+                                                        <span class="megamenu-navlinktext">2022-2023 Instructional Calendar</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/student-success/2023-2024-college-calendar">
+                                                        <span class="megamenu-navlinktext">2023-2024 College Calendar</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="http://catalog.lit.edu/">
+                                                        <span class="megamenu-navlinktext">2023-2024 Undergraduate Catalog</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/student-success/academic-support">
+                                                        <span class="megamenu-navlinktext">Academic Support</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/information/class-schedules">
+                                                        <span class="megamenu-navlinktext">Advisors and Class Schedules</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/student-success/campus-safety">
+                                                        <span class="megamenu-navlinktext">Campus Safety</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/student-success/career-services">
+                                                        <span class="megamenu-navlinktext">Career Services</span>
+                                                    </a>
+                                                </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="col-megamenu">
+                                    <ul class="list-unstyled">
+
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/student-success/graduation-information">
+                                                        <span class="megamenu-navlinktext">Graduation Information</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/information-technology">
+                                                        <span class="megamenu-navlinktext">IT Helpdesk</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/student-success/lamar-link">
+                                                        <span class="megamenu-navlinktext">Lamar Link</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/student-success/learning-lab">
+                                                        <span class="megamenu-navlinktext">Learning Lab</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/student-success/mentoring-program">
+                                                        <span class="megamenu-navlinktext">Mentoring Program: eLITe</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/online-learning">
+                                                        <span class="megamenu-navlinktext">Online Learning</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/student-success/prior-learning-assessment">
+                                                        <span class="megamenu-navlinktext">Prior Learning Assessment</span>
+                                                    </a>
+                                                </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="col-megamenu">
+                                    <ul class="list-unstyled">
+
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/student-success/special-populations">
+                                                        <span class="megamenu-navlinktext">Special Populations</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/student-success/starfish">
+                                                        <span class="megamenu-navlinktext">Starfish</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/student-success/student-activities">
+                                                        <span class="megamenu-navlinktext">Student Engagement</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/student-success/student-handbook">
+                                                        <span class="megamenu-navlinktext">Student Handbook</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/student-success/online-orientation">
+                                                        <span class="megamenu-navlinktext">Student Orientation</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/student-success/successful-eagles-soar">
+                                                        <span class="megamenu-navlinktext">Successful Eagles Soar</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/testing-center">
+                                                        <span class="megamenu-navlinktext">Testing Center</span>
+                                                    </a>
+                                                </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="col-megamenu">
+                                    <ul class="list-unstyled">
+
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/student-success/title-ix">
+                                                        <span class="megamenu-navlinktext">Title IX</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/student-success/transcripts">
+                                                        <span class="megamenu-navlinktext">Transcripts</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/student-success/vaccine-requirement">
+                                                        <span class="megamenu-navlinktext">Vaccine Requirement</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/student-success/veterans">
+                                                        <span class="megamenu-navlinktext">Veterans</span>
+                                                    </a>
+                                                </li>
+                                    </ul>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item nav-item-main dropdown has-megamenu">
+                <a class="nav-link nav-link-main py-lg-3 p-md-2" href="https://www.lit.edu/about"><span>About</span></a>
+                <span class="dropdown-toggle megamenu-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></span>
+                <div class="dropdown-menu megamenu my-0" role="menu" aria-labelledby="navbarDropdownMenuLink">
+                    <div class="row">
+
+                            <div class="col-md-3">
+                                <div class="col-megamenu">
+                                    <ul class="list-unstyled">
+
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/about/compact-with-texans">
+                                                        <span class="megamenu-navlinktext">Compact with Texans</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/finance-and-operations">
+                                                        <span class="megamenu-navlinktext">Finance and Operations</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/about/history-of-lamar-institute-of-technology">
+                                                        <span class="megamenu-navlinktext">History</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/institutional-data">
+                                                        <span class="megamenu-navlinktext">Institutional Data</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/internal-audit">
+                                                        <span class="megamenu-navlinktext">Internal Audit</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/about/lit-by-the-numbers-(fy-2022)">
+                                                        <span class="megamenu-navlinktext">LIT By The Numbers</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/about/lit-master-plan">
+                                                        <span class="megamenu-navlinktext">LIT Master Plan</span>
+                                                    </a>
+                                                </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="col-megamenu">
+                                    <ul class="list-unstyled">
+
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/about/mission-statement">
+                                                        <span class="megamenu-navlinktext">Mission Statement</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="news">
+                                                        <span class="megamenu-navlinktext">Press Releases</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/about/programs">
+                                                        <span class="megamenu-navlinktext">Programs</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/teaching-and-learning-center">
+                                                        <span class="megamenu-navlinktext">Teaching and Learning Center</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/about/college-administration">
+                                                        <span class="megamenu-navlinktext">The LIT Executive Team</span>
+                                                    </a>
+                                                </li>
+                                    </ul>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item nav-item-main dropdown has-megamenu">
+                <a class="nav-link nav-link-main py-lg-3 p-md-2" href="https://www.lit.edu/foundation"><span>Giving</span></a>
+                <span class="dropdown-toggle megamenu-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></span>
+                <div class="dropdown-menu megamenu my-0" role="menu" aria-labelledby="navbarDropdownMenuLink">
+                    <div class="row">
+
+                            <div class="col-md-3">
+                                <div class="col-megamenu">
+                                    <ul class="list-unstyled">
+
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/foundation/salute">
+                                                        <span class="megamenu-navlinktext">A Salute to the Real American Heroes</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/foundation/alumni">
+                                                        <span class="megamenu-navlinktext">Alumni</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/foundation/board-of-directors">
+                                                        <span class="megamenu-navlinktext">Board of Directors</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/foundation/contact-us">
+                                                        <span class="megamenu-navlinktext">Contact Us</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/foundation/development-office">
+                                                        <span class="megamenu-navlinktext">Development Office</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/foundation/donor-recognition">
+                                                        <span class="megamenu-navlinktext">Donor Recognition</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/foundation/exemption-letter">
+                                                        <span class="megamenu-navlinktext">IRS 501(c)(3) Exemption Letter</span>
+                                                    </a>
+                                                </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="col-megamenu">
+                                    <ul class="list-unstyled">
+
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/foundation/kroger-community-rewards-program">
+                                                        <span class="megamenu-navlinktext">Kroger Community Rewards Program</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/foundation/lamar-institute-of-technology-foundation">
+                                                        <span class="megamenu-navlinktext">Lamar Institute of Technology Foundation</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/foundation/golf">
+                                                        <span class="megamenu-navlinktext">LIT Foundation Scholarship Golf Tournament</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/foundation/shootout">
+                                                        <span class="megamenu-navlinktext">LIT Sporting Clays Classic</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/foundation/scholarships">
+                                                        <span class="megamenu-navlinktext">Scholarships</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/foundation/ways-to-give">
+                                                        <span class="megamenu-navlinktext">Ways to Give</span>
+                                                    </a>
+                                                </li>
+                                    </ul>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </li>
+</ul>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-light d-none d-md-block secondnavbar py-0">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+                <div class="d-flex flex-lg-row flex-md-column-reverse w-100 menubar position-relative">
+                    <!--lg expanded, md toggler #1, sm no effect-->
+                    <form action="https://www.lit.edu/site-search/" class="google-lit-search form-inline my-2 my-lg-0 d-lg-none">
+                        <input id="q" name="q" class="search-input form-control mr-sm-2 search2" type="search" placeholder="Search" aria-label="Search">
+                        <button aria-label="Search" class="btn btn-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg>
+                        </button>
+                    </form>
+                    <!--lg expanded, md toggler #2, sm no effect-->
+                    
+
+<ul class="navbar-nav navbar-nav-main mr-auto">
+            <li class="nav-item nav-item-main dropdown has-megamenu">
+                <a class="nav-link nav-link-main py-lg-3 p-md-2" href="https://www.lit.edu/programs"><span>Programs</span></a>
+                <span class="dropdown-toggle megamenu-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></span>
+                <div class="dropdown-menu megamenu my-0" role="menu" aria-labelledby="navbarDropdownMenuLink">
+                    <div class="row">
+
+                            <div class="col-md-3">
+                                <div class="col-megamenu">
+                                    <ul class="list-unstyled">
+
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/programs/business">
+                                                        <span class="megamenu-navlinktext">Business</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/dual-credit">
+                                                        <span class="megamenu-navlinktext">Dual Credit</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/programs/general-education">
+                                                        <span class="megamenu-navlinktext">General Education</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/programs/healthcare-and-sciences">
+                                                        <span class="megamenu-navlinktext">Healthcare and Sciences</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/programs/public-service-and-safety">
+                                                        <span class="megamenu-navlinktext">Public Service and Safety</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/programs/technology">
+                                                        <span class="megamenu-navlinktext">Technology</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/workforce-continuing-education">
+                                                        <span class="megamenu-navlinktext">Workforce Training and Continuing Education</span>
+                                                    </a>
+                                                </li>
+                                    </ul>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item nav-item-main dropdown has-megamenu">
+                <a class="nav-link nav-link-main py-lg-3 p-md-2" href="https://www.lit.edu/admissions"><span>Admissions</span></a>
+                <span class="dropdown-toggle megamenu-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></span>
+                <div class="dropdown-menu megamenu my-0" role="menu" aria-labelledby="navbarDropdownMenuLink">
+                    <div class="row">
+
+                            <div class="col-md-3">
+                                <div class="col-megamenu">
+                                    <ul class="list-unstyled">
+
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/admissions/bacterial-meningitis-vaccination">
+                                                        <span class="megamenu-navlinktext">Bacterial Meningitis Vaccination</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu//student-success/catalog-and-handbook-(2)">
+                                                        <span class="megamenu-navlinktext">Catalog and Handbook</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/dual-credit">
+                                                        <span class="megamenu-navlinktext">Dual Credit</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/admissions/future-students">
+                                                        <span class="megamenu-navlinktext">Future Students</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/admissions/ged-certificate-holders">
+                                                        <span class="megamenu-navlinktext">GED or HiSET Certificate Holders</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/admissions/high-school-graduates">
+                                                        <span class="megamenu-navlinktext">High School Graduates</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/admissions/international-students">
+                                                        <span class="megamenu-navlinktext">International Students</span>
+                                                    </a>
+                                                </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="col-megamenu">
+                                    <ul class="list-unstyled">
+
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/admissions/non-high-school-graduates">
+                                                        <span class="megamenu-navlinktext">Non-High School Graduates</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/admissions/readmission-of-students">
+                                                        <span class="megamenu-navlinktext">Readmission of Students</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/admissions/registration">
+                                                        <span class="megamenu-navlinktext">Registration</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/admissions/senior-citizen-enrollment">
+                                                        <span class="megamenu-navlinktext">Senior Citizen Enrollment</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/testing-center">
+                                                        <span class="megamenu-navlinktext">Testing Center</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/admissions/transfer-students">
+                                                        <span class="megamenu-navlinktext">Transfer Students</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/admissions/tuition-and-fees">
+                                                        <span class="megamenu-navlinktext">Tuition and Fees</span>
+                                                    </a>
+                                                </li>
+                                    </ul>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item nav-item-main dropdown has-megamenu">
+                <a class="nav-link nav-link-main py-lg-3 p-md-2" href="https://www.lit.edu/financial-aid"><span>Financial Aid</span></a>
+                <span class="dropdown-toggle megamenu-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></span>
+                <div class="dropdown-menu megamenu my-0" role="menu" aria-labelledby="navbarDropdownMenuLink">
+                    <div class="row">
+
+                            <div class="col-md-3">
+                                <div class="col-megamenu">
+                                    <ul class="list-unstyled">
+
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/financial-aid/appeal-process">
+                                                        <span class="megamenu-navlinktext">Appeal Process</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/financial-aid/apply-for-financial-aid">
+                                                        <span class="megamenu-navlinktext">Apply</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/financial-aid/cares-act-30-day-reporting">
+                                                        <span class="megamenu-navlinktext">CARES Act Reporting</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/financial-aid/contact-us">
+                                                        <span class="megamenu-navlinktext">Contact Us</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/financial-aid/cares-act-funding-and-assistance">
+                                                        <span class="megamenu-navlinktext">COVID-19 Emergency Aid (HEERF)</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/financial-aid/federal-verification-process">
+                                                        <span class="megamenu-navlinktext">Federal Verification Process</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/financial-aid/forms">
+                                                        <span class="megamenu-navlinktext">Forms</span>
+                                                    </a>
+                                                </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="col-megamenu">
+                                    <ul class="list-unstyled">
+
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/financial-aid/funding-options">
+                                                        <span class="megamenu-navlinktext">Funding Options</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="http://www.collegeforalltexans.com/index.cfm?objectid=8f88f7f2-a11a-b69f-5e25d9d6f972dae4&amp;audience=student">
+                                                        <span class="megamenu-navlinktext">Net Price Calculator</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/financial-aid/return-of-title-iv-funds">
+                                                        <span class="megamenu-navlinktext">Return of Title IV Funds</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/financial-aid/satisfactory-academic-progress">
+                                                        <span class="megamenu-navlinktext">Satisfactory Academic Progress</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/financial-aid/special-circumstances">
+                                                        <span class="megamenu-navlinktext">Special Circumstances</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/financial-aid/student-worker-application">
+                                                        <span class="megamenu-navlinktext">Student Worker Application</span>
+                                                    </a>
+                                                </li>
+                                    </ul>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item nav-item-main dropdown has-megamenu">
+                <a class="nav-link nav-link-main py-lg-3 p-md-2" href="https://www.lit.edu/student-success"><span>Student Success</span></a>
+                <span class="dropdown-toggle megamenu-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></span>
+                <div class="dropdown-menu megamenu my-0" role="menu" aria-labelledby="navbarDropdownMenuLink">
+                    <div class="row">
+
+                            <div class="col-md-3">
+                                <div class="col-megamenu">
+                                    <ul class="list-unstyled">
+
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/student-success/instructional-calendar-2022-2023-pdf">
+                                                        <span class="megamenu-navlinktext">2022-2023 Instructional Calendar</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/student-success/2023-2024-college-calendar">
+                                                        <span class="megamenu-navlinktext">2023-2024 College Calendar</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="http://catalog.lit.edu/">
+                                                        <span class="megamenu-navlinktext">2023-2024 Undergraduate Catalog</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/student-success/academic-support">
+                                                        <span class="megamenu-navlinktext">Academic Support</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/information/class-schedules">
+                                                        <span class="megamenu-navlinktext">Advisors and Class Schedules</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/student-success/campus-safety">
+                                                        <span class="megamenu-navlinktext">Campus Safety</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/student-success/career-services">
+                                                        <span class="megamenu-navlinktext">Career Services</span>
+                                                    </a>
+                                                </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="col-megamenu">
+                                    <ul class="list-unstyled">
+
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/student-success/graduation-information">
+                                                        <span class="megamenu-navlinktext">Graduation Information</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/information-technology">
+                                                        <span class="megamenu-navlinktext">IT Helpdesk</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/student-success/lamar-link">
+                                                        <span class="megamenu-navlinktext">Lamar Link</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/student-success/learning-lab">
+                                                        <span class="megamenu-navlinktext">Learning Lab</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/student-success/mentoring-program">
+                                                        <span class="megamenu-navlinktext">Mentoring Program: eLITe</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/online-learning">
+                                                        <span class="megamenu-navlinktext">Online Learning</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/student-success/prior-learning-assessment">
+                                                        <span class="megamenu-navlinktext">Prior Learning Assessment</span>
+                                                    </a>
+                                                </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="col-megamenu">
+                                    <ul class="list-unstyled">
+
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/student-success/special-populations">
+                                                        <span class="megamenu-navlinktext">Special Populations</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/student-success/starfish">
+                                                        <span class="megamenu-navlinktext">Starfish</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/student-success/student-activities">
+                                                        <span class="megamenu-navlinktext">Student Engagement</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/student-success/student-handbook">
+                                                        <span class="megamenu-navlinktext">Student Handbook</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/student-success/online-orientation">
+                                                        <span class="megamenu-navlinktext">Student Orientation</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/student-success/successful-eagles-soar">
+                                                        <span class="megamenu-navlinktext">Successful Eagles Soar</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/testing-center">
+                                                        <span class="megamenu-navlinktext">Testing Center</span>
+                                                    </a>
+                                                </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="col-megamenu">
+                                    <ul class="list-unstyled">
+
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/student-success/title-ix">
+                                                        <span class="megamenu-navlinktext">Title IX</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/student-success/transcripts">
+                                                        <span class="megamenu-navlinktext">Transcripts</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/student-success/vaccine-requirement">
+                                                        <span class="megamenu-navlinktext">Vaccine Requirement</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/student-success/veterans">
+                                                        <span class="megamenu-navlinktext">Veterans</span>
+                                                    </a>
+                                                </li>
+                                    </ul>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item nav-item-main dropdown has-megamenu">
+                <a class="nav-link nav-link-main py-lg-3 p-md-2" href="https://www.lit.edu/about"><span>About</span></a>
+                <span class="dropdown-toggle megamenu-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></span>
+                <div class="dropdown-menu megamenu my-0" role="menu" aria-labelledby="navbarDropdownMenuLink">
+                    <div class="row">
+
+                            <div class="col-md-3">
+                                <div class="col-megamenu">
+                                    <ul class="list-unstyled">
+
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/about/compact-with-texans">
+                                                        <span class="megamenu-navlinktext">Compact with Texans</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/finance-and-operations">
+                                                        <span class="megamenu-navlinktext">Finance and Operations</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/about/history-of-lamar-institute-of-technology">
+                                                        <span class="megamenu-navlinktext">History</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/institutional-data">
+                                                        <span class="megamenu-navlinktext">Institutional Data</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/internal-audit">
+                                                        <span class="megamenu-navlinktext">Internal Audit</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/about/lit-by-the-numbers-(fy-2022)">
+                                                        <span class="megamenu-navlinktext">LIT By The Numbers</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/about/lit-master-plan">
+                                                        <span class="megamenu-navlinktext">LIT Master Plan</span>
+                                                    </a>
+                                                </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="col-megamenu">
+                                    <ul class="list-unstyled">
+
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/about/mission-statement">
+                                                        <span class="megamenu-navlinktext">Mission Statement</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="news">
+                                                        <span class="megamenu-navlinktext">Press Releases</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/about/programs">
+                                                        <span class="megamenu-navlinktext">Programs</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/teaching-and-learning-center">
+                                                        <span class="megamenu-navlinktext">Teaching and Learning Center</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/about/college-administration">
+                                                        <span class="megamenu-navlinktext">The LIT Executive Team</span>
+                                                    </a>
+                                                </li>
+                                    </ul>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item nav-item-main dropdown has-megamenu">
+                <a class="nav-link nav-link-main py-lg-3 p-md-2" href="https://www.lit.edu/foundation"><span>Giving</span></a>
+                <span class="dropdown-toggle megamenu-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></span>
+                <div class="dropdown-menu megamenu my-0" role="menu" aria-labelledby="navbarDropdownMenuLink">
+                    <div class="row">
+
+                            <div class="col-md-3">
+                                <div class="col-megamenu">
+                                    <ul class="list-unstyled">
+
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/foundation/salute">
+                                                        <span class="megamenu-navlinktext">A Salute to the Real American Heroes</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/foundation/alumni">
+                                                        <span class="megamenu-navlinktext">Alumni</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/foundation/board-of-directors">
+                                                        <span class="megamenu-navlinktext">Board of Directors</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/foundation/contact-us">
+                                                        <span class="megamenu-navlinktext">Contact Us</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/foundation/development-office">
+                                                        <span class="megamenu-navlinktext">Development Office</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/foundation/donor-recognition">
+                                                        <span class="megamenu-navlinktext">Donor Recognition</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/foundation/exemption-letter">
+                                                        <span class="megamenu-navlinktext">IRS 501(c)(3) Exemption Letter</span>
+                                                    </a>
+                                                </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="col-megamenu">
+                                    <ul class="list-unstyled">
+
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/foundation/kroger-community-rewards-program">
+                                                        <span class="megamenu-navlinktext">Kroger Community Rewards Program</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/foundation/lamar-institute-of-technology-foundation">
+                                                        <span class="megamenu-navlinktext">Lamar Institute of Technology Foundation</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/foundation/golf">
+                                                        <span class="megamenu-navlinktext">LIT Foundation Scholarship Golf Tournament</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/foundation/shootout">
+                                                        <span class="megamenu-navlinktext">LIT Sporting Clays Classic</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/foundation/scholarships">
+                                                        <span class="megamenu-navlinktext">Scholarships</span>
+                                                    </a>
+                                                </li>
+                                                <li class="megamenu-navitem">
+                                                    <a class="megamenu-navlink dropdown-item text-white text-wrap py-2"
+                                                       href="https://www.lit.edu/foundation/ways-to-give">
+                                                        <span class="megamenu-navlinktext">Ways to Give</span>
+                                                    </a>
+                                                </li>
+                                    </ul>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </li>
+</ul>
+
+                    <!--lg expanded, md invisible, sm invisible-->
+                    <form action="https://www.lit.edu/site-search/" class="search3 google-lit-search form-inline my-2 my-lg-0 d-md-none d-lg-block mt-lg-2">
+                        <input id="q" name="q" class="search-input form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button aria-label="Search" class="btn btn-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg>
+                        </button>
+                    </form>
+
+                    
+
+                    <div class="cta-menu cta-menu3 my-2 my-lg-0 mr-0 mr-lg-0 d-lg-none">
+                        <a href="https://www.lit.edu/academic-calendar" class="text-dark border-bottom border-danger text-decoration-none my-2 my-sm-0 mr-3">Academic Calendar</a>
+                        <a href="https://www.goapplytexas.org/" class="btn btn-apply btn-danger text-white text-uppercase font-weight-bold my-2 my-sm-0 px-lg-4 py-lg-2">Apply</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+
+<div id="alertPlaceholder"></div>
+
+
+
+<div id="customHeaderAlert" class="alert alert-warning" style="margin-bottom:0;border:1px solid black; font-weight: 500; color: black; /*background-color:mediumspringgreen;*/ padding-right:5%; display:block; position:relative; text-align: center;">
+    <h4>The TEAS exam is now required for Radiologic Technology, Dental Hygiene, Respiratory Care, and Sonography.</h4>
+    <p>The TEAS exam must be completed prior to applying to these selective application programs. The applications are accepted from 1/3/24 - 2/29/24.  Students interested in any of these allied health programs must take the TEAS exam prior to applying.</p>
+    <p>Details can be found at this link:  <a href="https://www.lit.edu/testing-center/ati-teas">https://www.lit.edu/testing-center/ati-teas</a></p>
+    <div class="closeCustomHeaderAlert" style="float:right; font-size:1.2em; position:absolute; top: 10px; right:20px;"><a href="news#">X</a></div>
+</div>
+
+    </header>
+
+    <main role="main" class="pb-0">
+        
+
+
+<div class="mx-2 mx-md-5">
+    <div class="row">
+        <!--main content-->
+        <div class="col-sm-12 col-lg-12">
+            <div class="breadcrumbs-holder">
+                <nav aria-label="You are here:">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="https://www.lit.edu/">Home</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="page-content">
+                <h3 class="text-dark">
+                    <span>
+    Latest News at Lamar Institute of Technology
+</span>
+                </h3>
+                <h4 class="text-dark">
+    What's Happening on Campus
+</h4>
+
+                
+    <ul class="list-group list-unstyled">
+            <li>
+                <a href="https://www.lit.edu/news/1161/jet-grants-awarded-to-five-isds-in-partnership-with-lit">
+                    <time class="badge badge-primary p-3 text-uppercase" datetime="2023-10-05">Oct 05</time>
+                    <span class="ml-lg-3 ml-md-1">JET Grants Awarded to Five ISDs in Partnership with LIT</span>
+                </a>
+                <hr />
+            </li>
+            <li>
+                <a href="https://www.lit.edu/news/1160/party-pregame-with-the-alumni-association">
+                    <time class="badge badge-primary p-3 text-uppercase" datetime="2023-10-05">Oct 05</time>
+                    <span class="ml-lg-3 ml-md-1">Party Pregame with the Alumni Association</span>
+                </a>
+                <hr />
+            </li>
+            <li>
+                <a href="https://www.lit.edu/news/1159/celebrating-hispanic-heritage-month-driving-prosperity-power-and-progress">
+                    <time class="badge badge-primary p-3 text-uppercase" datetime="2023-10-04">Oct 04</time>
+                    <span class="ml-lg-3 ml-md-1">Celebrating Hispanic Heritage Month: Driving Prosperity, Power and Progress</span>
+                </a>
+                <hr />
+            </li>
+            <li>
+                <a href="https://www.lit.edu/news/1146/2023-24-academic-year-kicks-off-at-convocation-">
+                    <time class="badge badge-primary p-3 text-uppercase" datetime="2023-09-08">Sep 08</time>
+                    <span class="ml-lg-3 ml-md-1">2023-24 Academic Year Kicks Off at Convocation&#160;</span>
+                </a>
+                <hr />
+            </li>
+            <li>
+                <a href="https://www.lit.edu/news/1144/foundation-hosts-22nd-annual-salute-to-the-real-american-heroes">
+                    <time class="badge badge-primary p-3 text-uppercase" datetime="2023-08-30">Aug 30</time>
+                    <span class="ml-lg-3 ml-md-1">Foundation Hosts 22nd Annual Salute to the Real American Heroes</span>
+                </a>
+                <hr />
+            </li>
+            <li>
+                <a href="https://www.lit.edu/news/1139/beaumont-silsbee-echs-class-of-2027-signs-commitment">
+                    <time class="badge badge-primary p-3 text-uppercase" datetime="2023-08-02">Aug 02</time>
+                    <span class="ml-lg-3 ml-md-1">Beaumont, Silsbee ECHS Class of 2027 Signs Commitment</span>
+                </a>
+                <hr />
+            </li>
+            <li>
+                <a href="https://www.lit.edu/news/1138/lit-selected-as-aws-welding-workforce-grant-recipient">
+                    <time class="badge badge-primary p-3 text-uppercase" datetime="2023-07-27">Jul 27</time>
+                    <span class="ml-lg-3 ml-md-1">LIT Selected as AWS Welding Workforce Grant Recipient</span>
+                </a>
+                <hr />
+            </li>
+            <li>
+                <a href="https://www.lit.edu/news/1125/lit-takes-home-two-bronze-medals-at-skillsusa-nationals">
+                    <time class="badge badge-primary p-3 text-uppercase" datetime="2023-06-30">Jun 30</time>
+                    <span class="ml-lg-3 ml-md-1">LIT Takes Home Two Bronze Medals at SkillsUSA Nationals</span>
+                </a>
+                <hr />
+            </li>
+            <li>
+                <a href="https://www.lit.edu/news/1124/lit-solicits-survey-responses-for-nursing-program-application">
+                    <time class="badge badge-primary p-3 text-uppercase" datetime="2023-06-26">Jun 26</time>
+                    <span class="ml-lg-3 ml-md-1">LIT Solicits Survey Responses for Nursing Program Application</span>
+                </a>
+                <hr />
+            </li>
+            <li>
+                <a href="https://www.lit.edu/news/1123/spring-2023-president-s-and-vice-president-s-list">
+                    <time class="badge badge-primary p-3 text-uppercase" datetime="2023-06-21">Jun 21</time>
+                    <span class="ml-lg-3 ml-md-1">Spring 2023 President&#39;s and Vice President&#39;s List</span>
+                </a>
+                <hr />
+            </li>
+    </ul>
+
+
+
+            </div><!--end page-content-->
+        </div>
+    </div>
+</div>
+
+        
+    </main>
+
+    <footer class="border-top footer text-muted">
+        <style>
+    .footer-links{
+        margin-bottom: 0.8em;
+    }
+</style>
+
+    <div class="footer-top row bg-primary py-3 mr-0">
+        <div class="container">
+            <div class="row  mr-0 xxh-100">
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <div class="footer-logo">
+                            <a href="https://www.tsus.edu/">
+                                <img src="media/LIT/MediaLibrary/General/logo-footer.png?ext=.png" alt="TSUS logo">
+                            </a>
+                    </div>
+                </div>
+                
+                <!-- START: Apply Button -->
+                <div class="col-sm-12 col-md-9 col-lg-9 my-auto">
+                    <div class="d-flex flex-row-reverse">
+                        <div class="">
+                            <a href="https://www.goapplytexas.org/" class="btn btn-danger">APPLY NOW</a>
+                        </div>
+
+                    </div>
+                </div><!-- END: Apply Button -->
+                <!-- sample change -->
+                
+            </div>
+        </div>
+    </div>
+    <div class="footer-main bg-dark pt-5">
+        <div class="container">
+            <div class="row mr-0">
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <div class="address-block mb-3">
+                        <strong class="font-weight-bold text-uppercase">Physical Address</strong>
+                        <address>
+                            <a href="https://goo.gl/maps/ySVNoBbCutp" target="_blank">855 East Lavaca 
+Beaumont,TX 77705</a>
+                        </address>
+                    </div>
+                    <div class="address-block mb-3">
+                        <strong class="font-weight-bold text-uppercase">Mailing Address</strong>
+                        <address>PO Box 10043 
+Beaumont,TX 77710</address>
+                    </div>
+                    <div class="address-block mb-3">
+                        <strong class="font-weight-bold text-uppercase">Phone</strong>
+                        <br />
+                        <a href="tel:18009506989">1-800-950-6989</a><br />
+<a href="tel:409880831">409-880-8321</a>
+                    </div>
+                    <div class="address-block mb-3">
+                        <a href="https://jobs.lit.edu/" class="btn btn-primary">JOBS AT LIT</a>
+                    </div>
+                </div>
+                <div class="col col-sm-12 col-md-9 col-lg-9">
+                    <div class="row mr-0">
+                            <div class="col">
+                                    <div class="footer-links">
+                                        <a href="https://www.lit.edu/information/campus-carry">Campus Carry Policy</a>
+                                    </div>
+                                    <div class="footer-links">
+                                        <a href="https://www.lit.edu/finance-and-operations/2022-annual-safety-report">Campus Crime Statistics</a>
+                                    </div>
+                                    <div class="footer-links">
+                                        <a href="https://www.lit.edu/about/compact-with-texans">Compact with Texans</a>
+                                    </div>
+                                    <div class="footer-links">
+                                        <a href="https://www.lit.edu/finance-and-operations/comprehensive-emergency-operations-plan">Comprehensive Emergency Operations Plan</a>
+                                    </div>
+                                    <div class="footer-links">
+                                        <a href="https://www.lit.edu/syllabi">Course and Faculty Information (HB 2504)</a>
+                                    </div>
+                                    <div class="footer-links">
+                                        <a href="https://www.lit.edu/information/freedom-of-information-act">Freedom of Information Act</a>
+                                    </div>
+                            </div>
+                            <div class="col">
+                                    <div class="footer-links">
+                                        <a href="https://www.lit.edu/human-resources">Human Resources</a>
+                                    </div>
+                                    <div class="footer-links">
+                                        <a href="http://www.thecb.state.tx.us/apps/resumes/">Institutional Resume</a>
+                                    </div>
+                                    <div class="footer-links">
+                                        <a href="https://www.lit.edu/information/mental-health-resources">Mental Health Resources</a>
+                                    </div>
+                                    <div class="footer-links">
+                                        <a href="https://www.lit.edu/privacy">Privacy</a>
+                                    </div>
+                                    <div class="footer-links">
+                                        <a href="https://secure.ethicspoint.com/domain/media/en/gui/12867/lit.html">Report Fraud and Abuse</a>
+                                    </div>
+                                    <div class="footer-links">
+                                        <a href="https://www.lit.edu/student-success/title-ix">Sexual Misconduct (Title IX)</a>
+                                    </div>
+                            </div>
+                            <div class="col">
+                                    <div class="footer-links">
+                                        <a href="http://www.tsl.state.tx.us/trail/">Statewide Search</a>
+                                    </div>
+                                    <div class="footer-links">
+                                        <a href="https://texas.gov">Texas Online</a>
+                                    </div>
+                                    <div class="footer-links">
+                                        <a href="https://sao.fraud.texas.gov/">Texas State Auditor’s Office Hotline</a>
+                                    </div>
+                                    <div class="footer-links">
+                                        <a href="https://veterans.portal.texas.gov/">Texas Veterans Portal</a>
+                                    </div>
+                                    <div class="footer-links">
+                                        <a href="http://www.tsus.edu/">The Texas State University System</a>
+                                    </div>
+                                    <div class="footer-links">
+                                        <a href="https://www.lit.edu/information/web-accessibility">Web Accessibility</a>
+                                    </div>
+                            </div>
+                    </div>
+                    <div class="d-flex flex-row social-networks align-items-center mb-3">
+                        <div class="p-2 mr-3 badge badge-pill badge-light">
+                            <a href="https://www.facebook.com/LamarInstituteofTechnology" target="_blank">
+                                <span><i class="fa fa-facebook text-dark"></i></span>
+                            </a>
+                        </div>
+                        <div class="p-2 mr-3 badge badge-pill badge-light">
+                            <a href="https://twitter.com/LITBMT" target="_blank">
+                                <span><i class="fa fa-twitter text-dark"></i></span>
+                            </a>
+                        </div>
+                        <div class="p-2 mr-3 badge badge-pill badge-light">
+                            <a href="https://www.instagram.com/lit_bmt/?hl=en" target="_blank">
+                                <span><i class="fa fa-instagram text-dark"></i></span>
+                            </a>
+                        </div>
+                        <div class="p-2 mr-3 badge badge-pill badge-light">
+                            <a href="https://www.youtube.com/channel/UCoVzDqORR2ekp6VLFczKh6g" target="_blank">
+                                <span><i class="fa fa-youtube text-dark"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <p>&copy; 2023, Lamar Institute of Technology. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </footer>
+    <script src="scripts/jquery-3.7.0.min.js"></script>
+    <script defer src="scripts/bootstrap.bundle.min.js"></script>
+    <script defer src="scripts/site.js"></script>
+    <!--<script src="https://webbot.admithub.com/static/js/webchat.js" defer></script>-->
+
+    
+    
+
+    <script>
+        $(function () {
+            processTopAlert();
+            processSecondTopAlert();
+            processDirectorySearch();
+        });
+
+        function processTopAlert() {
+            var showTopAlert = 'false';
+            var topAlertNotExpired = 'false';
+            var topAlertHeading = '';
+            var topAlertText = '';
+            var topAlertUrl = '';
+
+            if (showTopAlert == 'true' && topAlertNotExpired == 'true' && topAlertHeading !== null && topAlertHeading.length > 0) {
+                showAlertBox(topAlertHeading, topAlertText, topAlertUrl);
+            }
+
+            var topAlertBox = document.getElementById('topAlertBox');
+            var headerPublished = $('#documentLastPublished').val();//used to compare close action on past/present alert boxes
+            var storageKey = 'topAlert' + headerPublished + 'Dismissed';
+            //console.log(storageKey);
+            if (topAlertBox === null) { /*top alert element not found, do nothing*/ }
+            else {
+                if (localStorage.getItem(storageKey) != 'true') {//not dismissed by user click yet
+                    topAlertBox.style.display = 'block';
+                }
+                else {
+                    topAlertBox.style.display = 'none';
+                }
+
+                $('#topAlertCloser').on('click', function () {
+                    localStorage.setItem(storageKey, 'true');
+                });
+            }
+        }
+
+    /* Processing for second top alert */
+    function processSecondTopAlert() {
+        var topAlertDiv = document.getElementById("customHeaderAlert");
+        var closeAlertEl = document.getElementsByClassName("closeCustomHeaderAlert")[0];
+        let storageKey = "customSecondTopAlert";
+        let savedStorageKey = localStorage.getItem(storageKey);
+
+        if (topAlertDiv !== null) {// top alert is being displayed
+            // hide if user already closed once before
+            if (savedStorageKey === "true") {
+                topAlertDiv.style.display = "none";
+                //topAlertDiv.remove();
+                return false;
+            }
+
+            closeAlertEl.addEventListener('click', function (e) {
+                e.preventDefault();
+                localStorage.setItem(storageKey, "true");
+                topAlertDiv.style.display = "none";
+                closeAlertEl.removeEventListener('click', e, false);
+            })
+        }
+    }
+
+        function processDirectorySearch() {
+            $('#dt').on('change', function () {
+                var dept = $('#dt').val();
+                if (dept != 'undefined' && dept.length > 0) {
+                    $('#pc > option[data-dept!="' + dept + '"]').hide();
+                    $('#pc > option[data-dept="' + dept + '"]').show();
+                }
+                else {
+                    $('#pc > option').show();
+                }
+            });
+        }
+    </script>
+
+    <!--start google site search-->
+    <script>
+        function loadPageSearch() {
+            (function () {
+                var cx = '016769998841081181076:wzy8shwplku';
+                var gcse = document.createElement('script');
+                gcse.type = 'text/javascript';
+                gcse.async = true;
+                gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(gcse, s);
+            })();
+        }
+
+        function loadJS(FILE_URL, async = true) {
+            let scriptEle = document.createElement("script");
+
+            scriptEle.setAttribute("src", FILE_URL);
+            scriptEle.setAttribute("type", "text/javascript");
+            scriptEle.setAttribute("async", async);
+
+            document.body.appendChild(scriptEle);
+
+            // success event
+            scriptEle.addEventListener("load", () => {
+                console.log("File loaded")
+            });
+
+            // error event
+            scriptEle.addEventListener("error", (ev) => {
+                console.log("Error on loading file", ev);
+            });
+        }
+
+        //window.addEventListener('DOMContentLoaded', (event) => {
+        window.addEventListener('load', (event) => {
+            loadPageSearch();
+
+            /*
+            let searchBox = document.getElementById("q");
+            searchBox.addEventListener('focus',function(e){
+                console.log("focused on input element");
+                loadPageSearch();
+              e.target.removeEventListener(e.type,arguments.callee);
+            });*/
+
+            // Chat bot
+            loadJS("https://webbot.admithub.com/static/js/webchat.js");
+            window.admitHubBot = { botToken: "4f0470af38c848488" };
+        });
+    </script>
+
+    <!-- Chat bot -->
+    
+
+    <!-- WDM Marketing -->
+    <script type="text/javascript">
+        (function (window, document, dataLayerName, id) {
+            window[dataLayerName] = window[dataLayerName] || [], window[dataLayerName].push({ start: (new Date).getTime(), event: "stg.start" }); var scripts = document.getElementsByTagName('script')[0], tags = document.createElement('script');
+            function stgCreateCookie(a, b, c) { var d = ""; if (c) { var e = new Date; e.setTime(e.getTime() + 24 * c * 60 * 60 * 1e3), d = "; expires=" + e.toUTCString() } document.cookie = a + "=" + b + d + "; path=/" }
+            var isStgDebug = (window.location.href.match("stg_debug") || document.cookie.match("stg_debug")) && !window.location.href.match("stg_disable_debug"); stgCreateCookie("stg_debug", isStgDebug ? 1 : "", isStgDebug ? 14 : -1);
+            var qP = []; dataLayerName !== "dataLayer" && qP.push("data_layer_name=" + dataLayerName), isStgDebug && qP.push("stg_debug"); var qPString = qP.length > 0 ? ("?" + qP.join("&")) : "";
+            tags.async = !0, tags.src = "https://display-logix.containers.piwik.pro/" + id + ".js" + qPString, scripts.parentNode.insertBefore(tags, scripts);
+            !function (a, n, i) { a[n] = a[n] || {}; for (var c = 0; c < i.length; c++)!function (i) { a[n][i] = a[n][i] || {}, a[n][i].api = a[n][i].api || function () { var a = [].slice.call(arguments, 0); "string" == typeof a[0] && window[dataLayerName].push({ event: n + "." + i + ":" + a[0], parameters: [].slice.call(arguments, 1) }) } }(i[c]) }(window, "ppms", ["tm", "cm"]);
+        })(window, document, 'dataLayer', 'a7ada094-3b34-4f9b-95ac-cd2135ac4e59');
+    </script>
+
+    <!-- Google Analytics -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E9KNZ9XDS5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-E9KNZ9XDS5');
+    </script>
+
+    <!-- Site Improve -->
+    <script async src=https://siteimproveanalytics.com/js/siteanalyze_66357749.js></script>
+</body>
+</html>
