@@ -95,9 +95,32 @@
       .ele-content li {
         margin-bottom: 10px;
       }
+
+      .img-container {
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+
+      .img-container img {
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 10px;
+      }
     </style>
 
     <div class="row">
+      <div class="img-container">
+        <img
+          src="https://www.lit.edu/getmedia/4a6bd661-04b6-40b2-9edd-b4ac307a8fc4/first-day-complete-web-header.png"
+          class="img-fluid"
+          alt="Eagle Learning Essentials (ELE) is an affordable textbook rental
+                program through the Barnes and Noble Bookstore"
+        />
+      </div>
+
       <div class="ele-content">
         <h3>Eagle Learning Essentials</h3>
         <p>
@@ -323,6 +346,7 @@
         </p>
       </div>
     </div>
+
     <script src="static/js/site.js" type="module"></script>
     <script src="static/lib/jquery/dist/jquery.min.js" type="module"></script>
     <script
