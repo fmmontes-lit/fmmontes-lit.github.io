@@ -9,15 +9,6 @@ body {
     text-align: center;
 }
 
-a,
-a:visited {
-    color: #007bff;
-}
-
-a:hover {
-    color: #0056b3;
-}
-
 nav ul {
     list-style-type: none;
     padding: 0;
