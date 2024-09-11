@@ -55,6 +55,18 @@
       </div>
     </nav>
     <div class="row">
+      <style>
+        .img-block {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 20px;
+        }
+
+        .img-block img {
+          border-radius: 8px;
+        }
+      </style>
       <main role="main" class="pb-0">
         <!--program name/sub title/overview-->
         <div class="container xmx-2 xmx-md-5">
@@ -114,15 +126,24 @@
               </div>
             </div>
             <!--call to action-->
-            <div class="col-sm-12 col-md-4 bg-light">
+            <div class="col-sm-12 col-md-4">
               <!-- Apply Button -->
               <div class="row mt-sm-1 p-sm-1 p-md-2 pb-0">
-                <div class="col-sm-12 col-lg-6">
-                  <a
-                    class="btn btn-danger"
-                    href="https://lit.edu/AlliedHealth/app/nursing/2025"
-                    >Apply Now</a
-                  >
+                <div class="col-sm-12 col-lg-12">
+                  <div class="img-block">
+                    <img
+                      class="img-fluid"
+                      src="https://lit.edu/getmedia/5e6796f9-29be-40be-bf70-1c0950684b97/nursing-0.png"
+                      alt="Why choose Nursing?"
+                    />
+                  </div>
+                  <div class="btn-block">
+                    <a
+                      class="btn btn-danger w-100"
+                      href="https://lit.edu/AlliedHealth/app/nursing/2025"
+                      >Apply Now</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
@@ -193,7 +214,13 @@
                 </p>
               </div>
               <div class="col-sm-12 col-md-4">
-                <div class="img-block"></div>
+                <div class="img-block">
+                  <img
+                    class="img-fluid"
+                    src="https://lit.edu/getmedia/361bc05c-8b4e-4438-a90a-b705a54a4c12/nursing-2.png"
+                    alt="Why choose Nursing?"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -204,7 +231,13 @@
           <div class="container">
             <div class="row mt-5">
               <div class="col-sm-12 col-md-4">
-                <div class="img-block"></div>
+                <div class="img-block">
+                  <img
+                    class="img-fluid"
+                    src="https://lit.edu/getmedia/3ba906f5-e958-48a4-8bf4-d383fe72b7d8/nursing-1.png"
+                    alt="Why choose Nursing?"
+                  />
+                </div>
               </div>
               <div class="col-sm-12 col-md-8">
                 <h2 class="text-primary">What can I do with this Degree?</h2>
@@ -331,7 +364,13 @@
                 </ul>
               </div>
               <div class="col-sm-12 col-md-4">
-                <div class="img-block"></div>
+                <div class="img-block">
+                  <img
+                    class="img-fluid"
+                    src="https://lit.edu/getmedia/361bc05c-8b4e-4438-a90a-b705a54a4c12/nursing-2.png"
+                    alt="Why choose Nursing?"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -351,11 +390,15 @@
               <div class="col-sm-12 col-md-4 xbg-white text-dark p-3">
                 <div class="card">
                   <div class="card-header">
-                    <a
-                      href="/degreeplan/96/health-sciences/associate-of-science"
+                    <!-- Button trigger modal -->
+                    <button
+                      type="button"
                       class="btn btn-primary w-100"
-                      >VIEW DEGREE PLAN</a
+                      data-toggle="modal"
+                      data-target="#degreePlanModal"
                     >
+                      VIEW DEGREE PLAN
+                    </button>
                   </div>
                   <div class="card-body">
                     <strong>Program Credits: </strong>60<br />
@@ -383,9 +426,11 @@
                     </h3>
                   </div>
                   <div class="card-body">
-                    Learn more about the requirements for this program including
-                    a background check, academic prerequisites, the cost and a
-                    typical weekly schedule.
+                    <p>
+                      Learn more about the requirements for this program
+                      including a background check, academic prerequisites, the
+                      cost and a typical weekly schedule.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -482,78 +527,115 @@
         </div>
       </main>
 
-      <hr />
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="degreePlanModal"
+        tabindex="-1"
+        aria-labelledby="degreePlanModal"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="#degreePlanModal">
+                Associate of Applied Science in Nursing Degree Plan
+              </h5>
+            </div>
+            <div class="modal-body">
+              <div class="degree-plan-container">
+                <h2>Associate of Applied Science in Nursing Degree Plan</h2>
 
-      <div class="degree-plan-container">
-        <h2>Associate of Applied Science in Nursing Degree Plan</h2>
+                <h3>Prerequisites</h3>
 
-        <h3>Prerequisites</h3>
+                <ul>
+                  <li>ENGL 1301 Composition I</li>
+                  <li>PSYC 2314 Lifespan Growth &amp; Development</li>
+                  <li>BIOL 2301 Anatomy &amp; Physiology I</li>
+                  <li>BIOL 2101 Anatomy &amp; Physiology I Lab</li>
+                  <li>DORI 0200 College Success</li>
+                  <li>BIOL 2320 Microbiology for Non-Science Majors</li>
+                  <li>BIOL 2120 Microbiology for Non-Science Majors Lab</li>
+                  <li>BIOL 1322 Public Health &amp; Nutrition</li>
+                  <li>BIOL 2302 Anatomy &amp; Physiology II</li>
+                  <li>BIOL 2102 Anatomy &amp; Physiology II Lab</li>
+                </ul>
 
-        <ul>
-          <li>ENGL 1301 Composition I</li>
-          <li>PSYC 2314 Lifespan Growth &amp; Development</li>
-          <li>BIOL 2301 Anatomy &amp; Physiology I</li>
-          <li>BIOL 2101 Anatomy &amp; Physiology I Lab</li>
-          <li>DORI 0200 College Success</li>
-          <li>BIOL 2320 Microbiology for Non-Science Majors</li>
-          <li>BIOL 2120 Microbiology for Non-Science Majors Lab</li>
-          <li>BIOL 1322 Public Health &amp; Nutrition</li>
-          <li>BIOL 2302 Anatomy &amp; Physiology II</li>
-          <li>BIOL 2102 Anatomy &amp; Physiology II Lab</li>
-        </ul>
+                <h3>First Semester</h3>
 
-        <h3>First Semester</h3>
+                <ul>
+                  <li>RNSG 1311 Nursing Pathophysiology*</li>
+                  <li>RNSG 1125 Professional Nursing Concepts</li>
+                  <li>RNSG 1128 Introduction to Health Care Concepts</li>
+                  <li>
+                    RNSG 1160 Clinical: Registered Nursing/Registered Nurse
+                  </li>
+                  <li>RNSG 1216 Professional Nursing Competencies</li>
+                  <li>RNSG 1330 Health Care Concepts I</li>
+                </ul>
 
-        <ul>
-          <li>RNSG 1311 Nursing Pathophysiology*</li>
-          <li>RNSG 1125 Professional Nursing Concepts</li>
-          <li>RNSG 1128 Introduction to Health Care Concepts</li>
-          <li>RNSG 1160 Clinical: Registered Nursing/Registered Nurse</li>
-          <li>RNSG 1216 Professional Nursing Competencies</li>
-          <li>RNSG 1330 Health Care Concepts I</li>
-        </ul>
+                <h3>Second Semester</h3>
 
-        <h3>Second Semester</h3>
+                <ul>
+                  <li>RNSG 1126 Professional Nursing Concepts II</li>
+                  <li>RNSG 1433 Health Care Concepts II</li>
+                  <li>
+                    RNSG 2361 Clinical: Registered Nursing/Registered Nurse II
+                  </li>
+                </ul>
 
-        <ul>
-          <li>RNSG 1126 Professional Nursing Concepts II</li>
-          <li>RNSG 1433 Health Care Concepts II</li>
-          <li>RNSG 2361 Clinical: Registered Nursing/Registered Nurse II</li>
-        </ul>
+                <h3>Third Semester</h3>
 
-        <h3>Third Semester</h3>
+                <ul>
+                  <li>RNSG 1137 Professional Nursing Concepts III</li>
+                  <li>RNSG 1438 Health Care Concepts III</li>
+                  <li>
+                    RNSG 2362 Clinical: Registered Nursing/Registered Nurse III
+                  </li>
+                  <li>
+                    HUMA 1315 Fine Arts Appreciation (can be taken at any time)
+                  </li>
+                </ul>
 
-        <ul>
-          <li>RNSG 1137 Professional Nursing Concepts III</li>
-          <li>RNSG 1438 Health Care Concepts III</li>
-          <li>RNSG 2362 Clinical: Registered Nursing/Registered Nurse III</li>
-          <li>HUMA 1315 Fine Arts Appreciation (can be taken at any time)</li>
-        </ul>
+                <h3>Fourth Semester</h3>
 
-        <h3>Fourth Semester</h3>
+                <ul>
+                  <li>RNSG 2138 Professional Nursing Concepts IV</li>
+                  <li>
+                    RNSG 2363 Clinical: Registered Nursing/Registered Nurse IV
+                  </li>
+                  <li>RNSG 2539 Health Care Concepts IV</li>
+                </ul>
 
-        <ul>
-          <li>RNSG 2138 Professional Nursing Concepts IV</li>
-          <li>RNSG 2363 Clinical: Registered Nursing/Registered Nurse IV</li>
-          <li>RNSG 2539 Health Care Concepts IV</li>
-        </ul>
+                <p><strong>Total:</strong> 60 SCH and 1936 Contact Hours</p>
 
-        <p><strong>Total:</strong> 60 SCH and 1936 Contact Hours</p>
+                <h3>Prerequisites to Apply</h3>
 
-        <h3>Prerequisites to Apply</h3>
-
-        <ul>
-          <li>ENGL 1301 Composition I</li>
-          <li>PSYC 2314 Lifespan Growth &amp; Development</li>
-          <li>BIOL 2301 Anatomy &amp; Physiology I</li>
-          <li>BIOL 2101 Anatomy &amp; Physiology I Lab</li>
-          <li>DORI 0200 College Success</li>
-          <li>BIOL 2320 Microbiology for Non-Science Majors</li>
-          <li>BIOL 2120 Microbiology for Non-Science Majors Lab</li>
-          <li>BIOL 1322 Public Health &amp; Nutrition</li>
-          <li>BIOL 2302 Anatomy &amp; Physiology II</li>
-          <li>BIOL 2102 Anatomy &amp; Physiology II Lab</li>
-        </ul>
+                <ul>
+                  <li>ENGL 1301 Composition I</li>
+                  <li>PSYC 2314 Lifespan Growth &amp; Development</li>
+                  <li>BIOL 2301 Anatomy &amp; Physiology I</li>
+                  <li>BIOL 2101 Anatomy &amp; Physiology I Lab</li>
+                  <li>DORI 0200 College Success</li>
+                  <li>BIOL 2320 Microbiology for Non-Science Majors</li>
+                  <li>BIOL 2120 Microbiology for Non-Science Majors Lab</li>
+                  <li>BIOL 1322 Public Health &amp; Nutrition</li>
+                  <li>BIOL 2302 Anatomy &amp; Physiology II</li>
+                  <li>BIOL 2102 Anatomy &amp; Physiology II Lab</li>
+                </ul>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
