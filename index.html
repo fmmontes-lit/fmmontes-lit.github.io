@@ -1,173 +1,190 @@
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LitPlayground</title>
-    <link rel="stylesheet" href="static/styles.css">
-    <link rel="stylesheet" href="static/lib/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="static/css/site.css">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
-</head>
+    <link rel="stylesheet" href="static/styles.css" />
+    <link
+      rel="stylesheet"
+      href="static/lib/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="static/css/site.css" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css"
+    />
+  </head>
 
-<body>
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-        <div class="container-fluid">
+  <body>
+    <nav
+      class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"
+    >
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target=".navbar-collapse"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <style>
-                .nav-item {
-                    border-right: solid 1px #e5e5e5;
-                    padding-right: 10px;
-                }
-            </style>
-            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                <ul class="navbar-nav flex-grow-1">
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="ab.html">Request Accommodations</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="ag.html">Documentation Guidelines</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="ac.html">Resources</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="ae.html">Service Animals</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="af.html">Responsibilities</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="ah.html">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="ad.html">FAQ - OLD</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div id="nav-corner" style="color: #1b6ec2">(^_^)
-                <div id="current-time"></div>
-            </div>
+        <div
+          class="navbar-collapse collapse d-sm-inline-flex justify-content-between"
+        >
+          <ul class="navbar-nav flex-grow-1">
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Ignore</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">These</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Links&reg;</a>
+            </li>
+          </ul>
         </div>
+
+        <div id="nav-corner" style="color: #1b6ec2">
+          (^_^)
+          <div id="current-time"></div>
+        </div>
+      </div>
     </nav>
-
-    <style>
-        .row {
-            margin: 5px 0 10px 0;
-        }
-
-        .row>h3 {
-            margin: 10px 0 10px 0;
-        }
-
-        .row a {
-            text-decoration: none;
-        }
-
-        .resource-info ul {
-            margin-top: 10px;
-        }
-
-        .resource-info li {
-            margin-bottom: 10px;
-        }
-    </style>
-
     <div class="row">
-        <div class="col-sm-12 col-md-10">
-            <div class="row">
-                <h3>Mission Statement</h3>
-                <p>
-                    The mission of the Special Populations Office is to ensure that special population students
-                    have equal access to all Lamar Institute of Technology programs and activities. The purpose
-                    of this office is to provide students the opportunity to reach their full potential by
-                    coordinating academic accommodations and support services, promoting independence and
-                    self-advocacy and providing information and referral services within the community.
-                </p>
-                <p>
-                    The Special Populations Office helps foster a supportive educational environment by
-                    maintaining partnerships with faculty and staff and promoting awareness among all members of
-                    the Lamar Institute of Technology community. The Office is located within the Student
-                    Services Division in the Eagles Nest and there is no charge for Services.
-                </p>
-                <h3>What header should we use here?</h3>
-                <div class="resource-info">
-                    <ul>
-                        <li><a href="https://fmmontes-lit.github.io/ah.html" target="_blank">Define a Disability</a> -
-                            Section 504 of the Americans with Disabilities Act defines a disability as a physical
-                            impairment, which substantially
-                            limits one or major life activities, for ex: breathing, speaking, seeing, walking, learning,
-                            working or taking care of
-                            oneself. Even if others do not perceive you as having such impairment, you may have a
-                            disability. The key here is the
-                            term substantially limits. This means a person is restricted as to the condition or manner,
-                            or duration under which a
-                            major life activity can be performed, in comparison to the average person or to most people,
-                            or that a person cannot
-                            perform the activity at all.
-                        </li>
-                        <li><a href="https://fmmontes-lit.github.io/ah.html" target="_blank">Frequently Asked
-                                Questions</a></li>
-                        <li><a href="https://fmmontes-lit.github.io/ab.html" target="_blank">Accommodation
-                                Procedures</a></li>
-                        <li><a href="https://fmmontes-lit.github.io/ac.html" target="_blank">Resources Offered</a></li>
-                        <li><a href="mailto:specialpopulations@lit.edu">Contact Us</a></li>
-                    </ul>
-                </div>
-            </div>
+      <style>
+        .container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 0 auto;
+          max-width: 25%;
+        }
+        .image-wrapper {
+          border: 1px solid #ccc;
+        }
+        .image-wrapper img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+        }
+        .controls {
+          display: flex;
+          gap: 10px;
+          margin-bottom: 20px;
+        }
+        .controls label {
+          font-weight: bold;
+        }
+        table {
+          border-collapse: collapse;
+          margin-top: 20px;
+        }
+        th,
+        td {
+          border: 1px solid #ccc;
+          padding: 8px;
+          text-align: center;
+        }
+        th {
+          background-color: #f4f4f4;
+        }
+      </style>
+      <div class="container">
+        <div class="controls">
+          <label for="aspect-ratio">Aspect Ratio:</label>
+          <select id="aspect-ratio">
+            <option value="16/9">16:9</option>
+            <option value="4/3">4:3</option>
+            <option value="1/1">1:1</option>
+            <option value="3/4">3:4</option>
+            <option value="9/16">9:16</option>
+          </select>
         </div>
 
-        <!--sidebar-->
-        <style>
-            .sidebar {
-                padding: 20px;
-                border-radius: 5px;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            }
-        </style>
-        <div class="col-sm-12 col-md-2 sidebar">
-            <div class="d-flex flex-column">
-                <div class="mb-2">
-                    <a class="sidebar-sibling" href="index.html">Home</a>
-                </div>
-                <div class="mb-2">
-                    <a class="sidebar-sibling" href="ab.html">Request Accommodations</a>
-                </div>
-                <div class="mb-2">
-                    <a class="sidebar-sibling" href="ag.html">Documentation Guidelines</a>
-                </div>
-                <div class="mb-2">
-                    <a class="sidebar-sibling" href="ac.html">Resources</a>
-                </div>
-
-                <div class="mb-2">
-                    <a class="sidebar-sibling" href="ae.html">Service Animals</a>
-                </div>
-                <div class="mb-2">
-                    <a class="sidebar-sibling" href="af.html">Responsibilities</a>
-                </div>
-                <div class="mb-2">
-                    <a class="sidebar-sibling" href="ah.html">FAQ</a>
-                </div>
-                <div class="mb-2">
-                    <a class="sidebar-sibling" href="ad.html">FAQ - OLD</a>
-                </div>
-            </div>
+        <div class="image-wrapper" id="image-wrapper">
+          <img
+            src="https://picsum.photos/600/600?random=1"
+            alt="Sample Image"
+            id="image"
+          />
         </div>
+
+        <table id="dimension-table">
+          <thead>
+            <tr>
+              <th>Width (pixels)</th>
+              <th>Height (pixels)</th>
+              <th>Width (inches)</th>
+              <th>Height (inches)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="width-px">1600</td>
+              <td id="height-px">900</td>
+              <td id="width-in">16.66</td>
+              <td id="height-in">9.375</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <script>
+        const imageWrapper = document.getElementById("image-wrapper");
+        const aspectRatioSelector = document.getElementById("aspect-ratio");
+        const image = document.getElementById("image");
+        const widthPx = document.getElementById("width-px");
+        const heightPx = document.getElementById("height-px");
+        const widthIn = document.getElementById("width-in");
+        const heightIn = document.getElementById("height-in");
+
+        function updateImageAndTable() {
+          const selectedRatio = aspectRatioSelector.value;
+          const [widthRatio, heightRatio] = selectedRatio
+            .split("/")
+            .map(Number);
+
+          // Calculate width and height based on the width of the container (300px for preview)
+          const width = 1600;
+          const height = Math.round((width * heightRatio) / widthRatio);
+
+          // Set new image source
+          image.src = `https://picsum.photos/${width}/${height}?random=${Math.random()}`;
+
+          // Update aspect ratio style
+          imageWrapper.style.aspectRatio = `${widthRatio} / ${heightRatio}`;
+
+          const designWidthPx = 1600;
+          const designHeightPx = Math.round(
+            (designWidthPx * heightRatio) / widthRatio
+          );
+          const designWidthIn = (designWidthPx / 96).toFixed(2);
+          const designHeightIn = (designHeightPx / 96).toFixed(2);
+
+          widthPx.textContent = designWidthPx;
+          heightPx.textContent = designHeightPx;
+          widthIn.textContent = designWidthIn;
+          heightIn.textContent = designHeightIn;
+        }
+
+        aspectRatioSelector.addEventListener("change", updateImageAndTable);
+        updateImageAndTable();
+      </script>
     </div>
+
     <script src="static/js/site.js" type="module"></script>
     <script src="static/lib/jquery/dist/jquery.min.js" type="module"></script>
-    <script src="static/lib/bootstrap/dist/js/bootstrap.bundle.min.js" type="module"></script>
-    <script src="static/lit_news_files/scripts/bootstrap.bundle.min.js" type="module"></script>
-</body>
-
+    <script
+      src="static/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+      type="module"
+    ></script>
+    <script
+      src="static/lit_news_files/scripts/bootstrap.bundle.min.js"
+      type="module"
+    ></script>
+  </body>
 </html>
