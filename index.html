@@ -133,6 +133,161 @@
         </table>
       </div>
 
+      <!-- How to Attend -->
+      <style>
+        .hta-container {
+          padding: 1rem;
+          container-type: inline-size;
+          container-name: hta;
+          border: 1px solid black;
+          border-radius: 5px;
+          /*background-image: url("https://picsum.photos/800/600");*/
+          background-image: url("../../static/images/lit-campus-w768.png");
+          background-size: cover;
+          background-position: center;
+          position: relative;
+        }
+
+        .hta-grid {
+          display: grid;
+          gap: 5px;
+          grid-template-columns: 1fr;
+          --color: white;
+          position: relative;
+          z-index: 1;
+          background-color: rgba(28, 117, 188, 0.8);
+          padding: 1rem;
+        }
+
+        .hta-grid::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          opacity: 0.8;
+          z-index: -1;
+        }
+
+        .hta-grid-item {
+          border-radius: 5px;
+          overflow: hidden;
+        }
+
+        .hta-grid-item-0 p {
+          text-align: left;
+          font-size: 1em;
+          color: var(--color);
+        }
+
+        .hta-grid-item-1 ol {
+          padding-left: 2rem;
+          margin-top: 0;
+        }
+
+        .hta-grid-item-1 li {
+          color: var(--color);
+          margin-bottom: 0.5rem;
+          font-size: 0.9em;
+        }
+
+        .hta-title {
+          color: #1c75bc;
+          font-size: 2rem;
+          margin-bottom: 1rem;
+        }
+
+        .hta-link {
+          color: var(--color);
+          text-decoration: none;
+          font-weight: bold;
+        }
+
+        .hta-link:hover {
+          color: #90b2ca;
+          text-decoration: underline;
+        }
+
+        @media (min-width: 768px) {
+          .hta-container {
+            /*background-image: url("https://picsum.photos/1600/900");*/
+            background-image: url("./static/images/lit-campus-w1600.png");
+          }
+
+          .hta-grid {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto;
+          }
+
+          .hta-grid-item-0 {
+            grid-column: 1 / -1;
+            grid-row: 1;
+          }
+
+          .hta-grid-item-0 p {
+            font-size: 1.8em;
+          }
+
+          .hta-grid-item-1 {
+            grid-column: 2 / -1;
+            grid-row: 2;
+          }
+
+          .hta-grid-item-1 ol {
+            margin-left: 1rem;
+          }
+
+          .hta-grid-item-1 li {
+            font-size: 1.2em;
+          }
+        }
+      </style>
+      <div class="row">
+        <h2 class="hta-title">How to Attend LIT</h2>
+        <div class="hta-container">
+          <div class="hta-grid">
+            <div class="hta-grid-item hta-grid-item-0">
+              <p>
+                Lamar Institute of Technology welcomes any student committed to
+                education and personal improvement. Here are tools to help you
+                begin your journey.
+              </p>
+            </div>
+            <div class="hta-grid-item hta-grid-item-1">
+              <ol>
+                <li data-index="1">
+                  <a href="/programs" class="hta-link"
+                    >Choose a path of study</a
+                  >
+                </li>
+                <li data-index="2">
+                  <a href="https://www.applytexas.org/" class="hta-link"
+                    >Start the application process</a
+                  >
+                </li>
+                <li data-index="3">
+                  <a href="/financial-aid" class="hta-link"
+                    >Get help paying for college</a
+                  >
+                </li>
+                <li data-index="4">
+                  <a href="/searchcourses" class="hta-link"
+                    >Search class schedules</a
+                  >
+                </li>
+                <li data-index="5">
+                  <a href="/admissions/registration" class="hta-link"
+                    >Register for classes</a
+                  >
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Script for Aspect Ratio -->
       <script>
         const imageWrapper = document.getElementById("image-wrapper");
         const aspectRatioSelector = document.getElementById("aspect-ratio");
