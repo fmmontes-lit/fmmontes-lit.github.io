@@ -1,0 +1,342 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LitPlayground</title>
+    <link rel="stylesheet" href="static/styles.css" />
+    <link
+      rel="stylesheet"
+      href="static/lib/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="static/css/site.css" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css"
+    />
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"
+    >
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target=".navbar-collapse"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="navbar-collapse collapse d-sm-inline-flex justify-content-between"
+        >
+          <ul class="navbar-nav flex-grow-1">
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Ignore</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">These</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Links&reg;</a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="nav-corner" style="color: #1b6ec2">
+          (^_^)
+          <div id="current-time"></div>
+        </div>
+      </div>
+    </nav>
+
+    <style>
+      .sidebar-sub-drawer {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        border: 1px solid black;
+        border-radius: 8px;
+      }
+
+      .sidebar-sub-drawer a {
+        text-decoration: none;
+        color: #000;
+        padding: 1rem 2rem;
+        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+      }
+
+      .sidebar-sub-drawer a:hover {
+        transform: translateX(-10px);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        background-color: #eee;
+        border-radius: 8px;
+      }
+
+      .veterans-page-content .card {
+        height: 100%;
+      }
+
+      [class^="col"] {
+        margin-bottom: 20px;
+      }
+
+      .main-content {
+        padding: 20px;
+        margin-bottom: 40px;
+        border: 1px solid black;
+        border-radius: 8px;
+      }
+
+      p {
+        animation-duration: 0.5s;
+        animation-name: slide-in;
+      }
+
+      @keyframes slide-in {
+        from {
+          translate: 150vw 0;
+          scale: 200% 1;
+        }
+
+        to {
+          translate: 0 0;
+          scale: 100% 1;
+        }
+      }
+    </style>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-10">
+        <div class="main-content veterans-page-content">
+          <div class="title-wrapper">
+            <h2 class="text-dark">
+              <span>Veteran Services</span>
+            </h2>
+          </div>
+          <p>
+            Our goal is to provide the pertinent information required to all our
+            Veteran and Dependent students attending Lamar Institute of
+            Technology. Veterans Services assists all students attending Lamar
+            Institute of Technology using education benefits under the
+            Department of Veterans Affairs Educational Assistance Programs and
+            Texas Hazlewood Exemption Act in the pursuit of a certificate or
+            associates degree.
+          </p>
+          <p>
+            Veterans are afforded the same rights and must meet all academic
+            requirements and maintain the same academic standards as any student
+            attending Lamar Institute of Technology.
+          </p>
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <div class="card">
+                <div class="card-header">
+                  <strong>Federal VA Education Benefits</strong>
+                </div>
+                <div class="card-body">
+                  <p>
+                    The application for VA educational benefits is completed
+                    online at the VA eBenefits website:
+                    <a
+                      href="https://www.va.gov/education/how-to-apply/"
+                      target="_blank"
+                      >www.va.gov/education/how-to-apply</a
+                    >
+                  </p>
+                  <p>
+                    Once approved, the VA will mail a Certificate of Eligibility
+                    to the student. It takes approximately 30 days from the day
+                    you apply to receive the certificate.
+                  </p>
+                  <p>
+                    You may only use one educational benefit at a time for a
+                    period of service. You will have to choose which education
+                    benefit you would like to use. If you choose to use the Post
+                    9/11 GI Bill (Chapter 33) instead of the Montgomery GI Bill
+                    (Chapter 30), you cannot switch back at a later date.
+                  </p>
+                  <p>
+                    For a comparison of benefits offered by the VA, please visit
+                    <a
+                      href="https://www.va.gov/education/gi-bill-comparison-tool/"
+                      target="_blank"
+                      >here</a
+                    >
+                    or call the VA at
+                    <a href="tel:8884424551">888-442-4551</a> to discuss options
+                    available to you.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <div class="card">
+                <div class="card-header">
+                  <strong>Texas Hazlewood Exemption Act</strong>
+                </div>
+                <div class="card-body">
+                  <p>
+                    The Hazlewood Act is a tuition exemption for up to 150
+                    credit hours for qualified Veterans and dependents.
+                    Eligibility for the Texas Hazlewood Exemption Act is for
+                    Veterans who:
+                  </p>
+                  <ol>
+                    <li>
+                      At the time of entry into active duty with the U.S. Armed
+                      Forces was
+                      <ol type="a">
+                        <li>A Texas Resident,</li>
+                        <li>or entered the service in Texas,</li>
+                        <li>
+                          During their Active Duty service, designated Texas as
+                          Home of Record.
+                        </li>
+                      </ol>
+                    </li>
+                    <li>
+                      Have received an Honorable Discharge or a General Under
+                      Honorable Conditions Discharge as indicated on the
+                      Veteran's Certificate of Release or Discharge from Active
+                      Duty (DD Form 214).
+                    </li>
+                    <li>
+                      Served at least 181 days of Active Duty service (excluding
+                      training).
+                    </li>
+                  </ol>
+                  <p>
+                    Additionally, you may use Hazlewood in conjunction with
+                    CH30, CH35 and CH1606.
+                  </p>
+                  <p>
+                    You may use Hazlewood with CH33 if you are receiving CH33 at
+                    less than 100%. Also, you cannot be in default on a student
+                    loan made or guaranteed by the State of Texas.
+                  </p>
+                  <p>
+                    It is highly recommended that Veterans and Dependents
+                    sign-up for the free database on the Texas Veterans
+                    Commission website
+                    <a
+                      href="https://hazlewood.tvc.texas.gov/students/Account/Register/"
+                      target="_blank"
+                      >here</a
+                    >
+                    to track Hazlewood hours used.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3>VA Certification</h3>
+          <p>
+            The U.S. Department of Veterans Affairs requires that the School
+            Certifying Official verify that all registered courses are
+            applicable to the degree plan the veteran is pursuing. Students must
+            submit their Certificate of Eligibility to Veteran Services along
+            with the LIT Certification Request Form. The Request Form MUST be
+            submitted each semester at the time of enrollment.
+          </p>
+          <p>CRF.pdf, CRF.docx</p>
+
+          <h3>Graduation Honor Cords</h3>
+          <p>
+            Lamar Institution of Technology celebrates our Veteran Graduates by
+            providing a Service Honor Cord. If you are a graduating Veteran,
+            please fill out the form below and submit it to Veteran Services.
+            The Honor Cords may be picked up the week before the Commencement
+            Ceremony or during Check-In for the ceremony.
+          </p>
+          <p>Service Honor Cord Application</p>
+
+          <h3>Veteran Services Contact Information and Staff</h3>
+          <p>
+            Veteran Services is part of Student Services and located in the
+            Eagles' Nest Bldg. Our email is
+            <a href="mailto:veteranservices@lit.edu">veteranservices@lit.edu</a>
+            and the number is <a href="tel:4098808437">409-880-8437</a>.
+          </p>
+          <ul>
+            <li>Eric Matthews - Veteran Liaison</li>
+            <li>Cheryl Talbert - School Certifying Official</li>
+            <li>Crystal Cole - School Certifying Official</li>
+          </ul>
+
+          <h3>Helpful Links</h3>
+          <ul>
+            <li>
+              <a href="https://www.va.gov/education/" target="_blank"
+                >VA Education & Training Benefits</a
+              >
+            </li>
+            <li>
+              <a href="https://tvc.texas.gov/" target="_blank"
+                >Texas Veteran Commission</a
+              >
+            </li>
+            <li>
+              <a href="https://veterans.portal.texas.gov/" target="_blank"
+                >Texas Veterans Portal</a
+              >
+            </li>
+            <li>
+              <a href="https://texvet.org/cvso/" target="_blank"
+                >Texas County Veteran Service Officers</a
+              >
+            </li>
+
+            <li>
+              <a href="https://jst.doded.mil/jst/" target="_blank"
+                >DoD Joint Service Transcript</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.airuniversity.af.edu/barnes/CCAF/"
+                target="_blank"
+                >CCAF/Air University Transcript</a
+              >
+            </li>
+            <li>
+              <a href="https://studentveterans.org/" target="_blank"
+                >Student Veterans of America</a
+              >
+            </li>
+            <li>
+              <a href="https://www.va.gov/beaumont-vet-center/" target="_blank"
+                >The Vet Center</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-2">
+        <div class="sidebar-sub-drawer">
+          <a href="./aa.html">Veteran Services</a>
+          <a href="./ab.html">Education Benefits</a>
+          <a href="./ac.html">Exemption Act</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="static/js/site.js" type="module"></script>
+    <script src="static/lib/jquery/dist/jquery.min.js" type="module"></script>
+    <script
+      src="static/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+      type="module"
+    ></script>
+    <script
+      src="static/lit_news_files/scripts/bootstrap.bundle.min.js"
+      type="module"
+    ></script>
+  </body>
+</html>
