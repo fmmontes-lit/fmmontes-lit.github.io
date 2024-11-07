@@ -67,26 +67,30 @@
         flex-direction: column;
         margin: 0;
         padding: 0;
-        border: 1px solid black;
+        box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(0, 0, 0, 0.3);
         border-radius: 8px;
       }
 
       .sidebar-sub-drawer a {
         text-decoration: none;
-        color: #000;
+        color: #1c75bc;
         padding: 1rem 2rem;
         transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
       }
 
       .sidebar-sub-drawer a:hover {
         transform: translateX(-10px);
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+        color: #1e448d;
         background-color: #eee;
         border-radius: 8px;
       }
 
       .veterans-page-content .card {
         height: 100%;
+        box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(0, 0, 0, 0.3);
       }
 
       [class^="col"] {
@@ -96,8 +100,36 @@
       .main-content {
         padding: 20px;
         margin-bottom: 40px;
-        border: 1px solid black;
+        box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(0, 0, 0, 0.3);
         border-radius: 8px;
+      }
+
+      .title-wrapper {
+        margin-bottom: 20px;
+      }
+
+      .text-dark span {
+        color: #1c75bc;
+        border-bottom: 1px solid black;
+        padding-bottom: 5px;
+        font-weight: bold;
+      }
+
+      .main-content h3 {
+        color: #1c75bc;
+        border-bottom: 1px solid black;
+        padding-bottom: 5px;
+        font-weight: bold;
+        font-size: calc(1rem + 0.9vw);
+      }
+
+      .card-header {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+      }
+
+      .card-header strong {
+        color: #1c75bc;
       }
 
       p {
@@ -127,7 +159,21 @@
             </h2>
           </div>
 
-          <h3>VA Certification</h3>
+          <p>
+            The Department of Veterans Affairs (VA) offers a variety of
+            education and training benefits to help Veterans, service members,
+            and their dependents achieve their educational goals. These programs
+            can provide financial assistance for undergraduate and graduate
+            degrees, vocational or technical training, apprenticeships,
+            on-the-job training, and more. Whether you served on active duty or
+            in the reserves, there may be a VA education benefit program
+            available to fit your needs. This webpage provides an overview of
+            the different programs offered and their eligibility requirements.
+            Be sure to explore all the options to find the program that best
+            suits your educational and career aspirations.
+          </p>
+
+          <h3>Montgomery GI Bill (Ch. 30)</h3>
           <p>
             The Montgomery GI Bill is for those who entered military service
             after June 30, 1985, and paid the $1,200 co-payment.
