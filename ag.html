@@ -1,146 +1,179 @@
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LitPlayground</title>
-    <link rel="stylesheet" href="static/styles.css">
-    <link rel="stylesheet" href="static/lib/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="static/css/site.css">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
-</head>
+    <link rel="stylesheet" href="static/styles.css" />
+    <link
+      rel="stylesheet"
+      href="static/lib/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="static/css/site.css" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css"
+    />
+  </head>
 
-<body>
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-        <div class="container-fluid">
+  <body>
+    <nav
+      class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"
+    >
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target=".navbar-collapse"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <style>
-                .nav-item {
-                    border-right: solid 1px #e5e5e5;
-                    padding-right: 10px;
-                }
-            </style>
-            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                <ul class="navbar-nav flex-grow-1">
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="ab.html">Request Accommodations</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="ag.html">Documentation Guidelines</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="ac.html">Resources</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="ae.html">Service Animals</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="af.html">Responsibilities</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="ah.html">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="ad.html">FAQ - OLD</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div id="nav-corner" style="color: #1b6ec2">(^_^)
-                <div id="current-time"></div>
-            </div>
+        <div
+          class="navbar-collapse collapse d-sm-inline-flex justify-content-between"
+        >
+          <ul class="navbar-nav flex-grow-1">
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./ae.html"
+                >Veteran Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./af.html"
+                >VA Education Benefits</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./ag.html"
+                >Hazlewood Exemption Act</a
+              >
+            </li>
+          </ul>
         </div>
+
+        <div id="nav-corner" style="color: #1b6ec2">
+          (^_^)
+          <div id="current-time"></div>
+        </div>
+      </div>
     </nav>
 
     <style>
-        .row {
-            margin: 5px 0 10px 0;
-        }
+      .veterans-page-content .card {
+        height: 100%;
+        box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(0, 0, 0, 0.3);
+      }
 
-        .row>h3 {
-            margin: 10px 0 10px 0;
-        }
-
-        .row a {
-            text-decoration: none;
-        }
-
-        .helpful-links {
-            display: block;
-            margin-top: 10px;
-        }
-
-        .resource-info ul {
-            margin-top: 10px;
-        }
-
-        .resource-info li {
-            margin-bottom: 10px;
-        }
+      [class^="col"] {
+        margin-bottom: 20px;
+      }
     </style>
-    <div class="row">
-        <h3>Documentation Guidelines</h3>
-        <div class="resource-info">
-            <p>
-                You will have to provide current documentation from a licensed or certified professional
-                qualified
-                to treat
-                and diagnose the disability. This can include medical documentation, such as a letter from your
-                provider, or
-                a full evaluation or diagnostic report. 504, IEP and ARD paperwork from 9th-12th Grade can be
-                used
-                as well.
-                Below are some essential requirements we look for and why we may request further documentation.
-            </p>
-            <ul>
-                <li>
-                    Disability diagnosis
-                </li>
-                <li>
-                    Functional limitations, length of time or impact of disability
-                </li>
-                <li>
-                    Medications, side effects, and treatment (if applicable)
-                </li>
-                <li>
-                    Recommended accommodations and rationale
-                </li>
-                <li>
-                    Any assessments, findings, or scores
-                </li>
-                <li>
-                    If from a physician or medical professional, information needs to be on letterhead with
-                    contact
-                    information and some form of signature
-                </li>
-                <li>
-                    Older documentation is appropriate when the student's age is greater or equal to seventeen
-                    (17)
-                    years at
-                    the time of the evaluation (this is used when the diagnosis is a learning disability)
-                </li>
-            </ul>
-            <p>
-                Please make sure all documentation is as recent as possible. The Office of Special Populations
-                reserves the
-                right to request additional information or evaluation. If you have any questions about the
-                documentation
-                that is requested, please feel free to contact the Office of Special Populations.
-            </p>
-        </div>
+
+    <div class="main-content hazlewood-act-content">
+      <div class="title-wrapper">
+        <h2 class="text-dark">
+          <span>Texas Hazlewood Exemption Act</span>
+        </h2>
+      </div>
+      <p>
+        The Hazlewood Application is good for one Academic Year (Aug-Jul) and
+        must be renewed every year. Additionally, students using Hazlewood must
+        request it be applied to their account every semester by submitting the
+        Certification Request Form once enrolled in classes for that semester.
+      </p>
+      <p>
+        If a different Dependent Child has used the Veteran's Hazlewood hours
+        previously, then a Revocation Form must be submitted to the institution
+        that child attended and LIT before the new child can use the benefit.
+      </p>
+
+      <h3>Paperwork Required</h3>
+      <ul>
+        <li>DD-214 (Member-4 copy)</li>
+        <li>Hazlewood Application</li>
+        <li>VA Letter of Eligibility (if necessary)</li>
+      </ul>
+
+      <h3>Additional Paperwork for Dependents</h3>
+      <p>
+        Relationship Document (i.e. Birth Certificate, Marriage Certificate,
+        Adoption Papers, Recent Income Tax Return, Divorce Decree, etc.).
+      </p>
+      <ul>
+        <li>
+          If veteran is deceased due to service-related circumstances
+          <ul>
+            <li>Report of Casualty, DD Form 1300</li>
+          </ul>
+        </li>
+        <li>
+          If veteran is deceased due to non-service-related circumstances
+          <ul>
+            <li>Death Certificate</li>
+          </ul>
+        </li>
+        <li>
+          If veteran is 100% disabled or unemployable due to service-related
+          injury or illness
+          <ul>
+            <li>Current VA disability rating</li>
+          </ul>
+        </li>
+      </ul>
+
+      <p>
+        <strong>NOTE:</strong> Student and veteran (if not the student) must
+        reside in the state of Texas in order to use this benefit and must
+        register with the Hazlewood Online Database at the Texas Veterans
+        Commission's website:
+        <a href="https://tvc.texas.gov/education/hazlewood/" target="_blank"
+          >www.tvc.texas.gov/education/hazlewood</a
+        >
+      </p>
+
+      <h3>Forms</h3>
+      <ul class="fa-ul">
+        <li>
+          <span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span>
+          <a
+            href="https://tvc.texas.gov/wp-content/uploads/2023/08/Forms-TVC-ED-1-and-TVC-ED-1a-Texas_Hazlewood_Act_Exemption_Application_with_Supporting_Documents_Instructions-Revised-01DEC21-v2.pdf"
+            target="_blank"
+          >
+            Hazlewood Act Application</a
+          >
+        </li>
+        <li>
+          <span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span>
+          <a
+            href="https://tvc.texas.gov/wp-content/uploads/2023/08/Form-TVC-ED-2-Texas_Hazlewood_Act_Exemption_-Application_For_Continued_Enrollment-Updated-08DEC21.pdf"
+            target="_blank"
+            >Hazlewood Renewal Application</a
+          >
+        </li>
+        <li>
+          <span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span>
+          <a
+            href="https://tvc.texas.gov/wp-content/uploads/2023/08/Form-TVC-ED-5-Revocation_of_Previously_Assigned_Texas_Hazlewood_Act_Exemption_Hours-Updated-08DEC21.pdf"
+            target="_blank"
+            >Hazlewood Revocation Form</a
+          >
+        </li>
+      </ul>
     </div>
+
     <script src="static/js/site.js" type="module"></script>
     <script src="static/lib/jquery/dist/jquery.min.js" type="module"></script>
-    <script src="static/lib/bootstrap/dist/js/bootstrap.bundle.min.js" type="module"></script>
-    <script src="static/lit_news_files/scripts/bootstrap.bundle.min.js" type="module"></script>
-</body>
-
+    <script
+      src="static/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+      type="module"
+    ></script>
+    <script
+      src="static/lit_news_files/scripts/bootstrap.bundle.min.js"
+      type="module"
+    ></script>
+  </body>
 </html>

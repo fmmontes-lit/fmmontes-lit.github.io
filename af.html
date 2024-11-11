@@ -1,209 +1,160 @@
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LitPlayground</title>
-    <link rel="stylesheet" href="static/styles.css">
-    <link rel="stylesheet" href="static/lib/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="static/css/site.css">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
-</head>
+    <link rel="stylesheet" href="static/styles.css" />
+    <link
+      rel="stylesheet"
+      href="static/lib/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="static/css/site.css" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css"
+    />
+  </head>
 
-<body>
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-        <div class="container-fluid">
+  <body>
+    <nav
+      class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"
+    >
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target=".navbar-collapse"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <style>
-                .nav-item {
-                    border-right: solid 1px #e5e5e5;
-                    padding-right: 10px;
-                }
-            </style>
-            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                <ul class="navbar-nav flex-grow-1">
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="ab.html">Request Accommodations</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="ag.html">Documentation Guidelines</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="ac.html">Resources</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="ae.html">Service Animals</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="af.html">Responsibilities</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="ah.html">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="ad.html">FAQ - OLD</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div id="nav-corner" style="color: #1b6ec2">(^_^)
-                <div id="current-time"></div>
-            </div>
+        <div
+          class="navbar-collapse collapse d-sm-inline-flex justify-content-between"
+        >
+          <ul class="navbar-nav flex-grow-1">
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./ae.html"
+                >Veteran Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./af.html"
+                >VA Education Benefits</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./ag.html"
+                >Hazlewood Exemption Act</a
+              >
+            </li>
+          </ul>
         </div>
+
+        <div id="nav-corner" style="color: #1b6ec2">
+          (^_^)
+          <div id="current-time"></div>
+        </div>
+      </div>
     </nav>
 
     <style>
-        .row {
-            margin: 5px 0 10px 0;
-        }
+      .veterans-page-content .card {
+        height: 100%;
+        box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(0, 0, 0, 0.3);
+      }
 
-        .row>h3 {
-            margin: 10px 0 10px 0;
-        }
-
-        .row a {
-            text-decoration: none;
-        }
-
-        .helpful-links {
-            display: block;
-            margin-top: 10px;
-        }
-
-        .resource-info ul {
-            margin-top: 10px;
-        }
-
-        .resource-info li {
-            margin-bottom: 10px;
-        }
+      [class^="col"] {
+        margin-bottom: 20px;
+      }
     </style>
 
-    <div class="row">
-        <div class="col-sm-12 col-md-10">
-            <div class="row">
-                <h3>Faculty Responsibilities</h3>
-                <p>
-                    Accommodation memos are best submitted to the instructor before or at the beginning of the semester.
-                    Students may request accommodations and revisions to previously assigned accommodations through the
-                    Special
-                    Populations Office during the semester and therefore, might submit an accommodation memos to
-                    instructors
-                    during the semester. No accommodations should be provided until the accommodation memo is received
-                    by
-                    the
-                    instructor from the student. Any assignments, projects or tests given before receiving an
-                    accommodation
-                    memo
-                    from a student should not be accommodated as accommodations are active from the day it is recieved
-                    by
-                    the
-                    instructor.Instructors are to return 'Instructor Confirmation Forms' to the Special Populations
-                    Coordinator.
-                    Any alterations to the accommodation letter should be brought to the attention of the Special
-                    Populations
-                    Coordinator.
-                </p>
+    <div class="main-content va-edu-benefits">
+      <div class="title-wrapper">
+        <h2 class="text-dark">
+          <span>Federal VA Education Benefits</span>
+        </h2>
+      </div>
 
-                <h3>Student Responsibilities</h3>
-                <p>
-                    Students with disabilities have the same responsibilities as any other students to meet and maintain
-                    LIT's
-                    academic standards. They have the responsibility to advocate for their individual needs and to seek
-                    information, counsel, and assistance as necessary to be effective self-advocates. Students should
-                    have
-                    knowledge about their disability, their strengths and weaknesses, and how their disability impacts
-                    and
-                    functionally limits their activities.
-                </p>
-                <p>
-                    Students are responsible for notifying the Coordinator of their disability, the need for
-                    accommodations,
-                    and
-                    for obtaining and providing documentation of their disability from a qualified, licensed
-                    professional.
-                    Students are responsible for paying for the cost of their assessments/evaluations/medical tests.
-                </p>
-                <p>
-                    Accommodations are provided on a semester-by-semester basis. It is the student's responsibility to
-                    obtain
-                    the accommodation memos from the Coordinator each semester they attend courses. Any assignments,
-                    projects or
-                    tests given prior to an accommodation memo being given to an instructor will not be accommodated as
-                    accommodations are not retroactive.
-                </p>
-                <p>
-                    The student is responsible for delivering the accommodation memos to each instructor. Students are
-                    encouraged to meet with their instructors to discuss the assigned accommodations. The student must
-                    give
-                    the
-                    accommodation memos and the instructor confirmation forms to all instructors every semester so the
-                    instructors will know what to provide and what changes to make.
-                </p>
-                <p>
-                    All students are required to follow the Code of Conduct. Classroom disruptions or disruptions of the
-                    learning environment, that place an undue burden on the faculty or staff, or that distract the other
-                    students in the specific course(s) from hearing and focusing on the lecture, participating in class
-                    or
-                    concentrating when completing in-class assignments or tests may result in the intervention of
-                    security
-                    personnel, a review of the student's records by administration and staff, and his/her subsequent
-                    withdrawal
-                    from the college.
-                </p>
-            </div>
-        </div>
+      <p>
+        The Department of Veterans Affairs (VA) offers a variety of education
+        and training benefits to help Veterans, service members, and their
+        dependents achieve their educational goals. These programs can provide
+        financial assistance for undergraduate and graduate degrees, vocational
+        or technical training, apprenticeships, on-the-job training, and more.
+        Whether you served on active duty or in the reserves, there may be a VA
+        education benefit program available to fit your needs. This webpage
+        provides an overview of the different programs offered and their
+        eligibility requirements. Be sure to explore all the options to find the
+        program that best suits your educational and career aspirations.
+      </p>
 
-        <!--sidebar-->
-        <style>
-            .sidebar {
-                padding: 20px;
-                border-radius: 5px;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            }
-        </style>
-        <div class="col-sm-12 col-md-2 sidebar">
-            <div class="d-flex flex-column">
-                <div class="mb-2">
-                    <a class="sidebar-sibling" href="index.html">Home</a>
-                </div>
-                <div class="mb-2">
-                    <a class="sidebar-sibling" href="ab.html">Request Accommodations</a>
-                </div>
-                <div class="mb-2">
-                    <a class="sidebar-sibling" href="ag.html">Documentation Guidelines</a>
-                </div>
-                <div class="mb-2">
-                    <a class="sidebar-sibling" href="ac.html">Resources</a>
-                </div>
+      <h3>Montgomery GI Bill (Ch. 30)</h3>
+      <p>
+        The Montgomery GI Bill is for those who entered military service after
+        June 30, 1985, and paid the $1,200 co-payment.
+      </p>
 
-                <div class="mb-2">
-                    <a class="sidebar-sibling" href="ae.html">Service Animals</a>
-                </div>
-                <div class="mb-2">
-                    <a class="sidebar-sibling" href="af.html">Responsibilities</a>
-                </div>
-                <div class="mb-2">
-                    <a class="sidebar-sibling" href="ah.html">FAQ</a>
-                </div>
-                <div class="mb-2">
-                    <a class="sidebar-sibling" href="ad.html">FAQ - OLD</a>
-                </div>
-            </div>
-        </div>
+      <h3>Post 9/11 GI Bill (Ch. 33)</h3>
+      <p>
+        The Post 9/11 GI Bill is for those with active-duty service for more
+        than 90 days since Sept. 11, 2001.
+      </p>
+      <p>
+        <strong>If your service ended before January 1, 2013</strong>, your
+        Post-9/11 GI Bill (Chapter 33) benefits will expire 15 years after your
+        last separation date from active service. You must use all your benefits
+        by that time, or you will lose whatever is left.
+      </p>
+      <p>
+        <strong>If your service ended on or after January 1, 2013</strong>,
+        there is no delimiting date for your benefit in accordance with the
+        Forever GI Bill - Harry W. Colmery Veterans Educational Assistance Act.
+      </p>
+
+      <h3>CH 1606 Reserve GI Bill</h3>
+      <p>
+        The Montgomery GI Bill Selected Reserve (MGIB-SR) program offers up to
+        36 months of education and training benefits. If you are a member of the
+        Army, Navy, Air Force, Marine Corps or Coast Guard Reserve, Army
+        National Guard, or Air National Guard, you may be eligible for this
+        benefit.
+      </p>
+
+      <h3>Dependent Educational Assistance (Ch. 35)</h3>
+      <p>
+        The Dependents' Educational Assistance (DEA) program offers education
+        and training opportunities to eligible dependents of Veterans who are
+        permanently and totally disabled due to a service-related condition or
+        of Veterans who died while on active duty or as a result of a
+        service-related condition.
+      </p>
+
+      <h3>Vocational Rehabilitation (Ch. 31)</h3>
+      <p>
+        To see if you qualify for Vocational Rehabilitation, please visit the
+        VA's Vocational Rehabilitation eligibility site:
+        <a
+          href="https://www.va.gov/careers-employment/vocational-rehabilitation/how-to-apply/"
+          target="_blank"
+          >www.va.gov/careers-employment/vocational-rehabilitation/how-to-apply</a
+        >
+      </p>
     </div>
+
     <script src="static/js/site.js" type="module"></script>
     <script src="static/lib/jquery/dist/jquery.min.js" type="module"></script>
-    <script src="static/lib/bootstrap/dist/js/bootstrap.bundle.min.js" type="module"></script>
-    <script src="static/lit_news_files/scripts/bootstrap.bundle.min.js" type="module"></script>
-</body>
-
+    <script
+      src="static/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+      type="module"
+    ></script>
+    <script
+      src="static/lit_news_files/scripts/bootstrap.bundle.min.js"
+      type="module"
+    ></script>
+  </body>
 </html>
