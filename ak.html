@@ -1,202 +1,198 @@
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LitPlayground</title>
-    <link rel="stylesheet" href="static/styles.css">
-    <link rel="stylesheet" href="static/lib/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="static/css/site.css">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
-</head>
+    <link rel="stylesheet" href="static/styles.css" />
+    <link
+      rel="stylesheet"
+      href="static/lib/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="static/css/site.css" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css"
+    />
+  </head>
 
-<body>
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-        <div class="container-fluid">
+  <body>
+    <nav
+      class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"
+    >
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target=".navbar-collapse"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                <ul class="navbar-nav flex-grow-1">
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="ai.html">Employee Directory</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="aj.html">First Day&reg;</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="ak.html">Items</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div id="nav-corner" style="color: #1b6ec2">(^_^)
-                <div id="current-time"></div>
-            </div>
+        <div
+          class="navbar-collapse collapse d-sm-inline-flex justify-content-between"
+        >
+          <ul class="navbar-nav flex-grow-1">
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./al.html">Ambassadors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./ai.html">Directory</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./aj.html">ELE&reg;</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./ak.html">LIT&reg;</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./am.html">Nursing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./aa.html">Veterans</a>
+            </li>
+          </ul>
         </div>
+
+        <div id="nav-corner" style="color: #1b6ec2">
+          (^_^)
+          <div id="current-time"></div>
+        </div>
+      </div>
     </nav>
 
     <h2>Items</h2>
 
     <style>
-        .sidebar-right {
-            padding: 20px;
-            border-radius: 1px;
-            box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-        }
+      .sidebar-right {
+        padding: 20px;
+        border-radius: 1px;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+      }
 
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            padding: 20px;
-        }
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 20px;
+      }
 
-        .grid-item {
-            background-color: #f9f9f9;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
+      .grid-item {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
 
-        .grid-item h2 {
-            color: #1e448d;
-        }
+      .grid-item h2 {
+        color: #1e448d;
+      }
 
-        .grid-item h3 {
-            color: #1c75bc;
-        }
+      .grid-item h3 {
+        color: #1c75bc;
+      }
 
-        .grid-item p {
-            color: #333;
-        }
+      .grid-item p {
+        color: #333;
+      }
 
-        .grid-item ul {
-            color: #ec2027;
-            padding-left: 20px;
-        }
+      .grid-item ul {
+        color: #ec2027;
+        padding-left: 20px;
+      }
 
-        .grid-item img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin-bottom: 10px;
-        }
+      .grid-item img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-bottom: 10px;
+      }
     </style>
 
-    <div class="row">
-        <div class="col-sm-12 col-md-10">
-            <div class="grid-container">
-                <div class="grid-item item1">
-                    <h2>Header 1</h2>
-                    <p>This is a paragraph for item 1.</p>
-                    <h3>Subheader 1</h3>
-                    <img class="img-fluid img-thumbnail"
-                        src="https://www.lit.edu/getmedia/25612c38-d238-45c1-b61d-ed562dc4e2f0/baldy04.png" alt="LIT">
-                    <p>This is the second paragraph for item 1.</p>
-                </div>
-                <div class="grid-item item2">
-                    <h2>Header 2</h2>
-                    <img class="img-fluid img-thumbnail"
-                        src="https://www.lit.edu/getmedia/ac3007ec-6306-4a4e-886c-545781515592/baldy05.png" alt="LIT">
-                    <p>This is a paragraph for item 2.</p>
-                </div>
-                <div class="grid-item item3">
-                    <h2>Header 3</h2>
-                    <p>This is the first paragraph for item 3.</p>
-                    <h3>Subheader 3</h3>
-                    <p>This is the second paragraph for item 3.</p>
-                </div>
-                <div class="grid-item item4">
-                    <h2>Header 4</h2>
-                    <p>This is a paragraph for item 4.</p>
-                    <h3>Subheader 4</h3>
-                    <ul>
-                        <li>List item 1</li>
-                        <li>List item 2</li>
-                        <li>List item 3</li>
-                    </ul>
-                </div>
-                <div class="grid-item item5">
-                    <h2>Header 5</h2>
-                    <p>This is a paragraph for item 5.</p>
-                    <h3>Subheader 5</h3>
-                    <ul>
-                        <li>List item 1</li>
-                        <li>List item 2</li>
-                        <li>List item 3</li>
-                    </ul>
-                </div>
-                <div class="grid-item item6">
-                    <h2>Header 6</h2>
-                    <ul>
-                        <li>List item 1</li>
-                        <li>List item 2</li>
-                        <li>List item 3</li>
-                    </ul>
-                </div>
-                <div class="grid-item item7">
-                    <h2>Header 7</h2>
-                    <img class="img-fluid img-thumbnail"
-                        src="https://www.lit.edu/getmedia/c98c01c3-3692-47b1-9f4f-c541a969fd63/baldy02.png" alt="LIT">
-                    <p>This is the first paragraph for item 7.</p>
-                </div>
-                <div class="grid-item item8">
-                    <h2>Header 8</h2>
-                    <p>This is the first paragraph for item 8.</p>
-                    <h3>Subheader 8</h3>
-                    <p>This is the second paragraph for item 8.</p>
-                </div>
-            </div>
-        </div>
-
-        <!--sidebar-->
-        <style>
-            .sidebar-sub {
-                border: 1px solid pink;
-                margin-bottom: 10px;
-                padding: 0 10px 20px 5px;
-            }
-
-            .sidebar-sub h5 {
-                margin-top: 0;
-                padding: 10px 0 0 10px;
-            }
-
-            .sidebar-sub a {
-                display: block;
-                padding: 10px 0 10px 25px;
-                font-size: 16px;
-                text-decoration: none;
-            }
-
-            .sidebar-sub a:hover {
-                background-color: #f2f2f2;
-                color: #000;
-            }
-        </style>
-        <div class="col-sm-12 col-md-2 sidebar-sub">
-            <div class="d-flex flex-column">
-                <div class="mb-2">
-                    <a class="sidebar-sibling" href="ai.html">Employee Directory</a>
-                </div>
-                <div class="mb-2">
-                    <a class="sidebar-sibling" href="aj.html">First Day&reg;</a>
-                </div>
-                <div class="mb-2">
-                    <a class="sidebar-sibling" href="ak.html">Items</a>
-                </div>
-            </div>
-        </div>
+    <div class="grid-container">
+      <div class="grid-item item1">
+        <h2>Header 1</h2>
+        <p>This is a paragraph for item 1.</p>
+        <h3>Subheader 1</h3>
+        <img
+          class="img-fluid img-thumbnail"
+          src="https://www.lit.edu/getmedia/25612c38-d238-45c1-b61d-ed562dc4e2f0/baldy04.png"
+          alt="LIT"
+        />
+        <p>This is the second paragraph for item 1.</p>
+      </div>
+      <div class="grid-item item2">
+        <h2>Header 2</h2>
+        <img
+          class="img-fluid img-thumbnail"
+          src="https://www.lit.edu/getmedia/ac3007ec-6306-4a4e-886c-545781515592/baldy05.png"
+          alt="LIT"
+        />
+        <p>This is a paragraph for item 2.</p>
+      </div>
+      <div class="grid-item item3">
+        <h2>Header 3</h2>
+        <p>This is the first paragraph for item 3.</p>
+        <h3>Subheader 3</h3>
+        <p>This is the second paragraph for item 3.</p>
+      </div>
+      <div class="grid-item item4">
+        <h2>Header 4</h2>
+        <p>This is a paragraph for item 4.</p>
+        <h3>Subheader 4</h3>
+        <ul>
+          <li>List item 1</li>
+          <li>List item 2</li>
+          <li>List item 3</li>
+        </ul>
+      </div>
+      <div class="grid-item item5">
+        <h2>Header 5</h2>
+        <p>This is a paragraph for item 5.</p>
+        <h3>Subheader 5</h3>
+        <ul>
+          <li>List item 1</li>
+          <li>List item 2</li>
+          <li>List item 3</li>
+        </ul>
+      </div>
+      <div class="grid-item item6">
+        <h2>Header 6</h2>
+        <ul>
+          <li>List item 1</li>
+          <li>List item 2</li>
+          <li>List item 3</li>
+        </ul>
+      </div>
+      <div class="grid-item item7">
+        <h2>Header 7</h2>
+        <img
+          class="img-fluid img-thumbnail"
+          src="https://www.lit.edu/getmedia/c98c01c3-3692-47b1-9f4f-c541a969fd63/baldy02.png"
+          alt="LIT"
+        />
+        <p>This is the first paragraph for item 7.</p>
+      </div>
+      <div class="grid-item item8">
+        <h2>Header 8</h2>
+        <p>This is the first paragraph for item 8.</p>
+        <h3>Subheader 8</h3>
+        <p>This is the second paragraph for item 8.</p>
+      </div>
     </div>
     <script src="static/js/site.js" type="module"></script>
     <script src="static/lib/jquery/dist/jquery.min.js" type="module"></script>
-    <script src="static/lib/bootstrap/dist/js/bootstrap.bundle.min.js" type="module"></script>
-    <script src="static/lit_news_files/scripts/bootstrap.bundle.min.js" type="module"></script>
-</body>
-
+    <script
+      src="static/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+      type="module"
+    ></script>
+    <script
+      src="static/lit_news_files/scripts/bootstrap.bundle.min.js"
+      type="module"
+    ></script>
+  </body>
 </html>
