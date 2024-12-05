@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Program List</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid #ccc;
+      }
+
+      th,
+      td {
+        padding: 8px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f4f4f4;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Program List</h1>
+    <table id="programTable">
+      <thead>
+        <tr>
+          <th>Program ID</th>
+          <th>Program Name</th>
+          <th>Department</th>
+          <th>Chair Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Address</th>
+          <th>Building</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Rows will be dynamically added here by JavaScript -->
+      </tbody>
+    </table>
+    <script>
+      // Define the API URL
+      const apiUrl = "https://a-api.lit.edu/public/v2/lists/programs";
+
+      // Function to fetch data and populate the table
+      async function fetchAndDisplayPrograms() {
+        try {
+          // Perform the AJAX call
+          const response = await fetch(apiUrl);
+
+          // Check if the response is OK
+          if (!response.ok) {
+            throw new Error(
+              `Error fetching data: ${response.status} ${response.statusText}`
+            );
+          }
+
+          // Parse the JSON data
+          const programs = await response.json();
+
+          // Select the table body element where rows will be added
+          const tableBody = document.querySelector("#programTable tbody");
+
+          // Clear any existing rows in the table body
+          tableBody.innerHTML = "";
+
+          // Loop through the programs and populate the table
+          programs.forEach((program) => {
+            const row = document.createElement("tr");
+
+            // Create table cells for each data field
+            row.innerHTML = `
+                    <td>${program.Id}</td>
+                    <td>${program.Name}</td>
+                    <td>${program.DepartmentName}</td>
+                    <td>${program.ChairName} (${program.ChairTitle})</td>
+                    <td>${program.Contact.Email}</td>
+                    <td>${program.Contact.Phone || "N/A"}</td>
+                    <td>${program.Contact.Address}</td>
+                    <td>${program.Contact.Building || "N/A"}</td>
+            `;
+
+            // Append the row to the table body
+            tableBody.appendChild(row);
+          });
+        } catch (error) {
+          console.error("Error:", error);
+          alert(
+            "An error occurred while fetching program data. Please try again later."
+          );
+        }
+      }
+
+      // Call the function on page load
+      window.onload = fetchAndDisplayPrograms;
+    </script>
+  </body>
+</html>
