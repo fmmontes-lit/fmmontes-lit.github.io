@@ -53,41 +53,28 @@
           <th>Building</th>
         </tr>
       </thead>
-      <tbody>
-        <!-- Rows will be dynamically added here by JavaScript -->
-      </tbody>
+      <tbody></tbody>
     </table>
     <script>
-      // Define the API URL
       const apiUrl = "https://a-api.lit.edu/public/v2/lists/programs";
 
-      // Function to fetch data and populate the table
       async function fetchAndDisplayPrograms() {
         try {
-          // Perform the AJAX call
           const response = await fetch(apiUrl);
 
-          // Check if the response is OK
           if (!response.ok) {
             throw new Error(
               `Error fetching data: ${response.status} ${response.statusText}`
             );
           }
 
-          // Parse the JSON data
           const programs = await response.json();
-
-          // Select the table body element where rows will be added
           const tableBody = document.querySelector("#programTable tbody");
-
-          // Clear any existing rows in the table body
           tableBody.innerHTML = "";
 
-          // Loop through the programs and populate the table
           programs.forEach((program) => {
             const row = document.createElement("tr");
 
-            // Create table cells for each data field
             row.innerHTML = `
                     <td>${program.Id}</td>
                     <td>${program.Name}</td>
@@ -99,18 +86,16 @@
                     <td>${program.Contact.Building || "N/A"}</td>
             `;
 
-            // Append the row to the table body
             tableBody.appendChild(row);
           });
         } catch (error) {
           console.error("Error:", error);
-          alert(
+          console.log(
             "An error occurred while fetching program data. Please try again later."
           );
         }
       }
 
-      // Call the function on page load
       window.onload = fetchAndDisplayPrograms;
     </script>
   </body>
