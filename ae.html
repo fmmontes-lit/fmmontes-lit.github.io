@@ -159,40 +159,58 @@
       }
     </style>
 
+    <style>
+      .centered-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .centered-content > p:first-of-type {
+        font-size: 2.2rem;
+        text-align: center;
+      }
+
+      .pgrm-btn a {
+        background-color: #007bff;
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+
+      .pgrm-btn a:hover {
+        background-color: #ec2027;
+        color: white;
+      }
+    </style>
+
     <div class="row">
       <div class="col-sm-12 col-md-10">
         <!-- Repairing the damage 12/10/24 -->
-        <img
-          alt="Commencement-Photo-for-Website.PNG"
-          src="https://www.lit.edu/getattachment/65323cb0-c5d4-49ed-b699-8d5655c828b3/Commencement-Photo-for-Website.PNG"
-          title="Commencement-Photo-for-Website.PNG"
-          class="img-fluid img-thumbnail"
-        />
-        <p>
-          Fall 2024 Commencement will be at 6:00 P.M. Monday, December 16, 2024
-          Neches Arena at the Montagne Center 4401 S Martin Luther King Jr Pkwy
-        </p>
-        <style>
-          .pgrm-btn a {
-            background-color: #007bff;
-            color: white;
-            padding: 10px;
-            text-decoration: none;
-            border-radius: 5px;
-          }
 
-          .pgrm-btn a:hover {
-            background-color: #ec2027;
-            color: white;
-          }
-        </style>
-        <div class="pgrm-btn">
-          <a
-            href="https://www.lit.edu/student-success/commencement/lit-commencement-program-fall-2024"
-            target="_blank"
-            aria-label="LIT Commencement Program Fall 2024"
-            >LIT Commencement Program Fall 2024</a
-          >
+        <div class="centered-content">
+          <img
+            alt="Commencement-Photo-for-Website.PNG"
+            src="https://www.lit.edu/getattachment/65323cb0-c5d4-49ed-b699-8d5655c828b3/Commencement-Photo-for-Website.PNG"
+            title="Commencement-Photo-for-Website.PNG"
+            class="img-fluid img-thumbnail"
+          />
+          <p>
+            Fall 2024 Commencement will be at 6:00 P.M. Monday, December 16,
+            2024 Neches Arena at the Montagne Center 4401 S Martin Luther King
+            Jr Pkwy
+          </p>
+
+          <p class="pgrm-btn">
+            <a
+              href="https://www.lit.edu/student-success/commencement/lit-commencement-program-fall-2024"
+              target="_blank"
+              aria-label="LIT Commencement Program Fall 2024"
+              >LIT Commencement Program Fall 2024</a
+            >
+          </p>
         </div>
 
         <h5>Are you graduating?</h5>
@@ -246,12 +264,11 @@
           <div class="card mb-2">
             <div class="card-header">
               <a class="card-link" data-toggle="collapse" href="#collapseOne1"
-                ><strong>Graduation Checklist - Step 1</strong>
+                ><strong>Step One: Review your degree audit</strong>
               </a>
             </div>
             <div class="collapse" data-parent="#accordion1" id="collapseOne1">
               <div class="card-body">
-                <h5>Step One: Review your degree audit</h5>
                 <p>
                   Verify that all degree requirements have been met or are
                   in-progress to be met Fall 2024 term. You can review the
@@ -268,12 +285,11 @@
           <div class="card mb-2">
             <div class="card-header">
               <a class="card-link" data-toggle="collapse" href="#collapseOne2"
-                ><strong>Graduation Checklist - Step 2</strong>
+                ><strong>Step Two: File Intent to Graduate Form</strong>
               </a>
             </div>
             <div class="collapse" data-parent="#accordion2" id="collapseOne2">
               <div class="card-body">
-                <h5>Step Two: File Intent to Graduate Form</h5>
                 <p>
                   On <strong>September 1, 2024</strong>, the Intent to Graduate
                   form will be available. Complete the Intent to Graduate form
@@ -296,12 +312,11 @@
           <div class="card mb-2">
             <div class="card-header">
               <a class="card-link" data-toggle="collapse" href="#collapseOne3"
-                ><strong>Graduation Checklist - Step 3</strong>
+                ><strong>Step Three: Apply for Graduation</strong>
               </a>
             </div>
             <div class="collapse" data-parent="#accordion3" id="collapseOne3">
               <div class="card-body">
-                <h5>Step Three: Apply for Graduation</h5>
                 <p>
                   Your department will evaluate your degree audit for
                   graduation. If you&rsquo;re cleared as a candidate for
@@ -399,12 +414,11 @@
           <div class="card mb-2">
             <div class="card-header">
               <a class="card-link" data-toggle="collapse" href="#collapseOne4"
-                ><strong>Graduation Checklist - Step 4</strong>
+                ><strong>Step Four: Participate in Commencement</strong>
               </a>
             </div>
             <div class="collapse" data-parent="#accordion4" id="collapseOne4">
               <div class="card-body">
-                <h5>Step Four: Participate in Commencement</h5>
                 <p>
                   Rehearsal for Commencement will be on Monday, December 16,
                   2024 at 10 a.m. at the Neches Arena at the Montagne Center.
@@ -488,14 +502,12 @@
           <div class="card mb-2">
             <div class="card-header">
               <a class="card-link" data-toggle="collapse" href="#collapseOne5"
-                ><strong>Graduation Checklist - Step 5</strong>
+                ><strong>Step Five: Receive Your Degree</strong>
               </a>
             </div>
             <div class="collapse" data-parent="#accordion5" id="collapseOne5">
               <div class="card-body">
-                <h5>Step Five: Receive Your Degree</h5>
-
-                <p>Congratulations on your achievement!</p>
+                <h6>Congratulations on your achievement!</h6>
                 <p>
                   Your degree will be conferred and your official transcripts
                   updated with your conferral date after you are cleared for
