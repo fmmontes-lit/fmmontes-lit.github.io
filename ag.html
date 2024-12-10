@@ -52,19 +52,13 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" href="./ae.html"
-                >Veteran Services</a
-              >
+              <a class="nav-link text-dark" href="./ae.html">e</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" href="./af.html"
-                >VA Education Benefits</a
-              >
+              <a class="nav-link text-dark" href="./af.html">f</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" href="./ag.html"
-                >Hazlewood Exemption Act</a
-              >
+              <a class="nav-link text-dark" href="./ag.html">g</a>
             </li>
           </ul>
         </div>
@@ -77,6 +71,31 @@
     </nav>
 
     <style>
+      .sidebar-sub-drawer {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        border-radius: 8px;
+      }
+
+      .sidebar-sub-drawer a {
+        text-decoration: none;
+        color: #1c75bc;
+        padding: 1rem 2rem;
+        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+      }
+
+      .sidebar-sub-drawer a:hover {
+        transform: translateX(-10px);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+        color: #1e448d;
+        background-color: #eee;
+        border-radius: 8px;
+      }
+
       .veterans-page-content .card {
         height: 100%;
         box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.1);
@@ -86,98 +105,80 @@
       [class^="col"] {
         margin-bottom: 20px;
       }
+
+      .main-content {
+        padding: 20px;
+        margin-bottom: 40px;
+        box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        border-radius: 8px;
+      }
+
+      .title-wrapper {
+        margin-bottom: 20px;
+      }
+
+      .text-dark span {
+        color: #1c75bc;
+        border-bottom: 1px solid black;
+        padding-bottom: 5px;
+        font-weight: bold;
+      }
+
+      .main-content h3 {
+        color: #1c75bc;
+        border-bottom: 1px solid black;
+        padding-bottom: 5px;
+        font-weight: bold;
+        font-size: calc(1rem + 0.9vw);
+      }
+
+      .card-header {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+      }
+
+      .card-header strong {
+        color: #1c75bc;
+      }
+
+      p {
+        animation-duration: 0.2s;
+        animation-name: slide-in;
+      }
+
+      @keyframes slide-in {
+        from {
+          translate: 150vw 0;
+          scale: 200% 1;
+        }
+
+        to {
+          translate: 0 0;
+          scale: 100% 1;
+        }
+      }
     </style>
 
-    <div class="main-content hazlewood-act-content">
-      <div class="title-wrapper">
-        <h2 class="text-dark">
-          <span>Texas Hazlewood Exemption Act</span>
-        </h2>
+    <div class="row">
+      <div class="col-sm-12 col-md-10">
+        <iframe
+          allowfullscreen="allowfullscreen"
+          scrolling="no"
+          class="fp-iframe"
+          src="https://heyzine.com/flip-book/82fc154be0.html"
+          style="border: 1px solid lightgray; width: 100%; height: 400px"
+        ></iframe>
       </div>
-      <p>
-        The Hazlewood Application is good for one Academic Year (Aug-Jul) and
-        must be renewed every year. Additionally, students using Hazlewood must
-        request it be applied to their account every semester by submitting the
-        Certification Request Form once enrolled in classes for that semester.
-      </p>
-      <p>
-        If a different Dependent Child has used the Veteran's Hazlewood hours
-        previously, then a Revocation Form must be submitted to the institution
-        that child attended and LIT before the new child can use the benefit.
-      </p>
-
-      <h3>Paperwork Required</h3>
-      <ul>
-        <li>DD-214 (Member-4 copy)</li>
-        <li>Hazlewood Application</li>
-        <li>VA Letter of Eligibility (if necessary)</li>
-      </ul>
-
-      <h3>Additional Paperwork for Dependents</h3>
-      <p>
-        Relationship Document (i.e. Birth Certificate, Marriage Certificate,
-        Adoption Papers, Recent Income Tax Return, Divorce Decree, etc.).
-      </p>
-      <ul>
-        <li>
-          If veteran is deceased due to service-related circumstances
-          <ul>
-            <li>Report of Casualty, DD Form 1300</li>
-          </ul>
-        </li>
-        <li>
-          If veteran is deceased due to non-service-related circumstances
-          <ul>
-            <li>Death Certificate</li>
-          </ul>
-        </li>
-        <li>
-          If veteran is 100% disabled or unemployable due to service-related
-          injury or illness
-          <ul>
-            <li>Current VA disability rating</li>
-          </ul>
-        </li>
-      </ul>
-
-      <p>
-        <strong>NOTE:</strong> Student and veteran (if not the student) must
-        reside in the state of Texas in order to use this benefit and must
-        register with the Hazlewood Online Database at the Texas Veterans
-        Commission's website:
-        <a href="https://tvc.texas.gov/education/hazlewood/" target="_blank"
-          >www.tvc.texas.gov/education/hazlewood</a
-        >
-      </p>
-
-      <h3>Forms</h3>
-      <ul class="fa-ul">
-        <li>
-          <span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span>
-          <a
-            href="https://tvc.texas.gov/wp-content/uploads/2023/08/Forms-TVC-ED-1-and-TVC-ED-1a-Texas_Hazlewood_Act_Exemption_Application_with_Supporting_Documents_Instructions-Revised-01DEC21-v2.pdf"
-            target="_blank"
-          >
-            Hazlewood Act Application</a
-          >
-        </li>
-        <li>
-          <span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span>
-          <a
-            href="https://tvc.texas.gov/wp-content/uploads/2023/08/Form-TVC-ED-2-Texas_Hazlewood_Act_Exemption_-Application_For_Continued_Enrollment-Updated-08DEC21.pdf"
-            target="_blank"
-            >Hazlewood Renewal Application</a
-          >
-        </li>
-        <li>
-          <span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span>
-          <a
-            href="https://tvc.texas.gov/wp-content/uploads/2023/08/Form-TVC-ED-5-Revocation_of_Previously_Assigned_Texas_Hazlewood_Act_Exemption_Hours-Updated-08DEC21.pdf"
-            target="_blank"
-            >Hazlewood Revocation Form</a
-          >
-        </li>
-      </ul>
+      <div class="col-sm-12 col-md-2">
+        <div class="sidebar-sub-drawer">
+          <a href="./aa.html">Veteran Services</a>
+          <a href="./ab.html">VA Education Benefits</a>
+          <a href="./ac.html">Hazlewood Exemption Act</a>
+          <a href="./ae.html">e</a>
+          <a href="./af.html">f</a>
+          <a href="./ag.html">g</a>
+        </div>
+      </div>
     </div>
 
     <script src="static/js/site.js" type="module"></script>
