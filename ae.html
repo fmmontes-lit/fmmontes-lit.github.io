@@ -157,14 +157,34 @@
           scale: 100% 1;
         }
       }
-    </style>
 
-    <style>
       .centered-content {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+      }
+
+      .centered-content img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .centered-content img {
+        width: 100%;
+        height: auto;
+      }
+
+      @media (min-width: 768px) {
+        .centered-content img {
+          width: 50%;
+        }
+      }
+
+      @media (min-width: 1200px) {
+        .centered-content img {
+          width: 30%;
+        }
       }
 
       .centered-content > p:first-of-type {
