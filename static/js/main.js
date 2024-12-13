@@ -60,11 +60,6 @@ let speed6 = 0.01;
 ball6.x = 576;
 ball6.y = 576;
 
-let dx = mouse.x - arrow.x;
-let dy = mouse.y - arrow.y;
-let dx2 = mouse.x - arrow2.x;
-let dy2 = mouse.y - arrow2.y;
-
 function animate() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   drawBalls();
