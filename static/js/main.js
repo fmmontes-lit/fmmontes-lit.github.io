@@ -12,7 +12,7 @@ canvas.addEventListener("mousemove", function (event) {
   mouse.y = event.pageY -= canvas.offsetTop;
 });
 
-const ball = new Ball(10);
+const ball = new Ball(10, "aqua");
 let angle = 0;
 let centerY = canvas.height / 2;
 let range = randomFromTo(50, 300);
@@ -28,7 +28,7 @@ let xspeed2 = 2;
 let yspeed2 = 0.05;
 ball2.x = -canvas.width / 2;
 
-const ball3 = new Ball(10, "skyblue");
+const ball3 = new Ball(10, "black");
 let angle3 = 0;
 let centerY3 = canvas.height / 2;
 let range3 = randomFromTo(50, 300);
@@ -36,7 +36,7 @@ let xspeed3 = 1;
 let yspeed3 = 0.05;
 ball3.x = 0;
 
-const ball4 = new Ball(10, "teal");
+const ball4 = new Ball(10, "royalblue");
 let angle4 = 0;
 let centerY4 = canvas.height / 2;
 let range4 = randomFromTo(50, 300);
@@ -47,16 +47,16 @@ ball4.x = -canvas.width / 2;
 const ball5 = new Ball(50, "plum");
 let angle5 = 0;
 let centerScale5 = 1;
-let range5 = 5;
-let speed5 = 0.01;
+let range5 = 6.655;
+let speed5 = 0.01075;
 ball5.x = 96;
 ball5.y = 96;
 
 const ball6 = new Ball(50, "rebeccapurple");
 let angle6 = 0;
 let centerScale6 = 1;
-let range6 = 5;
-let speed6 = 0.01;
+let range6 = 6.655;
+let speed6 = 0.01075;
 ball6.x = 576;
 ball6.y = 576;
 

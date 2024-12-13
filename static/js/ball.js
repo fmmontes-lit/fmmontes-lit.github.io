@@ -23,6 +23,8 @@ class Ball {
     ctx.scale(this.scaleX, this.scaleY);
     ctx.lineWidth = this.lineWidth;
     ctx.fillStyle = this.color;
+    ctx.strokeStyle = "yellow";
+    ctx.lineWidth = 2;
     ctx.beginPath();
     //x, y, radius, start_angle, end_angle, anti-clockwise
     ctx.arc(0, 0, this.radius, 0, Math.PI * 2, true);
