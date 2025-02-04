@@ -17,7 +17,7 @@ const mouse = {
 canvas.addEventListener("click", function (event) {
   mouse.x = event.offsetX;
   mouse.y = event.offsetY;
-  for (let i = 0; i < 10; i++) myParticles.push(new Particle());
+  for (let i = 0; i < 100; i++) myParticles.push(new Particle());
 });
 canvas.addEventListener("mousemove", function (event) {
   mouse.x = event.offsetX;
@@ -51,19 +51,6 @@ class Particle {
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-function generateId(index) {
-  const letters = "abcdefghijklmnopqrstuvwxyz";
-  const digits = "123456789";
-  const letterPart =
-    letters[Math.floor(index / digits.length) % letters.length];
-  const digitPart = digits[index % digits.length];
-  const prefixPart =
-    letters[
-      Math.floor(index / (letters.length * digits.length)) % letters.length
-    ];
-  return prefixPart + letterPart + digitPart;
-}
-
 function drawParticles() {
   for (let i = 0; i < myParticles.length; i++) {
     // update particle data and draw it
@@ -101,7 +88,7 @@ function animate() {
   ctx.fillStyle = "rgba(0,0,0,0.02)";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
   drawParticles();
-  hue += 2;
+  hue += 10;
   requestAnimationFrame(animate);
 }
 animate();
