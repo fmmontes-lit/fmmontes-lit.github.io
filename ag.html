@@ -96,78 +96,263 @@
         border-radius: 8px;
       }
 
-      .veterans-page-content .card {
-        height: 100%;
-        box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.1);
-        border: 1px solid rgba(0, 0, 0, 0.3);
+      .hta-container {
+        padding: 1rem;
+        container-type: inline-size;
+        container-name: hta;
+        border: 1px solid black;
+        border-radius: 5px;
       }
 
-      [class^="col"] {
-        margin-bottom: 20px;
+      .hta-grid {
+        display: grid;
+        gap: 20px;
       }
 
-      .main-content {
+      .hta-grid-item {
+        position: relative;
         padding: 20px;
-        margin-bottom: 40px;
-        box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.1);
-        border: 1px solid rgba(0, 0, 0, 0.3);
-        border-radius: 8px;
+        border-radius: 5px;
+        overflow: hidden;
+        color: white;
       }
 
-      .title-wrapper {
-        margin-bottom: 20px;
+      .hta-grid-item::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        opacity: 0.8;
       }
 
-      .text-dark span {
+      .hta-grid-item-0 {
+        border: 1px solid black;
+        border-radius: 5px;
+      }
+
+      .hta-grid-item-0 h3 {
+        text-align: left;
+        font-size: 2.5rem;
+        color: #90b2ca;
+      }
+
+      .hta-grid-item-0 .hta-card {
+        text-align: left;
+        font-size: 0.9rem;
+        color: black;
+        background: white;
+      }
+
+      .hta-grid-item-0 li {
+        text-align: left;
+      }
+
+      @container hta (max-width: 768px) {
+        .hta-grid {
+          grid-template-columns: repeat(1, 1fr);
+          --color: #90b2ca;
+        }
+
+        .hta-grid-item-1::before {
+          background-image: url("https://picsum.photos/600/400?random=1");
+        }
+
+        .hta-grid-item-2::before {
+          background-image: url("https://picsum.photos/600/400?random=2");
+        }
+
+        .hta-grid-item-3::before {
+          background-image: url("https://picsum.photos/600/400?random=3");
+        }
+
+        .hta-grid-item-4::before {
+          background-image: url("https://picsum.photos/600/400?random=4");
+        }
+
+        .hta-grid-item-5::before {
+          background-image: url("https://picsum.photos/600/400?random=5");
+        }
+      }
+
+      @container hta (min-width: 768px) {
+        .hta-grid {
+          grid-template-columns: repeat(2, 1fr);
+          --color: #90b2ca;
+        }
+
+        .hta-grid-item-1::before {
+          background-image: url("https://picsum.photos/800/500?random=1");
+        }
+
+        .hta-grid-item-2::before {
+          background-image: url("https://picsum.photos/800/500?random=2");
+        }
+
+        .hta-grid-item-3::before {
+          background-image: url("https://picsum.photos/800/500?random=3");
+        }
+
+        .hta-grid-item-4::before {
+          background-image: url("https://picsum.photos/800/500?random=4");
+        }
+
+        .hta-grid-item-5::before {
+          background-image: url("https://picsum.photos/800/500?random=5");
+        }
+      }
+
+      .highlight {
+        background-color: yellow;
+      }
+
+      .hta-title {
         color: #1c75bc;
-        border-bottom: 1px solid black;
-        padding-bottom: 5px;
+        font-size: 2rem;
+      }
+
+      .hta-card {
+        position: relative;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 20px;
+        border-radius: 5px;
+      }
+
+      .hta-card p {
+        margin-top: 0.6rem;
+      }
+
+      .hta-link {
+        color: var(--color);
+        text-decoration: none;
         font-weight: bold;
       }
 
-      .main-content h3 {
-        color: #1c75bc;
-        border-bottom: 1px solid black;
-        padding-bottom: 5px;
-        font-weight: bold;
-        font-size: calc(1rem + 0.9vw);
+      .hta-link:hover {
+        color: var(--color);
+        text-decoration: underline;
       }
 
-      .card-header {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-      }
-
-      .card-header strong {
-        color: #1c75bc;
-      }
-
-      p {
-        animation-duration: 0.2s;
-        animation-name: slide-in;
-      }
-
-      @keyframes slide-in {
-        from {
-          translate: 150vw 0;
-          scale: 200% 1;
-        }
-
-        to {
-          translate: 0 0;
-          scale: 100% 1;
-        }
+      .hta-link:visited {
+        color: var(--color);
       }
     </style>
 
     <div class="row">
       <div class="col-sm-12 col-md-10">
-        <iframe
-          allowfullscreen="allowfullscreen"
-          scrolling="no"
-          class="fp-iframe"
-          src="https://heyzine.com/flip-book/82fc154be0.html"
-          style="border: 1px solid lightgray; width: 100%; height: 800px"
-        ></iframe>
+        <h2 class="hta-title">How to Attend LIT</h2>
+        <div class="hta-container">
+          <div class="hta-grid">
+            <div class="hta-grid-item hta-grid-item-0">
+              <div class="hta-card">
+                <h3>How to Attend LIT</h3>
+                <p>
+                  Lamar Institute of Technology welcomes any student committed
+                  to education and personal improvement. Here are tools to help
+                  you begin your journey.
+                </p>
+                <ol>
+                  <li data-index="1">
+                    <a href="/programs" class="hta-link"
+                      >Choose a path of study</a
+                    >
+                  </li>
+                  <li data-index="2">
+                    <a href="https://www.applytexas.org/" class="hta-link"
+                      >Start the application process</a
+                    >
+                  </li>
+                  <li data-index="3">
+                    <a href="/financial-aid" class="hta-link"
+                      >Get help paying for college</a
+                    >
+                  </li>
+                  <li data-index="4">
+                    <a href="/searchcourses" class="hta-link"
+                      >Search class schedules</a
+                    >
+                  </li>
+                  <li data-index="5">
+                    <a href="/admissions/registration" class="hta-link"
+                      >Register for classes</a
+                    >
+                  </li>
+                </ol>
+              </div>
+            </div>
+            <div class="hta-grid-item hta-grid-item-1">
+              <div class="hta-card">
+                <h3>
+                  <a href="/programs" class="hta-link"
+                    >Choose a Path of Study</a
+                  >
+                </h3>
+                <p>Choose a path of study.</p>
+              </div>
+            </div>
+            <div class="hta-grid-item hta-grid-item-2">
+              <div class="hta-card">
+                <h3>
+                  <a href="https://www.applytexas.org/" class="hta-link"
+                    >Start the Application Process</a
+                  >
+                </h3>
+                <p>Start the application process.</p>
+              </div>
+            </div>
+            <div class="hta-grid-item hta-grid-item-3">
+              <div class="hta-card">
+                <h3>
+                  <a href="/financial-aid" class="hta-link"
+                    >Get Help Paying for College</a
+                  >
+                </h3>
+                <p>Get help paying for college.</p>
+              </div>
+            </div>
+            <div class="hta-grid-item hta-grid-item-4">
+              <div class="hta-card">
+                <h3>
+                  <a href="/searchcourses" class="hta-link"
+                    >Search Class Schedules</a
+                  >
+                </h3>
+                <p>Search class schedules.</p>
+              </div>
+            </div>
+            <div class="hta-grid-item hta-grid-item-5">
+              <div class="hta-card">
+                <h3>
+                  <a href="/admissions/registration" class="hta-link"
+                    >Register for Classes</a
+                  >
+                </h3>
+                <p>Register for classes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+          document.querySelectorAll(".hta-grid-item-0 li").forEach((item) => {
+            item.addEventListener("mouseover", function () {
+              let index = this.getAttribute("data-index");
+              document
+                .querySelector(`.hta-grid-item-${index}`)
+                .classList.add("highlight");
+            });
+
+            item.addEventListener("mouseout", function () {
+              let index = this.getAttribute("data-index");
+              document
+                .querySelector(`.hta-grid-item-${index}`)
+                .classList.remove("highlight");
+            });
+          });
+        </script>
       </div>
       <div class="col-sm-12 col-md-2">
         <div class="sidebar-sub-drawer">
