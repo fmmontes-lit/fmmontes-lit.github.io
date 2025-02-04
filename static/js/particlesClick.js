@@ -29,7 +29,6 @@ canvas.addEventListener("mousemove", function (event) {
 
 class Particle {
   constructor() {
-    this.id = generateId(myParticles.length);
     this.x = mouse.x;
     this.y = mouse.y;
     this.size = Math.random() * 15 + 1; // from 1 to 16
