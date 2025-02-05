@@ -263,6 +263,23 @@
         color: #ffd700;
         text-decoration: underline;
       }
+
+      p {
+        animation-duration: 0.2s;
+        animation-name: slide-in;
+      }
+
+      @keyframes slide-in {
+        from {
+          translate: 150vw 0;
+          scale: 200% 1;
+        }
+
+        to {
+          translate: 0 0;
+          scale: 100% 1;
+        }
+      }
     </style>
 
     <div class="row">
