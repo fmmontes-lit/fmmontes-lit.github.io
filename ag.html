@@ -112,7 +112,8 @@
         padding: 20px;
         border-radius: 5px;
         overflow: hidden;
-        color: white;
+        display: flex;
+        align-items: stretch;
         min-height: 350px;
       }
 
@@ -126,6 +127,7 @@
         background-size: cover;
         background-position: center;
         opacity: 0.8;
+        background-color: rgba(0, 0, 0, 0.3);
       }
 
       .hta-grid-item-0 {
@@ -216,13 +218,15 @@
       .hta-card {
         position: relative;
         text-align: center;
+        color: white;
         background: rgba(0, 0, 0, 0.7);
         padding: 20px;
         border-radius: 5px;
-      }
-
-      .hta-card p {
-        margin-top: 0.6rem;
+        flex-grow: 1; /* Makes the card fill the full height of the parent */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
       }
 
       .hta-link {
@@ -238,6 +242,22 @@
 
       .hta-link:visited {
         color: var(--color);
+      }
+
+      .hta-card h3 {
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+
+      .hta-card p {
+        margin-top: 0.6rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+
+      .hta-card a:hover {
+        color: #ffd700;
+        text-decoration: underline;
       }
     </style>
 
@@ -290,7 +310,7 @@
                     >Choose a Path of Study</a
                   >
                 </h3>
-                <p>Choose a path of study.</p>
+                <p>Blurb about choosing a path of study.</p>
               </div>
             </div>
             <div class="hta-grid-item hta-grid-item-2">
@@ -300,7 +320,7 @@
                     >Start the Application Process</a
                   >
                 </h3>
-                <p>Start the application process.</p>
+                <p>Blurb about the application process.</p>
               </div>
             </div>
             <div class="hta-grid-item hta-grid-item-3">
@@ -310,7 +330,7 @@
                     >Get Help Paying for College</a
                   >
                 </h3>
-                <p>Get help paying for college.</p>
+                <p>Blurb about getting help paying for college.</p>
               </div>
             </div>
             <div class="hta-grid-item hta-grid-item-4">
@@ -320,7 +340,7 @@
                     >Search Class Schedules</a
                   >
                 </h3>
-                <p>Search class schedules.</p>
+                <p>Blurb about searching class schedules.</p>
               </div>
             </div>
             <div class="hta-grid-item hta-grid-item-5">
@@ -330,7 +350,7 @@
                     >Register for Classes</a
                   >
                 </h3>
-                <p>Register for classes.</p>
+                <p>Blurb about registering for classes.</p>
               </div>
             </div>
           </div>
