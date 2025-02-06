@@ -97,7 +97,6 @@
       }
 
       .hta-container {
-        padding: 1rem;
         container-type: inline-size;
         container-name: hta;
       }
@@ -105,6 +104,7 @@
       .hta-grid {
         display: grid;
         gap: 20px;
+        /* grid-template-columns and grid-template-rows are set in container queries below*/
       }
 
       .hta-grid-item {
@@ -114,7 +114,6 @@
         overflow: hidden;
         display: flex;
         align-items: stretch;
-        min-height: 300px;
       }
 
       .hta-grid-item::before {
@@ -150,7 +149,6 @@
         font-size: 0.9rem;
         color: black;
         background: white;
-        padding: 5px;
       }
 
       .hta-grid-item-0 li {
@@ -164,50 +162,56 @@
         }
 
         .hta-grid-item-1::before {
-          background-image: url("https://picsum.photos/400/200?random=1");
+          background-image: url("https://picsum.photos/200/200?random=1");
         }
 
         .hta-grid-item-2::before {
-          background-image: url("https://picsum.photos/400/200?random=2");
+          background-image: url("https://picsum.photos/200/200?random=2");
         }
 
         .hta-grid-item-3::before {
-          background-image: url("https://picsum.photos/400/200?random=3");
+          background-image: url("https://picsum.photos/200/200?random=3");
         }
 
         .hta-grid-item-4::before {
-          background-image: url("https://picsum.photos/400/200?random=4");
+          background-image: url("https://picsum.photos/200/200?random=4");
         }
 
         .hta-grid-item-5::before {
-          background-image: url("https://picsum.photos/400/200?random=5");
+          background-image: url("https://picsum.photos/200/200?random=5");
         }
       }
 
       @container hta (min-width: 768px) {
         .hta-grid {
-          grid-template-columns: repeat(2, 1fr);
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
           --color: #90b2ca;
         }
 
+        .hta-grid-item-0 {
+          grid-column-end: span 2;
+          grid-row-end: span 2;
+        }
+
         .hta-grid-item-1::before {
-          background-image: url("https://picsum.photos/800/400?random=1");
+          background-image: url("https://picsum.photos/600/300?random=1");
         }
 
         .hta-grid-item-2::before {
-          background-image: url("https://picsum.photos/800/400?random=2");
+          background-image: url("https://picsum.photos/600/300?random=2");
         }
 
         .hta-grid-item-3::before {
-          background-image: url("https://picsum.photos/800/400?random=3");
+          background-image: url("https://picsum.photos/600/300?random=3");
         }
 
         .hta-grid-item-4::before {
-          background-image: url("https://picsum.photos/800/400?random=4");
+          background-image: url("https://picsum.photos/600/300?random=4");
         }
 
         .hta-grid-item-5::before {
-          background-image: url("https://picsum.photos/800/400?random=5");
+          background-image: url("https://picsum.photos/600/300?random=5");
         }
       }
 
@@ -231,6 +235,7 @@
         flex-direction: column;
         justify-content: center;
         text-align: center;
+        padding: 20px;
       }
 
       .hta-link {
