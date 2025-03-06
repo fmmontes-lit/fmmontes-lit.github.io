@@ -330,7 +330,7 @@
           }
 
           /* Main Content */
-          .my-container {
+          .main-card-grid {
             display: grid;
             grid-template-columns: 1fr;
             gap: 20px;
@@ -339,7 +339,7 @@
           }
 
           @media (min-width: 768px) {
-            .my-container {
+            .main-card-grid {
               grid-template-columns: 1fr 1fr; /* Two columns on desktop */
             }
           }
@@ -414,7 +414,12 @@
           .highlight-box-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
             gap: 20px;
+          }
+
+          .highlight-box-grid-item-1 {
+            grid-row-end: span 2;
           }
 
           .highlight-box {
@@ -424,7 +429,7 @@
           }
 
           .highlight-box h3 {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             margin-bottom: 10px;
           }
 
@@ -453,7 +458,6 @@
 
           .info-box h3 {
             font-size: 1.4rem;
-            color: #007bff;
           }
 
           .info-box p {
@@ -482,8 +486,8 @@
           </div>
         </div>
 
-        <!-- Main Content Section -->
-        <div class="my-container">
+        <!-- Main Cards Section -->
+        <div class="main-card-grid">
           <!-- Advising Card -->
           <div class="card advising">
             <div class="card-content">
@@ -514,7 +518,7 @@
           <!-- Grid for highlight-box's -->
           <div class="highlight-box-grid">
             <!-- Highlighted New Offerings -->
-            <div class="highlight-box">
+            <div class="highlight-box highlight-box-grid-item-0">
               <h3>New Offerings Include:</h3>
               <ul class="highlight-list">
                 <li>
@@ -550,7 +554,7 @@
             </div>
 
             <!-- Highlighted Established Programs -->
-            <div class="highlight-box">
+            <div class="highlight-box highlight-box-grid-item-1">
               <h3>Also Being Offered:</h3>
               <ul class="highlight-list">
                 <li>
@@ -624,33 +628,31 @@
             </div>
 
             <!-- Additional Information -->
-            <div class="highlight-box">
-              <div class="info-box">
-                <h3>Get Personalized Guidance</h3>
-                <p>
-                  Advisors are available Monday through Friday, 8 AM - 5 PM, to
-                  answer questions about programs, courses, and registration.
-                </p>
-                <p>
-                  The
-                  <a href="https://www.lit.edu/student-success"
-                    >Student Success Department</a
-                  >
-                  is also available to assist with admissions, registration, and
-                  financial aid.
-                </p>
-                <p>
-                  Ready to apply? Visit
-                  <a href="https://www.applytexas.org">www.applytexas.org</a>.
-                </p>
-                <p>
-                  Need financial aid? Apply at
-                  <a href="https://fafsa.gov/">https://fafsa.gov/</a> or contact
-                  the Financial Aid Office at
-                  <a href="mailto:finaidoffice@lit.edu">finaidoffice@lit.edu</a>
-                  or call 409-880-2137.
-                </p>
-              </div>
+            <div class="highlight-box highlight-box-grid-item-2 info-box">
+              <h3>Get Personalized Guidance</h3>
+              <p>
+                Advisors are available Monday through Friday, 8 AM - 5 PM, to
+                answer questions about programs, courses, and registration.
+              </p>
+              <p>
+                The
+                <a href="https://www.lit.edu/student-success"
+                  >Student Success Department</a
+                >
+                is also available to assist with admissions, registration, and
+                financial aid.
+              </p>
+              <p>
+                Ready to apply? Visit
+                <a href="https://www.applytexas.org">www.applytexas.org</a>.
+              </p>
+              <p>
+                Need financial aid? Apply at
+                <a href="https://fafsa.gov/">https://fafsa.gov/</a> or contact
+                the Financial Aid Office at
+                <a href="mailto:finaidoffice@lit.edu">finaidoffice@lit.edu</a>
+                or call 409-880-2137.
+              </p>
             </div>
           </div>
         </div>
