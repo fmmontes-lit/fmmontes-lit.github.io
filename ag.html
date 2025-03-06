@@ -296,12 +296,14 @@
             background: url("https://www.lit.edu/getmedia/c3364e02-8722-4cde-9db2-ab262fb4900f/hero-bg-1000x400.png")
               no-repeat center center/cover;
             height: 300px;
+            width: 100%;
             color: white;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
             padding: 20px;
+            overflow: hidden;
           }
 
           .hero::before {
@@ -317,6 +319,9 @@
           .hero-content {
             position: relative;
             z-index: 1;
+            width: 100%;
+            padding: 0 20px;
+            box-sizing: border-box;
           }
 
           .hero h2 {
@@ -327,60 +332,35 @@
           .hero p {
             font-size: 1.3rem;
             max-width: 600px;
+            margin: 0 auto;
           }
 
-          /* Main Content */
-          .main-card-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 20px;
-            padding: 40px 20px;
-            margin: auto;
-          }
+          @media (max-width: 768px) {
+            .hero {
+              height: auto;
+              padding: 40px 20px;
+            }
 
-          @media (min-width: 768px) {
-            .main-card-grid {
-              grid-template-columns: 1fr 1fr; /* Two columns on desktop */
+            .hero h2 {
+              font-size: 2rem;
+            }
+
+            .hero p {
+              font-size: 1rem;
             }
           }
 
-          /* Card Styles */
-          .card {
-            position: relative;
-            background-size: cover;
-            background-position: center;
-            height: 300px;
-            width: 100%;
-            color: white;
+          /* Hero Btn Styles */
+          .hero-btn-container {
             display: flex;
-            align-items: center;
             justify-content: center;
-            text-align: center;
-            border-radius: 10px;
-            overflow: hidden;
+            gap: 20px;
+            padding: 20px 10px;
+            margin: auto;
+            flex-wrap: wrap;
           }
 
-          .card::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5); /* Dark overlay */
-          }
-
-          .card-content {
-            position: relative;
-            z-index: 1;
-          }
-
-          .card h3 {
-            font-size: 1.8rem;
-            margin-bottom: 10px;
-          }
-
-          .card a {
+          .hero-btn-container a {
             display: inline-block;
             padding: 10px 20px;
             font-size: 1rem;
@@ -392,17 +372,8 @@
             transition: background 0.3s ease-in-out;
           }
 
-          .card a:hover {
+          .hero-btn-container a:hover {
             background: #1e448d;
-          }
-
-          /* Background Images for Cards */
-          .advising {
-            background-image: url("https://www.lit.edu/getmedia/ccabf857-6928-4124-bb43-4e03aa432aba/card-bg-2-400x400.jpg");
-          }
-
-          .schedule {
-            background-image: url("https://www.lit.edu/getmedia/c299c314-a83f-4245-a18e-7f189236055b/card-bg-3-400x400.png");
           }
 
           /* New Offereings Section */
@@ -413,9 +384,15 @@
 
           .highlight-box-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr;
             gap: 20px;
+          }
+
+          @media (min-width: 768px) {
+            .highlight-box-grid {
+              grid-template-columns: 1fr 1fr;
+              grid-template-rows: 1fr 1fr;
+            }
           }
 
           .highlight-box-grid-item-1 {
@@ -466,12 +443,13 @@
           }
 
           .info-box a {
-            color: #007bff;
+            color: #0366d6;
             font-weight: bold;
             text-decoration: none;
           }
 
           .info-box a:hover {
+            color: #1e448d;
             text-decoration: underline;
           }
         </style>
@@ -483,26 +461,17 @@
               Get the guidance you need and stay on top of your classes with our
               advising and scheduling resources.
             </p>
-          </div>
-        </div>
 
-        <!-- Main Cards Section -->
-        <div class="main-card-grid">
-          <!-- Advising Card -->
-          <div class="card advising">
-            <div class="card-content">
-              <h3>Meet with an Advisor</h3>
-              <a href="https://www.lit.edu/information/advisors"
-                >Get Advising</a
-              >
-            </div>
-          </div>
-
-          <!-- Class Schedule Card -->
-          <div class="card schedule">
-            <div class="card-content">
-              <h3>View Class Schedule</h3>
-              <a href="https://www.lit.edu/searchcourses">See Schedule</a>
+            <!-- Hero Btn Section -->
+            <div class="hero-btn-container">
+              <div class="hero-btn-container-item">
+                <a href="https://www.lit.edu/information/advisors"
+                  >Get Advising</a
+                >
+              </div>
+              <div class="hero-btn-container-item">
+                <a href="https://www.lit.edu/searchcourses">See Schedule</a>
+              </div>
             </div>
           </div>
         </div>
