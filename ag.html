@@ -289,6 +289,389 @@
 
     <div class="row">
       <div class="col-sm-12 col-md-10">
+        <style>
+          /* Hero Section */
+          .hero {
+            position: relative;
+            background: url("https://www.lit.edu/getmedia/c3364e02-8722-4cde-9db2-ab262fb4900f/hero-bg-1000x400.png")
+              no-repeat center center/cover;
+            height: 400px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+          }
+
+          .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+          }
+
+          .hero-content {
+            position: relative;
+            z-index: 1;
+          }
+
+          .hero h2 {
+            font-size: 2.6rem;
+            margin-bottom: 10px;
+          }
+
+          .hero p {
+            font-size: 1.3rem;
+            max-width: 600px;
+          }
+
+          .hero .cta-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: white;
+            background: #1c75bc;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease-in-out;
+          }
+
+          .hero .cta-button:hover {
+            background: #1e448d;
+          }
+
+          /* Main Content */
+          .my-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            padding: 40px 20px;
+            margin: auto;
+          }
+
+          @media (min-width: 768px) {
+            .my-container {
+              grid-template-columns: 1fr 1fr; /* Two columns on desktop */
+            }
+          }
+
+          /* Card Styles */
+          .card {
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            width: 100%;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 10px;
+            overflow: hidden;
+          }
+
+          .card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+          }
+
+          .card-content {
+            position: relative;
+            z-index: 1;
+          }
+
+          .card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+          }
+
+          .card a {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: white;
+            background: #1c75bc;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease-in-out;
+          }
+
+          .card a:hover {
+            background: #1e448d;
+          }
+
+          /* Background Images for Cards */
+          .advising {
+            background-image: url("https://www.lit.edu/getmedia/ccabf857-6928-4124-bb43-4e03aa432aba/card-bg-2-400x400.jpg");
+          }
+
+          .schedule {
+            background-image: url("https://www.lit.edu/getmedia/c299c314-a83f-4245-a18e-7f189236055b/card-bg-3-400x400.png");
+          }
+
+          /* New Offereings Section */
+          .course-offerings {
+            padding: 40px 20px;
+            background: #f8f9fa;
+          }
+
+          .highlight-box-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+          }
+
+          .highlight-box {
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+          }
+
+          .highlight-box h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+          }
+
+          .highlight-list li {
+            margin-bottom: 10px;
+            font-size: 1rem;
+          }
+
+          .highlight-list a {
+            color: #0366d6;
+            text-decoration: none;
+            font-weight: bold;
+          }
+
+          .highlight-list a:hover {
+            text-decoration: underline;
+          }
+
+          .info-box {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+          }
+
+          .info-box h3 {
+            font-size: 1.4rem;
+            color: #007bff;
+          }
+
+          .info-box p {
+            font-size: 1rem;
+            color: #333;
+          }
+
+          .info-box a {
+            color: #007bff;
+            font-weight: bold;
+            text-decoration: none;
+          }
+
+          .info-box a:hover {
+            text-decoration: underline;
+          }
+        </style>
+        <!-- Hero Section -->
+        <div class="hero">
+          <div class="hero-content">
+            <h2>Advisors and Class Schedules</h2>
+            <p>
+              Get the guidance you need and stay on top of your classes with our
+              advising and scheduling resources.
+            </p>
+          </div>
+        </div>
+
+        <!-- Main Content Section -->
+        <div class="my-container">
+          <!-- Advising Card -->
+          <div class="card advising">
+            <div class="card-content">
+              <h3>Meet with an Advisor</h3>
+              <a href="advising.html">Get Advising</a>
+            </div>
+          </div>
+
+          <!-- Class Schedule Card -->
+          <div class="card schedule">
+            <div class="card-content">
+              <h3>View Class Schedule</h3>
+              <a href="schedule.html">See Schedule</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course Offerings Section -->
+        <div class="course-offerings">
+          <h3>New Course Offerings for Spring Semester</h3>
+          <p>
+            Explore the latest programs available for both online and on-campus
+            registration at Lamar Institute of Technology.
+          </p>
+
+          <!-- Grid for highlight-box's -->
+          <div class="highlight-box-grid">
+            <!-- Highlighted New Offerings -->
+            <div class="highlight-box">
+              <h3>New Offerings Include:</h3>
+              <ul class="highlight-list">
+                <li>
+                  <a
+                    href="https://www.lit.edu/programs/healthcare-and-sciences/child-care-and-development/level-ii-certificate"
+                    target="_self"
+                    >Child Care Administrator - Level II Certificate</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.lit.edu/programs/healthcare-and-sciences/child-care-and-development/level-1-certificate"
+                    target="_self"
+                    >Child Care and Development - Level I Certificate</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.lit.edu/programs/healthcare-and-sciences/occupational-safety-and-health/environmental-technology-certificate"
+                    target="_self"
+                    >Environmental Technology - Certificate</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.lit.edu/programs/healthcare-and-sciences/health-information-technology/medical-coding-specialist-certificate"
+                    target="_self"
+                    >Medical Coding Specialist Certificate Program</a
+                  >
+                  (Great for telecommuting careers!)
+                </li>
+              </ul>
+            </div>
+
+            <!-- Highlighted Established Programs -->
+            <div class="highlight-box">
+              <h3>Also Being Offered:</h3>
+              <ul class="highlight-list">
+                <li>
+                  <a
+                    href="https://www.lit.edu/programs/healthcare-and-sciences/health-information-technology/associate-of-applied-science-aas"
+                    >Health Information Technology</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.lit.edu/programs/business/accounting-technology/associate-of-applied-science-aas"
+                    >Accounting Technology</a
+                  >
+                </li>
+                <li>
+                  Computer Information Systems (<a
+                    href="https://www.lit.edu/programs/business/computer-information-systems/software-apps-associate-of-applied-science-aas"
+                    target="_self"
+                    >Software Applications</a
+                  >
+                  &
+                  <a
+                    href="https://www.lit.edu/programs/business/computer-information-systems/web-design-associate-of-applied-science-aas"
+                    target="_self"
+                    >Web Design</a
+                  >)
+                </li>
+                <li>
+                  <a
+                    href="https://www.lit.edu/programs/business/office-management-and-administration/associate-of-applied-science-aas"
+                    >Office Technology</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.lit.edu/programs/business/real-estate/associate-of-applied-science-aas"
+                    >Real Estate</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.lit.edu/programs/public-service-and-safety/criminal-justice/security-threat-groups-aas"
+                    >Criminal Justice Security Threat Groups</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.lit.edu/programs/public-service-and-safety/emergency-management-and-homeland-security/associate-of-applied-science-aas"
+                    >Homeland Security</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.lit.edu/programs/technology/advanced-engine/associate-of-applied-science-aas"
+                    >Advanced Engine Technology</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.lit.edu/programs/technology/heating-ventilation-and-air-conditioning/associate-of-applied-science-aas"
+                    >HVAC (Heating, Ventilation & Air Conditioning)</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.lit.edu/programs/technology/industrial-mechanics-technology/associate-of-applied-science-aas"
+                    >Industrial Mechanics</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Additional Information -->
+            <div class="highlight-box">
+              <div class="info-box">
+                <h3>Get Personalized Guidance</h3>
+                <p>
+                  Advisors are available Monday through Friday, 8 AM - 5 PM, to
+                  answer questions about programs, courses, and registration.
+                </p>
+                <p>
+                  The
+                  <a href="https://www.lit.edu/student-success"
+                    >Student Success Department</a
+                  >
+                  is also available to assist with admissions, registration, and
+                  financial aid.
+                </p>
+                <p>
+                  Ready to apply? Visit
+                  <a href="https://www.applytexas.org">www.applytexas.org</a>.
+                </p>
+                <p>
+                  Need financial aid? Apply at
+                  <a href="https://fafsa.gov/">https://fafsa.gov/</a> or contact
+                  the Financial Aid Office at
+                  <a href="mailto:finaidoffice@lit.edu">finaidoffice@lit.edu</a>
+                  or call 409-880-2137.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
         <h2>
           Lamar Institute of Technology equips you to build a brighter future.
         </h2>
