@@ -289,13 +289,13 @@
 
     <div class="row">
       <div class="col-sm-12 col-md-10">
+        <!-- Library -->
         <style>
-          /* Hero Section */
-          .hero {
+          .library-hero {
             position: relative;
-            background: url("https://www.lit.edu/getmedia/5b28be62-61ce-4bda-a064-76e7996e7769/students-1000x400.png")
+            background: url("https://www.lit.edu/getmedia/95862214-949f-4c44-89f0-7940246b206b/lit-campus-w1600.png")
               no-repeat center center/cover;
-            min-height: 50vh;
+            min-height: 40vh;
             height: auto;
             width: 100%;
             color: white;
@@ -308,7 +308,7 @@
           }
 
           /* Dark Overlay for Readability */
-          .hero::before {
+          .library-hero::before {
             content: "";
             position: absolute;
             top: 0;
@@ -318,8 +318,7 @@
             background: rgba(0, 0, 0, 0.5);
           }
 
-          /* Hero Content */
-          .hero-content {
+          .library-hero-content {
             position: relative;
             z-index: 1;
             width: 100%;
@@ -327,109 +326,68 @@
             box-sizing: border-box;
           }
 
-          .hero h2 {
-            font-size: 2.6rem;
+          .library-hero h1 {
+            font-size: 3rem;
             margin-bottom: 10px;
           }
 
-          .hero p {
+          .library-hero p {
             font-size: 1.3rem;
-            max-width: 600px;
+            max-width: 800px;
             margin: 0 auto;
           }
 
-          /* Mobile View: Change Background Image and Adjust Layout */
           @media (max-width: 768px) {
-            .hero {
+            .library-hero {
               background: url("https://www.lit.edu/getmedia/855d666c-a1f0-43a2-9cea-d4f1fb6fdb6d/hta-bg-mobile.png")
                 no-repeat center center/cover;
-              min-height: 40vh;
+              min-height: 30vh;
               padding: 30px 15px;
             }
 
-            .hero h2 {
+            .library-hero h1 {
               font-size: 2rem;
             }
 
-            .hero p {
+            .library-hero p {
               font-size: 1.1rem;
             }
           }
 
-          /* Small Mobile Screens */
           @media (max-width: 480px) {
-            .hero {
+            .library-hero {
               min-height: 250px;
               padding: 20px 10px;
             }
 
-            .hero h2 {
+            .library-hero h1 {
               font-size: 1.6rem;
             }
 
-            .hero p {
+            .library-hero p {
               font-size: 1rem;
             }
           }
 
-          /* Hero Button Styles */
-          .hero-btn-container {
+          .help {
             display: flex;
-            justify-content: center;
             gap: 20px;
-            padding: 20px 10px;
-            margin: auto;
             flex-wrap: wrap;
           }
 
-          .hero-btn-container a {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 1rem;
-            color: white;
-            background: #1c75bc;
-            border: none;
+          .help-item {
+            flex: 1;
+            min-width: 200px;
+            padding: 10px;
+            border: 1px solid #ccc;
             border-radius: 5px;
-            text-decoration: none;
-            transition: background 0.3s ease-in-out;
-          }
-
-          .hero-btn-container a:hover {
-            background: #1e448d;
-          }
-
-          /* New Offereings Section */
-          .course-offerings {
-            padding: 40px 20px;
-            background: #f8f9fa;
-          }
-
-          .highlight-box-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 20px;
-          }
-
-          @media (min-width: 768px) {
-            .highlight-box-grid {
-              grid-template-columns: 1fr 1fr;
-              grid-template-rows: 1fr 1fr;
-            }
-          }
-
-          .highlight-box-grid-item-1 {
-            grid-row-end: span 2;
+            background-color: #f9f9f9;
           }
 
           .highlight-box {
             padding: 20px;
             border-radius: 8px;
             margin-bottom: 20px;
-          }
-
-          .highlight-box h3 {
-            font-size: 1.4rem;
-            margin-bottom: 10px;
           }
 
           .highlight-list li {
@@ -455,16 +413,6 @@
             margin-top: 20px;
           }
 
-          .info-box-2 {
-            padding: 20px;
-            margin-top: 20px;
-          }
-
-          .info-box ul {
-            list-style-type: none;
-            padding: 0;
-          }
-
           .info-box h3 {
             font-size: 1.4rem;
           }
@@ -483,362 +431,130 @@
             text-decoration: underline;
           }
         </style>
-        <!-- Hero Section -->
-        <div class="hero">
-          <div class="hero-content">
-            <h2>Advisors and Class Schedules</h2>
-            <p>
-              Get the guidance you need and stay on top of your classes with our
-              advising and scheduling resources.
-            </p>
-
-            <!-- Hero Btn Section -->
-            <div class="hero-btn-container">
-              <div class="hero-btn-container-item">
-                <a href="https://www.lit.edu/information/advisors"
-                  >Get Advising</a
-                >
-              </div>
-              <div class="hero-btn-container-item">
-                <a href="https://www.lit.edu/searchcourses">See Schedule</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Course Offerings Section -->
-        <div class="course-offerings">
-          <h3>New Course Offerings for Spring Semester</h3>
-          <p>
-            Explore the latest programs available for both online and on-campus
-            registration at Lamar Institute of Technology.
-          </p>
-
-          <!-- Grid for highlight-box's -->
-          <div class="highlight-box-grid">
-            <!-- Highlighted New Offerings -->
-            <div class="highlight-box highlight-box-grid-item-0 info-box">
-              <h3>New Offerings Include</h3>
-              <ul class="highlight-list">
-                <li>
-                  <a href="https://www.lit.edu/nursing" target="_self"
-                    >Nursing - Associate of Applied Science</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.lit.edu/programs/technology/engineering/as"
-                    target="_self"
-                    >Engineering - Associate of Science</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.lit.edu/programs/technology/utility-line-technology/certificate"
-                    target="_self"
-                    >Utility Line Technology - Certificate</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.lit.edu/programs/business/cosmetology/certificate"
-                    target="_self"
-                    >Cosmetology - Certificate</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.lit.edu/programs/business/cosmetology/esthetics"
-                    target="_self"
-                    >Esthetics - Certificate</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.lit.edu/programs/technology/mechatronics/aas"
-                    target="_self"
-                    >Mechatronics - Associate of Applied Science</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.lit.edu/programs/technology/engineering/biomedical-engineering-technology-associate-of-app"
-                    target="_self"
-                    >Biomedical Engineering Technology - Associate of Applied
-                    Science</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.lit.edu/programs/technology/engineering/computer-engineering-technology-associate-of-appli"
-                    target="_self"
-                    >Computer Engineering Technology - Associate of Applied
-                    Science</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.lit.edu/programs/technology/engineering/electromechanical-engineering-associate-of-applied"
-                    target="_self"
-                    >Electromechanical Engineering Technology - Associate of
-                    Applied Science</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.lit.edu/programs/technology/engineering/robotics-automation-technology-associate-of-applie"
-                    target="_self"
-                    >Electronics Engineering Technology - Associate of Applied
-                    Science</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.lit.edu/programs/technology/engineering/electronics-engineering-associate-of-applied-scien"
-                    target="_self"
-                    >Robotics & Automation Technology - Associate of Applied
-                    Science</a
-                  >
-                </li>
-              </ul>
-            </div>
-
-            <!-- Highlighted Established Programs -->
-            <div class="highlight-box highlight-box-grid-item-1 info-box-2">
-              <h3>Also Being Offered</h3>
-              <ul class="highlight-list">
-                <li>
-                  <a
-                    href="https://www.lit.edu/programs/healthcare-and-sciences/health-information-technology/associate-of-applied-science-aas"
-                    >Health Information Technology</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.lit.edu/programs/healthcare-and-sciences/health-information-technology/medical-coding-specialist-certificate"
-                    target="_self"
-                    >Medical Coding Specialist Certificate Program</a
-                  >
-                  (Great for telecommuting careers!)
-                </li>
-                <li>
-                  <a
-                    href="https://www.lit.edu/programs/business/accounting-technology/associate-of-applied-science-aas"
-                    >Accounting Technology</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.lit.edu/programs/business/computer-information-systems/software-apps-associate-of-applied-science-aas"
-                    target="_self"
-                    >Computer Information Systems</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.lit.edu/programs/business/management-and-entrepreneurship/associate-of-applied-science-aas"
-                    >Management and Entrepreneurship</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.lit.edu/programs/business/real-estate/associate-of-applied-science-aas"
-                    >Real Estate</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.lit.edu/programs/public-service-and-safety/criminal-justice/security-threat-groups-aas"
-                    >Criminal Justice Security Threat Groups</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.lit.edu/programs/public-service-and-safety/emergency-management-and-homeland-security/associate-of-applied-science-aas"
-                    >Homeland Security</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.lit.edu/programs/technology/advanced-engine/associate-of-applied-science-aas"
-                    >Advanced Engine Technology</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.lit.edu/programs/technology/heating-ventilation-and-air-conditioning/associate-of-applied-science-aas"
-                    >HVAC (Heating, Ventilation & Air Conditioning)</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.lit.edu/programs/technology/industrial-mechanics-technology/associate-of-applied-science-aas"
-                    >Industrial Mechanics</a
-                  >
-                </li>
-              </ul>
-            </div>
-
-            <!-- Additional Information -->
-            <div class="highlight-box highlight-box-grid-item-2">
-              <h3>Get Personalized Guidance</h3>
+        <div class="my-block">
+          <div class="library-hero">
+            <div class="library-hero-content">
+              <h1>Library</h1>
               <p>
-                Advisors are available Monday through Friday, 8 AM - 5 PM, to
-                answer questions about programs, courses, and registration.
-              </p>
-              <p>
-                The
-                <a href="https://www.lit.edu/student-success"
-                  >Student Success Department</a
-                >
-                is also available to assist with admissions, registration, and
-                financial aid.
-              </p>
-              <p>
-                Ready to apply? Visit
-                <a href="https://www.applytexas.org">www.applytexas.org</a>.
-              </p>
-              <p>
-                Need financial aid? Apply at
-                <a href="https://fafsa.gov/">https://fafsa.gov/</a> or contact
-                the Financial Aid Office at
-                <a href="mailto:finaidoffice@lit.edu">finaidoffice@lit.edu</a>
-                or call 409-880-2137.
+                LIT students and employees have full access to the
+                <strong>Mary and John Gray Library</strong> at Lamar University.
+                To log in to library computers and access library services, a
+                <strong>Lamar Electronic Account (LEA)</strong> is required.
               </p>
             </div>
           </div>
+
+          <div class="highlight-box info-box">
+            <ol class="highlight-list">
+              <li>
+                <a href="https://www.lamar.edu/library/index.html"
+                  >LU Mary and John Gray Library</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.lamar.edu/it-services-and-support/lit-students.html"
+                  >LEA Setup with Your LIT Account</a
+                >
+              </li>
+              <li>
+                LEA Support & Troubleshooting
+                <ul class="fa-ul">
+                  <li>
+                    <span class="fa-li"
+                      ><i class="fa-solid fa-file-pdf"></i
+                    ></span>
+                    <a
+                      href="https://www.lamar.edu/_files/documents/it-services-and-support/lea-steps-for-lit-students.pdf"
+                      >How to Retrieve LEA Username and Password</a
+                    >
+                  </li>
+                  <li>
+                    <span class="fa-li"
+                      ><i class="fa-solid fa-file-pdf"></i
+                    ></span>
+                    <a
+                      href="https://www.lit.edu/getmedia/b0980c5b-7b2d-4b16-b6b6-d95a45a0b1dc/UTF-8LU-Library-Account-Troubleshooting.pdf"
+                      >LEA Troubleshooting Guidelines</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="https://libguides.lamar.edu/c.php?g=369335&p=2495767"
+                  >Library Search Video Tutorials</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.lamar.edu/library/services/faculty-support.html"
+                  >Faculty Support</a
+                >
+              </li>
+              <li>
+                Forms for Faculty
+                <ul>
+                  <li>
+                    <a href="https://lamar.libinsight.com/instruction"
+                      >Library Instruction Request Form</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://lamar.libwizard.com/f/facultypurchase/"
+                      >Faculty Purchase Request Form</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.lamar.edu/forms/library/faculty-reserve-request.html"
+                      >Faculty Reserve Request Form</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+
+          <h3>Need Help?</h3>
+
+          <div class="help">
+            <div class="help-item">
+              <h5>LEA Support</h5>
+              <ul class="fa-ul highlight-list">
+                <li>
+                  <span class="fa-li"
+                    ><i class="fa-solid fa-envelope"></i
+                  ></span>
+                  <a href="mailto:servicedesk@lamar.edu"
+                    >servicedesk@lamar.edu</a
+                  >
+                </li>
+                <li>
+                  <span class="fa-li"><i class="fa-solid fa-phone"></i></span>
+                  (409) 880-2222
+                </li>
+              </ul>
+            </div>
+            <div class="help-item">
+              <h5>Library Assistance</h5>
+              <ul class="fa-ul highlight-list">
+                <li>
+                  <span class="fa-li"
+                    ><i class="fa-solid fa-envelope"></i
+                  ></span>
+                  <strong>Ask a Librarian</strong>
+                  <a href="mailto:ask@lamar.libanswers.com"
+                    >ask@lamar.libanswers.com</a
+                  >
+                </li>
+                <li>
+                  <span class="fa-li"><i class="fa-solid fa-phone"></i></span>
+                  (409) 880-7264
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-
-        <hr />
-
-        <h2>
-          Lamar Institute of Technology equips you to build a brighter future.
-        </h2>
-        <p>
-          <em
-            >Whether you want short-term training or a two-year degree, the
-            Institute offers a program to help you achieve your goals.</em
-          >
-        </p>
-        <p>
-          Named the <strong>#1 Community College in Texas for 2018</strong> and
-          with nationally-ranked job outcomes for our students, an Institute
-          education makes the American Dream possible.
-        </p>
-
-        <h3>Institute Students Are…</h3>
-        <ul>
-          <li>
-            <strong>First-Time-in-College Students:</strong><br />
-            You've never taken college courses.
-            <a href="/programs">Learn More</a>
-          </li>
-          <li>
-            <strong>Transfer Students:</strong><br />
-            You've attended another college or university.
-            <a href="/admissions/transfer-students">Learn More</a>
-          </li>
-          <li>
-            <strong>International Students:</strong><br />
-            You are not a U.S. citizen or permanent resident.
-            <a href="/admissions/international-students">Learn More</a>
-          </li>
-          <li>
-            <strong>Continuing Education Students:</strong><br />
-            You want to learn a skill using a one day, one week, few weeks or a
-            one semester course.
-            <a href="/workforce-continuing-education">Learn More</a>
-          </li>
-        </ul>
-
-        <h3>An Investment in Your Goals</h3>
-        <p>
-          Affordability and strong academics make us a top-value, two-year
-          college. A two-year degree from Lamar Institute of Technology costs
-          just $11,268 in tuition and fees for a Texas resident. And a degree
-          from the Institute gives great return on investment, earning you a
-          median salary of $44,021 in the first year of employment.
-        </p>
-
-        <h3>Paying for School</h3>
-        <p>
-          Our knowledgeable and enthusiastic staff can help you pursue grants,
-          work-study and on-campus jobs, loans and scholarships.
-        </p>
-        <ul>
-          <li><a href="/admissions/tuition-and-fees">Calculate Tuition</a></li>
-          <li><a href="/financial-aid">Go to Financial Aid</a></li>
-          <li><a href="href=/foundation/scholarships">Find Scholarships</a></li>
-        </ul>
-
-        <h3>Find Out More</h3>
-        <p>
-          An Institute education opens new doors. You'll get to develop your
-          interests and apply them to real-world needs while training for a job
-          of the future. We invite you to learn more and connect with us online
-          and in person.
-        </p>
-        <ul>
-          <li><a href="/learn-more">Schedule a Campus Visit</a></li>
-          <li>
-            <a href="https://www.lamar.edu/residence-life/index.html"
-              >See Housing Near Campus</a
-            >
-          </li>
-        </ul>
-
-        <h3>Your Safety is a Priority at LIT</h3>
-        <p>
-          The Annual Security Report is available online on our LIT website.
-          Click
-          <a
-            href="/student-success/campus-safety/2024-annual-security-report"
-            aria-label="Visit Lamar Institute of Technology"
-            >here</a
-          >
-          to view our Annual Security Report. This report contains information
-          regarding campus safety and security including topics such as: campus
-          law enforcement authority; crime reporting policies; campus alerts
-          (Timely Warnings and Emergency Notifications); programs to prevent
-          dating violence, domestic violence, sexual assault and stalking; the
-          procedures the Institute will follow when one of these crimes is
-          reported; and other matters of importance related to security on
-          campus. The report also contains information about crime statistics
-          for the three most recent calendar years concerning reported crimes
-          that occurred on campus; in non-campus buildings or property owned or
-          controlled by the Institute or a recognized student organization; and
-          on public property within, or immediately adjacent to and accessible
-          from, the campus. If you would like to receive a paper copy of the
-          Annual Security Report, you can stop by Lamar Institute of Technology
-          -- Eagles' Nest, Room 128 at 855 East Lavaca Beaumont, TX 77710 or you
-          can request that a copy be mailed to you by calling 409-257-0056 or
-          emailing
-          <a
-            href="mailto:rnelson@lit.edu"
-            aria-label="Visit Lamar Institute of Technology"
-            >rnelson@lit.edu</a
-          >.
-        </p>
-
-        <h3>Contact Us</h3>
-        <ul>
-          <li>
-            <strong>In-person:</strong> Student Success-Admissions Office<br />
-            Eagles' Nest, Room 123<br />
-            855 E. Lavaca<br />
-            Beaumont, TX 77705
-          </li>
-          <li>
-            <strong>By phone or email:</strong>
-            <a href="/contact-us">click here</a>
-          </li>
-          <li>
-            <strong>By mail:</strong> Lamar Institute of Technology<br />
-            Student Success-Admissions<br />
-            P.O. Box 10043<br />
-            Beaumont, TX 77710
-          </li>
-        </ul>
       </div>
       <div class="col-sm-12 col-md-2">
         <div class="sidebar-sub-drawer">
@@ -854,6 +570,7 @@
 
     <hr />
 
+    <!-- How to attend-->
     <style>
       .my-row {
         background: white;
@@ -861,7 +578,6 @@
         margin: 0;
       }
     </style>
-
     <div class="my-row">
       <h2 class="hta-title">What we know about cats and ghost</h2>
       <p>
