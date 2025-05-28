@@ -1036,5 +1036,30 @@
       src="static/lit_news_files/scripts/bootstrap.bundle.min.js"
       type="module"
     ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggles = document.querySelectorAll(
+          ".main-navigation .nav-toggle"
+        );
+
+        toggles.forEach((toggle) => {
+          toggle.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            const parentLi = this.parentElement;
+            const isOpen = parentLi.classList.contains("open");
+
+            // Close all siblings
+            const siblings = parentLi.parentElement.querySelectorAll("li.open");
+            siblings.forEach((sib) => sib.classList.remove("open"));
+
+            // Toggle current
+            if (!isOpen) {
+              parentLi.classList.add("open");
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>
