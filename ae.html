@@ -102,6 +102,89 @@
         border-radius: 8px;
         margin-bottom: 20px;
       }
+
+      /* new nav */
+      .main-navigation {
+        font-family: sans-serif;
+      }
+
+      .main-navigation ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .main-navigation li {
+        border-bottom: 1px solid #ddd;
+      }
+
+      .main-navigation a,
+      .main-navigation button.nav-toggle {
+        display: block;
+        width: 100%;
+        padding: 12px 16px;
+        text-align: left;
+        background: #f8f8f8;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+        text-decoration: none;
+        color: #333;
+        transition: background 0.3s;
+      }
+
+      .main-navigation button.nav-toggle::after {
+        content: "▸";
+        float: right;
+        transition: transform 0.3s;
+      }
+
+      .main-navigation li.open > button.nav-toggle::after {
+        transform: rotate(90deg);
+      }
+
+      .main-navigation ul ul {
+        display: none;
+      }
+
+      .main-navigation li.open > ul {
+        display: block;
+      }
+
+      /* Level 2 */
+      .main-navigation ul ul a,
+      .main-navigation ul ul button.nav-toggle {
+        background: #e7eef7;
+        padding-left: 32px;
+        border-left: 4px solid #1e448d; /* deep blue */
+      }
+
+      /* Level 3 */
+      .main-navigation ul ul ul a,
+      .main-navigation ul ul ul button.nav-toggle {
+        background: #d6e7f4;
+        padding-left: 48px;
+        border-left: 4px solid #1c75bc; /* vibrant blue */
+      }
+
+      /* Level 4 (if needed) */
+      .main-navigation ul ul ul ul a,
+      .main-navigation ul ul ul ul button.nav-toggle {
+        background: #f9e2e4;
+        padding-left: 64px;
+        border-left: 4px solid #ec2027; /* bold red */
+      }
+
+      /* Hover effects */
+      .main-navigation a:hover,
+      .main-navigation button.nav-toggle:hover {
+        background: #dce7f4;
+      }
+
+      /* Active/expanded */
+      .main-navigation li.open > button.nav-toggle {
+        background: #cbddef;
+      }
     </style>
 
     <div class="row">
@@ -532,360 +615,402 @@
           <div class="col-md-6">
             <h5>Proposed Navigation Menu</h5>
             <hr />
-            <ul>
-              <li>
-                Academics
-                <ul>
-                  <li>
-                    Programs Offered
-                    <ul>
-                      <li><a href="/programs/business">Business</a></li>
-                      <li>
-                        <a href="/programs/dual-credit">Dual Credit Programs</a>
-                      </li>
-                      <li>
-                        <a href="/programs/general-education"
-                          >General Education</a
-                        >
-                      </li>
-                      <li>
-                        <a href="/programs/healthcare-sciences"
-                          >Healthcare and Sciences</a
-                        >
-                      </li>
-                      <li>
-                        <a href="/programs/public-service-safety"
-                          >Public Service and Safety</a
-                        >
-                      </li>
-                      <li><a href="/programs/technology">Technology</a></li>
-                      <li>
-                        <a href="/programs/workforce-training"
-                          >Workforce Training and Continuing Education</a
-                        >
-                      </li>
-                      <li>
-                        <a href="/programs/online-learning">Online Learning</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    Academic Resources
-                    <ul>
-                      <li><a href="/academic-support">Academic Support</a></li>
-                      <li><a href="/learning-lab">Learning Lab</a></li>
-                      <li><a href="/testing-center">Testing Center</a></li>
-                      <li>
-                        <a href="/prior-learning-assessment"
-                          >Prior Learning Assessment</a
-                        >
-                      </li>
-                      <li><a href="/starfish">Starfish</a></li>
-                      <li>
-                        <a href="/eagle-learning-essentials"
-                          >Eagle Learning Essentials</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    Academic Information
-                    <ul>
-                      <li>
-                        <a href="/catalog-handbook"
-                          >College Catalog & Student Handbook</a
-                        >
-                      </li>
-                      <li>
-                        <a href="/academic-calendars">Academic Calendars</a>
-                      </li>
-                      <li>
-                        <a href="/final-exam-schedules">Final Exam Schedules</a>
-                      </li>
-                      <li><a href="/accreditation">Accreditation</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    Advising & Registration
-                    <ul>
-                      <li>
-                        <a href="/academic-advising">Academic Advising</a>
-                      </li>
-                      <li><a href="/class-schedules">Class Schedules</a></li>
-                      <li><a href="/registration">Registration</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
+            <nav class="main-navigation">
+              <ul class="nav-level-1">
+                <li>
+                  <button class="nav-toggle">Academics</button>
+                  <ul class="nav-level-2">
+                    <li>
+                      <button class="nav-toggle">Programs Offered</button>
+                      <ul class="nav-level-3">
+                        <li><a href="/programs/business">Business</a></li>
+                        <li>
+                          <a href="/programs/dual-credit"
+                            >Dual Credit Programs</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/programs/general-education"
+                            >General Education</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/programs/healthcare-sciences"
+                            >Healthcare and Sciences</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/programs/public-service"
+                            >Public Service and Safety</a
+                          >
+                        </li>
+                        <li><a href="/programs/technology">Technology</a></li>
+                        <li>
+                          <a href="/programs/workforce-training"
+                            >Workforce Training and Continuing Education</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/programs/online-learning"
+                            >Online Learning</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <button class="nav-toggle">Academic Resources</button>
+                      <ul class="nav-level-3">
+                        <li>
+                          <a href="/academic-support">Academic Support</a>
+                        </li>
+                        <li><a href="/learning-lab">Learning Lab</a></li>
+                        <li><a href="/testing-center">Testing Center</a></li>
+                        <li>
+                          <a href="/prior-learning"
+                            >Prior Learning Assessment</a
+                          >
+                        </li>
+                        <li><a href="/starfish">Starfish</a></li>
+                        <li>
+                          <a href="/eagle-essentials"
+                            >Eagle Learning Essentials</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <button class="nav-toggle">Academic Information</button>
+                      <ul class="nav-level-3">
+                        <li>
+                          <a href="/catalog"
+                            >College Catalog & Student Handbook</a
+                          >
+                        </li>
+                        <li><a href="/calendars">Academic Calendars</a></li>
+                        <li><a href="/final-exams">Final Exam Schedules</a></li>
+                        <li><a href="/accreditation">Accreditation</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <button class="nav-toggle">
+                        Advising & Registration
+                      </button>
+                      <ul class="nav-level-3">
+                        <li><a href="/advising">Academic Advising</a></li>
+                        <li><a href="/class-schedules">Class Schedules</a></li>
+                        <li><a href="/registration">Registration</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
 
-              <li>
-                Admissions
-                <ul>
-                  <li>
-                    How to Apply
-                    <ul>
-                      <li><a href="/future-students">Future Students</a></li>
-                      <li>
-                        <a href="/high-school-graduates"
-                          >High School Graduates</a
-                        >
-                      </li>
-                      <li>
-                        <a href="/transfer-students">Transfer Students</a>
-                      </li>
-                      <li>
-                        <a href="/international-students"
-                          >International Students</a
-                        >
-                      </li>
-                      <li>
-                        <a href="/dual-credit-admissions"
-                          >Dual Credit Admissions</a
-                        >
-                      </li>
-                      <li>
-                        <a href="/ged-hiset"
-                          >GED or HiSET Certificate Holders</a
-                        >
-                      </li>
-                      <li>
-                        <a href="/non-hs-graduates"
-                          >Non-High School Graduates</a
-                        >
-                      </li>
-                      <li>
-                        <a href="/readmission">Readmission of Students</a>
-                      </li>
-                      <li>
-                        <a href="/senior-enrollment"
-                          >Senior Citizen Enrollment</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    Admission Requirements
-                    <ul>
-                      <li>
-                        <a href="/bacterial-meningitis"
-                          >Bacterial Meningitis Vaccination</a
-                        >
-                      </li>
-                      <li><a href="/placement-testing">Testing Center</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="/tuition-fees">Tuition and Fees</a></li>
-                  <li><a href="/visit-lit">Visit LIT</a></li>
-                  <li><a href="/contact-admissions">Contact Admissions</a></li>
-                </ul>
-              </li>
+                <li>
+                  <button class="nav-toggle">Admissions</button>
+                  <ul class="nav-level-2">
+                    <li>
+                      <button class="nav-toggle">How to Apply</button>
+                      <ul class="nav-level-3">
+                        <li>
+                          <a href="/admissions/future-students"
+                            >Future Students</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/admissions/high-school"
+                            >High School Graduates</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/admissions/transfer">Transfer Students</a>
+                        </li>
+                        <li>
+                          <a href="/admissions/international"
+                            >International Students</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/admissions/dual-credit"
+                            >Dual Credit Admissions</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/admissions/ged">GED or HiSET Holders</a>
+                        </li>
+                        <li>
+                          <a href="/admissions/non-high-school"
+                            >Non-High School Graduates</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/admissions/readmission">Readmission</a>
+                        </li>
+                        <li>
+                          <a href="/admissions/senior-citizen"
+                            >Senior Citizen Enrollment</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <button class="nav-toggle">Admission Requirements</button>
+                      <ul class="nav-level-3">
+                        <li>
+                          <a href="/admissions/meningitis"
+                            >Bacterial Meningitis Vaccination</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/admissions/testing">Testing Center</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="/admissions/tuition">Tuition and Fees</a></li>
+                    <li><a href="/admissions/visit">Visit LIT</a></li>
+                    <li>
+                      <a href="/admissions/contact">Contact Admissions</a>
+                    </li>
+                  </ul>
+                </li>
 
-              <li>
-                Financial Aid
-                <ul>
-                  <li>
-                    <a href="/apply-financial-aid">Apply for Financial Aid</a>
-                  </li>
-                  <li>
-                    Funding Options
-                    <ul>
-                      <li><a href="/grants">Grants</a></li>
-                      <li><a href="/scholarships">Scholarships</a></li>
-                      <li><a href="/loans">Loans</a></li>
-                      <li><a href="/work-study">Work-Study</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    Financial Aid Processes
-                    <ul>
-                      <li>
-                        <a href="/federal-verification"
-                          >Federal Verification Process</a
-                        >
-                      </li>
-                      <li>
-                        <a href="/satisfactory-academic-progress"
-                          >Satisfactory Academic Progress</a
-                        >
-                      </li>
-                      <li>
-                        <a href="/return-title-iv">Return of Title IV Funds</a>
-                      </li>
-                      <li><a href="/appeal-process">Appeal Process</a></li>
-                      <li>
-                        <a href="/special-circumstances"
-                          >Special Circumstances</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                  <li><a href="/financial-aid-forms">Forms</a></li>
-                  <li>
-                    <a href="/cares-act"
-                      >CARES Act / COVID-19 Emergency Aid (HEERF)</a
-                    >
-                  </li>
-                  <li>
-                    <a href="/contact-financial-aid">Contact Financial Aid</a>
-                  </li>
-                </ul>
-              </li>
+                <li>
+                  <button class="nav-toggle">Financial Aid</button>
+                  <ul class="nav-level-2">
+                    <li>
+                      <a href="/financial-aid/apply">Apply for Financial Aid</a>
+                    </li>
+                    <li>
+                      <button class="nav-toggle">Funding Options</button>
+                      <ul class="nav-level-3">
+                        <li><a href="/financial-aid/grants">Grants</a></li>
+                        <li>
+                          <a href="/financial-aid/scholarships">Scholarships</a>
+                        </li>
+                        <li><a href="/financial-aid/loans">Loans</a></li>
+                        <li>
+                          <a href="/financial-aid/work-study">Work-Study</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <button class="nav-toggle">
+                        Financial Aid Processes
+                      </button>
+                      <ul class="nav-level-3">
+                        <li>
+                          <a href="/financial-aid/verification"
+                            >Federal Verification Process</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/financial-aid/sap"
+                            >Satisfactory Academic Progress</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/financial-aid/title-iv"
+                            >Return of Title IV Funds</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/financial-aid/appeals">Appeal Process</a>
+                        </li>
+                        <li>
+                          <a href="/financial-aid/special-circumstances"
+                            >Special Circumstances</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="/financial-aid/forms">Forms</a></li>
+                    <li>
+                      <a href="/financial-aid/cares"
+                        >CARES Act / COVID-19 Emergency Aid</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/financial-aid/contact">Contact Financial Aid</a>
+                    </li>
+                  </ul>
+                </li>
 
-              <li>
-                Student Services & Campus Life
-                <ul>
-                  <li>
-                    Student Support & Resources
-                    <ul>
-                      <li><a href="/it-helpdesk">IT Helpdesk</a></li>
-                      <li><a href="/transcripts">Transcripts</a></li>
-                      <li><a href="/veteran-services">Veteran Services</a></li>
-                      <li>
-                        <a href="/special-populations"
-                          >Special Populations Support</a
-                        >
-                      </li>
-                      <li><a href="/title-ix">Title IX Information</a></li>
-                      <li>
-                        <a href="/successful-eagles-soar"
-                          >Successful Eagles Soar</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    Health & Wellness
-                    <ul>
-                      <li><a href="/campus-safety">Campus Safety</a></li>
-                      <li><a href="/health-services">Health Services</a></li>
-                      <li><a href="/timelycare">TimelyCare</a></li>
-                      <li>
-                        <a href="/general-vaccine"
-                          >General Vaccine Requirement</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    Engagement & Development
-                    <ul>
-                      <li>
-                        <a href="/student-engagement">Student Engagement</a>
-                      </li>
-                      <li>
-                        <a href="/eagle-ambassadors">Eagle Ambassadors</a>
-                      </li>
-                      <li><a href="/career-services">Career Services</a></li>
-                      <li>
-                        <a href="/commencement">Commencement Information</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
+                <li>
+                  <button class="nav-toggle">
+                    Student Services & Campus Life
+                  </button>
+                  <ul class="nav-level-2">
+                    <li>
+                      <button class="nav-toggle">
+                        Student Support & Resources
+                      </button>
+                      <ul class="nav-level-3">
+                        <li><a href="/services/it">IT Helpdesk</a></li>
+                        <li><a href="/services/transcripts">Transcripts</a></li>
+                        <li>
+                          <a href="/services/veterans">Veteran Services</a>
+                        </li>
+                        <li>
+                          <a href="/services/special-populations"
+                            >Special Populations</a
+                          >
+                        </li>
+                        <li><a href="/services/title-ix">Title IX</a></li>
+                        <li>
+                          <a href="/services/soar">Successful Eagles Soar</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <button class="nav-toggle">Health & Wellness</button>
+                      <ul class="nav-level-3">
+                        <li><a href="/services/safety">Campus Safety</a></li>
+                        <li><a href="/services/health">Health Services</a></li>
+                        <li><a href="/services/timelycare">TimelyCare</a></li>
+                        <li>
+                          <a href="/services/vaccine"
+                            >General Vaccine Requirement</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <button class="nav-toggle">
+                        Engagement & Development
+                      </button>
+                      <ul class="nav-level-3">
+                        <li>
+                          <a href="/services/engagement">Student Engagement</a>
+                        </li>
+                        <li>
+                          <a href="/services/ambassadors">Eagle Ambassadors</a>
+                        </li>
+                        <li><a href="/services/careers">Career Services</a></li>
+                        <li>
+                          <a href="/services/commencement"
+                            >Commencement Information</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
 
-              <li>
-                About LIT
-                <ul>
-                  <li>
-                    Our Institution
-                    <ul>
-                      <li><a href="/history">History</a></li>
-                      <li>
-                        <a href="/executive-team">The LIT Executive Team</a>
-                      </li>
-                      <li>
-                        <a href="/learning-locations">LIT Learning Locations</a>
-                      </li>
-                      <li><a href="/master-plan">LIT Master Plan</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    Data & Governance
-                    <ul>
-                      <li>
-                        <a href="/institutional-data">Institutional Data</a>
-                      </li>
-                      <li>
-                        <a href="/finance-operations">Finance and Operations</a>
-                      </li>
-                      <li><a href="/internal-audit">Internal Audit</a></li>
-                      <li><a href="/compact-texans">Compact with Texans</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    Communications & Outreach
-                    <ul>
-                      <li>
-                        <a href="/communications-marketing"
-                          >Communications and Marketing</a
-                        >
-                      </li>
-                      <li>
-                        <a href="/teaching-learning-center"
-                          >Teaching and Learning Center</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
+                <li>
+                  <button class="nav-toggle">About LIT</button>
+                  <ul class="nav-level-2">
+                    <li>
+                      <button class="nav-toggle">Our Institution</button>
+                      <ul class="nav-level-3">
+                        <li><a href="/about/history">History</a></li>
+                        <li>
+                          <a href="/about/executive-team">Executive Team</a>
+                        </li>
+                        <li>
+                          <a href="/about/locations">Learning Locations</a>
+                        </li>
+                        <li><a href="/about/master-plan">Master Plan</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <button class="nav-toggle">Data & Governance</button>
+                      <ul class="nav-level-3">
+                        <li><a href="/about/data">Institutional Data</a></li>
+                        <li>
+                          <a href="/about/finance">Finance and Operations</a>
+                        </li>
+                        <li><a href="/about/audit">Internal Audit</a></li>
+                        <li>
+                          <a href="/about/compact">Compact with Texans</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <button class="nav-toggle">
+                        Communications & Outreach
+                      </button>
+                      <ul class="nav-level-3">
+                        <li>
+                          <a href="/about/communications"
+                            >Communications and Marketing</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/about/teaching"
+                            >Teaching and Learning Center</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
 
-              <li>
-                Giving to LIT
-                <ul>
-                  <li>
-                    <a href="/about-foundation">About the LIT Foundation</a>
-                  </li>
-                  <li><a href="/ways-to-give">Ways to Give</a></li>
-                  <li>
-                    <a href="/gift-donation-form">Gift & Donation Form</a>
-                  </li>
-                  <li>
-                    <a href="/scholarships-foundation"
-                      >Scholarships Offered by the Foundation</a
-                    >
-                  </li>
-                  <li><a href="/donor-recognition">Donor Recognition</a></li>
-                  <li>
-                    Foundation Events
-                    <ul>
-                      <li>
-                        <a href="/salute-heroes"
-                          >A Salute to the Real American Heroes</a
-                        >
-                      </li>
-                      <li>
-                        <a href="/scholarship-golf"
-                          >LIT Foundation Scholarship Golf Tournament</a
-                        >
-                      </li>
-                      <li>
-                        <a href="/tree-lighting"
-                          >LIT Foundation Tree Lighting</a
-                        >
-                      </li>
-                      <li>
-                        <a href="/sporting-clays">LIT Sporting Clays Classic</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li><a href="/alumni-engagement">Alumni Engagement</a></li>
-                  <li>
-                    Foundation Governance
-                    <ul>
-                      <li><a href="/board-directors">Board of Directors</a></li>
-                      <li>
-                        <a href="/irs-501c3">IRS 501(c)(3) Exemption Letter</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="/contact-foundation">Contact the Foundation</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
+                <li>
+                  <button class="nav-toggle">Giving to LIT</button>
+                  <ul class="nav-level-2">
+                    <li>
+                      <a href="/giving/foundation">About the Foundation</a>
+                    </li>
+                    <li>
+                      <button class="nav-toggle">Ways to Give</button>
+                      <ul class="nav-level-3">
+                        <li>
+                          <a href="/giving/donate">Gift & Donation Form</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="/giving/scholarships"
+                        >Scholarships Offered by the Foundation</a
+                      >
+                    </li>
+                    <li><a href="/giving/donors">Donor Recognition</a></li>
+                    <li>
+                      <button class="nav-toggle">Foundation Events</button>
+                      <ul class="nav-level-3">
+                        <li>
+                          <a href="/giving/events/heroes"
+                            >A Salute to the Real American Heroes</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/giving/events/golf"
+                            >LIT Foundation Scholarship Golf Tournament</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/giving/events/tree"
+                            >LIT Foundation Tree Lighting</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/giving/events/clays"
+                            >LIT Sporting Clays Classic</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="/giving/alumni">Alumni Engagement</a></li>
+                    <li>
+                      <button class="nav-toggle">Foundation Governance</button>
+                      <ul class="nav-level-3">
+                        <li>
+                          <a href="/giving/governance/board"
+                            >Board of Directors</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/giving/governance/501c3"
+                            >IRS 501(c)(3) Exemption Letter</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="/giving/contact">Contact the Foundation</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
