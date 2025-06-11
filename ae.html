@@ -96,7 +96,7 @@
         border-radius: 8px;
       }
 
-      .nav-test-container {
+      .test-container {
         background-color: white;
         padding: 20px;
         border-radius: 8px;
@@ -131,7 +131,10 @@
         cursor: pointer;
         transition: background-color 0.3s;
       }
+    </style>
 
+    <!-- New Nav Menu -->
+    <style>
       /* new nav */
       .main-navigation {
         max-width: 450px;
@@ -219,9 +222,411 @@
       }
     </style>
 
+    <!-- IST Styles -->
+    <style>
+      .ist-container {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        line-height: 1.6;
+      }
+
+      .ist-container .urgent-note {
+        border-left: 6px solid #ec2027;
+        background-color: #ffe6e9;
+        margin: 10px 0;
+        padding: 15px;
+        border-radius: 8px;
+        font-weight: 600;
+        color: #721c24;
+      }
+
+      .ist-container .urgent-note p {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        color: #721c24;
+      }
+
+      .classes-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .classes-grid-item {
+        background-color: #ffffff;
+        padding: 0;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Desktop: Wide screen */
+      @media (min-width: 1000px) {
+        .classes-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 20px;
+        }
+      }
+
+      .classes-grid-item .card {
+        border: none; /* remove double borders */
+        box-shadow: none; /* let outer grid-item provide shadow */
+      }
+
+      .classes-grid-item .card-header {
+        background-color: #1b6ec2;
+        font-size: 1.25rem;
+        padding: 1rem;
+        color: white;
+        text-align: center;
+      }
+
+      .classes-grid-item .card-body {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding: 1rem;
+      }
+    </style>
+
     <div class="row">
       <div class="col-sm-12 col-md-10">
-        <div class="row nav-test-container">
+        <div class="row ist-container">
+          <h3>Regional Police Academy In-service</h3>
+          <p>
+            All training is free to law enforcement in the region unless
+            otherwise noted in the posting. To register, please complete the
+            online form. For any questions, contact us @
+            <a
+              href="mailto:policeacademy@lit.edu"
+              aria-label="Visit Lamar Institute of Technology - Regional Police Academy In-service Training"
+              >policeacademy@lit.edu</a
+            >. You must have your agency's approval before registering for any
+            course listed.
+          </p>
+          <div class="urgent-note">
+            <p>
+              <strong>Important Information:</strong> The Multi-Purpose Center
+              (Paul and Connie Szuch Building) is located at 802 E. Lavaca in
+              Beaumont, Texas. This facility is located across the street from
+              the main campus of LIT. Training is held downstairs in the
+              conference room and upstairs in the in-service classroom #262 and
+              the cadet classroom #252.
+            </p>
+          </div>
+
+          <div class="urgent-note">
+            <p><strong>Please Note New Phone Number:</strong> (409) 257-0049</p>
+          </div>
+
+          <hr />
+
+          <h3>Upcoming In-service Classes</h3>
+
+          <div class="classes-grid">
+            <!-- Supervisory and Investigatory Response to a Force Incident -->
+            <div class="classes-grid-item">
+              <div class="card">
+                <div class="card-header">
+                  <strong
+                    >Supervisory and Investigatory Response to a Force
+                    Incident</strong
+                  >
+                </div>
+                <div class="card-body">
+                  <h5>June 10-12, 2025 (8:00 AM - 5:00 PM daily)</h5>
+                  <p>
+                    This intensive 24-hour course covers all aspects of police
+                    use of force investigations, including officer-involved
+                    non-critical and critical force incidents, force against the
+                    mentally ill and emotionally disturbed, administrative and
+                    criminal investigative procedures, reporting, policy,
+                    agency/municipality liability, and civil/criminal legal
+                    ramifications.
+                  </p>
+                  <p>
+                    Designed for Investigators, Supervisors, Staff Officers, and
+                    Executive Staff (including the Chief Executive). This course
+                    would also greatly benefit police Legal Counsel, Union
+                    Representatives and Public Information Officers (PIOs).
+                  </p>
+                  <p>
+                    Taught by nationally recognized Police Use of Force expert
+                    Matt Morrow (Beaumont PD). Participants will receive a
+                    student workbook, "Supervisory On-Scene Critical Force
+                    Checklist" and "Public Safety Statement."
+                  </p>
+
+                  <div class="location-info">
+                    <h5>
+                      Lamar Institute of Technology - Regional Police Academy
+                    </h5>
+                    <address>
+                      805 E. Lavaca St. (Ballroom)<br />
+                      Beaumont, Texas 77705
+                    </address>
+                    <ul>
+                      <li>24 hours TCOLE Credit</li>
+                      <li>No Cost</li>
+                      <li>
+                        <a
+                          href="https://www.lit.edu/police-officer-in-service-registration-form"
+                          >Click Here to Register</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Crimes Scene Investigation Course TCOLE #2106 -->
+            <div class="classes-grid-item">
+              <div class="card">
+                <div class="card-header">
+                  <strong>Crimes Scene Investigation Course TCOLE #2106</strong>
+                </div>
+                <div class="card-body">
+                  <h5>June 23-27, 2025 (8:00 AM - 5:00 PM)</h5>
+
+                  <div class="location-info">
+                    <h5>
+                      Lamar Institute of Technology - Regional Police Academy
+                    </h5>
+                    <address>
+                      Academy Classroom 252<br />
+                      805 E. Lavaca St.<br />
+                      Beaumont, Texas 77705
+                    </address>
+                    <ul>
+                      <li>24 hours TCOLE Credit</li>
+                      <li>No Cost</li>
+                      <li>
+                        <a
+                          href="https://www.lit.edu/police-officer-in-service-registration-form"
+                          >Click Here to Register</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Commercial Sexual Exploitation Identification Tool (CSE-IT) Training for Law Enforcement & Criminal Justice Personnel -->
+            <div class="classes-grid-item">
+              <div class="card">
+                <div class="card-header">
+                  <strong>
+                    Commercial Sexual Exploitation Identification Tool (CSE-IT)
+                    Training for Law Enforcement & Criminal Justice Personnel -
+                    July 24, 2025 (8:00 AM - 5:00 PM)
+                  </strong>
+                </div>
+                <div class="card-body">
+                  <img
+                    alt="July 24, 2025 (8:00 AM - 5:00 PM) - Commercial Sexual Exploitation Identification Tool (CSE-IT) Training for Law Enforcement & Criminal Justice Personnel"
+                    class="img-fluid img-thumbnail"
+                    src="https://www.lit.edu/getmedia/8c7f02f5-77c1-4ca5-a486-990ba2a9e43e/CSE-IT-Training.png"
+                    title="July 24, 2025 (8:00 AM - 5:00 PM) - Commercial Sexual Exploitation Identification Tool (CSE-IT) Training for Law Enforcement & Criminal Justice Personnel"
+                  />
+
+                  <hr />
+                  <div class="location-info">
+                    <h5>
+                      Lamar Institute of Technology - Regional Police Academy
+                    </h5>
+                    <address>
+                      Multi-purpose Center Ballroom<br />
+                      805 E. Lavaca St.<br />
+                      Beaumont, Texas 77705
+                    </address>
+                    <ul>
+                      <li>6 hours TCOLE Credit</li>
+                      <li>
+                        <a
+                          href="https://www.lit.edu/police-officer-in-service-registration-form"
+                          >Click Here to Register</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Human Sex Trafficking -->
+            <div class="classes-grid-item">
+              <div class="card">
+                <div class="card-header">
+                  <strong
+                    >Human Sex Trafficking - September 24-25 (8:00 AM - 5:00
+                    PM)</strong
+                  >
+                </div>
+                <div class="card-body">
+                  <img
+                    alt="September 24-25 (8:00 AM - 5:00 PM) - Human Sex Trafficking"
+                    class="img-fluid img-thumbnail"
+                    src="https://www.lit.edu/getmedia/8d58a7ea-35c2-4bd7-ab8e-94a405d0ca88/Heidi-Chance.png"
+                    title="September 24-25 (8:00 AM - 5:00 PM) - Human Sex Trafficking"
+                  />
+                  <hr />
+
+                  <div class="location-info">
+                    <h5>
+                      Lamar Institute of Technology - Regional Police Academy
+                    </h5>
+                    <address>
+                      Workforce / Nursing Building room 101<br />
+                      915 E. Lavaca St.<br />
+                      Beaumont, Texas 77705
+                    </address>
+                    <ul>
+                      <li>16 hours TCOLE 6050 Human Sex Trafficking Credit</li>
+                      <li>
+                        <a
+                          href="https://www.lit.edu/police-officer-in-service-registration-form"
+                          >Click Here to Register</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Media Interaction Training -->
+            <div class="classes-grid-item">
+              <div class="card">
+                <div class="card-header">
+                  <strong>
+                    Media Interaction Training - October 14-15 (8:00 AM - 5:00
+                    PM)
+                  </strong>
+                </div>
+                <div class="card-body">
+                  <img
+                    alt="October 14-15 (8:00 AM - 5:00 PM) - Media Interaction Training"
+                    class="img-fluid img-thumbnail"
+                    src="https://www.lit.edu/getmedia/c4bca97c-2f1a-4d0d-b95b-20ff6c840823/PIO.png"
+                    title="October 14-15 (8:00 AM - 5:00 PM) - Media Interaction Training"
+                  />
+                  <hr />
+
+                  <div class="location-info">
+                    <h5>
+                      Lamar Institute of Technology - Regional Police Academy
+                    </h5>
+                    <address>
+                      Workforce / Nursing Building room 101<br />
+                      915 E. Lavaca St.<br />
+                      Beaumont, Texas 77705
+                    </address>
+                    <ul>
+                      <li>
+                        16 hours TCOLE 6038 Public Information Officer Credit
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.lit.edu/police-officer-in-service-registration-form"
+                          >Click Here to Register</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Enhancing Investigation through Genetic Genealogy -->
+            <div class="classes-grid-item">
+              <div class="card">
+                <div class="card-header">
+                  <strong>
+                    Enhancing Investigation Through Genetic Genealogy - November
+                    13-14 (8:00 AM - 5:00 PM)
+                  </strong>
+                </div>
+                <div class="card-body">
+                  <img
+                    alt="November 13-14 (8:00 AM - 5:00 PM) - Enhancing Investigation Through Genetic Genealogy"
+                    class="img-fluid img-thumbnail"
+                    src="https://www.lit.edu/getmedia/0af49e1d-6a97-4759-99db-88b54ca0ac97/Genetic-Genealogy.png"
+                    title="November 13-14 (8:00 AM - 5:00 PM) - Enhancing Investigation Through Genetic Genealogy"
+                  />
+                  <hr />
+
+                  <div class="location-info">
+                    <h5>
+                      Lamar Institute of Technology - Regional Police Academy
+                    </h5>
+                    <address>
+                      Workforce and Nursing Building Room 101<br />
+                      915 E. Lavaca St.<br />
+                      Beaumont, Texas 77705
+                    </address>
+                    <ul>
+                      <li>16 hours TCOLE 3850 General DNA Credit</li>
+                      <li>
+                        <a
+                          href="https://ncjtc.fvtc.edu/trainings/TR00011181/TRI2662605/enhancing-investigations-through-genetic-genealogy"
+                          >Click Here to Register</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Casting a Digital Footprint -->
+            <div class="classes-grid-item">
+              <div class="card">
+                <div class="card-header">
+                  <strong>
+                    Casting a Digital Footprint - November 17-18 (8:00 AM - 5:00
+                    PM)
+                  </strong>
+                </div>
+                <div class="card-body">
+                  <img
+                    alt="November 17-18 (8:00 AM - 5:00 PM) - Casting a Digital Footprint"
+                    class="img-fluid img-thumbnail"
+                    src="https://www.lit.edu/getmedia/c884c3b3-4742-4e57-9c0d-92f91b34b4fb/Digital-Footprint.png"
+                    title="November 17-18 (8:00 AM - 5:00 PM) - Casting a Digital Footprint"
+                  />
+                  <hr />
+
+                  <div class="location-info">
+                    <h5>
+                      Lamar Institute of Technology - Regional Police Academy
+                    </h5>
+                    <address>
+                      Small Classroom 262<br />
+                      805 E. Lavaca St.<br />
+                      Beaumont, Texas 77705
+                    </address>
+                    <ul>
+                      <li>16 hours TCOLE 3373 Cyber Investigation Credits</li>
+                      <li>
+                        <a
+                          href="https://ncjtc.fvtc.edu/trainings/TR00006400/TRI2878945/casting-the-digital-footprint"
+                          >Click Here to Register</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row test-container">
           <hr />
           <div class="col-md-6">
             <h5>Current Navigation Menu</h5>
