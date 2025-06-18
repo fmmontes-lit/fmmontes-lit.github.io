@@ -13,321 +13,287 @@
       rel="stylesheet"
       href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css"
     />
+    <!-- Glass -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 100%;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        min-height: 100vh;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background-image: url("https://www.lit.edu/getmedia/a90c3e48-94a3-453a-ae36-288df48a4bba/B_2.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1.25rem;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          sans-serif;
+      }
+
+      /* Background pattern */
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: radial-gradient(
+            circle at 20% 50%,
+            rgba(120, 119, 198, 0.3) 0%,
+            transparent 50%
+          ),
+          radial-gradient(
+            circle at 80% 20%,
+            rgba(255, 119, 198, 0.3) 0%,
+            transparent 50%
+          ),
+          radial-gradient(
+            circle at 40% 80%,
+            rgba(120, 219, 255, 0.3) 0%,
+            transparent 50%
+          );
+        pointer-events: none;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+        gap: 1.25rem;
+        max-width: 62.5rem;
+        width: 100%;
+      }
+
+      /* Liquid glass effect class */
+      .glass {
+        position: relative;
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(2px) saturate(180%);
+        border: 0.0625rem solid rgba(255, 255, 255, 0.8);
+        border-radius: 2rem;
+        padding: 1.25rem;
+        box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2),
+          inset 0 4px 20px rgba(255, 255, 255, 0.3);
+      }
+
+      .glass::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 2rem;
+        backdrop-filter: blur(1px);
+        box-shadow: inset -10px -8px 0px -11px rgba(255, 255, 255, 1),
+          inset 0px -9px 0px -8px rgba(255, 255, 255, 1);
+        opacity: 0.6;
+        z-index: -1;
+        filter: blur(1px) drop-shadow(10px 4px 6px black) brightness(115%);
+        pointer-events: none;
+      }
+
+      /* Content style */
+      .card-header {
+        display: flex;
+        align-items: center;
+        gap: 0.9375rem;
+        margin-bottom: 0.9375rem;
+      }
+
+      .icon {
+        position: relative;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 0.625rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.25rem;
+      }
+
+      .icon::after {
+        border-radius: 0.625rem;
+      }
+
+      .card-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: black;
+        margin: 0;
+      }
+
+      .card-subtitle {
+        font-size: 1.1rem;
+        color: black;
+        margin: 0.3125rem 0 0 0;
+      }
+
+      .card-content {
+        color: black;
+        line-height: 1.6;
+      }
+
+      .card-content-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.938rem;
+        margin-top: 0.938rem;
+      }
+
+      .card-content-icon {
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        margin: 0 auto 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        aspect-ratio: 1;
+      }
+
+      .btn-glass {
+        position: relative;
+        color: black;
+        padding: 0.75rem 1.5rem;
+        border-radius: 0.75rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-top: 0.9375rem;
+        display: inline-block;
+        text-decoration: none;
+      }
+
+      .btn-glass::after {
+        border-radius: 0.75rem;
+      }
+
+      .btn-glass:hover {
+        background: rgba(255, 255, 255, 0.3);
+        transform: scale(1.05);
+      }
+
+      /* Musical Widget */
+      .music-widget {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 0.9375rem;
+        padding: 0.9375rem;
+        border-radius: 0.9375rem;
+        margin-top: 0.9375rem;
+      }
+
+      .music-widget::after {
+        border-radius: 0.9375rem;
+      }
+
+      .album-cover {
+        width: 3.125rem;
+        height: 3.125rem;
+        background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+        border-radius: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+      }
+
+      .play-btn {
+        width: 2.5rem;
+        height: 2.5rem;
+        background: rgba(255, 255, 255, 0.3);
+        border: none;
+        border-radius: 50%;
+        color: white;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+      }
+
+      .play-btn:hover {
+        background: rgba(255, 255, 255, 0.5);
+        transform: scale(1.1);
+      }
+
+      /* Responsive */
+      @media (max-width: 550) {
+        .container {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
   </head>
 
   <body>
-    <nav
-      class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"
-    >
-      <div class="container-fluid">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target=".navbar-collapse"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div
-          class="navbar-collapse collapse d-sm-inline-flex justify-content-between"
-        >
-          <ul class="navbar-nav flex-grow-1">
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="#">Ignore</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="#">These</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="#">Links&reg;</a>
-            </li>
-          </ul>
-        </div>
-
-        <div id="nav-corner" style="color: #1b6ec2">
-          (^_^)
-          <div id="current-time"></div>
-        </div>
-      </div>
-    </nav>
-    <div class="row">
-      <style>
-        .container {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          margin: 0 auto;
-          margin-bottom: 40px;
-          max-width: 25%;
-        }
-        .image-wrapper {
-          border: 1px solid #ccc;
-        }
-        .image-wrapper img {
-          width: 100%;
-          height: auto;
-          object-fit: cover;
-        }
-        .controls {
-          display: flex;
-          gap: 10px;
-          margin-bottom: 20px;
-        }
-        .controls label {
-          font-weight: bold;
-        }
-        table {
-          border-collapse: collapse;
-          margin-top: 20px;
-        }
-        th,
-        td {
-          border: 1px solid #ccc;
-          padding: 8px;
-          text-align: center;
-        }
-        th {
-          background-color: #f4f4f4;
-        }
-      </style>
-      <div class="container">
-        <div class="controls">
-          <label for="aspect-ratio">Aspect Ratio:</label>
-          <select id="aspect-ratio">
-            <option value="16/9">16:9</option>
-            <option value="4/3">4:3</option>
-            <option value="1/1">1:1</option>
-            <option value="3/4">3:4</option>
-            <option value="9/16">9:16</option>
-          </select>
-        </div>
-
-        <div class="image-wrapper" id="image-wrapper">
-          <img
-            src="https://picsum.photos/600/600?random=1"
-            alt="Sample Image"
-            id="image"
-          />
-        </div>
-
-        <table id="dimension-table">
-          <thead>
-            <tr>
-              <th>Width (pixels)</th>
-              <th>Height (pixels)</th>
-              <th>Width (inches)</th>
-              <th>Height (inches)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td id="width-px">1600</td>
-              <td id="height-px">900</td>
-              <td id="width-in">16.66</td>
-              <td id="height-in">9.375</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <hr />
-
-      <!-- How to Attend -->
-      <style>
-        .hta-container {
-          padding: 1rem;
-          container-type: inline-size;
-          container-name: hta;
-          border: 1px solid black;
-          border-radius: 5px;
-          /*background-image: url("https://picsum.photos/800/600");*/
-          background-image: url("./static/images/lit-campus-w768.png");
-          background-size: cover;
-          background-position: center;
-          position: relative;
-        }
-
-        .hta-grid {
-          display: grid;
-          gap: 5px;
-          grid-template-columns: 1fr;
-          --color: white;
-          position: relative;
-          z-index: 1;
-          background-color: rgba(28, 117, 188, 0.8);
-          padding: 1rem;
-        }
-
-        .hta-grid::before {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          opacity: 0.8;
-          z-index: -1;
-        }
-
-        .hta-grid-item {
-          border-radius: 5px;
-          overflow: hidden;
-        }
-
-        .hta-grid-item-0 p {
-          text-align: left;
-          font-size: 1em;
-          color: var(--color);
-        }
-
-        .hta-grid-item-1 ol {
-          padding-left: 2rem;
-          margin-top: 0;
-        }
-
-        .hta-grid-item-1 li {
-          color: var(--color);
-          margin-bottom: 0.5rem;
-          font-size: 0.9em;
-        }
-
-        .hta-title {
-          color: #1c75bc;
-          font-size: 2rem;
-          margin-bottom: 1rem;
-        }
-
-        .hta-link {
-          color: var(--color);
-          text-decoration: none;
-          font-weight: bold;
-        }
-
-        .hta-link:hover {
-          color: #90b2ca;
-          text-decoration: underline;
-        }
-
-        @media (min-width: 768px) {
-          .hta-container {
-            /*background-image: url("https://picsum.photos/1600/900");*/
-            background-image: url("./static/images/lit-campus-w1600.png");
-          }
-
-          .hta-grid {
-            grid-template-columns: 1fr;
-            grid-template-rows: auto auto;
-          }
-
-          .hta-grid-item-0 {
-            grid-column: 1 / -1;
-            grid-row: 1;
-          }
-
-          .hta-grid-item-0 p {
-            font-size: 1.8em;
-          }
-
-          .hta-grid-item-1 {
-            grid-column: 2 / -1;
-            grid-row: 2;
-          }
-
-          .hta-grid-item-1 ol {
-            margin-left: 1rem;
-          }
-
-          .hta-grid-item-1 li {
-            font-size: 1.2em;
-          }
-        }
-      </style>
-      <h2 class="hta-title">How to Attend LIT</h2>
-      <div class="hta-container">
-        <div class="hta-grid">
-          <div class="hta-grid-item hta-grid-item-0">
-            <p>
-              Lamar Institute of Technology welcomes any student committed to
-              education and personal improvement. Here are tools to help you
-              begin your journey.
-            </p>
-          </div>
-          <div class="hta-grid-item hta-grid-item-1">
-            <ol>
-              <li data-index="1">
-                <a href="/programs" class="hta-link">Choose a path of study</a>
-              </li>
-              <li data-index="2">
-                <a href="https://www.applytexas.org/" class="hta-link"
-                  >Start the application process</a
-                >
-              </li>
-              <li data-index="3">
-                <a href="/financial-aid" class="hta-link"
-                  >Get help paying for college</a
-                >
-              </li>
-              <li data-index="4">
-                <a href="/searchcourses" class="hta-link"
-                  >Search class schedules</a
-                >
-              </li>
-              <li data-index="5">
-                <a href="/admissions/registration" class="hta-link"
-                  >Register for classes</a
-                >
-              </li>
-            </ol>
+    <div class="container">
+      <!-- Card base glass -->
+      <div class="glass">
+        <div class="card-header">
+          <div class="icon glass">🎵</div>
+          <div>
+            <h3 class="card-title">Today's Hits</h3>
+            <p class="card-subtitle">LIT Music Hits</p>
           </div>
         </div>
+        <div class="music-widget glass">
+          <div class="album-cover">♪</div>
+          <div style="flex: 1">
+            <div style="color: black; font-weight: 500">Current Song</div>
+            <div style="color: rgba(0, 0, 0, 0.7); font-size: 14px">
+              Artist Name
+            </div>
+          </div>
+          <button class="play-btn">▶</button>
+        </div>
       </div>
 
-      <!-- Script for Aspect Ratio -->
-      <script>
-        const imageWrapper = document.getElementById("image-wrapper");
-        const aspectRatioSelector = document.getElementById("aspect-ratio");
-        const image = document.getElementById("image");
-        const widthPx = document.getElementById("width-px");
-        const heightPx = document.getElementById("height-px");
-        const widthIn = document.getElementById("width-in");
-        const heightIn = document.getElementById("height-in");
+      <div class="glass">
+        <div class="card-header">
+          <div class="icon glass">📝</div>
+          <div>
+            <h3 class="card-title">Reminders</h3>
+            <p class="card-subtitle">3 items</p>
+          </div>
+        </div>
+        <div class="card-content">
+          <div style="margin-bottom: 10px">○ Chores</div>
+          <div style="margin-bottom: 10px">○ Get food</div>
+          <div>○ Study!</div>
+        </div>
+      </div>
 
-        function updateImageAndTable() {
-          const selectedRatio = aspectRatioSelector.value;
-          const [widthRatio, heightRatio] = selectedRatio
-            .split("/")
-            .map(Number);
-
-          // Calculate width and height based on the width of the container (300px for preview)
-          const width = 1600;
-          const height = Math.round((width * heightRatio) / widthRatio);
-
-          // Set new image source
-          image.src = `https://picsum.photos/${width}/${height}?random=${Math.random()}`;
-
-          // Update aspect ratio style
-          imageWrapper.style.aspectRatio = `${widthRatio} / ${heightRatio}`;
-
-          const designWidthPx = 1600;
-          const designHeightPx = Math.round(
-            (designWidthPx * heightRatio) / widthRatio
-          );
-          const designWidthIn = (designWidthPx / 96).toFixed(2);
-          const designHeightIn = (designHeightPx / 96).toFixed(2);
-
-          widthPx.textContent = designWidthPx;
-          heightPx.textContent = designHeightPx;
-          widthIn.textContent = designWidthIn;
-          heightIn.textContent = designHeightIn;
-        }
-
-        aspectRatioSelector.addEventListener("change", updateImageAndTable);
-        updateImageAndTable();
-      </script>
+      <div class="glass">
+        <div class="card-header">
+          <div class="icon glass">✨</div>
+          <div>
+            <h3 class="card-title">Glassmorphism</h3>
+            <p class="card-subtitle">Modern Design</p>
+          </div>
+        </div>
+        <div class="card-content">
+          <p>
+            The glass effect relies on transparency, background blur and thin
+            edges to create depth.
+          </p>
+          <a href="#" class="btn-glass glass">Discover more</a>
+        </div>
+      </div>
     </div>
 
     <script src="static/js/site.js" type="module"></script>
