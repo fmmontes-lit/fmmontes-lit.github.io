@@ -13,285 +13,229 @@
       rel="stylesheet"
       href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css"
     />
-    <!-- Glass -->
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      html {
-        font-size: 100%;
-        scroll-behavior: smooth;
-      }
-
-      body {
-        min-height: 100vh;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        background-image: url("https://www.lit.edu/getmedia/a90c3e48-94a3-453a-ae36-288df48a4bba/B_2.jpg");
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 1.25rem;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-          sans-serif;
-      }
-
-      /* Background pattern */
-      body::before {
-        content: "";
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: radial-gradient(
-            circle at 20% 50%,
-            rgba(120, 119, 198, 0.3) 0%,
-            transparent 50%
-          ),
-          radial-gradient(
-            circle at 80% 20%,
-            rgba(255, 119, 198, 0.3) 0%,
-            transparent 50%
-          ),
-          radial-gradient(
-            circle at 40% 80%,
-            rgba(120, 219, 255, 0.3) 0%,
-            transparent 50%
-          );
-        pointer-events: none;
-      }
-
-      .container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
-        gap: 1.25rem;
-        max-width: 62.5rem;
-        width: 100%;
-      }
-
-      /* Liquid glass effect class */
-      .glass {
-        position: relative;
-        background: rgba(255, 255, 255, 0.15);
-        backdrop-filter: blur(2px) saturate(180%);
-        border: 0.0625rem solid rgba(255, 255, 255, 0.8);
-        border-radius: 2rem;
-        padding: 1.25rem;
-        box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2),
-          inset 0 4px 20px rgba(255, 255, 255, 0.3);
-      }
-
-      .glass::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 2rem;
-        backdrop-filter: blur(1px);
-        box-shadow: inset -10px -8px 0px -11px rgba(255, 255, 255, 1),
-          inset 0px -9px 0px -8px rgba(255, 255, 255, 1);
-        opacity: 0.6;
-        z-index: -1;
-        filter: blur(1px) drop-shadow(10px 4px 6px black) brightness(115%);
-        pointer-events: none;
-      }
-
-      /* Content style */
-      .card-header {
-        display: flex;
-        align-items: center;
-        gap: 0.9375rem;
-        margin-bottom: 0.9375rem;
-      }
-
-      .icon {
-        position: relative;
-        width: 2.5rem;
-        height: 2.5rem;
-        border-radius: 0.625rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.25rem;
-      }
-
-      .icon::after {
-        border-radius: 0.625rem;
-      }
-
-      .card-title {
-        font-size: 1.5rem;
-        font-weight: 600;
-        color: black;
-        margin: 0;
-      }
-
-      .card-subtitle {
-        font-size: 1.1rem;
-        color: black;
-        margin: 0.3125rem 0 0 0;
-      }
-
-      .card-content {
-        color: black;
-        line-height: 1.6;
-      }
-
-      .card-content-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0.938rem;
-        margin-top: 0.938rem;
-      }
-
-      .card-content-icon {
-        background: rgba(0, 0, 0, 0.1);
-        border-radius: 10px;
-        margin: 0 auto 5px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        aspect-ratio: 1;
-      }
-
-      .btn-glass {
-        position: relative;
-        color: black;
-        padding: 0.75rem 1.5rem;
-        border-radius: 0.75rem;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        margin-top: 0.9375rem;
-        display: inline-block;
-        text-decoration: none;
-      }
-
-      .btn-glass::after {
-        border-radius: 0.75rem;
-      }
-
-      .btn-glass:hover {
-        background: rgba(255, 255, 255, 0.3);
-        transform: scale(1.05);
-      }
-
-      /* Musical Widget */
-      .music-widget {
-        position: relative;
-        display: flex;
-        align-items: center;
-        gap: 0.9375rem;
-        padding: 0.9375rem;
-        border-radius: 0.9375rem;
-        margin-top: 0.9375rem;
-      }
-
-      .music-widget::after {
-        border-radius: 0.9375rem;
-      }
-
-      .album-cover {
-        width: 3.125rem;
-        height: 3.125rem;
-        background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
-        border-radius: 0.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        font-weight: bold;
-      }
-
-      .play-btn {
-        width: 2.5rem;
-        height: 2.5rem;
-        background: rgba(255, 255, 255, 0.3);
-        border: none;
-        border-radius: 50%;
-        color: white;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: all 0.3s ease;
-      }
-
-      .play-btn:hover {
-        background: rgba(255, 255, 255, 0.5);
-        transform: scale(1.1);
-      }
-
-      /* Responsive */
-      @media (max-width: 550) {
-        .container {
-          grid-template-columns: 1fr;
-        }
-      }
-    </style>
   </head>
 
   <body>
-    <div class="container">
-      <!-- Card base glass -->
-      <div class="glass">
-        <div class="card-header">
-          <div class="icon glass">🎵</div>
-          <div>
-            <h3 class="card-title">Today's Hits</h3>
-            <p class="card-subtitle">LIT Music Hits</p>
+    <!-- Risk MGMT -->
+    <style>
+      .risk-mgmt-container {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        line-height: 1.6;
+        align-items: stretch;
+      }
+      .risk-mgmt-item {
+        display: flex;
+        flex: 1 1 300px;
+      }
+      .risk-mgmt-item .card {
+        display: flex;
+        flex: 1; /* Ensures the card takes full height of the parent */
+        flex-direction: column;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+      .risk-mgmt-item .card-header {
+        background-color: #1b6ec2;
+        font-size: 1.25rem;
+        padding: 1rem;
+        color: white;
+        text-align: center;
+      }
+      .risk-mgmt-item .card-body {
+        display: flex;
+        flex-grow: 1; /* Let the body grow to fill remaining space */
+        flex-direction: column;
+        padding: 1rem;
+      }
+      .risk-mgmt-item .final-doc {
+        border-left: 6px solid #ec2027;
+        background-color: #ffe6e9;
+        margin: 10px 0;
+        padding: 15px;
+        border-radius: 8px;
+        font-weight: 600;
+        color: #721c24;
+      }
+    </style>
+    <div class="risk-mgmt-container">
+      <div class="risk-mgmt-item">
+        <div class="card">
+          <div class="card-header">
+            <strong>Hazard Communication Program</strong>
           </div>
-        </div>
-        <div class="music-widget glass">
-          <div class="album-cover">♪</div>
-          <div style="flex: 1">
-            <div style="color: black; font-weight: 500">Current Song</div>
-            <div style="color: rgba(0, 0, 0, 0.7); font-size: 14px">
-              Artist Name
+          <div class="card-body">
+            <p>
+              The purpose of the Hazard Communication Program is to inform
+              employees of the hazards associated with chemicals and to ensure
+              the safe use, handling, storage, and disposal of chemicals. Key
+              elements of the program include:
+            </p>
+            <ul>
+              <li>Supervisor's responsibilities</li>
+              <li>Training requirements</li>
+              <li>Hazard identification</li>
+              <li>Chemical labeling</li>
+              <li>Safety Data Sheets</li>
+              <li>Chemical inventories (Workplace Chemical Lists)</li>
+            </ul>
+            <div class="final-doc">
+              <i class="fa-solid fa-file-pdf"></i>&nbsp;
+              <a
+                href="https://www.lit.edu/getmedia/af77f849-c9b7-4d4d-bb7f-d185e029fc8a/lit-hazcomm-program-final-062025.pdf"
+                >LIT Hazard Communication Program (Final Document)</a
+              >
             </div>
           </div>
-          <button class="play-btn">▶</button>
         </div>
       </div>
-
-      <div class="glass">
-        <div class="card-header">
-          <div class="icon glass">📝</div>
-          <div>
-            <h3 class="card-title">Reminders</h3>
-            <p class="card-subtitle">3 items</p>
+      <div class="risk-mgmt-item">
+        <div class="card">
+          <div class="card-header">
+            <strong>Resources</strong>
           </div>
-        </div>
-        <div class="card-content">
-          <div style="margin-bottom: 10px">○ Chores</div>
-          <div style="margin-bottom: 10px">○ Get food</div>
-          <div>○ Study!</div>
-        </div>
-      </div>
-
-      <div class="glass">
-        <div class="card-header">
-          <div class="icon glass">✨</div>
-          <div>
-            <h3 class="card-title">Glassmorphism</h3>
-            <p class="card-subtitle">Modern Design</p>
+          <div class="card-body">
+            <p>
+              The documents below have been developed to communicate hazard and
+              safety information regarding hazardous substances to employees and
+              to comply with the Texas Hazard Communication Act.
+            </p>
+            <ul class="fa-ul">
+              <li>
+                <span class="fa-li"
+                  ><i class="fa-solid fa-file-excel"></i
+                ></span>
+                <a
+                  href="https://www.lit.edu/getmedia/45656b9f-9a07-4a99-836e-67a63cfc361a/hazwaste-disposal-inventory-workbook.xlsx"
+                  aria-label="Visit Lamar Institute of Technology"
+                  >HazWaste Disposal Inventory Workbook</a
+                >
+              </li>
+              <li>
+                <span class="fa-li"
+                  ><i class="fa-solid fa-file-excel"></i
+                ></span>
+                <a
+                  href="https://www.lit.edu/getmedia/20d7ae3e-5fc6-4f3e-a55b-da2bcd920445/in-use-and-stored-chemicals-and-materials-inventory-workbook.xlsx"
+                  aria-label="Visit Lamar Institute of Technology"
+                  >In-Use &amp; Stored Chemicals &amp; Materials Inventory
+                  Workbook</a
+                >
+              </li>
+              <li>
+                <span class="fa-li"
+                  ><i class="fa-solid fa-file-excel"></i
+                ></span>
+                <a
+                  href="https://www.lit.edu/getmedia/6f6c4a26-d6ef-4a74-b989-1c7df0a3a30c/experiment-hazard-analysis-blank.xlsx"
+                  aria-label="Visit Lamar Institute of Technology"
+                  >Experiment Hazard Analysis Blank</a
+                >
+              </li>
+              <li>
+                <span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span>
+                <a
+                  href="https://www.lit.edu/getmedia/f10b0f2e-3256-4925-bfce-cf400d6e50d0/hazmat-secondary-container-label.pdf"
+                  aria-label="Visit Lamar Institute of Technology"
+                  >HAZMAT Secondary Container Label</a
+                >
+              </li>
+              <li>
+                <span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span>
+                <a
+                  href="https://www.lit.edu/getmedia/c9e95e99-01c7-4b4f-bdc9-43bc1aa4e113/chemical-segregation-and-storage-table.pdf"
+                  aria-label="Visit Lamar Institute of Technology"
+                  >Chemical Segregation and Storage Table</a
+                >
+              </li>
+              <li>
+                <span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span>
+                <a
+                  href="https://www.lit.edu/getmedia/62f9b990-a233-4736-87a5-d2902d68d0d9/chemical-storage-flowchart.pdf"
+                  aria-label="Visit Lamar Institute of Technology"
+                  >Chemical Storage Flowchart</a
+                >
+              </li>
+              <li>
+                <span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span>
+                <a
+                  href="https://www.lit.edu/getmedia/e502e69b-b3ed-4dd2-9aff-1bd538cb22df/color-code-storage-pic.pdf"
+                  aria-label="Visit Lamar Institute of Technology"
+                  >Color Code Storage Pic</a
+                >
+              </li>
+              <li>
+                <span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span>
+                <a
+                  href="https://www.lit.edu/getmedia/3c8b4c76-def3-46c0-bc9c-5abe3cda31c8/osha-3165-job-safety-and-health-its-the-law-color-poster.pdf"
+                  aria-label="Visit Lamar Institute of Technology"
+                  >OSHA 3165 Job Safety &amp; Health</a
+                >
+              </li>
+              <li>
+                <span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span>
+                <a
+                  href="https://www.lit.edu/getmedia/ee1c9d56-59fe-4d69-84e7-786c6d0d3134/osha-hazcom-final-ruling.pdf"
+                  aria-label="Visit Lamar Institute of Technology"
+                  >OSHA HazCom Final Ruling</a
+                >
+              </li>
+              <li>
+                <span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span>
+                <a
+                  href="https://www.lit.edu/getmedia/7da30d76-1d86-40a0-8371-637c7103339e/osha-hazcommstandard-labels-and-pictograms.pdf"
+                  aria-label="Visit Lamar Institute of Technology"
+                  >OSHA HazComm Standard Labels &amp; Pictograms</a
+                >
+              </li>
+              <li>
+                <span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span>
+                <a
+                  href="https://www.lit.edu/getmedia/62b9a8bd-0757-4cbb-ac60-67112512472c/osha-quick-card-nfpa-704-and-hazcom-2012-labels.pdf"
+                  aria-label="Visit Lamar Institute of Technology"
+                  >OSHA Quick Card NFPA 704 &amp; HazCom 2012 Labels</a
+                >
+              </li>
+              <li>
+                <span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span>
+                <a
+                  href="https://www.lit.edu/getmedia/1f9f8313-1d9b-4925-a83f-25ed2f69322b/osha-right-to-know-law-2023.pdf"
+                  aria-label="Visit Lamar Institute of Technology"
+                  >OSHA Right to Know Law</a
+                >
+              </li>
+              <li>
+                <span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span>
+                <a
+                  href="https://www.lit.edu/getmedia/9b229445-f681-49e7-b183-7d174f8f0375/risk-management-for-hazardous-chemicals-full.pdf"
+                  aria-label="Visit Lamar Institute of Technology"
+                  >Risk Management for Hazardous Chemicals</a
+                >
+              </li>
+              <li>
+                <span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span>
+                <a
+                  href="https://www.lit.edu/getmedia/9da1439d-09b0-4f47-92c9-4c6fd4089b0b/texas-dhhs-notice-to-employees.pdf"
+                  aria-label="Visit Lamar Institute of Technology"
+                  >Texas DHHS Notice to Employees</a
+                >
+              </li>
+              <li>
+                <span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span>
+                <a
+                  href="https://www.lit.edu/getmedia/22ffe24f-aed8-4d37-a897-b547be673023/wallet-card-ghs-pictograms.pdf"
+                  aria-label="Visit Lamar Institute of Technology"
+                  >Wallet Card GHS Pictograms</a
+                >
+              </li>
+            </ul>
           </div>
-        </div>
-        <div class="card-content">
-          <p>
-            The glass effect relies on transparency, background blur and thin
-            edges to create depth.
-          </p>
-          <a href="#" class="btn-glass glass">Discover more</a>
         </div>
       </div>
     </div>
