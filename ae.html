@@ -72,7 +72,132 @@
 
     <div class="row">
       <div class="col-sm-12 col-md-10">
-        <!-- YouTube Video - Workforce -->
+        <!-- /////////////////////////////////////////////////////////////-->
+
+        <!-- Workforce - HERO -->
+        <style>
+          .workforce-hero {
+            position: relative;
+            min-height: 40vh;
+            height: auto;
+            width: 100%;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            border-radius: 8px;
+          }
+
+          .workforce-hero {
+            position: relative;
+            background: url("https://www.lit.edu/getmedia/0c4a6cdf-ad6c-4ee1-b6da-cf32ef4dd02b/2048x700.png")
+              no-repeat top center/cover;
+          }
+
+          .workforce-hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(30, 68, 141, 0.65); /* primary with transparency */
+          }
+
+          .workforce-hero-content {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            padding: 0 20px;
+            box-sizing: border-box;
+          }
+
+          .workforce-hero h1 {
+            font-size: 3.2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+          }
+
+          .workforce-hero p {
+            font-size: 1.5rem;
+            font-weight: bold;
+            line-height: 1.6;
+          }
+
+          @media (max-width: 768px) {
+            .workforce-hero {
+              background: url("https://www.lit.edu/getmedia/855d666c-a1f0-43a2-9cea-d4f1fb6fdb6d/hta-bg-mobile.png")
+                no-repeat center center/cover;
+              min-height: 30vh;
+              padding: 30px 15px;
+            }
+
+            .workforce-hero h1 {
+              font-size: 2.5rem;
+            }
+
+            .workforce-hero p {
+              font-size: 1.1rem;
+            }
+          }
+
+          @media (max-width: 480px) {
+            .workforce-hero {
+              min-height: 250px;
+              padding: 20px 10px;
+            }
+
+            .workforce-hero h1 {
+              font-size: 2rem;
+            }
+
+            .workforce-hero p {
+              font-size: 1rem;
+            }
+          }
+
+          .text-bg {
+            background-color: rgba(
+              28,
+              117,
+              188,
+              0.6
+            ); /* primary alt with transparency */
+            padding: 40px;
+            border-radius: 8px;
+            display: inline-block;
+            animation: fadeIn 1.2s ease-out;
+            min-width: 100%;
+          }
+
+          @keyframes fadeIn {
+            from {
+              opacity: 0;
+              transform: translateY(10px);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+        </style>
+        <div class="workforce-hero workforce-hero">
+          <div class="workforce-hero-content">
+            <div class="text-bg">
+              <h1>Workforce Training and Continuing Education</h1>
+              <p>
+                Continuing & Community Education, Corporate Training, and more.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Workforce - YouTube Video -->
         <style>
           .workforce-video-container {
             display: grid;
@@ -180,7 +305,7 @@
             }
           }
         </style>
-        <section class="row workforce-video-container">
+        <section class="workforce-video-container">
           <div class="workforce-video-item-1">
             <div class="workforce-video-card">
               <div
@@ -199,7 +324,7 @@
           </div>
           <div class="workforce-video-item-2">
             <div class="workforce-video-card">
-              <h3>Workforce Training and Continuing Education</h3>
+              <!--<h3>Workforce Training and Continuing Education</h3>-->
               <p>
                 Want to boost or change your career? Get trained through LIT's
                 Workforce Training and Continuing Education office to increase
