@@ -70,563 +70,306 @@
       </div>
     </nav>
 
-    <style>
-      .sidebar-sub-drawer {
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-        box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.1);
-        border: 1px solid rgba(0, 0, 0, 0.3);
-        border-radius: 8px;
-      }
-
-      .sidebar-sub-drawer a {
-        text-decoration: none;
-        color: #1c75bc;
-        padding: 1rem 2rem;
-        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-      }
-
-      .sidebar-sub-drawer a:hover {
-        transform: translateX(-10px);
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
-        color: #1e448d;
-        background-color: #eee;
-        border-radius: 8px;
-      }
-
-      .test-container {
-        background-color: white;
-        padding: 20px;
-        border-radius: 8px;
-        margin-bottom: 20px;
-      }
-
-      .google-lit-search {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin-top: 20px;
-        width: 100%;
-        max-width: 450px;
-      }
-      .google-lit-search input {
-        margin-right: 10px;
-        padding: 8px;
-        font-size: 16px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        height: 100px;
-        font-size: 4rem;
-      }
-      .google-lit-search button {
-        width: 100%;
-        height: 50px;
-        padding: 8px 16px;
-        background-color: #1b6ec2;
-        color: white;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-      }
-    </style>
-
-    <!-- New Nav Menu -->
-    <style>
-      /* new nav */
-      .main-navigation {
-        max-width: 450px;
-        /* margin: 0 auto; */
-      }
-
-      .main-navigation ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
-
-      .main-navigation li {
-        border-bottom: 1px solid #ddd;
-      }
-
-      .main-navigation a,
-      .main-navigation button.nav-toggle {
-        display: block;
-        width: 100%;
-        padding: 6px 16px;
-        text-align: left;
-        background: #f8f8f8;
-        border: none;
-        font-size: 1.4rem;
-        cursor: pointer;
-        text-decoration: none;
-        color: #1e448d;
-        transition: background 0.3s;
-      }
-
-      .main-navigation button.nav-toggle::after {
-        font-size: 2rem;
-        content: "▸";
-        float: right;
-        transition: transform 0.3s;
-      }
-
-      .main-navigation li.open > button.nav-toggle::after {
-        transform: rotate(90deg);
-      }
-
-      .main-navigation ul ul {
-        display: none;
-      }
-
-      .main-navigation li.open > ul {
-        display: block;
-      }
-
-      /* Level 2 */
-      .main-navigation ul ul a,
-      .main-navigation ul ul button.nav-toggle {
-        background: #e7eef7;
-        padding-left: 48px;
-        border-left: 4px solid #1e448d; /* deep blue */
-      }
-
-      /* Level 3 */
-      .main-navigation ul ul ul a,
-      .main-navigation ul ul ul button.nav-toggle {
-        background: #d6e7f4;
-        padding-left: 80px;
-        border-left: 4px solid #ec2027; /* bold red */
-      }
-
-      /* Level 4 (if needed) */
-      .main-navigation ul ul ul ul a,
-      .main-navigation ul ul ul ul button.nav-toggle {
-        background: #f9e2e4;
-        padding-left: 112px;
-        border-left: 4px solid #1c75bc; /* vibrant blue */
-      }
-
-      /* Hover effects */
-      .main-navigation a:hover,
-      .main-navigation button.nav-toggle:hover {
-        color: #ec2027;
-        background: #dce7f4;
-      }
-
-      /* Active/expanded */
-      .main-navigation li.open > button.nav-toggle {
-        background: #cbddef;
-      }
-    </style>
-
-    <!-- IST Styles -->
-    <style>
-      .ist-container {
-        background-color: white;
-        padding: 20px;
-        border-radius: 8px;
-        margin-bottom: 20px;
-        line-height: 1.6;
-      }
-
-      .ist-container .urgent-note {
-        border-left: 6px solid #ec2027;
-        background-color: #ffe6e9;
-        margin: 10px 0;
-        padding: 15px;
-        border-radius: 8px;
-        font-weight: 600;
-        color: #721c24;
-      }
-
-      .ist-container .urgent-note p {
-        margin: 0;
-        padding: 0;
-        text-align: center;
-        color: #721c24;
-      }
-
-      .classes-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-      }
-
-      .classes-grid-item {
-        background-color: #ffffff;
-        padding: 0;
-        border-radius: 12px;
-        overflow: hidden;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-      }
-
-      /* Desktop: Wide screen */
-      @media (min-width: 1000px) {
-        .classes-grid {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 20px;
-        }
-      }
-
-      .classes-grid-item .card {
-        border: none; /* remove double borders */
-        box-shadow: none; /* let outer grid-item provide shadow */
-      }
-
-      .classes-grid-item .card-header {
-        background-color: #1b6ec2;
-        font-size: 1.25rem;
-        padding: 1rem;
-        color: white;
-        text-align: center;
-      }
-
-      .classes-grid-item .card-body {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        padding: 1rem;
-      }
-    </style>
-
     <div class="row">
       <div class="col-sm-12 col-md-10">
-        <div class="row ist-container">
-          <h3>Regional Police Academy In-service</h3>
-          <p>
-            All training is free to law enforcement in the region unless
-            otherwise noted in the posting. To register, please complete the
-            online form. For any questions, contact us @
-            <a
-              href="mailto:policeacademy@lit.edu"
-              aria-label="Visit Lamar Institute of Technology - Regional Police Academy In-service Training"
-              >policeacademy@lit.edu</a
-            >. You must have your agency's approval before registering for any
-            course listed.
-          </p>
-          <div class="urgent-note">
-            <p>
-              <strong>Important Information:</strong> The Multi-Purpose Center
-              (Paul and Connie Szuch Building) is located at 802 E. Lavaca in
-              Beaumont, Texas. This facility is located across the street from
-              the main campus of LIT. Training is held downstairs in the
-              conference room and upstairs in the in-service classroom #262 and
-              the cadet classroom #252.
-            </p>
-          </div>
+        <!-- YouTube Video - Workforce -->
+        <style>
+          .workforce-video-container {
+            display: grid;
+            gap: 1.5em;
+            grid-template-columns: 1fr;
+            background-color: white;
+            margin-bottom: 1.5em;
+            border-radius: 0.5em;
+            box-shadow: 0 7px 1px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            padding: 1rem;
+          }
 
-          <div class="urgent-note">
-            <p><strong>Please Note New Phone Number:</strong> (409) 257-0049</p>
-          </div>
+          .workforce-video-item-1,
+          .workforce-video-item-2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
 
-          <hr />
+          .workforce-video-card {
+            width: 100%;
+            padding: 1rem;
+          }
 
-          <h3>Upcoming In-service Classes</h3>
+          .workforce-video-card h3 {
+            color: #1c75bc;
+            font-size: 2rem;
+          }
 
-          <div class="classes-grid">
-            <!-- Supervisory and Investigatory Response to a Force Incident -->
-            <div class="classes-grid-item">
-              <div class="card">
-                <div class="card-header">
-                  <strong
-                    >Supervisory and Investigatory Response to a Force
-                    Incident</strong
-                  >
-                </div>
-                <div class="card-body">
-                  <h5>June 10-12, 2025 (8:00 AM - 5:00 PM daily)</h5>
-                  <p>
-                    This intensive 24-hour course covers all aspects of police
-                    use of force investigations, including officer-involved
-                    non-critical and critical force incidents, force against the
-                    mentally ill and emotionally disturbed, administrative and
-                    criminal investigative procedures, reporting, policy,
-                    agency/municipality liability, and civil/criminal legal
-                    ramifications.
-                  </p>
-                  <p>
-                    Designed for Investigators, Supervisors, Staff Officers, and
-                    Executive Staff (including the Chief Executive). This course
-                    would also greatly benefit police Legal Counsel, Union
-                    Representatives and Public Information Officers (PIOs).
-                  </p>
-                  <p>
-                    Taught by nationally recognized Police Use of Force expert
-                    Matt Morrow (Beaumont PD). Participants will receive a
-                    student workbook, "Supervisory On-Scene Critical Force
-                    Checklist" and "Public Safety Statement."
-                  </p>
+          .workforce-video-card p {
+            color: black;
+            font-size: 1rem;
+            margin-bottom: 1em;
+          }
 
-                  <div class="location-info">
-                    <h5>
-                      Lamar Institute of Technology - Regional Police Academy
-                    </h5>
-                    <address>
-                      805 E. Lavaca St. (Ballroom)<br />
-                      Beaumont, Texas 77705
-                    </address>
-                    <ul>
-                      <li>24 hours TCOLE Credit</li>
-                      <li>No Cost</li>
-                      <li>
-                        <a
-                          href="https://www.lit.edu/police-officer-in-service-registration-form"
-                          >Click Here to Register</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+          .workforce-video-button .button {
+            display: inline-block;
+            color: white;
+            background-color: red;
+            text-decoration: none;
+            text-align: center;
+            padding: 0.5rem 1rem;
+            border: 1px solid white;
+            border-radius: 0.25rem;
+            font-size: 1rem;
+          }
 
-            <!-- Crimes Scene Investigation Course TCOLE #2106 -->
-            <div class="classes-grid-item">
-              <div class="card">
-                <div class="card-header">
-                  <strong>Crimes Scene Investigation Course TCOLE #2106</strong>
-                </div>
-                <div class="card-body">
-                  <h5>June 23-27, 2025 (8:00 AM - 5:00 PM)</h5>
+          .workforce-video-button .button:hover {
+            background: rgba(236, 32, 39, 0.5);
+          }
 
-                  <div class="location-info">
-                    <h5>
-                      Lamar Institute of Technology - Regional Police Academy
-                    </h5>
-                    <address>
-                      Academy Classroom 252<br />
-                      805 E. Lavaca St.<br />
-                      Beaumont, Texas 77705
-                    </address>
-                    <ul>
-                      <li>24 hours TCOLE Credit</li>
-                      <li>No Cost</li>
-                      <li>
-                        <a
-                          href="https://www.lit.edu/police-officer-in-service-registration-form"
-                          >Click Here to Register</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+          .workforce-video-iframe-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            overflow: hidden;
+            border-radius: 12px;
+          }
 
-            <!-- Commercial Sexual Exploitation Identification Tool (CSE-IT) Training for Law Enforcement & Criminal Justice Personnel -->
-            <div class="classes-grid-item">
-              <div class="card">
-                <div class="card-header">
-                  <strong>
-                    Commercial Sexual Exploitation Identification Tool (CSE-IT)
-                    Training for Law Enforcement & Criminal Justice Personnel -
-                    July 24, 2025 (8:00 AM - 5:00 PM)
-                  </strong>
-                </div>
-                <div class="card-body">
-                  <img
-                    alt="July 24, 2025 (8:00 AM - 5:00 PM) - Commercial Sexual Exploitation Identification Tool (CSE-IT) Training for Law Enforcement & Criminal Justice Personnel"
-                    class="img-fluid img-thumbnail"
-                    src="https://www.lit.edu/getmedia/8c7f02f5-77c1-4ca5-a486-990ba2a9e43e/CSE-IT-Training.png"
-                    title="July 24, 2025 (8:00 AM - 5:00 PM) - Commercial Sexual Exploitation Identification Tool (CSE-IT) Training for Law Enforcement & Criminal Justice Personnel"
-                  />
+          .workforce-video-iframe-container iframe,
+          .workforce-video-iframe-container img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+            object-fit: cover;
+          }
 
-                  <hr />
-                  <div class="location-info">
-                    <h5>
-                      Lamar Institute of Technology - Regional Police Academy
-                    </h5>
-                    <address>
-                      Multi-purpose Center Ballroom<br />
-                      805 E. Lavaca St.<br />
-                      Beaumont, Texas 77705
-                    </address>
-                    <ul>
-                      <li>6 hours TCOLE Credit</li>
-                      <li>
-                        <a
-                          href="https://www.lit.edu/police-officer-in-service-registration-form"
-                          >Click Here to Register</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+          @media screen and (min-width: 701px) {
+            .workforce-video-container {
+              grid-template-columns: 1fr 1fr;
+            }
 
-            <!-- Human Sex Trafficking -->
-            <div class="classes-grid-item">
-              <div class="card">
-                <div class="card-header">
-                  <strong
-                    >Human Sex Trafficking - September 24-25 (8:00 AM - 5:00
-                    PM)</strong
-                  >
-                </div>
-                <div class="card-body">
-                  <img
-                    alt="September 24-25 (8:00 AM - 5:00 PM) - Human Sex Trafficking"
-                    class="img-fluid img-thumbnail"
-                    src="https://www.lit.edu/getmedia/8d58a7ea-35c2-4bd7-ab8e-94a405d0ca88/Heidi-Chance.png"
-                    title="September 24-25 (8:00 AM - 5:00 PM) - Human Sex Trafficking"
-                  />
-                  <hr />
+            .workforce-video-item-1 {
+              order: 1;
+            }
 
-                  <div class="location-info">
-                    <h5>
-                      Lamar Institute of Technology - Regional Police Academy
-                    </h5>
-                    <address>
-                      Workforce / Nursing Building room 101<br />
-                      915 E. Lavaca St.<br />
-                      Beaumont, Texas 77705
-                    </address>
-                    <ul>
-                      <li>16 hours TCOLE 6050 Human Sex Trafficking Credit</li>
-                      <li>
-                        <a
-                          href="https://www.lit.edu/police-officer-in-service-registration-form"
-                          >Click Here to Register</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+            .workforce-video-item-2 {
+              order: 2;
+            }
 
-            <!-- Media Interaction Training -->
-            <div class="classes-grid-item">
-              <div class="card">
-                <div class="card-header">
-                  <strong>
-                    Media Interaction Training - October 14-15 (8:00 AM - 5:00
-                    PM)
-                  </strong>
-                </div>
-                <div class="card-body">
-                  <img
-                    alt="October 14-15 (8:00 AM - 5:00 PM) - Media Interaction Training"
-                    class="img-fluid img-thumbnail"
-                    src="https://www.lit.edu/getmedia/c4bca97c-2f1a-4d0d-b95b-20ff6c840823/PIO.png"
-                    title="October 14-15 (8:00 AM - 5:00 PM) - Media Interaction Training"
-                  />
-                  <hr />
+            .workforce-video-card h3 {
+              font-size: 2.2rem;
+            }
 
-                  <div class="location-info">
-                    <h5>
-                      Lamar Institute of Technology - Regional Police Academy
-                    </h5>
-                    <address>
-                      Workforce / Nursing Building room 101<br />
-                      915 E. Lavaca St.<br />
-                      Beaumont, Texas 77705
-                    </address>
-                    <ul>
-                      <li>
-                        16 hours TCOLE 6038 Public Information Officer Credit
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.lit.edu/police-officer-in-service-registration-form"
-                          >Click Here to Register</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+            .workforce-video-card p {
+              font-size: 1.1rem;
+            }
+          }
 
-            <!-- Enhancing Investigation through Genetic Genealogy -->
-            <div class="classes-grid-item">
-              <div class="card">
-                <div class="card-header">
-                  <strong>
-                    Enhancing Investigation Through Genetic Genealogy - November
-                    13-14 (8:00 AM - 5:00 PM)
-                  </strong>
-                </div>
-                <div class="card-body">
-                  <img
-                    alt="November 13-14 (8:00 AM - 5:00 PM) - Enhancing Investigation Through Genetic Genealogy"
-                    class="img-fluid img-thumbnail"
-                    src="https://www.lit.edu/getmedia/0af49e1d-6a97-4759-99db-88b54ca0ac97/Genetic-Genealogy.png"
-                    title="November 13-14 (8:00 AM - 5:00 PM) - Enhancing Investigation Through Genetic Genealogy"
-                  />
-                  <hr />
+          @media screen and (min-width: 1051px) {
+            .workforce-video-container {
+              grid-template-columns: 2fr 3fr;
+            }
 
-                  <div class="location-info">
-                    <h5>
-                      Lamar Institute of Technology - Regional Police Academy
-                    </h5>
-                    <address>
-                      Workforce and Nursing Building Room 101<br />
-                      915 E. Lavaca St.<br />
-                      Beaumont, Texas 77705
-                    </address>
-                    <ul>
-                      <li>16 hours TCOLE 3850 General DNA Credit</li>
-                      <li>
-                        <a
-                          href="https://ncjtc.fvtc.edu/trainings/TR00011181/TRI2662605/enhancing-investigations-through-genetic-genealogy"
-                          >Click Here to Register</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+            .workforce-video-card h3 {
+              font-size: 2.4rem;
+            }
 
-            <!-- Casting a Digital Footprint -->
-            <div class="classes-grid-item">
-              <div class="card">
-                <div class="card-header">
-                  <strong>
-                    Casting a Digital Footprint - November 17-18 (8:00 AM - 5:00
-                    PM)
-                  </strong>
-                </div>
-                <div class="card-body">
-                  <img
-                    alt="November 17-18 (8:00 AM - 5:00 PM) - Casting a Digital Footprint"
-                    class="img-fluid img-thumbnail"
-                    src="https://www.lit.edu/getmedia/c884c3b3-4742-4e57-9c0d-92f91b34b4fb/Digital-Footprint.png"
-                    title="November 17-18 (8:00 AM - 5:00 PM) - Casting a Digital Footprint"
-                  />
-                  <hr />
-
-                  <div class="location-info">
-                    <h5>
-                      Lamar Institute of Technology - Regional Police Academy
-                    </h5>
-                    <address>
-                      Small Classroom 262<br />
-                      805 E. Lavaca St.<br />
-                      Beaumont, Texas 77705
-                    </address>
-                    <ul>
-                      <li>16 hours TCOLE 3373 Cyber Investigation Credits</li>
-                      <li>
-                        <a
-                          href="https://ncjtc.fvtc.edu/trainings/TR00006400/TRI2878945/casting-the-digital-footprint"
-                          >Click Here to Register</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+            .workforce-video-card p {
+              font-size: 1.2rem;
+            }
+          }
+        </style>
+        <section class="row workforce-video-container">
+          <div class="workforce-video-item-1">
+            <div class="workforce-video-card">
+              <div
+                class="workforce-video-iframe-container"
+                id="workforce-video-container"
+              >
+                <img
+                  src="https://img.youtube.com/vi/0IbO8vgaDEY/hqdefault.jpg"
+                  alt="Lamar Institute of Technology - Workforce Training and Continuing Education"
+                  id="workforce-video-placeholder"
+                  style="cursor: pointer"
+                  class="img-fluid"
+                />
               </div>
             </div>
           </div>
-        </div>
-        <div class="row test-container">
+          <div class="workforce-video-item-2">
+            <div class="workforce-video-card">
+              <h3>Workforce Training and Continuing Education</h3>
+              <p>
+                Want to boost or change your career? Get trained through LIT's
+                Workforce Training and Continuing Education office to increase
+                your competitiveness and job satisfaction.
+              </p>
+              <p>
+                We offer a variety of non-credit education and training programs
+                as well as customized training for employers.
+              </p>
+              <div class="workforce-video-button">
+                <a
+                  class="button"
+                  href="mailto:workforcetraining@lit.edu"
+                  target="_blank"
+                  aria-label="Email workforcetraining@lit.edu"
+                  >Email Us</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <script>
+          document
+            .getElementById("workforce-video-placeholder")
+            .addEventListener("click", function () {
+              var iframe = document.createElement("iframe");
+              iframe.src =
+                "https://www.youtube.com/embed/0IbO8vgaDEY?autoplay=1";
+              iframe.title = "Workforce Training and Continuing Education";
+              iframe.frameBorder = "0";
+              iframe.allow =
+                "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+              iframe.referrerPolicy = "strict-origin-when-cross-origin";
+              iframe.allowFullscreen = true;
+
+              var videoContainer = document.getElementById(
+                "workforce-video-container"
+              );
+              videoContainer.innerHTML = "";
+              videoContainer.appendChild(iframe);
+            });
+        </script>
+
+        <!-- /////////////////////////////////////////////////////////////-->
+
+        <!-- New Nav Menu -->
+        <style>
+          .menu-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+          }
+
+          /* new nav */
+          .main-navigation {
+            max-width: 450px;
+            /* margin: 0 auto; */
+          }
+
+          .main-navigation ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+          }
+
+          .main-navigation li {
+            border-bottom: 1px solid #ddd;
+          }
+
+          .main-navigation a,
+          .main-navigation button.nav-toggle {
+            display: block;
+            width: 100%;
+            padding: 6px 16px;
+            text-align: left;
+            background: #f8f8f8;
+            border: none;
+            font-size: 1.4rem;
+            cursor: pointer;
+            text-decoration: none;
+            color: #1e448d;
+            transition: background 0.3s;
+          }
+
+          .main-navigation button.nav-toggle::after {
+            font-size: 2rem;
+            content: "▸";
+            float: right;
+            transition: transform 0.3s;
+          }
+
+          .main-navigation li.open > button.nav-toggle::after {
+            transform: rotate(90deg);
+          }
+
+          .main-navigation ul ul {
+            display: none;
+          }
+
+          .main-navigation li.open > ul {
+            display: block;
+          }
+
+          /* Level 2 */
+          .main-navigation ul ul a,
+          .main-navigation ul ul button.nav-toggle {
+            background: #e7eef7;
+            padding-left: 48px;
+            border-left: 4px solid #1e448d; /* deep blue */
+          }
+
+          /* Level 3 */
+          .main-navigation ul ul ul a,
+          .main-navigation ul ul ul button.nav-toggle {
+            background: #d6e7f4;
+            padding-left: 80px;
+            border-left: 4px solid #ec2027; /* bold red */
+          }
+
+          /* Level 4 (if needed) */
+          .main-navigation ul ul ul ul a,
+          .main-navigation ul ul ul ul button.nav-toggle {
+            background: #f9e2e4;
+            padding-left: 112px;
+            border-left: 4px solid #1c75bc; /* vibrant blue */
+          }
+
+          /* Hover effects */
+          .main-navigation a:hover,
+          .main-navigation button.nav-toggle:hover {
+            color: #ec2027;
+            background: #dce7f4;
+          }
+
+          /* Active/expanded */
+          .main-navigation li.open > button.nav-toggle {
+            background: #cbddef;
+          }
+
+          .google-lit-search {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+            width: 100%;
+            max-width: 450px;
+          }
+          .google-lit-search input {
+            margin-right: 10px;
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            height: 100px;
+            font-size: 4rem;
+          }
+          .google-lit-search button {
+            width: 100%;
+            height: 50px;
+            padding: 8px 16px;
+            background-color: #1b6ec2;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+          }
+        </style>
+        <div class="row menu-container">
           <hr />
           <div class="col-md-6">
             <h5>Current Navigation Menu</h5>
@@ -1679,6 +1422,32 @@
         </div>
       </div>
       <div class="col-sm-12 col-md-2">
+        <style>
+          .sidebar-sub-drawer {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+          }
+
+          .sidebar-sub-drawer a {
+            text-decoration: none;
+            color: #1c75bc;
+            padding: 1rem 2rem;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+          }
+
+          .sidebar-sub-drawer a:hover {
+            transform: translateX(-10px);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+            color: #1e448d;
+            background-color: #eee;
+            border-radius: 8px;
+          }
+        </style>
         <div class="sidebar-sub-drawer">
           <a href="./aa.html">Veteran Services</a>
           <a href="./ab.html">VA Education Benefits</a>
