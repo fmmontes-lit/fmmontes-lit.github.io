@@ -212,6 +212,17 @@
             background-color: #ec2027;
             color: white;
           }
+
+          #lit-online-contact {
+            background-color: #f8f9fa;
+            border-radius: 0.08rem;
+            padding: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          }
+
+          .form-group {
+            margin-bottom: 0.5rem;
+          }
         </style>
 
         <div class="page-content">
@@ -272,10 +283,240 @@
               </p>
             </div>
 
+            <!-- BEGIN CONTACT FORM CARD -->
             <div class="lit-online-card">
               <h3>Request More Information</h3>
-              <p>ADD FORM LATER</p>
+              <form
+                id="lit-online-contact"
+                action="/"
+                method="post"
+                enctype="multipart/form-data"
+                novalidate
+              >
+                <!-- FIRST NAME -->
+                <div class="form-group">
+                  <label for="first-name">First Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="first-name"
+                    name="first-name"
+                    placeholder="First name"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Please enter your first name.
+                  </div>
+                </div>
+                <!---------------------------------------------------------->
+
+                <!-- LAST NAME -->
+                <div class="form-group">
+                  <label for="last-name">Last Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="last-name"
+                    name="last-name"
+                    placeholder="Last name"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Please enter your last name.
+                  </div>
+                </div>
+                <!---------------------------------------------------------->
+
+                <!-- PHONE -->
+                <div class="form-group">
+                  <label for="phone">Phone</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="phone"
+                    name="phone"
+                    placeholder="phone"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Please enter your phone number.
+                  </div>
+                </div>
+                <!---------------------------------------------------------->
+
+                <!-- EMAIL -->
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Email address"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Please enter a valid email address.
+                  </div>
+                </div>
+                <!---------------------------------------------------------->
+
+                <!-- PROGRAM SELECT -->
+                <div class="form-group">
+                  <label for="selectedProgram">Program of Interest</label>
+                  <select
+                    class="form-control"
+                    data-val="true"
+                    data-val-required="Please provide a reason for your contact."
+                    id="selectedProgram"
+                    name="selectedProgram"
+                    required="required"
+                  >
+                    <option value="">Select</option>
+                    <option value="business">Business</option>
+                    <option value="accounting">Accounting</option>
+                    <option value="mgmtEntrepreneurship">
+                      Management and Entrepreneurship
+                    </option>
+                    <option value="realEstate">Real Estate</option>
+                    <option value="genEd">General Education</option>
+                    <option value="teaching">Teaching</option>
+
+                    <option value="bioScience">Biological Science</option>
+                    <option value="healthScience">Health Science</option>
+                    <option value="healthInfoTech">
+                      Health Information Technology
+                    </option>
+                    <option value="healthInformatics">
+                      Health Informatics
+                    </option>
+                    <option value="medCoding">Medical Coding Specialist</option>
+                    <option value="crimJustice">Criminal Justice</option>
+                    <option value="crimJusticeGroups">
+                      Criminal Justice Security Threat Groups
+                    </option>
+                    <option value="emerMgmtHMSecurity">
+                      Emergency Management and Homeland Security
+                    </option>
+                    <option value="workforceCont">
+                      Workforce and Continuing Education
+                    </option>
+                    <option value="undecided">Undecided/Other</option>
+                  </select>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" id="submitBtn" class="btn btn-primary">
+                  Submit
+                </button>
+                <!---------------------------------------------------------->
+              </form>
             </div>
+            <script>
+              function validateForm() {
+                let isValid = true;
+
+                // Validate Email
+                const email = document.getElementById("email");
+                if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
+                  email.setCustomValidity("Please enter a valid email address");
+                  isValid = false;
+                } else {
+                  email.setCustomValidity("");
+                }
+
+                // Validate Phone Numbers
+                const phoneFields = ["phone"];
+                phoneFields.forEach((field) => {
+                  const phone = document.getElementById(field);
+                  if (
+                    phone.value &&
+                    !/^\d{10}$/.test(phone.value.replace(/\D/g, ""))
+                  ) {
+                    phone.setCustomValidity(
+                      "Please enter a valid 10-digit phone number"
+                    );
+                    isValid = false;
+                  } else {
+                    phone.setCustomValidity("");
+                  }
+                });
+
+                // Validate Selected Program
+                const program = document.getElementById("selectedProgram");
+                if (!program.value) {
+                  program.setCustomValidity(
+                    "Please select a program of interest"
+                  );
+                  isValid = false;
+                } else {
+                  program.setCustomValidity("");
+                }
+
+                return isValid;
+              }
+
+              document
+                .getElementById("lit-online-contact")
+                .addEventListener("submit", function (event) {
+                  event.preventDefault();
+
+                  if (!validateForm()) {
+                    console.log("Form is not valid");
+                    event.stopPropagation();
+                    this.classList.add("was-validated");
+                    return;
+                  }
+
+                  // Collect form values
+                  const form = this;
+                  const formData = new FormData(form);
+
+                  // Check required fields
+                  const requiredInputs =
+                    document.querySelectorAll("input[required]");
+                  let allRequiredFilled = true;
+
+                  for (let i = 0; i < requiredInputs.length; i++) {
+                    if (!requiredInputs[i].value) {
+                      allRequiredFilled = false;
+                      break;
+                    }
+                  }
+
+                  if (allRequiredFilled) {
+                    // Log all form data keys and values for debugging
+                    for (const [key, value] of formData.entries()) {
+                      console.log(`${key}: ${value}`);
+                    }
+
+                    // Make the fetch request (adjust the URL when ready)
+                    fetch("/LIT-Online-Contact-Form", {
+                      method: "POST",
+                      body: formData, // No need to set headers for FormData
+                    })
+                      .then((response) => response.json())
+                      .then((data) => {
+                        if (data.success) {
+                          console.log("Success:", data.message);
+                        } else {
+                          console.error("Server error:", data.message);
+                        }
+                      })
+                      .catch((error) => {
+                        console.error("Network error:", error);
+                      });
+                  }
+                });
+
+              document.addEventListener("DOMContentLoaded", function () {
+                document.getElementById("first-name").value = "Forrest";
+                document.getElementById("last-name").value = "Montes";
+                document.getElementById("phone").value = "111-222-3333";
+                document.getElementById("email").value = "fmmontes@lit.edu";
+              });
+            </script>
+            <!-- END CONTACT FORM CARD ------------------------------------------>
           </div>
           <!-- /////////////////////////////////////////////////////////// -->
 
@@ -987,6 +1228,228 @@
               <p>
                 Need help along the way? The LIT team is just an email or phone
                 call away!
+              </p>
+
+              <h3>1 MAKE THIS SECTION INTO AN ACCORDION</h3>
+              <p>
+                <strong
+                  >ACCORDION LINK -What should I do before class starts?</strong
+                >
+              </p>
+              <p>
+                Please make every effort to prepare yourself and your computer
+                prior to the first day of class.
+              </p>
+
+              <p><strong>Before class starts:</strong></p>
+              <ul>
+                <li>
+                  Run the
+                  <a
+                    href="https://help.blackboard.com/Learn/Student/Ultra/Getting_Started/Browser_Support/Browser_Checker"
+                    >Browser Checker</a
+                  >
+                  to determine if your browser is compatable for our Learning
+                  Management System: Blackboard.
+                </li>
+                <ul>
+                  <li>
+                    If you receive all green checks, the compatibility check was
+                    successful.
+                  </li>
+                  <li>
+                    If you received a red "x", follow the repair instructions.
+                  </li>
+                  <li>
+                    For technical assistance, contact the LIT helpdesk at
+                    409-839-2074 or
+                    <a href="mailto:helpdesk@lit.edu">helpdesk@lit.edu</a>.
+                  </li>
+                </ul>
+                <li>
+                  Review videos on how you will submit assignments, view your
+                  grades, interact on discussion boards, and take test within
+                  the learning management system and attempt these tasks in the
+                  orientation course found in your course list the first few
+                  weeks of the semester.
+                </li>
+                <ul>
+                  <li>
+                    <a
+                      href="https://youtu.be/ga62ByySsAc?si=B-1rBPjpV1ynD4FV"
+                      target="_blank"
+                      >Introduction to Ultra Course View</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://youtu.be/6pYsU4xT3xE?si=MKP4Hgkf7UNKibSe"
+                      target="_blank"
+                      >Notification Settings</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://youtu.be/vyejvk0Xoic?si=rYztDftKDzTiiwzg"
+                      target="_blank"
+                      >Assignment Submission</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://youtu.be/Cmdi6elETPQ?si=JI3u8uK3y82V0g_y"
+                      target="_blank"
+                      >Discussions</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://youtu.be/V6Zxl2YK5OM?si=Ot71U-1F_zaWDZjF"
+                      target="_blank"
+                      >Grades</a
+                    >
+                  </li>
+                </ul>
+                <li>
+                  Preview the course
+                  <a href="https://www.lit.edu/syllabi">syllabus</a> to purchase
+                  and/or gather required course material.
+                </li>
+              </ul>
+              <p>
+                Registered course enrollments should display within 2-4 hours
+                after enrollment but they will not be available to access until
+                the first day of the semester.
+              </p>
+
+              <h3>2 MAKE THIS SECTION INTO AN ACCORDION</h3>
+              <p>
+                <strong
+                  >ACCORDION LINK - What should I do the first day of
+                  class?</strong
+                >
+              </p>
+              <p>
+                The first day of class you will want to log in to Blackboard via
+                myLIT and familiarize yourself with your class and instructors
+                preferred method of communication.
+              </p>
+              <p>
+                In most cases the first day of class will be the first
+                opportunity you have to login to your class.
+              </p>
+              <h5>Username and Password</h5>
+              <ul>
+                <li>
+                  Usernames and passwords are generated automatically by the
+                  system.
+                  <ul>
+                    <li>
+                      Your instructor will <strong>NOT</strong> know your log in
+                      credentials.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Username will be your studentID@my.lit.edu
+                  <ul>
+                    <li>
+                      This can be found on your LIT tuition payment receipts,
+                      your acceptance letter and within Self-Service Banner.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Password will be the
+                  <a
+                    href="http://www.lit.edu/pdf/5481/instructions-complex-password.pdf"
+                    target="_blank"
+                    >complex password</a
+                  >.
+                  <ul>
+                    <li>Click complex password for more details</li>
+                  </ul>
+                </li>
+              </ul>
+              <h5>
+                Blackboard Learn access is built into our Single SignOn "myLIT"
+              </h5>
+              <ol>
+                <li>Go to the www.lit.edu</li>
+                <li>Click on "myLIT"</li>
+                <li>Type in your Username and Password</li>
+                <li>Click on Sign in</li>
+                <li>Locate Blackboard in your myLIT.</li>
+                <li>
+                  You can then click:
+                  <ol>
+                    <li>
+                      Institution Page - to see campus announcements and
+                      resources.
+                    </li>
+                    <li>
+                      <a
+                        href="https://youtu.be/1ENC_PmS2FI?si=YgR5_RE8-i_dhmd5"
+                        target="_blank"
+                        >Your Name</a
+                      >
+                      - to update your profile and add a photo/pronouns/ and
+                      name pronunciation.
+                    </li>
+                    <li>
+                      Activity Stream - to see a list of important course
+                      activities and jump into your course.
+                    </li>
+                    <li>
+                      <a
+                        href="https://youtu.be/qIcX6ktPRf0?si=EVZMAc1RzsOa_1g1"
+                        target="_blank"
+                        >Courses</a
+                      >
+                      - to see a list of your courses that you click to enter.
+                    </li>
+                    <li>
+                      <a
+                        href="https://youtu.be/-rWnSiUZVKA?si=01WNdc_Q9QqlEKPa"
+                        target="_blank"
+                        >Calendar</a
+                      >
+                      - to see a calendar display of assignments with set due
+                      dates.
+                      <ul>
+                        <li>
+                          Note not all assignments will populate to this
+                          calendar if the instructor did not assign a due date
+                          to the item.
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a
+                        href="https://youtu.be/s066yt2qxXk?si=WJidHYZBIEYSH9B8"
+                        target="_blank"
+                        >Messages</a
+                      >
+                      - to see internal message system for instructors that
+                      prefer this method of communication.
+                    </li>
+                  </ol>
+                </li>
+              </ol>
+              <p>
+                While your classes may appear before the first day of the
+                semester your courses will not be available to you until the
+                first day of class.
+              </p>
+              <p>
+                If you are taking an online course that utilizes additional
+                resources from the textbook publisher, you may need a STUDENT
+                ACCESS CODE. The access code will be provided with your textbook
+                and/or your instructor will tell you how to access your code.
+              </p>
+              <p>
+                *If you register late please give the system 4-6 hours to
+                process the registration and create an account.
               </p>
             </div>
           </div>
