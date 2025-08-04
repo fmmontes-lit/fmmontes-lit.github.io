@@ -286,236 +286,27 @@
             <!-- BEGIN CONTACT FORM CARD -->
             <div class="lit-online-card">
               <h3>Request More Information</h3>
-              <form
-                id="lit-online-contact"
-                action="/"
-                method="post"
-                enctype="multipart/form-data"
-                novalidate
+              <style>
+                a.contact-btn:link,
+                a.contact-btn:visited {
+                  background-color: #1c75bc;
+                  color: white;
+                  padding: 0.5em 1.5em;
+                  text-align: center;
+                  text-decoration: none;
+                  border-radius: 0.5em;
+                  display: block;
+                }
+
+                a.contact-btn:hover,
+                a.contact-btn:active {
+                  background-color: #ec2027;
+                }
+              </style>
+              <a href="https://www.lit.edu/contact-us" class="contact-btn"
+                >Click here</a
               >
-                <!-- FIRST NAME -->
-                <div class="form-group">
-                  <label for="first-name">First Name</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="first-name"
-                    name="first-name"
-                    placeholder="First name"
-                    required
-                  />
-                  <div class="invalid-feedback">
-                    Please enter your first name.
-                  </div>
-                </div>
-                <!---------------------------------------------------------->
-
-                <!-- LAST NAME -->
-                <div class="form-group">
-                  <label for="last-name">Last Name</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="last-name"
-                    name="last-name"
-                    placeholder="Last name"
-                    required
-                  />
-                  <div class="invalid-feedback">
-                    Please enter your last name.
-                  </div>
-                </div>
-                <!---------------------------------------------------------->
-
-                <!-- PHONE -->
-                <div class="form-group">
-                  <label for="phone">Phone</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="phone"
-                    name="phone"
-                    placeholder="phone"
-                    required
-                  />
-                  <div class="invalid-feedback">
-                    Please enter your phone number.
-                  </div>
-                </div>
-                <!---------------------------------------------------------->
-
-                <!-- EMAIL -->
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    name="email"
-                    placeholder="Email address"
-                    required
-                  />
-                  <div class="invalid-feedback">
-                    Please enter a valid email address.
-                  </div>
-                </div>
-                <!---------------------------------------------------------->
-
-                <!-- PROGRAM SELECT -->
-                <div class="form-group">
-                  <label for="selectedProgram">Program of Interest</label>
-                  <select
-                    class="form-control"
-                    data-val="true"
-                    data-val-required="Please provide a reason for your contact."
-                    id="selectedProgram"
-                    name="selectedProgram"
-                    required="required"
-                  >
-                    <option value="">Select</option>
-                    <option value="business">Business</option>
-                    <option value="accounting">Accounting</option>
-                    <option value="mgmtEntrepreneurship">
-                      Management and Entrepreneurship
-                    </option>
-                    <option value="realEstate">Real Estate</option>
-                    <option value="genEd">General Education</option>
-                    <option value="teaching">Teaching</option>
-
-                    <option value="bioScience">Biological Science</option>
-                    <option value="healthScience">Health Science</option>
-                    <option value="healthInfoTech">
-                      Health Information Technology
-                    </option>
-                    <option value="healthInformatics">
-                      Health Informatics
-                    </option>
-                    <option value="medCoding">Medical Coding Specialist</option>
-                    <option value="crimJustice">Criminal Justice</option>
-                    <option value="crimJusticeGroups">
-                      Criminal Justice Security Threat Groups
-                    </option>
-                    <option value="emerMgmtHMSecurity">
-                      Emergency Management and Homeland Security
-                    </option>
-                    <option value="workforceCont">
-                      Workforce and Continuing Education
-                    </option>
-                    <option value="undecided">Undecided/Other</option>
-                  </select>
-                </div>
-
-                <!-- Submit Button -->
-                <button type="submit" id="submitBtn" class="btn btn-primary">
-                  Submit
-                </button>
-                <!---------------------------------------------------------->
-              </form>
             </div>
-            <script>
-              function validateForm() {
-                let isValid = true;
-
-                // Validate Email
-                const email = document.getElementById("email");
-                if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
-                  email.setCustomValidity("Please enter a valid email address");
-                  isValid = false;
-                } else {
-                  email.setCustomValidity("");
-                }
-
-                // Validate Phone Numbers
-                const phoneFields = ["phone"];
-                phoneFields.forEach((field) => {
-                  const phone = document.getElementById(field);
-                  if (
-                    phone.value &&
-                    !/^\d{10}$/.test(phone.value.replace(/\D/g, ""))
-                  ) {
-                    phone.setCustomValidity(
-                      "Please enter a valid 10-digit phone number"
-                    );
-                    isValid = false;
-                  } else {
-                    phone.setCustomValidity("");
-                  }
-                });
-
-                // Validate Selected Program
-                const program = document.getElementById("selectedProgram");
-                if (!program.value) {
-                  program.setCustomValidity(
-                    "Please select a program of interest"
-                  );
-                  isValid = false;
-                } else {
-                  program.setCustomValidity("");
-                }
-
-                return isValid;
-              }
-
-              document
-                .getElementById("lit-online-contact")
-                .addEventListener("submit", function (event) {
-                  event.preventDefault();
-
-                  if (!validateForm()) {
-                    console.log("Form is not valid");
-                    event.stopPropagation();
-                    this.classList.add("was-validated");
-                    return;
-                  }
-
-                  // Collect form values
-                  const form = this;
-                  const formData = new FormData(form);
-
-                  // Check required fields
-                  const requiredInputs =
-                    document.querySelectorAll("input[required]");
-                  let allRequiredFilled = true;
-
-                  for (let i = 0; i < requiredInputs.length; i++) {
-                    if (!requiredInputs[i].value) {
-                      allRequiredFilled = false;
-                      break;
-                    }
-                  }
-
-                  if (allRequiredFilled) {
-                    // Log all form data keys and values for debugging
-                    for (const [key, value] of formData.entries()) {
-                      console.log(`${key}: ${value}`);
-                    }
-
-                    // Make the fetch request (adjust the URL when ready)
-                    fetch("/LIT-Online-Contact-Form", {
-                      method: "POST",
-                      body: formData, // No need to set headers for FormData
-                    })
-                      .then((response) => response.json())
-                      .then((data) => {
-                        if (data.success) {
-                          console.log("Success:", data.message);
-                        } else {
-                          console.error("Server error:", data.message);
-                        }
-                      })
-                      .catch((error) => {
-                        console.error("Network error:", error);
-                      });
-                  }
-                });
-
-              document.addEventListener("DOMContentLoaded", function () {
-                document.getElementById("first-name").value = "Forrest";
-                document.getElementById("last-name").value = "Montes";
-                document.getElementById("phone").value = "111-222-3333";
-                document.getElementById("email").value = "fmmontes@lit.edu";
-              });
-            </script>
             <!-- END CONTACT FORM CARD ------------------------------------------>
           </div>
           <!-- /////////////////////////////////////////////////////////// -->
