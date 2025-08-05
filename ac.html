@@ -203,7 +203,7 @@
             margin: 0.8em 0;
             background-color: #1c75bc;
             color: white;
-            padding: 0.5em;
+            padding: 0.5em 1.5em;
             text-decoration: none;
             border-radius: 0.5em;
           }
@@ -288,6 +288,11 @@
               <h3>Request More Information</h3>
 
               <style>
+                a.contact-btn {
+                  margin: 0.8em 0;
+                  margin-block-end: 1.5em;
+                }
+
                 a.contact-btn:link,
                 a.contact-btn:visited {
                   background-color: #1c75bc;
@@ -296,7 +301,7 @@
                   text-align: center;
                   text-decoration: none;
                   border-radius: 0.5em;
-                  display: block;
+                  display: inline-block;
                 }
 
                 a.contact-btn:hover,
@@ -311,7 +316,6 @@
                 >Click here</a
               >
             </div>
-
             <!-- END CONTACT FORM CARD ------------------------------------------>
           </div>
           <!-- /////////////////////////////////////////////////////////// -->
@@ -968,12 +972,38 @@
           <div class="row lit-online">
             <div class="lit-online-card">
               <h3>LIT Online Frequently Asked Questions</h3>
-              <h5>How do I Apply?</h5>
-              <ul>
-                <li>
-                  <a href="https://lit.edu/admissions">lit.edu/admissions</a>
-                </li>
-              </ul>
+
+              <!-- BEGIN Accordion - How do I apply? -->
+              <div class="col-sm-12 col-lg-12" id="accordionApply">
+                <div class="card mb-2">
+                  <div class="card-header">
+                    <a
+                      class="card-link collapsed"
+                      data-toggle="collapse"
+                      href="#collapseApply"
+                      aria-label="Minimum Computer and Equipment Requirements"
+                      alt="Minimum Computer and Equipment Requirements"
+                      aria-expanded="false"
+                      ><strong>How do I apply?</strong>
+                    </a>
+                  </div>
+                  <div
+                    class="collapse"
+                    data-parent="#accordionApply"
+                    id="collapseApply"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a href="https://lit.edu/admissions"
+                            >lit.edu/admissions</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
               <!-- BEGIN Accordion - How do online students get advised? -->
               <div class="col-sm-12 col-lg-12" id="accordionHowToGetAdvised">
