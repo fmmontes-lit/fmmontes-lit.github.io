@@ -42,23 +42,29 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" href="./ab.html"
-                >VA Education Benefits</a
-              >
+              <a class="nav-link text-dark" href="./ab.html">LIT Online</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-dark" href="./ac.html"
-                >Hazlewood Exemption Act</a
+                >Online Courses & Programs</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" href="./ae.html">e</a>
+              <a class="nav-link text-dark" href="./ad.html"
+                >LIT Online Experience</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" href="./af.html">fun</a>
+              <a class="nav-link text-dark" href="./ah.html">LIT Online FAQ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" href="./ag.html">g</a>
+              <a class="nav-link text-dark" href="./ae.html">Workforce</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./af.html">Canvas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./ag.html">Library</a>
             </li>
           </ul>
         </div>
@@ -96,51 +102,6 @@
         border-radius: 8px;
       }
 
-      .veterans-page-content .card {
-        height: 100%;
-        box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.1);
-        border: 1px solid rgba(0, 0, 0, 0.3);
-      }
-
-      [class^="col"] {
-        margin-bottom: 20px;
-      }
-
-      .main-content {
-        padding: 20px;
-        margin-bottom: 40px;
-        box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.1);
-        border: 1px solid rgba(0, 0, 0, 0.3);
-        border-radius: 8px;
-      }
-
-      .title-wrapper {
-        margin-bottom: 20px;
-      }
-
-      .text-dark span {
-        color: #1c75bc;
-        border-bottom: 1px solid black;
-        padding-bottom: 5px;
-        font-weight: bold;
-      }
-
-      .main-content h3 {
-        color: #1c75bc;
-        border-bottom: 1px solid black;
-        padding-bottom: 5px;
-        font-weight: bold;
-        font-size: calc(1rem + 0.9vw);
-      }
-
-      .card-header {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-      }
-
-      .card-header strong {
-        color: #1c75bc;
-      }
-
       p {
         animation-duration: 0.2s;
         animation-name: slide-in;
@@ -161,89 +122,1336 @@
 
     <div class="row">
       <div class="col-sm-12 col-md-10">
-        <div class="main-content va-edu-benefits">
-          <div class="title-wrapper">
-            <h2 class="text-dark">
-              <span>Federal VA Education Benefits</span>
-            </h2>
+        <!-- ///////////////////////////////////////////////////////////// -->
+        <!-- LIT ONLINE ////////////////////////////////////////////////// -->
+        <!-- ///////////////////////////////////////////////////////////// -->
+        <style>
+          .lit-online > * + * {
+            margin-top: 1.5em;
+          }
+
+          .row {
+            padding: 0.8em 0.5em;
+          }
+
+          img.lit-online-hero {
+            border-radius: 0.5em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 1.5em;
+          }
+
+          .online-pgrm-grid {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: 1fr;
+          }
+
+          .online-pgrm-grid-item {
+            background: #f8f9fa;
+            border-radius: 0.5rem;
+            border: 1px solid rgba(0, 0, 0, 0.125);
+          }
+
+          @media (min-width: 768px) {
+            .online-pgrm-grid {
+              grid-template-columns: repeat(2, 1fr);
+              margin-bottom: 1.5em;
+            }
+          }
+
+          .lit-online-card {
+            border-radius: 0.5em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 1.5em;
+            height: 100%;
+          }
+
+          .lit-online-card h3 {
+            color: #1c75bc;
+            border-bottom: 1px solid #ec2027;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+            font-size: 1.5rem;
+            font-weight: bold;
+          }
+
+          .lit-online-card h5 {
+            display: inline-block;
+            color: #1c75bc;
+            border-bottom: 1px solid #ec2027;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+            font-size: 1rem;
+            font-weight: bold;
+          }
+
+          .lit-online-card ul {
+            margin-top: 0.8em;
+          }
+
+          .lit-online-card li {
+            margin-bottom: 0.8em;
+          }
+
+          .lit-online-card p {
+            margin: 0.8em 0;
+          }
+
+          a {
+            text-decoration: none;
+          }
+
+          a:hover {
+            color: #ec2027;
+            text-decoration: underline;
+          }
+
+          a.view-pgrm-btn {
+            display: inline-block;
+            margin: 0.8em 0;
+            background-color: #1c75bc;
+            color: white;
+            padding: 0.5em 1.5em;
+            text-decoration: none;
+            border-radius: 0.5em;
+          }
+
+          a.view-pgrm-btn:hover {
+            background-color: #ec2027;
+            color: white;
+          }
+
+          #lit-online-contact {
+            background-color: #f8f9fa;
+            border-radius: 0.08rem;
+            padding: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          }
+
+          .form-group {
+            margin-bottom: 0.5rem;
+          }
+        </style>
+
+        <div class="page-content">
+          <!-- PAGE ONE ////////////////////////////////////////////////// -->
+          <div class="row lit-online">
+            <img
+              src="https://www.lit.edu/getmedia/0ce9fb38-0cdb-45fe-978b-6b474eb06a5c/litonline-herow2000.png"
+              class="img-fluid lit-online-hero"
+              alt="LIT Online. Online learning."
+            />
+
+            <div class="lit-online-card">
+              <h3>What is LIT Online?</h3>
+              <p>
+                LIT Online is a hub for students to start their college journey
+                beyond a traditional face-to-face classroom setting. The online
+                environment can provide you the flexibility to balance the
+                demands of work, home and school.
+              </p>
+
+              <ul>
+                <li>
+                  16 fully online programs - Attend classes anytime, anywhere
+                  remotely. No campus visits required.
+                </li>
+                <li>
+                  5 hybrid programs - Complete 90% or more of your degree or
+                  certificate online.
+                </li>
+              </ul>
+
+              <a
+                href="https://my.lit.edu/online-learning/online-credit"
+                class="view-pgrm-btn"
+                >View Programs</a
+              >
+            </div>
+
+            <div class="lit-online-card">
+              <h3>What Will I Learn?</h3>
+              <p>
+                LIT Online students receive the same quality education and
+                support as on-campus students. Learn anytime, anywhere through
+                our virtual classroom powered by Blackboard, with interactive
+                discussions, assignments, and deadlines that mirror the
+                traditional experience.
+              </p>
+
+              <h5>What to Expect</h5>
+              <ul>
+                <li>Discussion boards for peer engagement</li>
+                <li>Weekly assignments and deadlines</li>
+                <li>Live or recorded lectures for various learning styles</li>
+              </ul>
+              <p>
+                Some courses may include special software or proctored exams.
+                Details are always listed in the course syllabus.
+              </p>
+            </div>
+
+            <!-- BEGIN CONTACT FORM CARD -->
+            <div class="lit-online-card">
+              <h3>Request More Information</h3>
+
+              <style>
+                a.contact-btn {
+                  margin: 0.8em 0;
+                  margin-block-end: 1.5em;
+                }
+
+                a.contact-btn:link,
+                a.contact-btn:visited {
+                  background-color: #1c75bc;
+                  color: white;
+                  padding: 0.5em 1.5em;
+                  text-align: center;
+                  text-decoration: none;
+                  border-radius: 0.5em;
+                  display: inline-block;
+                }
+
+                a.contact-btn:hover,
+                a.contact-btn:active {
+                  background-color: #ec2027;
+                }
+              </style>
+              <a
+                href="https://www.lit.edu/contact-us?dept=atclark@lit.edu"
+                target="_blank"
+                class="contact-btn"
+                >Click here</a
+              >
+            </div>
+            <!-- END CONTACT FORM CARD ------------------------------------------>
+          </div>
+          <!-- /////////////////////////////////////////////////////////// -->
+
+          <!-- PAGE TWO ////////////////////////////////////////////////// -->
+          <div class="row lit-online">
+            <div class="lit-online-card">
+              <h3>Online Courses & Programs</h3>
+              <p>
+                LIT Online offers a variety of online and hybrid programs and
+                classes so you can earn your college degree or certificate with
+                maximum flexibility.
+              </p>
+
+              <p>
+                Most online courses are conducted entirely online; however, some
+                online courses may have proctoring requirements for exams,
+                laboratory sessions and other activities - review the
+                <a href="https://lit.edu/syllabi">course syllabus</a> for
+                detailed course requirements.
+              </p>
+
+              <p>
+                Search for online courses by clicking on the Course Finder
+                button below.
+              </p>
+
+              <a
+                href="https://reg-prod.ec.lit.edu/StudentRegistrationSsb/ssb/term/termSelection?mode=search"
+                class="view-pgrm-btn"
+                >Course Finder</a
+              >
+
+              <p>
+                Please click on the program name below for more information
+                about that program.
+              </p>
+
+              <!-- BEGIN PGRM GRID -->
+              <div class="online-pgrm-grid">
+                <!-- Business Associates Degrees -->
+                <div class="online-pgrm-grid-item">
+                  <div class="lit-online-card">
+                    <h5>Business Associates Degrees</h5>
+                    <ul>
+                      <li>
+                        <a
+                          href="https://lit.edu/programs/business/business/associate-of-arts-aa"
+                          aria-label="Associate of Arts in General Business"
+                          alt="Associate of Arts in General Business"
+                          >Associate of Arts in General Business</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://lit.edu/programs/business/accounting-technology/associate-of-applied-science-aas"
+                          aria-label="Associate of Applied Science in Accounting"
+                          alt="Associate of Applied Science in Accounting"
+                          >Associate of Applied Science in Accounting</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.lit.edu/programs/business/management-and-entrepreneurship/associate-of-applied-science-aas"
+                          aria-label="Associate of Applied Science in Management and Entrepreneurship"
+                          alt="Associate of Applied Science in Management and Entrepreneurship"
+                          >Associate of Applied Science in Management and
+                          Entrepreneurship</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://lit.edu/programs/business/real-estate/associate-of-applied-science-aas"
+                          aria-label="Associate of Applied Science in Real Estate"
+                          alt="Associate of Applied Science in Real Estate"
+                          >Associate of Applied Science in Real Estate</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Business Certificate Programs -->
+                <div class="online-pgrm-grid-item">
+                  <div class="lit-online-card">
+                    <h5>Business Certificate Programs</h5>
+                    <ul>
+                      <li>
+                        <a
+                          href="https://lit.edu/programs/business/accounting-technology/certificate"
+                          aria-label="Certificate in Accounting"
+                          alt="Certificate in Accounting"
+                          >Certificate in Accounting</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.lit.edu/programs/business/management-and-entrepreneurship/certificate"
+                          aria-label="Certificate in Management and Entrepreneurship"
+                          alt="Certificate in Management and Entrepreneurship"
+                          >Certificate in Management and Entrepreneurship</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://lit.edu/programs/business/real-estate/certificate"
+                          aria-label="Certificate in Real Estate"
+                          alt="Certificate in Real Estate"
+                          >Certificate in Real Estate</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- General Education Associates Degrees -->
+                <div class="online-pgrm-grid-item">
+                  <div class="lit-online-card">
+                    <h5>General Education Associates Degrees</h5>
+                    <ul>
+                      <li>
+                        <a
+                          href="https://lit.edu/programs/general-education/general-studies/associate-of-arts-aa"
+                          aria-label="Associate of Arts in General Education"
+                          alt="Associate of Arts in General Education"
+                          >Associate of Arts in General Education</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.lit.edu/programs/general-education/teaching/associate-of-arts-in-teaching"
+                          aria-label="Associate of Arts in Teaching"
+                          alt="Associate of Arts in Teaching"
+                          >Associate of Arts in Teaching</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- General Education Certificate Programs -->
+                <div class="online-pgrm-grid-item">
+                  <div class="lit-online-card">
+                    <h5>General Education Certificate Programs</h5>
+                    <ul>
+                      <li>
+                        <a
+                          href="http://catalog.lit.edu/preview_program.php?catoid=7&amp;poid=754"
+                          aria-label="Academic Certificate Core Complete"
+                          alt="Academic Certificate Core Complete"
+                          >Academic Certificate Core Complete</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Healthcare and Sciences Associates Degrees -->
+                <div class="online-pgrm-grid-item">
+                  <div class="lit-online-card">
+                    <h5>Healthcare and Sciences Associates Degrees</h5>
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.lit.edu/programs/healthcare-and-sciences/biological-sciences/associate-of-science-as"
+                          aria-label="Associate of Science in Biological Science"
+                          alt="Associate of Science in Biological Science"
+                          >Associate of Science in Biological Science</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.lit.edu/programs/healthcare-and-sciences/biological-sciences/associate-of-science-in-health-science"
+                          aria-label="Associate of Science in Health Science"
+                          alt="Associate of Science in Health Science"
+                          >Associate of Science in Health Science</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://lit.edu/programs/healthcare-and-sciences/health-information-technology/associate-of-applied-science-aas"
+                          aria-label="Associate of Applied Science in Health Information Technology"
+                          alt="Associate of Applied Science in Health Information Technology"
+                          >Associate of Applied Science in Health Information
+                          Technology</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Healthcare and Sciences Certificate Programs -->
+                <div class="online-pgrm-grid-item">
+                  <div class="lit-online-card">
+                    <h5>Healthcare and Sciences Certificate Programs</h5>
+                    <ul>
+                      <li>
+                        <a
+                          href="https://lit.edu/programs/healthcare-and-sciences/health-information-technology/health-informatics-certificate"
+                          aria-label="Certificate in Health Informatics"
+                          alt="Certificate in Health Informatics"
+                          >Certificate in Health Informatics</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://lit.edu/programs/healthcare-and-sciences/health-information-technology/medical-coding-specialist-certificate"
+                          aria-label="Medical Coding Specialist Certificate Program"
+                          alt="Medical Coding Specialist Certificate Program"
+                          >Medical Coding Specialist Certificate Program</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Public Service and Safety Associates Degrees -->
+                <div class="online-pgrm-grid-item">
+                  <div class="lit-online-card">
+                    <h5>Public Service and Safety Associates Degrees</h5>
+                    <ul>
+                      <li>
+                        <a
+                          href="https://lit.edu/programs/public-service-and-safety/criminal-justice/associate-of-science-as"
+                          aria-label="Associate of Science in Criminal Justice"
+                          alt="Associate of Science in Criminal Justice"
+                          >Associate of Science in Criminal Justice</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.lit.edu/programs/public-service-and-safety/criminal-justice/security-threat-groups-aas"
+                          aria-label="Associate of Applied Science Criminal Justice Security Threat Groups"
+                          alt="Associate of Applied Science Criminal Justice Security Threat Groups"
+                          >Associate of Applied Science Criminal Justice
+                          Security Threat Groups</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.lit.edu/programs/public-service-and-safety/emergency-management-and-homeland-security/associate-of-applied-science-aas"
+                          aria-label="Associate of Applied Science in Emergency Management and Homeland Security"
+                          alt="Associate of Applied Science in Emergency Management and Homeland Security"
+                          >Associate of Applied Science in Emergency Management
+                          and Homeland Security</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Healthcare and Sciences Certificate Programs -->
+                <div class="online-pgrm-grid-item">
+                  <div class="lit-online-card">
+                    <h5>Public Service and Safety Certificate Programs</h5>
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.lit.edu/programs/public-service-and-safety/criminal-justice/security-threat-groups-certificate"
+                          aria-label="Certificate in Criminal Justice Security Threat Groups"
+                          alt="Certificate in Criminal Justice Security Threat Groups"
+                          >Certificate in Criminal Justice Security Threat
+                          Groups</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.lit.edu/programs/public-service-and-safety/emergency-management-and-homeland-security/certificate"
+                          aria-label="Certificate in Emergency Management and Homeland Security*"
+                          alt="Certificate in Emergency Management and Homeland Security"
+                          >Certificate in Emergency Management and Homeland
+                          Security</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Workforce Training and Continuing Education -->
+                <div class="online-pgrm-grid-item">
+                  <div class="lit-online-card">
+                    <h5>Workforce Training and Continuing Education</h5>
+                    <ul>
+                      <li>
+                        <a
+                          href="https://lit.edu/workforce-continuing-education/online-learning"
+                          aria-label="Click here for more information on CE-Online Learning"
+                          alt="Click here for more information on CE-Online Learning"
+                          >Click here for more information on CE-Online
+                          Learning</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- /////////////////////////////////////////////////////////////-->
+                <!-- END OF ONLINE PGRM GRID ITEMS -->
+                <!-- /////////////////////////////////////////////////////////////-->
+              </div>
+              <!-- END PGRM GRID -->
+            </div>
           </div>
 
-          <p>
-            The Department of Veterans Affairs (VA) offers a variety of
-            education and training benefits to help Veterans, service members,
-            and their dependents achieve their educational goals. These programs
-            can provide financial assistance for undergraduate and graduate
-            degrees, vocational or technical training, apprenticeships,
-            on-the-job training, and more. Whether you served on active duty or
-            in the reserves, there may be a VA education benefit program
-            available to fit your needs. This webpage provides an overview of
-            the different programs offered and their eligibility requirements.
-            Be sure to explore all the options to find the program that best
-            suits your educational and career aspirations.
-          </p>
+          <!-- PAGE THREE //////////////////////////////////////////////// -->
+          <div class="row lit-online">
+            <div class="lit-online-card">
+              <h3>The LIT Online Experience</h3>
 
-          <h3>Montgomery GI Bill (Ch. 30)</h3>
-          <p>
-            The Montgomery GI Bill is for those who entered military service
-            after June 30, 1985, and paid the $1,200 co-payment.
-          </p>
+              <!-- BEGIN Online Experience GRID -->
+              <div class="online-pgrm-grid">
+                <!-- Blackboard  -->
+                <div class="online-pgrm-grid-item">
+                  <div class="lit-online-card">
+                    <h5>Blackboard</h5>
+                    <p>
+                      Blackboard is the Learning Management System (LMS) used
+                      for online and face-to-face classes. Students and faculty
+                      will access Blackboard through their myLIT single sign on
+                      system. Online courses may require special software or
+                      proctoring agreements for labs and/or exams to provide an
+                      in-depth and user-friendly experience for learners. This
+                      information will be outlined in the
+                      <a href="https://lit.edu/syllabi">course syllabus</a>.
+                    </p>
+                  </div>
+                </div>
 
-          <h3>Post 9/11 GI Bill (Ch. 33)</h3>
-          <p>
-            The Post 9/11 GI Bill is for those with active-duty service for more
-            than 90 days since Sept. 11, 2001.
-          </p>
-          <p>
-            <strong>If your service ended before January 1, 2013</strong>, your
-            Post-9/11 GI Bill (Chapter 33) benefits will expire 15 years after
-            your last separation date from active service. You must use all your
-            benefits by that time, or you will lose whatever is left.
-          </p>
-          <p>
-            <strong>If your service ended on or after January 1, 2013</strong>,
-            there is no delimiting date for your benefit in accordance with the
-            Forever GI Bill - Harry W. Colmery Veterans Educational Assistance
-            Act.
-          </p>
+                <!-- Online Quad -->
+                <div class="online-pgrm-grid-item">
+                  <div class="lit-online-card">
+                    <h5>Online Quad</h5>
+                    <p>
+                      Where being virtual doesn't mean disconnected. The LIT
+                      Online Quad is your go-to space for weekly non-course
+                      related discussions, community building and a fresh take
+                      on campus life - no matter where you log in. Whether
+                      you're here to connect with classmates, rediscover
+                      forgotten traditions, or simply have fun while learning,
+                      the Online Quat provides a community space that exists
+                      within Blackboard.
+                    </p>
+                  </div>
+                </div>
 
-          <h3>CH 1606 Reserve GI Bill</h3>
-          <p>
-            The Montgomery GI Bill Selected Reserve (MGIB-SR) program offers up
-            to 36 months of education and training benefits. If you are a member
-            of the Army, Navy, Air Force, Marine Corps or Coast Guard Reserve,
-            Army National Guard, or Air National Guard, you may be eligible for
-            this benefit.
-          </p>
+                <!-- LIT Online Student Policies and Resources -->
+                <div class="online-pgrm-grid-item">
+                  <div class="lit-online-card">
+                    <h5>LIT Online Student Policies and Resources</h5>
+                    <p>
+                      LIT is committed to a high-quality educational experience
+                      for all students. Online students have access to the same
+                      educational resources as face-to-face students including
+                      faculty, online tutoring, financial aid opportunities,
+                      virtual health and well-being support and more.
+                    </p>
+                  </div>
+                </div>
 
-          <h3>Dependent Educational Assistance (Ch. 35)</h3>
-          <p>
-            The Dependents' Educational Assistance (DEA) program offers
-            education and training opportunities to eligible dependents of
-            Veterans who are permanently and totally disabled due to a
-            service-related condition or of Veterans who died while on active
-            duty or as a result of a service-related condition.
-          </p>
+                <!-- Technical Support -->
+                <div class="online-pgrm-grid-item">
+                  <div class="lit-online-card">
+                    <h5>Technical Support</h5>
+                    <p>
+                      LIT students have technical support for Blackboard Learn™
+                      and related online learning tools available 24/7 through a
+                      <a href="https://tsus.edu/" target="_blank"
+                        >Texas State University System</a
+                      >
+                      shared services agreement with Sam Houston State
+                      University - Online.
+                    </p>
+                    <p>
+                      Students should contact LIT Blackboard Support at
+                      936-294-4395 or
+                      <a href="mailto:lit-bbsupport@lit.edu"
+                        >lit-bbsupport@lit.edu</a
+                      >
+                      for technical assistance.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- END Online Experience GRID -->
 
-          <h3>Vocational Rehabilitation (Ch. 31)</h3>
-          <p>
-            To see if you qualify for Vocational Rehabilitation, please visit
-            the VA's Vocational Rehabilitation eligibility site:
-            <a
-              href="https://www.va.gov/careers-employment/vocational-rehabilitation/how-to-apply/"
-              target="_blank"
-              >www.va.gov/careers-employment/vocational-rehabilitation/how-to-apply</a
-            >
-          </p>
+              <h3>Is LIT Online Right for You?</h3>
+              <p>
+                Whether you're earning a degree or completing a certificate, LIT
+                Online offers the tools and flexibility to help you thrive -
+                anytime, anywhere.
+              </p>
+
+              <!-- BEGIN Accordion Essential Learning -->
+              <div class="col-sm-12 col-lg-12" id="accordionEssentialLearning">
+                <div class="card mb-2">
+                  <div class="card-header">
+                    <a
+                      class="card-link collapsed"
+                      data-toggle="collapse"
+                      href="#collapseEssentialLearning"
+                      aria-label="LIT Essential Online Learning Skills"
+                      alt="LIT Online Essential Online Learning Skills"
+                      aria-expanded="false"
+                      ><strong>Essential Online Learning Skills</strong>
+                    </a>
+                  </div>
+                  <div
+                    class="collapse"
+                    data-parent="#accordionEssentialLearning"
+                    id="collapseEssentialLearning"
+                  >
+                    <div class="card-body">
+                      <!-- BEGIN Essential Learning GRID -->
+                      <div class="online-pgrm-grid">
+                        <!-- General Skills -->
+                        <div class="online-pgrm-grid-item">
+                          <div class="lit-online-card">
+                            <h5>General Skills</h5>
+                            <ul>
+                              <li>
+                                Start up, shutdown, or restart your computer
+                              </li>
+                              <li>Typing</li>
+                              <li>Use a Mouse to navigate</li>
+                              <li>
+                                Scrolling - to view and move within an entire
+                                page
+                              </li>
+                              <li>Install/uninstall software and plug-ins</li>
+                              <li>Connect to and use the Internet</li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <!-- Program Management Skills -->
+                        <div class="online-pgrm-grid-item">
+                          <div class="lit-online-card">
+                            <h5>Program Management Skills</h5>
+                            <ul>
+                              <li>Start and quit programs</li>
+                              <li>
+                                Word processing - cut, paste, rename, delete,
+                                save, and retrieve text, pictures and files
+                              </li>
+                              <li>
+                                Desktop features - resize, move, maximize,
+                                minimize, and close windows
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <!-- File Management Skills -->
+                        <div class="online-pgrm-grid-item">
+                          <div class="lit-online-card">
+                            <h5>File Management Skills</h5>
+                            <ul>
+                              <li>
+                                Create, rename, delete, copy, and move
+                                directories, folders, and files
+                              </li>
+                              <li>Transfer, download, upload</li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <!-- Communication Skills -->
+                        <div class="online-pgrm-grid-item">
+                          <div class="lit-online-card">
+                            <h5>Communication Skills</h5>
+                            <ul>
+                              <li>
+                                E-mail - create, send, forward, reply, save,
+                                group mail, and attachments
+                              </li>
+                              <li>
+                                Discussions Boards - post, send, and review
+                                messages
+                              </li>
+                              <li>
+                                Video Conferencing - follow proper etiquette for
+                                live chats
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <!-- Troubleshooting Skills -->
+                        <div class="online-pgrm-grid-item">
+                          <div class="lit-online-card">
+                            <h5>Troubleshooting Skills</h5>
+                            <ul>
+                              <li>
+                                Always check with instructor and course
+                                materials for any additional requirements.
+                              </li>
+                            </ul>
+                            <p>
+                              Contact the Blackboard Support Help Desk email
+                              <a href="mailto:lit-bbsupport@lit.edu"
+                                >lit-bbsupport@lit.edu</a
+                              >
+                              or phone 936-294-4395 when experiencing technical
+                              difficulties.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- END Essential Learning GRID -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END Accordion Essential Learning -->
+
+              <!-- BEGIN Accordion Minimum Requirements -->
+              <div
+                class="col-sm-12 col-lg-12"
+                id="accordionMinimumRequirements"
+              >
+                <div class="card mb-2">
+                  <div class="card-header">
+                    <a
+                      class="card-link collapsed"
+                      data-toggle="collapse"
+                      href="#collapseMinimumRequirements"
+                      aria-label="LIT Online Minimum Computer and Equipment Requirements"
+                      alt="LIT Online Minimum Computer and Equipment Requirements"
+                      aria-expanded="false"
+                      ><strong
+                        >Minimum Computer and Equipment Requirements</strong
+                      >
+                    </a>
+                  </div>
+                  <div
+                    class="collapse"
+                    data-parent="#accordionMinimumRequirements"
+                    id="collapseMinimumRequirements"
+                  >
+                    <div class="card-body">
+                      <!-- BEGIN Minimum Requirements GRID -->
+                      <div class="online-pgrm-grid">
+                        <!-- Requirements -->
+                        <div class="online-pgrm-grid-item">
+                          <div class="lit-online-card">
+                            <h5>
+                              In order to take an online course, your computer
+                              equipment must meet the following requirements:
+                            </h5>
+                            <ul>
+                              <li>
+                                External Hardware: Keyboard, Mouse, Web Camera*,
+                                Microphone, Speakers/Headset
+                              </li>
+                              <li>
+                                *Web Camera: We suggest you use the embedded web
+                                camera in your laptop or any standard web cam
+                                purchased and manufactured within the last 5
+                                years.
+                              </li>
+                              <li>
+                                Hardware requirements differ from browser to
+                                browser and should be verified when installing
+                                the browser.
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <!-- Web Browsers -->
+                        <div class="online-pgrm-grid-item">
+                          <div class="lit-online-card">
+                            <h5>Web Browsers (Any of the following):</h5>
+                            <ul>
+                              <li>
+                                Chrome (<a
+                                  href="https://www.google.com/chrome/"
+                                  target="_blank"
+                                  >latest Chrome version</a
+                                >)
+                              </li>
+                              <li>
+                                <a
+                                  href="https://support.google.com/chrome/a/answer/7100626"
+                                  target="_blank"
+                                  >Chrome Browser System Requirement</a
+                                >
+                              </li>
+                              <li>
+                                MS Edge (<a
+                                  href="https://www.microsoft.com/en-us/edge"
+                                  target="_blank"
+                                  >MS Edge version</a
+                                >)
+                              </li>
+                              <li>
+                                <a
+                                  href="https://docs.microsoft.com/en-us/deployedge/microsoft-edge-supported-operating-systems"
+                                  target="_blank"
+                                  >Edge System Requirement</a
+                                >
+                              </li>
+                              <li>
+                                Firefox (<a
+                                  href="https://www.mozilla.org/en-US/firefox/new/"
+                                  target="_blank"
+                                  >Firefox version</a
+                                >)
+                              </li>
+                              <li>
+                                <a
+                                  href="https://www.mozilla.org/firefox/system-requirements"
+                                  target="_blank"
+                                  >System Requirement</a
+                                >
+                              </li>
+                              <li>
+                                Safari (<a
+                                  href="https://support.apple.com/downloads/safari"
+                                  target="_blank"
+                                  >Safari version</a
+                                >)
+                              </li>
+                              <li>
+                                <a
+                                  href="https://help.blackboard.com/Learn/Student/Original/Getting_Started/Browser_Support"
+                                  target="_blank"
+                                  >Learn System Requirement</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  href="https://help.blackboard.com/Collaborate/Ultra/Participant/Get_Started/Browser_Support"
+                                  target="_blank"
+                                  >Class for Web (formerly Collaborate) System
+                                  Requirement</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- END Minimum Requirements GRID -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END Accordion Minimum Requirements -->
+            </div>
+          </div>
+          <!-- ///////////////////////////////////////////////////////////// -->
+
+          <!-- PAGE FOUR /////////////////////////////////////////////////// -->
+          <div class="row lit-online">
+            <div class="lit-online-card">
+              <h3>LIT Online Frequently Asked Questions</h3>
+
+              <!-- BEGIN Accordion - How do I apply? -->
+              <div class="col-sm-12 col-lg-12" id="accordionApply">
+                <div class="card mb-2">
+                  <div class="card-header">
+                    <a
+                      class="card-link collapsed"
+                      data-toggle="collapse"
+                      href="#collapseApply"
+                      aria-label="Minimum Computer and Equipment Requirements"
+                      alt="Minimum Computer and Equipment Requirements"
+                      aria-expanded="false"
+                      ><strong>How do I apply?</strong>
+                    </a>
+                  </div>
+                  <div
+                    class="collapse"
+                    data-parent="#accordionApply"
+                    id="collapseApply"
+                  >
+                    <div class="card-body">
+                      <ul>
+                        <li>
+                          <a href="https://lit.edu/admissions"
+                            >lit.edu/admissions</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- BEGIN Accordion - How do online students get advised? -->
+              <div class="col-sm-12 col-lg-12" id="accordionHowToGetAdvised">
+                <div class="card mb-2">
+                  <div class="card-header">
+                    <a
+                      class="card-link collapsed"
+                      data-toggle="collapse"
+                      href="#collapseHowToGetAdvised"
+                      aria-label="Minimum Computer and Equipment Requirements"
+                      alt="Minimum Computer and Equipment Requirements"
+                      aria-expanded="false"
+                      ><strong>How do online students get advised?</strong>
+                    </a>
+                  </div>
+                  <div
+                    class="collapse"
+                    data-parent="#accordionHowToGetAdvised"
+                    id="collapseHowToGetAdvised"
+                  >
+                    <div class="card-body">
+                      <p>
+                        LIT Online students follow the same advising process as
+                        on-campus students. Advising helps you stay on track,
+                        choose the right classes, and make progress toward your
+                        goals.
+                      </p>
+
+                      <h5>Before your advising appointment, be sure to:</h5>
+                      <ul>
+                        <li>Check your application status</li>
+                        <li>Call 409-880-8321 or email admissions@lit.edu</li>
+                        <li>Complete the TSI Assessment, if required</li>
+                        <li>Review the LIT Catalog and Student Handbook</li>
+                        <li>
+                          Understand your degree plan and course requirements
+                        </li>
+                        <li>Browse the class schedule</li>
+                        <li>
+                          Create a draft list of courses you're interested in
+                        </li>
+                      </ul>
+
+                      <p>
+                        <strong>New Students</strong>: Email
+                        <a href="mailto:registration@lit.edu"
+                          >registration@lit.edu</a
+                        >
+                        to connect with a general advisor from Student Services.
+                      </p>
+                      <p>
+                        <strong>Returning Students</strong>: Log into Starfish
+                        and schedule an appointment with your assigned advisor
+                        under your "Success Network".
+                      </p>
+
+                      <h5>How do online students get registered?</h5>
+                      <p>
+                        Once you've met with an advisor and finalized your
+                        course plan, you're ready to register!
+                      </p>
+                      <ul>
+                        <li>
+                          Your advisor will help you identify CRNs (Course
+                          Reference Numbers)
+                        </li>
+                        <li>
+                          You can register through your Self-Service Banner
+                          account
+                        </li>
+                        <li>
+                          Be sure to double-check deadlines and payment due
+                          dates
+                        </li>
+                      </ul>
+                      <p>
+                        Need help along the way? The LIT team is just an email
+                        or phone call away!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- BEGIN Accordion - What should I do before class starts? -->
+              <div class="col-sm-12 col-lg-12" id="accordionBeforeClassStarts">
+                <div class="card mb-2">
+                  <div class="card-header">
+                    <a
+                      class="card-link collapsed"
+                      data-toggle="collapse"
+                      href="#collapseBeforeClassStarts"
+                      aria-label="Minimum Computer and Equipment Requirements"
+                      alt="Minimum Computer and Equipment Requirements"
+                      aria-expanded="false"
+                      ><strong>What should I do before class starts?</strong>
+                    </a>
+                  </div>
+                  <div
+                    class="collapse"
+                    data-parent="#accordionBeforeClassStarts"
+                    id="collapseBeforeClassStarts"
+                  >
+                    <div class="card-body">
+                      <p>
+                        Please make every effort to prepare yourself and your
+                        computer prior to the first day of class.
+                      </p>
+
+                      <p><strong>Before class starts:</strong></p>
+                      <ul>
+                        <li>
+                          Run the
+                          <a
+                            href="https://help.blackboard.com/Learn/Student/Ultra/Getting_Started/Browser_Support/Browser_Checker"
+                            >Browser Checker</a
+                          >
+                          to determine if your browser is compatable for our
+                          Learning Management System: Blackboard.
+                        </li>
+                        <ul>
+                          <li>
+                            If you receive all green checks, the compatibility
+                            check was successful.
+                          </li>
+                          <li>
+                            If you received a red "x", follow the repair
+                            instructions.
+                          </li>
+                          <li>
+                            For technical assistance, contact the LIT helpdesk
+                            at 409-839-2074 or
+                            <a href="mailto:helpdesk@lit.edu"
+                              >helpdesk@lit.edu</a
+                            >.
+                          </li>
+                        </ul>
+                        <li>
+                          Review videos on how you will submit assignments, view
+                          your grades, interact on discussion boards, and take
+                          test within the learning management system and attempt
+                          these tasks in the orientation course found in your
+                          course list the first few weeks of the semester.
+                        </li>
+                        <ul>
+                          <li>
+                            <a
+                              href="https://youtu.be/ga62ByySsAc?si=B-1rBPjpV1ynD4FV"
+                              target="_blank"
+                              >Introduction to Ultra Course View</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="https://youtu.be/6pYsU4xT3xE?si=MKP4Hgkf7UNKibSe"
+                              target="_blank"
+                              >Notification Settings</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="https://youtu.be/vyejvk0Xoic?si=rYztDftKDzTiiwzg"
+                              target="_blank"
+                              >Assignment Submission</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="https://youtu.be/Cmdi6elETPQ?si=JI3u8uK3y82V0g_y"
+                              target="_blank"
+                              >Discussions</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="https://youtu.be/V6Zxl2YK5OM?si=Ot71U-1F_zaWDZjF"
+                              target="_blank"
+                              >Grades</a
+                            >
+                          </li>
+                        </ul>
+                        <li>
+                          Preview the course
+                          <a href="https://www.lit.edu/syllabi">syllabus</a> to
+                          purchase and/or gather required course material.
+                        </li>
+                      </ul>
+                      <p>
+                        Registered course enrollments should display within 2-4
+                        hours after enrollment but they will not be available to
+                        access until the first day of the semester.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- BEGIN Accordion - What should I do the first day of class? -->
+              <div class="col-sm-12 col-lg-12" id="accordionFirstDay">
+                <div class="card mb-2">
+                  <div class="card-header">
+                    <a
+                      class="card-link collapsed"
+                      data-toggle="collapse"
+                      href="#collapseFirstDay"
+                      aria-label="Minimum Computer and Equipment Requirements"
+                      alt="Minimum Computer and Equipment Requirements"
+                      aria-expanded="false"
+                      ><strong>What should I do the first day of class?</strong>
+                    </a>
+                  </div>
+                  <div
+                    class="collapse"
+                    data-parent="#accordionFirstDay"
+                    id="collapseFirstDay"
+                  >
+                    <div class="card-body">
+                      <p>
+                        The first day of class you will want to log in to
+                        Blackboard via myLIT and familiarize yourself with your
+                        class and instructors preferred method of communication.
+                      </p>
+                      <p>
+                        In most cases the first day of class will be the first
+                        opportunity you have to login to your class.
+                      </p>
+                      <h5>Username and Password</h5>
+                      <ul>
+                        <li>
+                          Usernames and passwords are generated automatically by
+                          the system.
+                          <ul>
+                            <li>
+                              Your instructor will <strong>NOT</strong> know
+                              your log in credentials.
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          Username will be your studentID@my.lit.edu
+                          <ul>
+                            <li>
+                              This can be found on your LIT tuition payment
+                              receipts, your acceptance letter and within
+                              Self-Service Banner.
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          Password will be the
+                          <a
+                            href="http://www.lit.edu/pdf/5481/instructions-complex-password.pdf"
+                            target="_blank"
+                            >complex password</a
+                          >.
+                          <ul>
+                            <li>Click complex password for more details</li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <h5>
+                        Blackboard Learn access is built into our Single SignOn
+                        "myLIT"
+                      </h5>
+                      <ol>
+                        <li>Go to the www.lit.edu</li>
+                        <li>Click on "myLIT"</li>
+                        <li>Type in your Username and Password</li>
+                        <li>Click on Sign in</li>
+                        <li>Locate Blackboard in your myLIT.</li>
+                        <li>
+                          You can then click:
+                          <ol>
+                            <li>
+                              Institution Page - to see campus announcements and
+                              resources.
+                            </li>
+                            <li>
+                              <a
+                                href="https://youtu.be/1ENC_PmS2FI?si=YgR5_RE8-i_dhmd5"
+                                target="_blank"
+                                >Your Name</a
+                              >
+                              - to update your profile and add a photo/pronouns/
+                              and name pronunciation.
+                            </li>
+                            <li>
+                              Activity Stream - to see a list of important
+                              course activities and jump into your course.
+                            </li>
+                            <li>
+                              <a
+                                href="https://youtu.be/qIcX6ktPRf0?si=EVZMAc1RzsOa_1g1"
+                                target="_blank"
+                                >Courses</a
+                              >
+                              - to see a list of your courses that you click to
+                              enter.
+                            </li>
+                            <li>
+                              <a
+                                href="https://youtu.be/-rWnSiUZVKA?si=01WNdc_Q9QqlEKPa"
+                                target="_blank"
+                                >Calendar</a
+                              >
+                              - to see a calendar display of assignments with
+                              set due dates.
+                              <ul>
+                                <li>
+                                  Note not all assignments will populate to this
+                                  calendar if the instructor did not assign a
+                                  due date to the item.
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a
+                                href="https://youtu.be/s066yt2qxXk?si=WJidHYZBIEYSH9B8"
+                                target="_blank"
+                                >Messages</a
+                              >
+                              - to see internal message system for instructors
+                              that prefer this method of communication.
+                            </li>
+                          </ol>
+                        </li>
+                      </ol>
+                      <p>
+                        While your classes may appear before the first day of
+                        the semester your courses will not be available to you
+                        until the first day of class.
+                      </p>
+                      <p>
+                        If you are taking an online course that utilizes
+                        additional resources from the textbook publisher, you
+                        may need a STUDENT ACCESS CODE. The access code will be
+                        provided with your textbook and/or your instructor will
+                        tell you how to access your code.
+                      </p>
+                      <p>
+                        *If you register late please give the system 4-6 hours
+                        to process the registration and create an account.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ///////////////////////////////////////////////////////////// -->
+
+          <!-- LIT ONLINE -- INJECTED GET MORE INFO CARD -->
+          <div class="injected-container" style="display: none">
+            <style>
+              h2.text-primary {
+                color: #1c75bc !important;
+              }
+            </style>
+            <div class="row">
+              <div class="col-sm-12 col-lg-6">&nbsp;</div>
+              <div class="col-sm-12 col-lg-6">
+                <div class="info-wrap">
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="text-primary">Get More Information</h2>
+                    </div>
+                    <div class="card-body">
+                      <div class="row">
+                        <div
+                          class="col-sm-12 col-md-4 xxprog-img-frame rounded"
+                        >
+                          <img
+                            class="img-fluid"
+                            src="https://lit.edu/db-image/13187/angela-tate-clark"
+                            alt="Angela Clark - Director of Online Learning"
+                            title="Angela Clark - Director of Online Learning"
+                          />
+                        </div>
+                        <div class="col-sm-12 col-md-8">
+                          <div class="info-box">
+                            <h3>Angela Clark</h3>
+                            <strong class="subtitle blue">
+                              <span>Director of Online Learning</span>
+                            </strong>
+                            <div class="holder">
+                              <address>
+                                <strong>Office:</strong> Technology Center, Room
+                                112D<br />
+                                <strong>Mailing Address:</strong> PO Box 10043,
+                                Beaumont, TX 77710<br />
+                                <strong>Phone:</strong>
+                                <a href="tel:4099816817">(409) 981-6817</a
+                                ><br />
+                                <strong>Email:</strong>
+                                <a href="mailto:atclark@lit.edu"
+                                  >atclark@lit.edu</a
+                                >
+                              </address>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              var pageContent = document.querySelector(".page-content");
+              var injectedContainer = document.querySelector(
+                ".injected-container"
+              );
+
+              if (pageContent && injectedContainer) {
+                pageContent.insertAdjacentElement(
+                  "afterend",
+                  injectedContainer
+                );
+                injectedContainer.style.display = "block";
+              }
+            });
+          </script>
+
+          <!-- ///////////////////////////////////////////////////////////// -->
+          <!-- END OF LIT ONLINE /////////////////////////////////////////// -->
+          <!-- ///////////////////////////////////////////////////////////// -->
         </div>
       </div>
       <div class="col-sm-12 col-md-2">
         <div class="sidebar-sub-drawer">
           <a href="./aa.html">Veteran Services</a>
-          <a href="./ab.html">VA Education Benefits</a>
-          <a href="./ac.html">Hazlewood Exemption Act</a>
-          <a href="./ae.html">e</a>
-          <a href="./af.html">fun</a>
-          <a href="./ag.html">g</a>
+          <a href="./ab.html">LIT Online</a>
+          <a href="./ac.html">Online Courses & Programs</a>
+          <a href="./ad.html">LIT Online Experience</a>
+          <a href="./ah.html">LIT Online FAQ</a>
+          <a href="./ae.html">Workforce</a>
+          <a href="./af.html">Canvas</a>
+          <a href="./ag.html">Library</a>
         </div>
       </div>
     </div>
