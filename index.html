@@ -16,6 +16,275 @@
   </head>
 
   <body>
+    <!-- /////////////////////////////////////////////////////////////-->
+    <!-- BEGIN CAREER SERVICES ///////////////////////////////////////-->
+    <!-- /////////////////////////////////////////////////////////////-->
+    <style>
+      .career-services-container {
+        padding: 1.2em;
+        border-radius: 0.5em;
+        margin-bottom: 1.2em;
+      }
+
+      .career-services-grid {
+        display: grid;
+        gap: 20px;
+      }
+
+      /* Default to single column on small screens */
+      .career-services-grid {
+        grid-template-columns: repeat(1, 1fr);
+        --color: #f0f0f0;
+      }
+
+      /* Two columns on wider screens */
+      @media (min-width: 801px) {
+        .career-services-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      .career-services-grid-item {
+        position: relative;
+        padding: 0.8em;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        color: white;
+      }
+
+      .career-services-grid-item::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+        opacity: 0.8;
+      }
+
+      .career-services-grid-item.item1::before {
+        background-image: url("https://lit.edu/getmedia/24536b84-4464-4705-9381-ceea2da54a06/analytics01.jpg");
+      }
+
+      .career-services-grid-item.item2::before {
+        background-image: url("https://lit.edu/getmedia/bd28f868-d216-4649-976d-33ccb9c9d627/auto-col-02.jpg");
+      }
+
+      .career-services-grid-item.item3::before {
+        background-image: url("https://lit.edu/media/LIT/MediaLibrary/Public-Service-and-Safety/Emergency-Medical-Services/640x380/B_1.jpg");
+      }
+
+      .career-services-grid-item.item4::before {
+        background-image: url("https://lit.edu/getattachment/f586532a-c37d-475c-97a1-e86f640cfd7f/med-assistant-3.jpg");
+      }
+
+      .career-services-grid-item.item5::before {
+        background-image: url("https://lit.edu/media/LIT/MediaLibrary/Allied-Health-and-Sciences/Pharmacy-Technician/640x380/B_1.jpg");
+      }
+
+      .career-services-grid-item.item6::before {
+        background-image: url("https://lit.edu/getmedia/5bdeec81-2ba9-4e86-87de-5bb80ea45468/com-electric-01.jpg");
+      }
+
+      .career-services-card {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 0.5em 1em;
+        border-radius: 0.5em;
+        height: 100%;
+      }
+
+      .career-services-link {
+        color: var(--color);
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .career-services-link:hover {
+        text-decoration: underline;
+        color: var(--color);
+      }
+
+      .career-services-link:visited {
+        color: var(--color);
+      }
+
+      .career-services-grid-item p {
+        margin-top: 0.6em;
+      }
+    </style>
+
+    <div class="career-services-container">
+      <div class="career-services-grid">
+        <div class="career-services-grid-item item1">
+          <div class="career-services-card">
+            <h3>
+              <a href="/" class="career-services-link" aria-label="On Campus"
+                >CareerLink</a
+              >
+            </h3>
+            <p>
+              CareerLink is the virtual home of our services, providing a
+              framework for career exploration, gaining experience, and engaging
+              in the career search process. CareerLink features resources, job
+              listings, events and more.
+            </p>
+            <ul>
+              <li>
+                <a
+                  href="https://shibboleth-lit-csm.symplicity.com/sso/"
+                  target="_blank"
+                  aria-label="Student Log-In"
+                  alt="Student Log-In"
+                  class="career-services-link"
+                  >Student Log-In</a
+                >
+                (you're registered!)
+              </li>
+              <li>
+                <a
+                  href="https://lit-csm.symplicity.com/students/index.php?signin_tab=0&amp;signin_tab=0"
+                  target="_blank"
+                  aria-label="Alumni - Register Today!"
+                  alt="Alumni - Register Today!"
+                  class="career-services-link"
+                  >Alumni - Register Today!</a
+                >
+                (if you have graduated less than a year ago use the students
+                log-in)
+              </li>
+              <li>
+                <a
+                  href="https://lit-csm.symplicity.com/employers/"
+                  target="_blank"
+                  aria-label="Employers - Register / Post A Job Today!"
+                  alt="Employers - Register / Post A Job Today!"
+                  class="career-services-link"
+                  >Employers - Register / Post A Job Today!</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="career-services-grid-item item2">
+          <div class="career-services-card">
+            <h3>
+              <a href="/" class="career-services-link" aria-label="Dual Credit"
+                >Career Resources</a
+              >
+            </h3>
+            <h5>Exploratory</h5>
+            <ul>
+              <li>CareerLink</li>
+              <li>Glassdoor</li>
+            </ul>
+            <h5>Resume</h5>
+            <ul>
+              <li>Create & Submit your resume for review</li>
+              <li>Zety</li>
+              <li>Indeed</li>
+            </ul>
+            <h5>External Resources</h5>
+            <ul>
+              <li>LinkedIn</li>
+              <li>Workforce Solutions</li>
+              <li>Indeed</li>
+            </ul>
+          </div>
+        </div>
+        <div class="career-services-grid-item item3">
+          <div class="career-services-card">
+            <h3>
+              <a href="/" class="career-services-link" aria-label="LIT Online"
+                >Career Events
+              </a>
+            </h3>
+            <p>
+              Through programs, partnership, coaching and events, we're
+              dedicated to helping make opportunities a reality.
+            </p>
+          </div>
+        </div>
+        <div class="career-services-grid-item item4">
+          <div class="career-services-card">
+            <h3>
+              <a href="/" class="career-services-link" aria-label="LIT Online"
+                >CareerLink Job Board</a
+              >
+            </h3>
+            <p>
+              Students, note that when you click on the job post of interest,
+              you will be redirected to sign in to CareerLink.
+            </p>
+            <a
+              href="https://lit-csm.symplicity.com/students/jobboard/cfdf0b149cfe985be1fda170b47c1dad"
+              class="career-services-link"
+              aria-label="Job Board"
+              alt="Job Board"
+              >Job Board</a
+            >
+          </div>
+        </div>
+        <div class="career-services-grid-item item5">
+          <div class="career-services-card">
+            <h3>
+              <a href="/" class="career-services-link" aria-label="LIT Online"
+                >Employers</a
+              >
+            </h3>
+            <p>
+              Connect with us directly so we can help proactively build
+              relationship with our students who could benefit from your
+              industry knowledge and expertise.
+            </p>
+            <p>
+              LIT is working on creating a robust employer program. You can
+              engage in recruitment events, post opportunities on CareerLink,
+              participate in development activities such as mock interviews,
+              workshops, career panels, resume reviews, information sessions and
+              conduct on-campus interviews.
+            </p>
+            <p>
+              Interested, want to know more? Contact us at careers@lit.edu or
+              call 409-241-7811!
+            </p>
+            <a
+              href="https://lit-csm.symplicity.com/employers/"
+              class="career-services-link"
+              aria-label="Employers Register / Post A Job Today!"
+              alt="Employers Register / Post A Job Today!"
+              >Employers Register / Post A Job Today!</a
+            >
+          </div>
+        </div>
+        <div class="career-services-grid-item item6">
+          <div class="career-services-card">
+            <h3>
+              <a href="/" class="career-services-link" aria-label="LIT Online"
+                >Career That Works</a
+              >
+            </h3>
+            <p>Want to find a Career That Works? Follow this action plan!</p>
+            <img
+              alt="Copy-of-Copy-of-ACTION-PLAN-(500-x-500-px).png"
+              class="img-fluid"
+              src="https://www.lit.edu/getattachment/Student-Success/Career-Services/Copy-of-Copy-of-ACTION-PLAN-(500-%C3%97-500-px).png"
+              title="Copy-of-Copy-of-ACTION-PLAN-(500-x-500-px).png"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /////////////////////////////////////////////////////////////-->
+    <!-- END CAREER SERVICES /////////////////////////////////////////-->
+    <!-- /////////////////////////////////////////////////////////////-->
+
+    <!-- /////////////////////////////////////////////////////////////-->
     <!-- Risk MGMT -->
     <style>
       .risk-mgmt-container {
@@ -239,6 +508,7 @@
         </div>
       </div>
     </div>
+    <!-- /////////////////////////////////////////////////////////////-->
 
     <script src="static/js/site.js" type="module"></script>
     <script src="static/lib/jquery/dist/jquery.min.js" type="module"></script>
