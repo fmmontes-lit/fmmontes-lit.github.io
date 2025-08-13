@@ -355,7 +355,7 @@
         id="slider"
         style="width: 800px"
         min="0"
-        max="24060"
+        max="24000"
         step="1"
         value="0"
       />
@@ -377,28 +377,28 @@
 
         function loop() {
           x += (slider.value - x) * 0.1;
-          indexToBlit = Math.floor(x / 802);
-          offset = x % 802;
+          indexToBlit = Math.floor(x / 800);
+          offset = x % 800;
           context.drawImage(
             photos[indexToBlit],
             offset,
             0,
-            802 - offset,
+            800 - offset,
             535,
             0,
             0,
-            802 - offset,
+            800 - offset,
             535
           );
           context.drawImage(
             photos[indexToBlit + 1],
             0,
             0,
-            802,
+            800,
             535,
-            802 - offset,
+            800 - offset,
             0,
-            802,
+            800,
             535
           );
         }
