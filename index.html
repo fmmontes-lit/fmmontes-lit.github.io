@@ -375,7 +375,7 @@
           photos.push(img);
         }
 
-        function loop() {
+        function draw() {
           x += (slider.value - x) * 0.1;
           indexToBlit = Math.floor(x / 800);
           offset = x % 800;
@@ -402,7 +402,7 @@
             535
           );
         }
-        setInterval(loop, 10);
+        setInterval(draw, 10);
       });
     </script>
     <script src="static/js/site.js" type="module"></script>
