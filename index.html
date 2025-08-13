@@ -16,499 +16,1370 @@
   </head>
 
   <body>
-    <!-- /////////////////////////////////////////////////////////////-->
-    <!-- BEGIN CAREER SERVICES ///////////////////////////////////////-->
-    <!-- /////////////////////////////////////////////////////////////-->
-    <style>
-      .career-services-container {
-        padding: 1.2em;
-        border-radius: 0.5em;
-        margin-bottom: 1.2em;
-      }
+    <div class="row">
+      <div class="col-sm-12 col-md-10">
+        <!-- /////////////////////////////////////////////////////////////-->
+        <!-- BEGIN CAREER SERVICES ///////////////////////////////////////-->
+        <!-- /////////////////////////////////////////////////////////////-->
+        <style>
+          .career-services-container {
+            padding: 1.2em;
+            border-radius: 0.5em;
+            margin-bottom: 1.2em;
+          }
 
-      .career-services-grid {
-        display: grid;
-        gap: 20px;
-      }
+          .career-services-grid {
+            display: grid;
+            gap: 20px;
+          }
 
-      /* Default to single column on small screens */
-      .career-services-grid {
-        grid-template-columns: repeat(1, 1fr);
-        --color: #f0f0f0;
-      }
+          /* Default to single column on small screens */
+          .career-services-grid {
+            grid-template-columns: repeat(1, 1fr);
+            --color: #f0f0f0;
+          }
 
-      /* Two columns on wider screens */
-      @media (min-width: 801px) {
-        .career-services-grid {
-          grid-template-columns: repeat(2, 1fr);
-        }
-      }
+          /* Two columns on wider screens */
+          @media (min-width: 801px) {
+            .career-services-grid {
+              grid-template-columns: repeat(2, 1fr);
+            }
+          }
 
-      .career-services-grid-item {
-        position: relative;
-        padding: 0.8em;
-        border-radius: 0.5rem;
-        overflow: hidden;
-        color: white;
-      }
+          .career-services-grid-item {
+            position: relative;
+            padding: 0.8em;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            color: white;
+          }
 
-      .career-services-grid-item::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-size: cover;
-        background-position: center;
-        z-index: -1;
-        opacity: 0.8;
-      }
+          .career-services-grid-item::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+            opacity: 0.8;
+          }
 
-      .career-services-grid-item.item1::before {
-        background-image: url("https://lit.edu/getmedia/24536b84-4464-4705-9381-ceea2da54a06/analytics01.jpg");
-      }
+          .career-services-grid-item.item1::before {
+            background-image: url("https://lit.edu/getmedia/24536b84-4464-4705-9381-ceea2da54a06/analytics01.jpg");
+          }
 
-      .career-services-grid-item.item2::before {
-        background-image: url("https://lit.edu/getmedia/bd28f868-d216-4649-976d-33ccb9c9d627/auto-col-02.jpg");
-      }
+          .career-services-grid-item.item2::before {
+            background-image: url("https://lit.edu/getmedia/bd28f868-d216-4649-976d-33ccb9c9d627/auto-col-02.jpg");
+          }
 
-      .career-services-grid-item.item3::before {
-        background-image: url("https://lit.edu/media/LIT/MediaLibrary/Public-Service-and-Safety/Emergency-Medical-Services/640x380/B_1.jpg");
-      }
+          .career-services-grid-item.item3::before {
+            background-image: url("https://lit.edu/media/LIT/MediaLibrary/Public-Service-and-Safety/Emergency-Medical-Services/640x380/B_1.jpg");
+          }
 
-      .career-services-grid-item.item4::before {
-        background-image: url("https://lit.edu/getattachment/f586532a-c37d-475c-97a1-e86f640cfd7f/med-assistant-3.jpg");
-      }
+          .career-services-grid-item.item4::before {
+            background-image: url("https://lit.edu/getattachment/f586532a-c37d-475c-97a1-e86f640cfd7f/med-assistant-3.jpg");
+          }
 
-      .career-services-grid-item.item5::before {
-        background-image: url("https://lit.edu/media/LIT/MediaLibrary/Allied-Health-and-Sciences/Pharmacy-Technician/640x380/B_1.jpg");
-      }
+          .career-services-grid-item.item5::before {
+            background-image: url("https://lit.edu/media/LIT/MediaLibrary/Allied-Health-and-Sciences/Pharmacy-Technician/640x380/B_1.jpg");
+          }
 
-      .career-services-grid-item.item6::before {
-        background-image: url("https://lit.edu/getmedia/5bdeec81-2ba9-4e86-87de-5bb80ea45468/com-electric-01.jpg");
-      }
+          .career-services-grid-item.item6::before {
+            background-image: url("https://lit.edu/getmedia/5bdeec81-2ba9-4e86-87de-5bb80ea45468/com-electric-01.jpg");
+          }
 
-      .career-services-card {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        background: rgba(0, 0, 0, 0.7);
-        padding: 0.5em 1em;
-        border-radius: 0.5em;
-        height: 100%;
-      }
+          .career-services-card {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 0.5em 1em;
+            border-radius: 0.5em;
+            height: 100%;
+          }
 
-      .career-services-link {
-        color: var(--color);
-        text-decoration: none;
-        font-weight: bold;
-      }
+          .career-services-link {
+            color: var(--color);
+            text-decoration: none;
+            font-weight: bold;
+          }
 
-      .career-services-link:hover {
-        text-decoration: underline;
-        color: var(--color);
-      }
+          .career-services-link:hover {
+            text-decoration: underline;
+            color: var(--color);
+          }
 
-      .career-services-link:visited {
-        color: var(--color);
-      }
+          .career-services-link:visited {
+            color: var(--color);
+          }
 
-      .career-services-grid-item p {
-        margin-top: 0.6em;
-      }
-    </style>
+          .career-services-grid-item p {
+            margin-top: 0.6em;
+          }
+        </style>
 
-    <div class="career-services-container">
-      <div class="career-services-grid">
-        <div class="career-services-grid-item item1">
-          <div class="career-services-card">
-            <h3>
-              <a href="/" class="career-services-link" aria-label="On Campus"
-                >CareerLink</a
-              >
-            </h3>
-            <p>
-              CareerLink is the virtual home of our services, providing a
-              framework for career exploration, gaining experience, and engaging
-              in the career search process. CareerLink features resources, job
-              listings, events and more.
-            </p>
-            <ul>
-              <li>
+        <div class="career-services-container page-content">
+          <div class="career-services-grid">
+            <div class="career-services-grid-item item1">
+              <div class="career-services-card">
+                <h3>
+                  <a
+                    href="/"
+                    class="career-services-link"
+                    aria-label="On Campus"
+                    >CareerLink</a
+                  >
+                </h3>
+                <p>
+                  CareerLink is the virtual home of our services, providing a
+                  framework for career exploration, gaining experience, and
+                  engaging in the career search process. CareerLink features
+                  resources, job listings, events and more.
+                </p>
+                <ul>
+                  <li>
+                    <a
+                      href="https://shibboleth-lit-csm.symplicity.com/sso/"
+                      target="_blank"
+                      aria-label="Student Log-In"
+                      alt="Student Log-In"
+                      class="career-services-link"
+                      >Student Log-In</a
+                    >
+                    (you're registered!)
+                  </li>
+                  <li>
+                    <a
+                      href="https://lit-csm.symplicity.com/students/index.php?signin_tab=0&amp;signin_tab=0"
+                      target="_blank"
+                      aria-label="Alumni - Register Today!"
+                      alt="Alumni - Register Today!"
+                      class="career-services-link"
+                      >Alumni - Register Today!</a
+                    >
+                    (if you have graduated less than a year ago use the students
+                    log-in)
+                  </li>
+                  <li>
+                    <a
+                      href="https://lit-csm.symplicity.com/employers/"
+                      target="_blank"
+                      aria-label="Employers - Register / Post A Job Today!"
+                      alt="Employers - Register / Post A Job Today!"
+                      class="career-services-link"
+                      >Employers - Register / Post A Job Today!</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="career-services-grid-item item2">
+              <div class="career-services-card">
+                <h3>
+                  <a
+                    href="/"
+                    class="career-services-link"
+                    aria-label="Dual Credit"
+                    >Career Resources</a
+                  >
+                </h3>
+                <h5>Exploratory</h5>
+                <ul>
+                  <li>CareerLink</li>
+                  <li>Glassdoor</li>
+                </ul>
+                <h5>Resume</h5>
+                <ul>
+                  <li>Create & Submit your resume for review</li>
+                  <li>Zety</li>
+                  <li>Indeed</li>
+                </ul>
+                <h5>External Resources</h5>
+                <ul>
+                  <li>LinkedIn</li>
+                  <li>Workforce Solutions</li>
+                  <li>Indeed</li>
+                </ul>
+              </div>
+            </div>
+            <div class="career-services-grid-item item3">
+              <div class="career-services-card">
+                <h3>
+                  <a
+                    href="/"
+                    class="career-services-link"
+                    aria-label="LIT Online"
+                    >Career Events
+                  </a>
+                </h3>
+                <p>
+                  Through programs, partnership, coaching and events, we're
+                  dedicated to helping make opportunities a reality.
+                </p>
+              </div>
+            </div>
+            <div class="career-services-grid-item item4">
+              <div class="career-services-card">
+                <h3>
+                  <a
+                    href="/"
+                    class="career-services-link"
+                    aria-label="LIT Online"
+                    >CareerLink Job Board</a
+                  >
+                </h3>
+                <p>
+                  Students, note that when you click on the job post of
+                  interest, you will be redirected to sign in to CareerLink.
+                </p>
                 <a
-                  href="https://shibboleth-lit-csm.symplicity.com/sso/"
-                  target="_blank"
-                  aria-label="Student Log-In"
-                  alt="Student Log-In"
+                  href="https://lit-csm.symplicity.com/students/jobboard/cfdf0b149cfe985be1fda170b47c1dad"
                   class="career-services-link"
-                  >Student Log-In</a
+                  aria-label="Job Board"
+                  alt="Job Board"
+                  >Job Board</a
                 >
-                (you're registered!)
-              </li>
-              <li>
-                <a
-                  href="https://lit-csm.symplicity.com/students/index.php?signin_tab=0&amp;signin_tab=0"
-                  target="_blank"
-                  aria-label="Alumni - Register Today!"
-                  alt="Alumni - Register Today!"
-                  class="career-services-link"
-                  >Alumni - Register Today!</a
-                >
-                (if you have graduated less than a year ago use the students
-                log-in)
-              </li>
-              <li>
+              </div>
+            </div>
+            <div class="career-services-grid-item item5">
+              <div class="career-services-card">
+                <h3>
+                  <a
+                    href="/"
+                    class="career-services-link"
+                    aria-label="LIT Online"
+                    >Employers</a
+                  >
+                </h3>
+                <p>
+                  Connect with us directly so we can help proactively build
+                  relationship with our students who could benefit from your
+                  industry knowledge and expertise.
+                </p>
+                <p>
+                  LIT is working on creating a robust employer program. You can
+                  engage in recruitment events, post opportunities on
+                  CareerLink, participate in development activities such as mock
+                  interviews, workshops, career panels, resume reviews,
+                  information sessions and conduct on-campus interviews.
+                </p>
+                <p>
+                  Interested, want to know more? Contact us at careers@lit.edu
+                  or call 409-241-7811!
+                </p>
                 <a
                   href="https://lit-csm.symplicity.com/employers/"
-                  target="_blank"
-                  aria-label="Employers - Register / Post A Job Today!"
-                  alt="Employers - Register / Post A Job Today!"
                   class="career-services-link"
-                  >Employers - Register / Post A Job Today!</a
+                  aria-label="Employers Register / Post A Job Today!"
+                  alt="Employers Register / Post A Job Today!"
+                  >Employers Register / Post A Job Today!</a
                 >
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="career-services-grid-item item2">
-          <div class="career-services-card">
-            <h3>
-              <a href="/" class="career-services-link" aria-label="Dual Credit"
-                >Career Resources</a
-              >
-            </h3>
-            <h5>Exploratory</h5>
-            <ul>
-              <li>CareerLink</li>
-              <li>Glassdoor</li>
-            </ul>
-            <h5>Resume</h5>
-            <ul>
-              <li>Create & Submit your resume for review</li>
-              <li>Zety</li>
-              <li>Indeed</li>
-            </ul>
-            <h5>External Resources</h5>
-            <ul>
-              <li>LinkedIn</li>
-              <li>Workforce Solutions</li>
-              <li>Indeed</li>
-            </ul>
-          </div>
-        </div>
-        <div class="career-services-grid-item item3">
-          <div class="career-services-card">
-            <h3>
-              <a href="/" class="career-services-link" aria-label="LIT Online"
-                >Career Events
-              </a>
-            </h3>
-            <p>
-              Through programs, partnership, coaching and events, we're
-              dedicated to helping make opportunities a reality.
-            </p>
-          </div>
-        </div>
-        <div class="career-services-grid-item item4">
-          <div class="career-services-card">
-            <h3>
-              <a href="/" class="career-services-link" aria-label="LIT Online"
-                >CareerLink Job Board</a
-              >
-            </h3>
-            <p>
-              Students, note that when you click on the job post of interest,
-              you will be redirected to sign in to CareerLink.
-            </p>
-            <a
-              href="https://lit-csm.symplicity.com/students/jobboard/cfdf0b149cfe985be1fda170b47c1dad"
-              class="career-services-link"
-              aria-label="Job Board"
-              alt="Job Board"
-              >Job Board</a
-            >
-          </div>
-        </div>
-        <div class="career-services-grid-item item5">
-          <div class="career-services-card">
-            <h3>
-              <a href="/" class="career-services-link" aria-label="LIT Online"
-                >Employers</a
-              >
-            </h3>
-            <p>
-              Connect with us directly so we can help proactively build
-              relationship with our students who could benefit from your
-              industry knowledge and expertise.
-            </p>
-            <p>
-              LIT is working on creating a robust employer program. You can
-              engage in recruitment events, post opportunities on CareerLink,
-              participate in development activities such as mock interviews,
-              workshops, career panels, resume reviews, information sessions and
-              conduct on-campus interviews.
-            </p>
-            <p>
-              Interested, want to know more? Contact us at careers@lit.edu or
-              call 409-241-7811!
-            </p>
-            <a
-              href="https://lit-csm.symplicity.com/employers/"
-              class="career-services-link"
-              aria-label="Employers Register / Post A Job Today!"
-              alt="Employers Register / Post A Job Today!"
-              >Employers Register / Post A Job Today!</a
-            >
-          </div>
-        </div>
-        <div class="career-services-grid-item item6">
-          <div class="career-services-card">
-            <h3>
-              <a href="/" class="career-services-link" aria-label="LIT Online"
-                >Career That Works</a
-              >
-            </h3>
-            <p>Want to find a Career That Works? Follow this action plan!</p>
-            <img
-              alt="Copy-of-Copy-of-ACTION-PLAN-(500-x-500-px).png"
-              class="img-fluid"
-              src="https://www.lit.edu/getattachment/Student-Success/Career-Services/Copy-of-Copy-of-ACTION-PLAN-(500-%C3%97-500-px).png"
-              title="Copy-of-Copy-of-ACTION-PLAN-(500-x-500-px).png"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /////////////////////////////////////////////////////////////-->
-    <!-- END CAREER SERVICES /////////////////////////////////////////-->
-    <!-- /////////////////////////////////////////////////////////////-->
-
-    <!-- /////////////////////////////////////////////////////////////-->
-    <!-- Risk MGMT -->
-    <style>
-      .risk-mgmt-container {
-        display: flex;
-        gap: 20px;
-        flex-wrap: wrap;
-        background-color: white;
-        padding: 20px;
-        border-radius: 8px;
-        margin-bottom: 20px;
-        line-height: 1.6;
-        align-items: stretch;
-      }
-      .risk-mgmt-item {
-        display: flex;
-        flex: 1 1 300px;
-      }
-      .risk-mgmt-item .card {
-        display: flex;
-        flex: 1; /* Ensures the card takes full height of the parent */
-        flex-direction: column;
-        border-radius: 12px;
-        overflow: hidden;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-      }
-      .risk-mgmt-item .card-header {
-        background-color: #1b6ec2;
-        font-size: 1.25rem;
-        padding: 1rem;
-        color: white;
-        text-align: center;
-      }
-      .risk-mgmt-item .card-body {
-        display: flex;
-        flex-grow: 1; /* Let the body grow to fill remaining space */
-        flex-direction: column;
-        padding: 1rem;
-      }
-      .risk-mgmt-item .final-doc {
-        border-left: 6px solid #ec2027;
-        background-color: #ffe6e9;
-        margin: 10px 0;
-        padding: 15px;
-        border-radius: 8px;
-        font-weight: 600;
-        color: #721c24;
-      }
-    </style>
-    <div class="risk-mgmt-container">
-      <div class="risk-mgmt-item">
-        <div class="card">
-          <div class="card-header">
-            <strong>Hazard Communication Program</strong>
-          </div>
-          <div class="card-body">
-            <p>
-              The purpose of the Hazard Communication Program is to inform
-              employees of the hazards associated with chemicals and to ensure
-              the safe use, handling, storage, and disposal of chemicals. Key
-              elements of the program include:
-            </p>
-            <ul>
-              <li>Supervisor's responsibilities</li>
-              <li>Training requirements</li>
-              <li>Hazard identification</li>
-              <li>Chemical labeling</li>
-              <li>Safety Data Sheets</li>
-              <li>Chemical inventories (Workplace Chemical Lists)</li>
-            </ul>
-            <div class="final-doc">
-              <i class="fa-solid fa-file-pdf"></i>&nbsp;
-              <a
-                href="https://www.lit.edu/getmedia/af77f849-c9b7-4d4d-bb7f-d185e029fc8a/lit-hazcomm-program-final-062025.pdf"
-                >LIT Hazard Communication Program (Final Document)</a
-              >
+              </div>
+            </div>
+            <div class="career-services-grid-item item6">
+              <div class="career-services-card">
+                <h3>
+                  <a
+                    href="/"
+                    class="career-services-link"
+                    aria-label="LIT Online"
+                    >Career That Works</a
+                  >
+                </h3>
+                <p>
+                  Want to find a Career That Works? Follow this action plan!
+                </p>
+                <img
+                  alt="Copy-of-Copy-of-ACTION-PLAN-(500-x-500-px).png"
+                  class="img-fluid"
+                  src="https://www.lit.edu/getattachment/Student-Success/Career-Services/Copy-of-Copy-of-ACTION-PLAN-(500-%C3%97-500-px).png"
+                  title="Copy-of-Copy-of-ACTION-PLAN-(500-x-500-px).png"
+                />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="risk-mgmt-item">
-        <div class="card">
-          <div class="card-header">
-            <strong>Resources</strong>
+        <!-- LIT ONLINE -- INJECTED GET MORE INFO CARD -->
+        <div class="injected-container" style="display: none">
+          <style>
+            h2.text-primary {
+              color: #1c75bc !important;
+            }
+          </style>
+          <div class="row">
+            <div class="col-sm-12 col-lg-6">&nbsp;</div>
+            <div class="col-sm-12 col-lg-6">
+              <div class="info-wrap">
+                <div class="card">
+                  <div class="card-header">
+                    <h2 class="text-primary">Get More Information</h2>
+                  </div>
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-sm-12 col-md-4 xxprog-img-frame rounded">
+                        <img
+                          class="img-fluid"
+                          src="https://lit.edu/db-image/13364/jennifer-marie-chambers"
+                          alt="Angela Clark - Director of Online Learning"
+                          title="Angela Clark - Director of Online Learning"
+                        />
+                      </div>
+                      <div class="col-sm-12 col-md-8">
+                        <div class="info-box">
+                          <h3>Jennifer Chambers</h3>
+                          <strong class="subtitle blue">
+                            <span>Coordinator of Career Services</span>
+                          </strong>
+                          <div class="holder">
+                            <address>
+                              <strong>Office:</strong> Eagles' Nest, Suite
+                              119<br />
+                              <strong>Physical Address:</strong> 855 East
+                              Lavaca, Beaumont, TX 77705<br />
+                              <strong>Mailing Address:</strong> PO Box 10043,
+                              Beaumont, TX 77710<br />
+                              <strong>Phone:</strong>
+                              <a href="tel:4092422047">(409) 242-2047</a><br />
+                              <strong>Email:</strong>
+                              <a href="mailto:jchambers3@lit.edu"
+                                >jchambers3@lit.edu</a
+                              ><br />
+                              <strong>Email (main):</strong>
+                              <a href="mailto:careers@lit.edu"
+                                >careers@lit.edu</a
+                              >
+                            </address>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="card-body">
-            <p>
-              The documents below have been developed to communicate hazard and
-              safety information regarding hazardous substances to employees and
-              to comply with the Texas Hazard Communication Act.
-            </p>
-            <ul class="fa-ul">
+        </div>
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            var pageContent = document.querySelector(".page-content");
+            var injectedContainer = document.querySelector(
+              ".injected-container"
+            );
+
+            if (pageContent && injectedContainer) {
+              pageContent.insertAdjacentElement("afterend", injectedContainer);
+              injectedContainer.style.display = "block";
+            }
+          });
+        </script>
+        <!-- /////////////////////////////////////////////////////////////-->
+        <!-- END CAREER SERVICES /////////////////////////////////////////-->
+        <!-- /////////////////////////////////////////////////////////////-->
+
+        <!-- /////////////////////////////////////////////////////////////-->
+        <!-- Risk MGMT -->
+        <!--<style>
+          .risk-mgmt-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+            align-items: stretch;
+          }
+          .risk-mgmt-item {
+            display: flex;
+            flex: 1 1 300px;
+          }
+          .risk-mgmt-item .card {
+            display: flex;
+            flex: 1; /* Ensures the card takes full height of the parent */
+            flex-direction: column;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+          }
+          .risk-mgmt-item .card-header {
+            background-color: #1b6ec2;
+            font-size: 1.25rem;
+            padding: 1rem;
+            color: white;
+            text-align: center;
+          }
+          .risk-mgmt-item .card-body {
+            display: flex;
+            flex-grow: 1; /* Let the body grow to fill remaining space */
+            flex-direction: column;
+            padding: 1rem;
+          }
+          .risk-mgmt-item .final-doc {
+            border-left: 6px solid #ec2027;
+            background-color: #ffe6e9;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            font-weight: 600;
+            color: #721c24;
+          }
+        </style>
+        <div class="risk-mgmt-container">
+          <div class="risk-mgmt-item">
+            <div class="card">
+              <div class="card-header">
+                <strong>Hazard Communication Program</strong>
+              </div>
+              <div class="card-body">
+                <p>
+                  The purpose of the Hazard Communication Program is to inform
+                  employees of the hazards associated with chemicals and to
+                  ensure the safe use, handling, storage, and disposal of
+                  chemicals. Key elements of the program include:
+                </p>
+                <ul>
+                  <li>Supervisor's responsibilities</li>
+                  <li>Training requirements</li>
+                  <li>Hazard identification</li>
+                  <li>Chemical labeling</li>
+                  <li>Safety Data Sheets</li>
+                  <li>Chemical inventories (Workplace Chemical Lists)</li>
+                </ul>
+                <div class="final-doc">
+                  <i class="fa-solid fa-file-pdf"></i>&nbsp;
+                  <a
+                    href="https://www.lit.edu/getmedia/af77f849-c9b7-4d4d-bb7f-d185e029fc8a/lit-hazcomm-program-final-062025.pdf"
+                    >LIT Hazard Communication Program (Final Document)</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="risk-mgmt-item">
+            <div class="card">
+              <div class="card-header">
+                <strong>Resources</strong>
+              </div>
+              <div class="card-body">
+                <p>
+                  The documents below have been developed to communicate hazard
+                  and safety information regarding hazardous substances to
+                  employees and to comply with the Texas Hazard Communication
+                  Act.
+                </p>
+                <ul class="fa-ul">
+                  <li>
+                    <span class="fa-li"
+                      ><i class="fa-solid fa-file-excel"></i
+                    ></span>
+                    <a
+                      href="https://www.lit.edu/getmedia/45656b9f-9a07-4a99-836e-67a63cfc361a/hazwaste-disposal-inventory-workbook.xlsx"
+                      aria-label="Visit Lamar Institute of Technology"
+                      >HazWaste Disposal Inventory Workbook</a
+                    >
+                  </li>
+                  <li>
+                    <span class="fa-li"
+                      ><i class="fa-solid fa-file-excel"></i
+                    ></span>
+                    <a
+                      href="https://www.lit.edu/getmedia/20d7ae3e-5fc6-4f3e-a55b-da2bcd920445/in-use-and-stored-chemicals-and-materials-inventory-workbook.xlsx"
+                      aria-label="Visit Lamar Institute of Technology"
+                      >In-Use &amp; Stored Chemicals &amp; Materials Inventory
+                      Workbook</a
+                    >
+                  </li>
+                  <li>
+                    <span class="fa-li"
+                      ><i class="fa-solid fa-file-excel"></i
+                    ></span>
+                    <a
+                      href="https://www.lit.edu/getmedia/6f6c4a26-d6ef-4a74-b989-1c7df0a3a30c/experiment-hazard-analysis-blank.xlsx"
+                      aria-label="Visit Lamar Institute of Technology"
+                      >Experiment Hazard Analysis Blank</a
+                    >
+                  </li>
+                  <li>
+                    <span class="fa-li"
+                      ><i class="fa-solid fa-file-pdf"></i
+                    ></span>
+                    <a
+                      href="https://www.lit.edu/getmedia/f10b0f2e-3256-4925-bfce-cf400d6e50d0/hazmat-secondary-container-label.pdf"
+                      aria-label="Visit Lamar Institute of Technology"
+                      >HAZMAT Secondary Container Label</a
+                    >
+                  </li>
+                  <li>
+                    <span class="fa-li"
+                      ><i class="fa-solid fa-file-pdf"></i
+                    ></span>
+                    <a
+                      href="https://www.lit.edu/getmedia/c9e95e99-01c7-4b4f-bdc9-43bc1aa4e113/chemical-segregation-and-storage-table.pdf"
+                      aria-label="Visit Lamar Institute of Technology"
+                      >Chemical Segregation and Storage Table</a
+                    >
+                  </li>
+                  <li>
+                    <span class="fa-li"
+                      ><i class="fa-solid fa-file-pdf"></i
+                    ></span>
+                    <a
+                      href="https://www.lit.edu/getmedia/62f9b990-a233-4736-87a5-d2902d68d0d9/chemical-storage-flowchart.pdf"
+                      aria-label="Visit Lamar Institute of Technology"
+                      >Chemical Storage Flowchart</a
+                    >
+                  </li>
+                  <li>
+                    <span class="fa-li"
+                      ><i class="fa-solid fa-file-pdf"></i
+                    ></span>
+                    <a
+                      href="https://www.lit.edu/getmedia/e502e69b-b3ed-4dd2-9aff-1bd538cb22df/color-code-storage-pic.pdf"
+                      aria-label="Visit Lamar Institute of Technology"
+                      >Color Code Storage Pic</a
+                    >
+                  </li>
+                  <li>
+                    <span class="fa-li"
+                      ><i class="fa-solid fa-file-pdf"></i
+                    ></span>
+                    <a
+                      href="https://www.lit.edu/getmedia/3c8b4c76-def3-46c0-bc9c-5abe3cda31c8/osha-3165-job-safety-and-health-its-the-law-color-poster.pdf"
+                      aria-label="Visit Lamar Institute of Technology"
+                      >OSHA 3165 Job Safety &amp; Health</a
+                    >
+                  </li>
+                  <li>
+                    <span class="fa-li"
+                      ><i class="fa-solid fa-file-pdf"></i
+                    ></span>
+                    <a
+                      href="https://www.lit.edu/getmedia/ee1c9d56-59fe-4d69-84e7-786c6d0d3134/osha-hazcom-final-ruling.pdf"
+                      aria-label="Visit Lamar Institute of Technology"
+                      >OSHA HazCom Final Ruling</a
+                    >
+                  </li>
+                  <li>
+                    <span class="fa-li"
+                      ><i class="fa-solid fa-file-pdf"></i
+                    ></span>
+                    <a
+                      href="https://www.lit.edu/getmedia/7da30d76-1d86-40a0-8371-637c7103339e/osha-hazcommstandard-labels-and-pictograms.pdf"
+                      aria-label="Visit Lamar Institute of Technology"
+                      >OSHA HazComm Standard Labels &amp; Pictograms</a
+                    >
+                  </li>
+                  <li>
+                    <span class="fa-li"
+                      ><i class="fa-solid fa-file-pdf"></i
+                    ></span>
+                    <a
+                      href="https://www.lit.edu/getmedia/62b9a8bd-0757-4cbb-ac60-67112512472c/osha-quick-card-nfpa-704-and-hazcom-2012-labels.pdf"
+                      aria-label="Visit Lamar Institute of Technology"
+                      >OSHA Quick Card NFPA 704 &amp; HazCom 2012 Labels</a
+                    >
+                  </li>
+                  <li>
+                    <span class="fa-li"
+                      ><i class="fa-solid fa-file-pdf"></i
+                    ></span>
+                    <a
+                      href="https://www.lit.edu/getmedia/1f9f8313-1d9b-4925-a83f-25ed2f69322b/osha-right-to-know-law-2023.pdf"
+                      aria-label="Visit Lamar Institute of Technology"
+                      >OSHA Right to Know Law</a
+                    >
+                  </li>
+                  <li>
+                    <span class="fa-li"
+                      ><i class="fa-solid fa-file-pdf"></i
+                    ></span>
+                    <a
+                      href="https://www.lit.edu/getmedia/9b229445-f681-49e7-b183-7d174f8f0375/risk-management-for-hazardous-chemicals-full.pdf"
+                      aria-label="Visit Lamar Institute of Technology"
+                      >Risk Management for Hazardous Chemicals</a
+                    >
+                  </li>
+                  <li>
+                    <span class="fa-li"
+                      ><i class="fa-solid fa-file-pdf"></i
+                    ></span>
+                    <a
+                      href="https://www.lit.edu/getmedia/9da1439d-09b0-4f47-92c9-4c6fd4089b0b/texas-dhhs-notice-to-employees.pdf"
+                      aria-label="Visit Lamar Institute of Technology"
+                      >Texas DHHS Notice to Employees</a
+                    >
+                  </li>
+                  <li>
+                    <span class="fa-li"
+                      ><i class="fa-solid fa-file-pdf"></i
+                    ></span>
+                    <a
+                      href="https://www.lit.edu/getmedia/22ffe24f-aed8-4d37-a897-b547be673023/wallet-card-ghs-pictograms.pdf"
+                      aria-label="Visit Lamar Institute of Technology"
+                      >Wallet Card GHS Pictograms</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>-->
+        <!-- /////////////////////////////////////////////////////////////-->
+      </div>
+      <div class="col-sm-12 col-md-12">
+        <style>
+          .sidebar-sub-drawer {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+          }
+          .menu-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+          }
+
+          /* new nav */
+          .main-navigation {
+            max-width: 450px;
+            /* margin: 0 auto; */
+          }
+
+          .main-navigation ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+          }
+
+          .main-navigation li {
+            border-bottom: 1px solid #ddd;
+          }
+
+          .main-navigation a,
+          .main-navigation button.nav-toggle {
+            display: block;
+            width: 100%;
+            padding: 6px 16px;
+            text-align: left;
+            background: #f8f8f8;
+            border: none;
+            font-size: 1.4rem;
+            cursor: pointer;
+            text-decoration: none;
+            color: #1e448d;
+            transition: background 0.3s;
+          }
+
+          .main-navigation button.nav-toggle::after {
+            font-size: 2rem;
+            content: "▸";
+            float: right;
+            transition: transform 0.3s;
+          }
+
+          .main-navigation li.open > button.nav-toggle::after {
+            transform: rotate(90deg);
+          }
+
+          .main-navigation ul ul {
+            display: none;
+          }
+
+          .main-navigation li.open > ul {
+            display: block;
+          }
+
+          /* Level 2 */
+          .main-navigation ul ul a,
+          .main-navigation ul ul button.nav-toggle {
+            background: #e7eef7;
+            padding-left: 48px;
+            border-left: 4px solid #1e448d; /* deep blue */
+          }
+
+          /* Level 3 */
+          .main-navigation ul ul ul a,
+          .main-navigation ul ul ul button.nav-toggle {
+            background: #d6e7f4;
+            padding-left: 80px;
+            border-left: 4px solid #ec2027; /* bold red */
+          }
+
+          /* Level 4 (if needed) */
+          .main-navigation ul ul ul ul a,
+          .main-navigation ul ul ul ul button.nav-toggle {
+            background: #f9e2e4;
+            padding-left: 112px;
+            border-left: 4px solid #1c75bc; /* vibrant blue */
+          }
+
+          /* Hover effects */
+          .main-navigation a:hover,
+          .main-navigation button.nav-toggle:hover {
+            color: #ec2027;
+            background: #dce7f4;
+          }
+
+          /* Active/expanded */
+          .main-navigation li.open > button.nav-toggle {
+            background: #cbddef;
+          }
+
+          .google-lit-search {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+            width: 100%;
+            max-width: 450px;
+          }
+          .google-lit-search input {
+            margin-right: 10px;
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            height: 50px;
+            font-size: 2rem;
+          }
+          .google-lit-search button {
+            width: 100%;
+            height: 50px;
+            padding: 8px 16px;
+            background-color: #1b6ec2;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+          }
+        </style>
+        <div class="sidebar-sub-drawer">
+          <nav class="main-navigation">
+            <ul class="nav-level-1">
               <li>
-                <span class="fa-li"
-                  ><i class="fa-solid fa-file-excel"></i
-                ></span>
-                <a
-                  href="https://www.lit.edu/getmedia/45656b9f-9a07-4a99-836e-67a63cfc361a/hazwaste-disposal-inventory-workbook.xlsx"
-                  aria-label="Visit Lamar Institute of Technology"
-                  >HazWaste Disposal Inventory Workbook</a
-                >
+                <button class="nav-toggle">Academics</button>
+                <ul class="nav-level-2">
+                  <li>
+                    <button class="nav-toggle">Programs Offered</button>
+                    <ul class="nav-level-3">
+                      <li>
+                        <a href="https://www.lit.edu/programs/business"
+                          >Business</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://www.lit.edu/dual-credit"
+                          >Dual Credit Programs</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://www.lit.edu/programs/general-education"
+                          >General Education</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.lit.edu/programs/healthcare-and-sciences"
+                          >Healthcare and Sciences</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.lit.edu/programs/public-service-and-safety"
+                          >Public Service and Safety</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://www.lit.edu/programs/technology"
+                          >Technology</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.lit.edu/workforce-continuing-education"
+                          >Workforce Training and Continuing Education</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://www.lit.edu/online-learning"
+                          >Online Learning</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <button class="nav-toggle">Academic Resources</button>
+                    <ul class="nav-level-3">
+                      <li>
+                        <a
+                          href="https://www.lit.edu/student-success/academic-support"
+                          >Academic Support</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.lit.edu/student-success/learning-lab"
+                          >Learning Lab</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://www.lit.edu/testing-center"
+                          >Testing Center</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.lit.edu/student-success/prior-learning-assessment"
+                          >Prior Learning Assessment</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://www.lit.edu/student-success/starfish"
+                          >Starfish</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.lit.edu/student-success/eagle-learning-essentials"
+                          >Eagle Learning Essentials</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <button class="nav-toggle">Academic Information</button>
+                    <ul class="nav-level-3">
+                      <li>
+                        <a href="http://catalog.lit.edu/"
+                          >College Catalog & Student Handbook</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://lit.edu/academic-calendar"
+                          >Academic Calendars</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://lit.edu/student-success/final-exam-schedule-spring-2025"
+                          >Final Exam Schedules</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://lit.edu/about/accreditation"
+                          >Accreditation</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <button class="nav-toggle">Advising & Registration</button>
+                    <ul class="nav-level-3">
+                      <li>
+                        <a href="https://www.lit.edu/information/advisors"
+                          >Academic Advising</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://reg-prod.ec.lit.edu/StudentRegistrationSsb/ssb/term/termSelection?mode=search"
+                          >Class Schedules</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://lit.edu/admissions/registration"
+                          >Registration</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
               </li>
+
               <li>
-                <span class="fa-li"
-                  ><i class="fa-solid fa-file-excel"></i
-                ></span>
-                <a
-                  href="https://www.lit.edu/getmedia/20d7ae3e-5fc6-4f3e-a55b-da2bcd920445/in-use-and-stored-chemicals-and-materials-inventory-workbook.xlsx"
-                  aria-label="Visit Lamar Institute of Technology"
-                  >In-Use &amp; Stored Chemicals &amp; Materials Inventory
-                  Workbook</a
-                >
+                <button class="nav-toggle">Admissions</button>
+                <ul class="nav-level-2">
+                  <li>
+                    <a href="https://lit.edu/admissions">LIT Admissions</a>
+                  </li>
+                  <li>
+                    <button class="nav-toggle">How to Apply</button>
+                    <ul class="nav-level-3">
+                      <li>
+                        <a href="https://lit.edu/admissions/future-students"
+                          >Future Students</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://lit.edu/admissions/high-school-graduates"
+                          >High School Graduates</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://lit.edu/admissions/transfer-students"
+                          >Transfer Students</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://lit.edu/admissions/international-students"
+                          >International Students</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://lit.edu/dual-credit"
+                          >Dual Credit Admissions</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://lit.edu/admissions/ged-certificate-holders"
+                          >GED or HiSET Holders</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://lit.edu/admissions/non-high-school-graduates"
+                          >Non-High School Graduates</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://lit.edu/admissions/readmission-of-students"
+                          >Readmission</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://lit.edu/admissions/senior-citizen-enrollment"
+                          >Senior Citizen Enrollment</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <button class="nav-toggle">Admission Requirements</button>
+                    <ul class="nav-level-3">
+                      <li>
+                        <a
+                          href="https://lit.edu/admissions/bacterial-meningitis-vaccination"
+                          >Bacterial Meningitis Vaccination</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://lit.edu/testing-center"
+                          >Testing Center</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="https://lit.edu/admissions/tuition-and-fees"
+                      >Tuition and Fees</a
+                    >
+                  </li>
+                  <li><a href="#">Visit LIT</a></li>
+                  <li><a href="#">Contact Admissions</a></li>
+                </ul>
               </li>
+
               <li>
-                <span class="fa-li"
-                  ><i class="fa-solid fa-file-excel"></i
-                ></span>
-                <a
-                  href="https://www.lit.edu/getmedia/6f6c4a26-d6ef-4a74-b989-1c7df0a3a30c/experiment-hazard-analysis-blank.xlsx"
-                  aria-label="Visit Lamar Institute of Technology"
-                  >Experiment Hazard Analysis Blank</a
-                >
+                <button class="nav-toggle">Financial Aid</button>
+                <ul class="nav-level-2">
+                  <li>
+                    <a href="https://lit.edu/financial-aid"
+                      >LIT Financial Aid Help</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://lit.edu/financial-aid/apply-for-financial-aid"
+                      >Apply for Financial Aid</a
+                    >
+                  </li>
+                  <li>
+                    <button class="nav-toggle">Funding Options</button>
+                    <ul class="nav-level-3">
+                      <li><a href="#">Grants</a></li>
+                      <li>
+                        <a href="https://lit.edu/foundation/scholarships"
+                          >Scholarships</a
+                        >
+                      </li>
+                      <li><a href="#">Loans</a></li>
+                      <li><a href="#">Work-Study</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <button class="nav-toggle">Financial Aid Processes</button>
+                    <ul class="nav-level-3">
+                      <li>
+                        <a
+                          href="https://lit.edu/financial-aid/federal-verification-process"
+                          >Federal Verification Process</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://lit.edu/financial-aid/satisfactory-academic-progress"
+                          >Satisfactory Academic Progress</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://lit.edu/financial-aid/return-of-title-iv-funds"
+                          >Return of Title IV Funds</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://lit.edu/financial-aid/appeal-process"
+                          >Appeal Process</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://lit.edu/financial-aid/special-circumstances"
+                          >Special Circumstances</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="https://lit.edu/financial-aid/forms">Forms</a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://lit.edu/financial-aid/cares-act-30-day-reporting"
+                      >CARES Act / COVID-19 Emergency Aid</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://lit.edu/financial-aid/contact-us"
+                      >Contact Financial Aid</a
+                    >
+                  </li>
+                </ul>
               </li>
+
               <li>
-                <span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span>
-                <a
-                  href="https://www.lit.edu/getmedia/f10b0f2e-3256-4925-bfce-cf400d6e50d0/hazmat-secondary-container-label.pdf"
-                  aria-label="Visit Lamar Institute of Technology"
-                  >HAZMAT Secondary Container Label</a
-                >
+                <button class="nav-toggle">
+                  Student Services & Campus Life
+                </button>
+                <ul class="nav-level-2">
+                  <li>
+                    <a href="https://lit.edu/student-success"
+                      >LIT Student Success</a
+                    >
+                  </li>
+                  <li>
+                    <button class="nav-toggle">
+                      Student Support & Resources
+                    </button>
+                    <ul class="nav-level-3">
+                      <li>
+                        <a href="https://lit.edu/information-technology"
+                          >IT Helpdesk</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://lit.edu/student-success/transcripts"
+                          >Transcripts</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://lit.edu/student-success/veterans"
+                          >Veteran Services</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://lit.edu/student-success/special-populations"
+                          >Special Populations</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://lit.edu/student-success/title-ix"
+                          >Title IX</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://lit.edu/student-success/successful-eagles-soar"
+                          >Successful Eagles Soar</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <button class="nav-toggle">Health & Wellness</button>
+                    <ul class="nav-level-3">
+                      <li>
+                        <a href="https://lit.edu/student-success/campus-safety"
+                          >Campus Safety</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://lit.edu/student-success/health-services"
+                          >Health Services</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://www.lit.edu/information/timelycare"
+                          >TimelyCare</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.lit.edu/student-success/vaccine-requirement"
+                          >General Vaccine Requirement</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <button class="nav-toggle">Engagement & Development</button>
+                    <ul class="nav-level-3">
+                      <li>
+                        <a
+                          href="https://www.lit.edu/student-success/student-activities"
+                          >Student Engagement</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.lit.edu/student-success/eagle-ambassadors"
+                          >Eagle Ambassadors</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.lit.edu/student-success/career-services"
+                          >Career Services</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.lit.edu/student-success/commencement"
+                          >Commencement Information</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
               </li>
+
               <li>
-                <span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span>
-                <a
-                  href="https://www.lit.edu/getmedia/c9e95e99-01c7-4b4f-bdc9-43bc1aa4e113/chemical-segregation-and-storage-table.pdf"
-                  aria-label="Visit Lamar Institute of Technology"
-                  >Chemical Segregation and Storage Table</a
-                >
+                <button class="nav-toggle">About LIT</button>
+                <ul class="nav-level-2">
+                  <li>
+                    <a href="https://www.lit.edu/about">About Us</a>
+                  </li>
+                  <li>
+                    <button class="nav-toggle">Our Institution</button>
+                    <ul class="nav-level-3">
+                      <li>
+                        <a
+                          href="https://www.lit.edu/about/history-of-lamar-institute-of-technology"
+                          >History</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.lit.edu/about/college-administration"
+                          >Executive Team</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.lit.edu/about/lit-learning-locations"
+                          >Learning Locations</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://www.lit.edu/about/lit-master-plan"
+                          >Master Plan</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <button class="nav-toggle">Data & Governance</button>
+                    <ul class="nav-level-3">
+                      <li>
+                        <a href="https://www.lit.edu/institutional-data"
+                          >Institutional Data</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://www.lit.edu/finance-and-operations"
+                          >Finance and Operations</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://www.lit.edu/internal-audit"
+                          >Internal Audit</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://www.lit.edu/about/compact-with-texans"
+                          >Compact with Texans</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <button class="nav-toggle">
+                      Communications & Outreach
+                    </button>
+                    <ul class="nav-level-3">
+                      <li>
+                        <a href="https://www.lit.edu/news"
+                          >Communications and Marketing</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.lit.edu/teaching-and-learning-center"
+                          >Teaching and Learning Center</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
               </li>
+
               <li>
-                <span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span>
-                <a
-                  href="https://www.lit.edu/getmedia/62f9b990-a233-4736-87a5-d2902d68d0d9/chemical-storage-flowchart.pdf"
-                  aria-label="Visit Lamar Institute of Technology"
-                  >Chemical Storage Flowchart</a
-                >
-              </li>
-              <li>
-                <span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span>
-                <a
-                  href="https://www.lit.edu/getmedia/e502e69b-b3ed-4dd2-9aff-1bd538cb22df/color-code-storage-pic.pdf"
-                  aria-label="Visit Lamar Institute of Technology"
-                  >Color Code Storage Pic</a
-                >
-              </li>
-              <li>
-                <span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span>
-                <a
-                  href="https://www.lit.edu/getmedia/3c8b4c76-def3-46c0-bc9c-5abe3cda31c8/osha-3165-job-safety-and-health-its-the-law-color-poster.pdf"
-                  aria-label="Visit Lamar Institute of Technology"
-                  >OSHA 3165 Job Safety &amp; Health</a
-                >
-              </li>
-              <li>
-                <span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span>
-                <a
-                  href="https://www.lit.edu/getmedia/ee1c9d56-59fe-4d69-84e7-786c6d0d3134/osha-hazcom-final-ruling.pdf"
-                  aria-label="Visit Lamar Institute of Technology"
-                  >OSHA HazCom Final Ruling</a
-                >
-              </li>
-              <li>
-                <span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span>
-                <a
-                  href="https://www.lit.edu/getmedia/7da30d76-1d86-40a0-8371-637c7103339e/osha-hazcommstandard-labels-and-pictograms.pdf"
-                  aria-label="Visit Lamar Institute of Technology"
-                  >OSHA HazComm Standard Labels &amp; Pictograms</a
-                >
-              </li>
-              <li>
-                <span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span>
-                <a
-                  href="https://www.lit.edu/getmedia/62b9a8bd-0757-4cbb-ac60-67112512472c/osha-quick-card-nfpa-704-and-hazcom-2012-labels.pdf"
-                  aria-label="Visit Lamar Institute of Technology"
-                  >OSHA Quick Card NFPA 704 &amp; HazCom 2012 Labels</a
-                >
-              </li>
-              <li>
-                <span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span>
-                <a
-                  href="https://www.lit.edu/getmedia/1f9f8313-1d9b-4925-a83f-25ed2f69322b/osha-right-to-know-law-2023.pdf"
-                  aria-label="Visit Lamar Institute of Technology"
-                  >OSHA Right to Know Law</a
-                >
-              </li>
-              <li>
-                <span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span>
-                <a
-                  href="https://www.lit.edu/getmedia/9b229445-f681-49e7-b183-7d174f8f0375/risk-management-for-hazardous-chemicals-full.pdf"
-                  aria-label="Visit Lamar Institute of Technology"
-                  >Risk Management for Hazardous Chemicals</a
-                >
-              </li>
-              <li>
-                <span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span>
-                <a
-                  href="https://www.lit.edu/getmedia/9da1439d-09b0-4f47-92c9-4c6fd4089b0b/texas-dhhs-notice-to-employees.pdf"
-                  aria-label="Visit Lamar Institute of Technology"
-                  >Texas DHHS Notice to Employees</a
-                >
-              </li>
-              <li>
-                <span class="fa-li"><i class="fa-solid fa-file-pdf"></i></span>
-                <a
-                  href="https://www.lit.edu/getmedia/22ffe24f-aed8-4d37-a897-b547be673023/wallet-card-ghs-pictograms.pdf"
-                  aria-label="Visit Lamar Institute of Technology"
-                  >Wallet Card GHS Pictograms</a
-                >
+                <button class="nav-toggle">Giving to LIT</button>
+                <ul class="nav-level-2">
+                  <li>
+                    <a href="https://www.lit.edu/foundation"
+                      >Giving to the LIT Foundation</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.lit.edu/foundation/development-office"
+                      >About the Foundation</a
+                    >
+                  </li>
+                  <li>
+                    <button class="nav-toggle">Ways to Give</button>
+                    <ul class="nav-level-3">
+                      <li>
+                        <a
+                          href="https://www.lit.edu/foundation/files/fillable-gift-inkind-form"
+                          >Gift & Donation Form</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="https://www.lit.edu/foundation/scholarships"
+                      >Scholarships Offered by the Foundation</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.lit.edu/foundation/donor-recognition"
+                      >Donor Recognition</a
+                    >
+                  </li>
+                  <li>
+                    <button class="nav-toggle">Foundation Events</button>
+                    <ul class="nav-level-3">
+                      <li>
+                        <a href="https://www.lit.edu/foundation/salute"
+                          >A Salute to the Real American Heroes</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://www.lit.edu/foundation/golf"
+                          >LIT Foundation Scholarship Golf Tournament</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.lit.edu/foundation/lit-foundation-tree-lighting"
+                          >LIT Foundation Tree Lighting</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://www.lit.edu/foundation/shootout"
+                          >LIT Sporting Clays Classic</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="https://www.lit.edu/foundation/alumni"
+                      >Alumni Engagement</a
+                    >
+                  </li>
+                  <li>
+                    <button class="nav-toggle">Foundation Governance</button>
+                    <ul class="nav-level-3">
+                      <li>
+                        <a
+                          href="https://www.lit.edu/foundation/board-of-directors"
+                          >Board of Directors</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.lit.edu/foundation/exemption-letter"
+                          >IRS 501(c)(3) Exemption Letter</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="/giving/contact">Contact the Foundation</a>
+                  </li>
+                </ul>
               </li>
             </ul>
-          </div>
+          </nav>
+
+          <form
+            action="https://www.lit.edu/site-search/"
+            class="google-lit-search"
+          >
+            <input
+              id="q"
+              name="q"
+              class="search-input form-control google-regular-input"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button aria-label="Search" class="btn btn-primary">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-search"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                ></path>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </div>
-    <!-- /////////////////////////////////////////////////////////////-->
 
     <script src="static/js/site.js" type="module"></script>
     <script src="static/lib/jquery/dist/jquery.min.js" type="module"></script>
