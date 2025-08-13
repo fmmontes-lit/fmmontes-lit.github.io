@@ -346,6 +346,64 @@
     <!-- /////////////////////////////////////////////////////////////-->
     <!-- END CAREER SERVICES /////////////////////////////////////////-->
     <!-- /////////////////////////////////////////////////////////////-->
+
+    <canvas width="800" height="600" id="canvas"></canvas>
+    <div>
+      <input
+        type="range"
+        id="slider"
+        style="width: 800px"
+        min="0"
+        max="24060"
+        step="1"
+        value="0"
+      />
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const canvas = document.getElementById("canvas");
+        const context = canvas.getContext("2d");
+        const photos = new Array();
+        let x = 0;
+        let indexToBlit = 0;
+        let offset = 0;
+
+        for (let i = 1; i <= 30; i++) {
+          const img = new Image();
+          img.src = "./static/images/ead/l" + i + ".jpg";
+          photos.push(img);
+        }
+
+        function loop() {
+          x += (slider.value - x) * 0.1;
+          indexToBlit = Math.floor(x / 802);
+          offset = x % 802;
+          context.drawImage(
+            photos[indexToBlit],
+            offset,
+            0,
+            802 - offset,
+            535,
+            0,
+            0,
+            802 - offset,
+            535
+          );
+          context.drawImage(
+            photos[indexToBlit + 1],
+            0,
+            0,
+            802,
+            535,
+            802 - offset,
+            0,
+            802,
+            535
+          );
+        }
+        setInterval(loop, 10);
+      });
+    </script>
     <div id="current-time">(^_^)</div>
     <script src="static/js/site.js" type="module"></script>
     <script src="static/lib/jquery/dist/jquery.min.js" type="module"></script>
