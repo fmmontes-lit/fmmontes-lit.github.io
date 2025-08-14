@@ -20,10 +20,8 @@
     <!-- BEGIN CAREER SERVICES ///////////////////////////////////////-->
     <!-- /////////////////////////////////////////////////////////////-->
     <style>
-      .career-services-container {
-        padding: 1.2em;
-        border-radius: 0.5em;
-        margin-bottom: 1.2em;
+      .career-services-container > * + * {
+        margin-top: 1.5em;
       }
 
       .career-services-grid {
@@ -93,7 +91,7 @@
         display: flex;
         flex-direction: column;
         position: relative;
-        background: rgba(0, 0, 0, 0.7);
+        background: rgba(28, 117, 188, 0.6);
         padding: 0.5em 1em;
         border-radius: 0.5em;
         height: 100%;
@@ -120,6 +118,132 @@
     </style>
 
     <div class="career-services-container page-content">
+      <style type="text/css">
+        .career-services-hero {
+          position: relative;
+          min-height: 40vh;
+          height: auto;
+          width: 100%;
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 40px 20px;
+          overflow: hidden;
+          margin-bottom: 20px;
+          box-sizing: border-box;
+          border-radius: 8px;
+        }
+
+        .career-services-hero {
+          position: relative;
+          background: url("https://www.lit.edu/getmedia/c3364e02-8722-4cde-9db2-ab262fb4900f/hero-bg-1000x400.png")
+            no-repeat top center/cover;
+        }
+
+        .career-services-hero::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(30, 68, 141, 0.65); /* primary with transparency */
+        }
+
+        .career-services-hero-content {
+          position: relative;
+          z-index: 1;
+          width: 100%;
+          padding: 0 20px;
+          box-sizing: border-box;
+        }
+
+        .career-services-hero h1 {
+          font-size: 3.2rem;
+          font-weight: bold;
+          margin-bottom: 20px;
+        }
+
+        .career-services-hero p {
+          font-size: 1.5rem;
+          font-weight: bold;
+          line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+          .career-services-hero {
+            background: url("https://www.lit.edu/getmedia/855d666c-a1f0-43a2-9cea-d4f1fb6fdb6d/hta-bg-mobile.png")
+              no-repeat center center/cover;
+            min-height: 30vh;
+            padding: 30px 15px;
+          }
+
+          .career-services-hero h1 {
+            font-size: 2.5rem;
+          }
+
+          .career-services-hero p {
+            font-size: 1.1rem;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .career-services-hero {
+            min-height: 250px;
+            padding: 20px 10px;
+          }
+
+          .career-services-hero h1 {
+            font-size: 2rem;
+          }
+
+          .career-services-hero p {
+            font-size: 1rem;
+          }
+        }
+
+        .text-bg {
+          background-color: rgba(
+            28,
+            117,
+            188,
+            0.6
+          ); /* primary alt with transparency */
+          padding: 40px;
+          border-radius: 8px;
+          display: inline-block;
+          animation: fadeIn 1.2s ease-out;
+          min-width: 100%;
+        }
+
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+            transform: translateY(10px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      </style>
+      <div class="career-services-hero">
+        <div class="career-services-hero-content">
+          <div class="text-bg">
+            <h1>Career Services</h1>
+
+            <p>
+              Career Services can provide you with the tools necessary to
+              realize success, both personally and professionally. Whether you
+              are trying to decide on a major, seeking employment after
+              graduation or interested in finding an internship, we are here to
+              assist you.
+            </p>
+          </div>
+        </div>
+      </div>
       <div class="career-services-grid">
         <div class="career-services-grid-item item1">
           <div class="career-services-card">
@@ -346,7 +470,6 @@
     <!-- /////////////////////////////////////////////////////////////-->
     <!-- END CAREER SERVICES /////////////////////////////////////////-->
     <!-- /////////////////////////////////////////////////////////////-->
-    <div id="current-time">(^_^)</div>
 
     <!-- /////////////////////////////////////////////////////////////-->
     <!-- BEGIN PHOTO SLIDER //////////////////////////////////////////-->
@@ -437,6 +560,7 @@
         setInterval(draw, 16); // ~60fps
       });
     </script>
+
     <!-- /////////////////////////////////////////////////////////////-->
     <!-- END PHOTO SLIDER ////////////////////////////////////////////-->
     <!-- /////////////////////////////////////////////////////////////-->
