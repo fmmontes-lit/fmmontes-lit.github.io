@@ -348,19 +348,39 @@
     <!-- /////////////////////////////////////////////////////////////-->
     <div id="current-time">(^_^)</div>
 
-    <h2 style="margin-top: 1em">PHOTO SLIDER</h2>
+    <!-- /////////////////////////////////////////////////////////////-->
+    <!-- BEGIN PHOTO SLIDER //////////////////////////////////////////-->
+    <!-- /////////////////////////////////////////////////////////////-->
+    <style>
+      .photo-canvas-container {
+        box-sizing: content-box;
+        margin-top: 1.5em;
+        padding: 1em;
+        max-width: 800px;
+        border: 1px dashed red;
+      }
 
-    <canvas
-      width="800"
-      height="600"
-      id="canvas"
-      style="border-radius: 0.5em"
-    ></canvas>
-    <div>
+      h2.photo-canvas {
+        width: 100%;
+      }
+
+      canvas.photo-canvas {
+        border-radius: 0.5em;
+      }
+
+      .photo-slider {
+        width: 100%;
+      }
+    </style>
+    <div class="photo-canvas-container">
+      <h2 class="photo-canvas">PHOTO SLIDER</h2>
+
+      <canvas id="canvas" class="photo-canvas"></canvas>
+
       <input
         type="range"
         id="slider"
-        style="width: 800px"
+        class="photo-slider"
         min="0"
         max="11200"
         step="1"
@@ -371,47 +391,56 @@
       document.addEventListener("DOMContentLoaded", function () {
         const canvas = document.getElementById("canvas");
         const context = canvas.getContext("2d");
-        const photos = new Array();
+        const slider = document.getElementById("slider");
+
+        const photos = [];
         let x = 0;
         let indexToBlit = 0;
         let offset = 0;
 
+        canvas.width = 800; //window.innerWidth - 70;
+        canvas.height = 600;
+
         for (let i = 1; i <= 15; i++) {
           const img = new Image();
-          img.src = "./static/images/img8x6/p" + i + ".jpg";
+          img.src = "./images/img8x6/p" + i + ".jpg";
           photos.push(img);
         }
 
         function draw() {
           x += (slider.value - x) * 0.1;
-          indexToBlit = Math.floor(x / 800);
-          offset = x % 800;
+          indexToBlit = Math.floor(x / canvas.width);
+          offset = x % canvas.width;
           context.drawImage(
             photos[indexToBlit],
             offset,
             0,
-            800 - offset,
-            600,
+            canvas.width - offset,
+            canvas.height,
             0,
             0,
-            800 - offset,
-            600
+            canvas.width - offset,
+            canvas.height
           );
           context.drawImage(
             photos[indexToBlit + 1],
             0,
             0,
-            800,
-            600,
-            800 - offset,
+            canvas.width,
+            canvas.height,
+            canvas.width - offset,
             0,
-            800,
-            600
+            canvas.width,
+            canvas.height
           );
         }
-        setInterval(draw, 10);
+        setInterval(draw, 16); // ~60fps
       });
     </script>
+    <!-- /////////////////////////////////////////////////////////////-->
+    <!-- END PHOTO SLIDER ////////////////////////////////////////////-->
+    <!-- /////////////////////////////////////////////////////////////-->
+
     <script src="static/js/site.js" type="module"></script>
     <script src="static/lib/jquery/dist/jquery.min.js" type="module"></script>
     <script
