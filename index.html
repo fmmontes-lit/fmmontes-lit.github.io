@@ -136,12 +136,47 @@
             margin-top: 1.5em;
           }
 
+          .career-services-flyer {
+            display: grid;
+            gap: 1.5em;
+          }
+
+          .career-services-flyer-item h5 {
+            font-size: 1.5em;
+            line-height: 1.8;
+          }
+
+          .career-services-flyer-item p {
+            font-size: 1.5em;
+            line-height: 1.8;
+          }
+
+          .flyer-item-1 {
+            grid-column: 1;
+            grid-row: 1;
+          }
+
+          .flyer-item-2 {
+            grid-column: 1;
+            grid-row: 2;
+          }
+
+          .flyer-item-3 {
+            grid-column: 2;
+            grid-row: 1 / span 2;
+            margin: 0 auto;
+          }
+
           .career-services-grid {
             display: grid;
-            gap: 20px;
+            gap: 1.5em;
           }
 
           /* Default to single column on small screens */
+          .career-services-flyer {
+            grid-template-columns: repeat(1, 1fr);
+            --color: #f0f0f0;
+          }
           .career-services-grid {
             grid-template-columns: repeat(1, 1fr);
             --color: #f0f0f0;
@@ -149,6 +184,9 @@
 
           /* Two columns on wider screens */
           @media (min-width: 801px) {
+            .career-services-flyer {
+              grid-template-columns: 1fr 1fr;
+            }
             .career-services-grid {
               grid-template-columns: repeat(2, 1fr);
             }
@@ -354,37 +392,54 @@
               </div>
             </div>
           </div>
-          <p>
-            Career Services can provide you with the tools necessary to realize
-            success, both personally and professionally. Whether you are trying
-            to decide on a major, seeking employment after graduation or
-            interested in finding an internship, we are here to assist you.
-          </p>
-          <p>
-            From virtual appointments, career development resources and events
-            to the ability to complete mock interviews during this time of
-            social distancing, we have you covered. Need something that is not
-            highlighted or listed below? Email us at
-            <a
-              href="mailto:careers@lit.edu"
-              target="_blank"
-              aria-label="email careers@lit.edu"
-              alt="email careers@lit.edu"
-              >careers@lit.edu</a
-            >
-          </p>
-          <h5>Job Search Academy with Indeed and LIT</h5>
-          <ul>
-            <li>
-              <a
-                href="https://go.indeed.com/JobSearchAcademy-LIT"
-                target="_blank"
-                aria-label="visit go.indeed.com/JobSearchAcademy-LIT"
-                alt="visit go.indeed.com/JobSearchAcademy-LIT"
-                >go.indeed.com/JobSearchAcademy-LIT</a
-              >
-            </li>
-          </ul>
+
+          <div class="career-services-flyer">
+            <div class="career-services-flyer-item flyer-item-1">
+              <p>
+                Career Services can provide you with the tools necessary to
+                realize success, both personally and professionally. Whether you
+                are trying to decide on a major, seeking employment after
+                graduation or interested in finding an internship, we are here
+                to assist you.
+              </p>
+              <p>
+                From virtual appointments, career development resources and
+                events to the ability to complete mock interviews during this
+                time of social distancing, we have you covered. Need something
+                that is not highlighted or listed below? Email us at
+                <a
+                  href="mailto:careers@lit.edu"
+                  target="_blank"
+                  aria-label="email careers@lit.edu"
+                  alt="email careers@lit.edu"
+                  >careers@lit.edu</a
+                >
+              </p>
+            </div>
+            <div class="career-services-flyer-item flyer-item-2">
+              <h5>Job Search Academy with Indeed and LIT</h5>
+              <ul>
+                <li>
+                  <a
+                    href="https://go.indeed.com/JobSearchAcademy-LIT"
+                    target="_blank"
+                    aria-label="visit go.indeed.com/JobSearchAcademy-LIT"
+                    alt="visit go.indeed.com/JobSearchAcademy-LIT"
+                    >go.indeed.com/JobSearchAcademy-LIT</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="career-services-flyer-item flyer-item-3">
+              <img
+                alt="Copy-of-Copy-of-ACTION-PLAN-(500-×-500-px).png"
+                class="img-fluid"
+                src="https://www.lit.edu/getattachment/Student-Success/Career-Services/Copy-of-Copy-of-ACTION-PLAN-(500-×-500-px).png"
+                title="Copy-of-Copy-of-ACTION-PLAN-(500-×-500-px).png"
+              />
+            </div>
+          </div>
+
           <div class="career-services-grid">
             <div class="career-services-grid-item item1">
               <div class="career-services-card">
@@ -560,7 +615,7 @@
           </div>
         </div>
 
-        <!-- LIT ONLINE -- INJECTED GET MORE INFO CARD -->
+        <!-- CAREER SERVICES -- INJECTED GET MORE INFO CARD -->
         <div class="injected-container" style="display: none">
           <style>
             h2.text-primary {
