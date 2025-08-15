@@ -138,17 +138,19 @@
 
           .career-services-flyer {
             display: grid;
+            place-items: center;
             gap: 1.5em;
+            line-height: 1.8;
           }
 
-          .career-services-flyer-item h5 {
-            font-size: 1.5em;
-            line-height: 1.8;
+          .career-services-flyer-item {
+            border: 1px solid black;
+            border-radius: 0.5em;
+            padding: 1em;
           }
 
           .career-services-flyer-item p {
             font-size: 1.5em;
-            line-height: 1.8;
           }
 
           .flyer-item-1 {
@@ -159,6 +161,7 @@
           .flyer-item-2 {
             grid-column: 1;
             grid-row: 2;
+            width: 100%;
           }
 
           .flyer-item-3 {
@@ -266,7 +269,6 @@
             margin-top: 0.6em;
           }
         </style>
-
         <div class="career-services-container page-content">
           <style>
             .career-services-hero {
@@ -417,7 +419,7 @@
               </p>
             </div>
             <div class="career-services-flyer-item flyer-item-2">
-              <h5>Job Search Academy with Indeed and LIT</h5>
+              <h3>Job Search Academy with Indeed and LIT</h3>
               <ul>
                 <li>
                   <a
