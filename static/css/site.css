@@ -9,57 +9,18 @@ html {
   line-height: 1.6;
 }
 
-@media (min-width: 1000px) {
-  html {
-    font-size: 18px;
-    /* Slight bump for desktop readability */
-  }
-}
-
 body {
-  margin: 20px auto;
-  padding: 0 15px;
-  background: #cae9ff;
-}
-
-h3 {
-  font-size: 1.5rem;
-  /* ~24px mobile, scales to ~27px on desktop */
-  margin-bottom: 0.5em;
-}
-
-h4 {
-  font-size: 1.25rem;
-  /* ~20px */
-  margin-bottom: 0.5em;
-}
-
-h5 {
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 0.3em;
-}
-
-p,
-li,
-address {
-  font-size: 1rem;
-  /* consistent 16px base */
-}
-
-a {
-  color: #1b6ec2;
-  text-decoration: underline;
+  margin: 1.5em auto;
+  background: white;
 }
 
 .my-block {
   background: white;
-  padding: 20px;
+  padding: 0.5em 1em;
   margin: 0;
 }
 
 .row {
-  background: white;
-  padding: 20px;
+  padding: 0.5em 1em;
   margin: 0;
 }
