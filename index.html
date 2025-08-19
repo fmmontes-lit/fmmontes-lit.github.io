@@ -138,7 +138,7 @@
 
           .career-services-hero {
             position: relative;
-            min-height: 40vh;
+            min-height: 30vh;
             height: auto;
             width: 100%;
             color: white;
@@ -146,11 +146,9 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            padding: 40px 20px;
+            padding: 0.8em 1.5em;
             overflow: hidden;
-            margin-bottom: 20px;
-            box-sizing: border-box;
-            border-radius: 8px;
+            border-radius: 0.5em;
           }
 
           .career-services-hero {
@@ -173,14 +171,14 @@
             position: relative;
             z-index: 1;
             width: 100%;
-            padding: 0 20px;
+            padding: 0 1.5em;
             box-sizing: border-box;
           }
 
           .career-services-hero h1 {
-            font-size: 3.2rem;
+            font-size: 5rem;
             font-weight: bold;
-            margin-bottom: 20px;
+            margin-bottom: 0.8em;
           }
 
           .career-services-hero p {
@@ -209,11 +207,10 @@
           @media (max-width: 480px) {
             .career-services-hero {
               min-height: 250px;
-              padding: 20px 10px;
             }
 
             .career-services-hero h1 {
-              font-size: 2rem;
+              font-size: 2.5rem;
             }
 
             .career-services-hero p {
@@ -228,8 +225,8 @@
               0,
               0.125
             ); /* primary alt with transparency */
-            padding: 40px;
-            border-radius: 8px;
+            padding: 2.5em;
+            border-radius: 0.5em;
             display: inline-block;
             animation: fadeIn 1.2s ease-out;
             min-width: 100%;
@@ -249,7 +246,7 @@
           .career-services-flyer {
             display: grid;
             place-items: center;
-            gap: 1.5em;
+            gap: 1.5rem;
             line-height: 1.8;
           }
 
@@ -269,6 +266,7 @@
             grid-template-columns: repeat(1, 1fr);
             --color: #f0f0f0;
           }
+
           .career-services-grid {
             grid-template-columns: repeat(1, 1fr);
             --color: #f0f0f0;
@@ -281,7 +279,7 @@
             }
 
             .career-services-flyer-item p {
-              font-size: 1.2em;
+              font-size: 1.2rem;
             }
 
             .flyer-item-1 {
@@ -334,6 +332,11 @@
             .career-services-grid-item.item6 {
               grid-column: 1;
               grid-row: 5 / 6;
+            }
+
+            .career-services-grid-item h3 {
+              font-size: 2.2rem;
+              font-weight: bold;
             }
           }
 
