@@ -136,7 +136,256 @@
             margin-top: 1.5em;
           }
 
-          .career-services-hero {
+          img.career-services-hero {
+            border-radius: 0.5em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 1.5em;
+          }
+
+          .career-services-cards {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 1.5em;
+          }
+
+          /* Two columns on wider screens */
+          @media (min-width: 801px) {
+            .career-services-cards {
+              grid-template-columns: 1fr 1fr;
+              grid-template-rows: 1fr;
+            }
+          }
+
+          .career-services-cards .card-body {
+            display: flex;
+            flex-direction: column;
+          }
+
+          .career-services-container a:link,
+          .career-services-container a:visited {
+            color: #0366d6;
+            text-decoration: none;
+          }
+
+          .career-services-container a:hover,
+          .career-services-container a:active {
+            text-decoration: underline;
+            color: #ec2027;
+          }
+        </style>
+        <div class="career-services-container page-content">
+          <img
+            alt="LIT Career Services"
+            class="img-fluid career-services-hero"
+            src="https://www.lit.edu/getmedia/1b5eeed2-f3a3-49e2-ba5a-ebc4dfe75dc8/careers-herow2000.png"
+          />
+          <p>
+            Career Services provides the tools and support you need to achieve
+            success—personally and professionally. Whether you're exploring
+            careers, preparing for life after graduation, or searching for the
+            right internship, we're here to help.
+          </p>
+          <p>
+            From career development resources and events to mock interviews and
+            personalized guidance, we've got you covered. If you're looking for
+            something not listed below, feel free to reach out to us at
+            <a href="mailto:careers@lit.edu">careers@lit.edu</a>.
+          </p>
+
+          <!-- Career Services --- CARDS GRID -->
+          <div class="career-services-cards">
+            <!-- Career Fairs & Events -->
+            <div class="card">
+              <div class="card-header">
+                <strong>Career Fairs & Events</strong>
+              </div>
+              <div class="card-body">
+                <img
+                  class="img-responsive"
+                  src="https://lit.edu/getmedia/24536b84-4464-4705-9381-ceea2da54a06/analytics01.jpg"
+                  alt="Career Fairs & Events at Lamar Institute of Technology"
+                />
+                <ul>
+                  <li>
+                    <a
+                      href="https://lit-csm.symplicity.com/events/Fall_2025_Career"
+                      aria-label="Visit LIT Career Fairs"
+                      alt="Career Fairs at Lamar Institute of Technology"
+                      target="_blank"
+                      >Career Fairs</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.lit.edu/academic-calendar"
+                      aria-label="Visit the Lamar Institute of Technology Academic Calendar"
+                      alt="Lamar Institute of Technology Academic Calendar"
+                      >Academic Calendar</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Students & Alumni -->
+            <div class="card">
+              <div class="card-header">
+                <strong>Students & Alumni</strong>
+              </div>
+              <div class="card-body">
+                <img
+                  class="img-responsive"
+                  src="https://lit.edu/getmedia/bd28f868-d216-4649-976d-33ccb9c9d627/auto-col-02.jpg"
+                  alt="Students & Alumni at Lamar Institute of Technology"
+                />
+                <ul>
+                  <li>
+                    <a
+                      href="https://lit-csm.symplicity.com/students/index.php?au=_register"
+                      aria-label="Visit Career Link"
+                      alt="Career Link at Lamar Institute of Technology"
+                      target="_blank"
+                      >Career Link</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://lit-csm.symplicity.com/students/jobboard/cfdf0b149cfe985be1fda170b47c1dad"
+                      aria-label="Visit the Lamar Institute of Technology Job board"
+                      alt="Visit the Lamar Institute of Technology Job board"
+                      target="_blank"
+                      >Job board</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://jobs.lit.edu/"
+                      aria-label="Visit LIT Jobs"
+                      alt="Visit LIT Jobs"
+                      target="_blank"
+                      >LIT Jobs</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://lit.starfishsolutions.com/starfish-ops/dl/instructor/serviceCatalog.html?bookmark=service/2247363/schedule"
+                      aria-label="Make a Starfish Appointment"
+                      alt="Make a Starfish Appointment"
+                      target="_blank"
+                      >Starfish Appointment</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Career Resources -->
+            <div class="card">
+              <div class="card-header">
+                <strong>Career Resources</strong>
+              </div>
+              <div class="card-body">
+                <img
+                  class="img-responsive"
+                  src="https://lit.edu/getmedia/5bdeec81-2ba9-4e86-87de-5bb80ea45468/com-electric-01.jpg"
+                  alt="Career Resources at Lamar Institute of Technology"
+                />
+                <ul>
+                  <li>
+                    <a
+                      href="https://shsu.blackboard.com/ultra/organizations/_313874_1/outline"
+                      aria-label="Visit 5G Career Readiness Training "
+                      alt="5G Career Readiness Training  at Lamar Institute of Technology"
+                      target="_blank"
+                      >5G Career Readiness Training
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.theforage.com/landing/lamar-institute-of-ovcwh/career-services-81t4"
+                      aria-label="Visit Forage - Lamar Institute of Technology"
+                      alt="Forage - Lamar Institute of Technology"
+                      target="_blank"
+                      >Forage</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.indeed.com/job-search-services/job-search-academy-lamar-institute-of-technology?hl=en%3Ffrom%3Djobseeker_marketing"
+                      aria-label="Visit Job Search Academy - Lamar Institute of Technology"
+                      alt="Job Search Academy - Lamar Institute of Technology"
+                      target="_blank"
+                      >Job Search Academy</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.lit.edu/workforce-continuing-education"
+                      aria-label="Visit Workforce Solutions - Lamar Institute of Technology"
+                      alt="Workforce Solutions - Lamar Institute of Technology"
+                      >Workforce Solutions</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Hire an Eagle - Employers -->
+            <div class="card">
+              <div class="card-header">
+                <strong>Hire an Eagle - Employers</strong>
+              </div>
+              <div class="card-body">
+                <img
+                  class="img-responsive"
+                  src="https://lit.edu/getattachment/f586532a-c37d-475c-97a1-e86f640cfd7f/med-assistant-3.jpg"
+                  alt="Hire an Eagle - Employers at Lamar Institute of Technology"
+                />
+                <ul>
+                  <li>
+                    <strong>Employers:</strong>
+                    <a
+                      href="https://lit-csm.symplicity.com/employers/?signin_tab=3"
+                      aria-label="Sign Up and Post Job"
+                      alt="Sign Up and Post Job at Lamar Institute of Technology"
+                      target="_blank"
+                      >Register/Post a job</a
+                    >
+                  </li>
+                  <li>
+                    <strong>Want to know more?</strong><br />
+                    <strong>Contact us at:</strong>
+                    <a
+                      href="mailto:careers@lit.edu"
+                      aria-label="mailto: careers@lit.edu"
+                      alt="mailto: careers@lit.edu"
+                      >careers@lit.edu</a
+                    >, or call
+                    <a
+                      href="tel:4092417811"
+                      aria-label="Call (409) 241-7811"
+                      alt="Call (409) 241-7811"
+                      >(409)241-7811</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /////////////////////////////////////////////////////////////-->
+        <!-- END CAREER SERVICES /////////////////////////////////////////-->
+        <!-- /////////////////////////////////////////////////////////////-->
+
+        <!-- /////////////////////////////////////////////////////////////-->
+        <!-- BEGIN CAREER OLD ////////////////////////////////////////////-->
+        <!-- /////////////////////////////////////////////////////////////-->
+        <style>
+          .career-container > * + * {
+            margin-top: 1.5em;
+          }
+
+          .career-hero {
             position: relative;
             min-height: 30vh;
             height: auto;
@@ -151,13 +400,13 @@
             border-radius: 0.5em;
           }
 
-          .career-services-hero {
+          .career-hero {
             position: relative;
             background: url("https://www.lit.edu/getmedia/25f0eaf2-ad41-42d4-887e-fa136bc2e501/B_1.jpg")
               no-repeat top center/cover;
           }
 
-          .career-services-hero::before {
+          .career-hero::before {
             content: "";
             position: absolute;
             top: 0;
@@ -167,7 +416,7 @@
             background: rgba(0, 0, 0, 0.65); /* primary with transparency */
           }
 
-          .career-services-hero-content {
+          .career-hero-content {
             position: relative;
             z-index: 1;
             width: 100%;
@@ -175,45 +424,45 @@
             box-sizing: border-box;
           }
 
-          .career-services-hero h1 {
+          .career-hero h1 {
             font-size: 5rem;
             font-weight: bold;
             margin-bottom: 0.8em;
           }
 
-          .career-services-hero p {
+          .career-hero p {
             font-size: 1.5rem;
             font-weight: bold;
             line-height: 2;
           }
 
           @media (max-width: 768px) {
-            .career-services-hero {
+            .career-hero {
               background: url("https://www.lit.edu/getmedia/855d666c-a1f0-43a2-9cea-d4f1fb6fdb6d/hta-bg-mobile.png")
                 no-repeat center center/cover;
               min-height: 30vh;
               padding: 30px 15px;
             }
 
-            .career-services-hero h1 {
+            .career-hero h1 {
               font-size: 2.5rem;
             }
 
-            .career-services-hero p {
+            .career-hero p {
               font-size: 1.1rem;
             }
           }
 
           @media (max-width: 480px) {
-            .career-services-hero {
+            .career-hero {
               min-height: 250px;
             }
 
-            .career-services-hero h1 {
+            .career-hero h1 {
               font-size: 2.5rem;
             }
 
-            .career-services-hero p {
+            .career-hero p {
               font-size: 1rem;
             }
           }
@@ -243,42 +492,42 @@
             }
           }
 
-          .career-services-flyer {
+          .career-flyer {
             display: grid;
             place-items: center;
             gap: 1.5rem;
             line-height: 1.8;
           }
 
-          .career-services-flyer-item {
+          .career-flyer-item {
             border: 1px solid black;
             border-radius: 0.5em;
             padding: 1em;
           }
 
-          .career-services-grid {
+          .career-grid {
             display: grid;
             gap: 1.5em;
           }
 
           /* Default to single column on small screens */
-          .career-services-flyer {
+          .career-flyer {
             grid-template-columns: repeat(1, 1fr);
             --color: #f0f0f0;
           }
 
-          .career-services-grid {
+          .career-grid {
             grid-template-columns: repeat(1, 1fr);
             --color: #f0f0f0;
           }
 
           /* Two columns on wider screens */
           @media (min-width: 801px) {
-            .career-services-flyer {
+            .career-flyer {
               grid-template-columns: 1fr 1fr;
             }
 
-            .career-services-flyer-item p {
+            .career-flyer-item p {
               font-size: 1.2rem;
             }
 
@@ -299,48 +548,48 @@
               margin: 0 auto;
             }
 
-            .career-services-grid {
+            .career-grid {
               grid-template-columns: 1fr 1fr;
               grid-template-rows: 1fr;
             }
 
-            .career-services-grid-item.item1 {
+            .career-grid-item.item1 {
               grid-column: 1;
               grid-row: 1 / 3;
             }
 
-            .career-services-grid-item.item2 {
+            .career-grid-item.item2 {
               grid-column: 2;
               grid-row: 1 / 4;
             }
 
-            .career-services-grid-item.item3 {
+            .career-grid-item.item3 {
               grid-column: 1;
               grid-row: 3 / 4;
             }
 
-            .career-services-grid-item.item4 {
+            .career-grid-item.item4 {
               grid-column: 1;
               grid-row: 4 / 5;
             }
 
-            .career-services-grid-item.item5 {
+            .career-grid-item.item5 {
               grid-column: 2;
               grid-row: 4 / 6;
             }
 
-            .career-services-grid-item.item6 {
+            .career-grid-item.item6 {
               grid-column: 1;
               grid-row: 5 / 6;
             }
 
-            .career-services-grid-item h3 {
+            .career-grid-item h3 {
               font-size: 2.2rem;
               font-weight: bold;
             }
           }
 
-          .career-services-grid-item {
+          .career-grid-item {
             position: relative;
             padding: 0.8em;
             border-radius: 0.5rem;
@@ -348,7 +597,7 @@
             color: white;
           }
 
-          .career-services-grid-item::before {
+          .career-grid-item::before {
             content: "";
             position: absolute;
             top: 0;
@@ -361,31 +610,31 @@
             opacity: 0.8;
           }
 
-          .career-services-grid-item.item1::before {
+          .career-grid-item.item1::before {
             background-image: url("https://lit.edu/getmedia/24536b84-4464-4705-9381-ceea2da54a06/analytics01.jpg");
           }
 
-          .career-services-grid-item.item2::before {
+          .career-grid-item.item2::before {
             background-image: url("https://lit.edu/getmedia/bd28f868-d216-4649-976d-33ccb9c9d627/auto-col-02.jpg");
           }
 
-          .career-services-grid-item.item3::before {
+          .career-grid-item.item3::before {
             background-image: url("https://lit.edu/media/LIT/MediaLibrary/Public-Service-and-Safety/Emergency-Medical-Services/640x380/B_1.jpg");
           }
 
-          .career-services-grid-item.item4::before {
+          .career-grid-item.item4::before {
             background-image: url("https://lit.edu/getattachment/f586532a-c37d-475c-97a1-e86f640cfd7f/med-assistant-3.jpg");
           }
 
-          .career-services-grid-item.item5::before {
+          .career-grid-item.item5::before {
             background-image: url("https://lit.edu/media/LIT/MediaLibrary/Allied-Health-and-Sciences/Pharmacy-Technician/640x380/B_1.jpg");
           }
 
-          .career-services-grid-item.item6::before {
+          .career-grid-item.item6::before {
             background-image: url("https://lit.edu/getmedia/5bdeec81-2ba9-4e86-87de-5bb80ea45468/com-electric-01.jpg");
           }
 
-          .career-services-card {
+          .career-card {
             display: flex;
             flex-direction: column;
             position: relative;
@@ -395,28 +644,28 @@
             height: 100%;
           }
 
-          .career-services-link {
+          .career-link {
             color: var(--color);
             text-decoration: none;
             font-weight: bold;
           }
 
-          .career-services-link:hover {
+          .career-link:hover {
             text-decoration: underline;
             color: var(--color);
           }
 
-          .career-services-link:visited {
+          .career-link:visited {
             color: var(--color);
           }
 
-          .career-services-grid-item p {
+          .career-grid-item p {
             margin-top: 0.6em;
           }
         </style>
-        <div class="career-services-container page-content">
-          <div class="career-services-hero">
-            <div class="career-services-hero-content">
+        <div class="career-container">
+          <div class="career-hero">
+            <div class="career-hero-content">
               <div class="text-bg">
                 <h1>Career Services</h1>
                 <p>
@@ -429,8 +678,8 @@
             </div>
           </div>
 
-          <div class="career-services-flyer">
-            <div class="career-services-flyer-item flyer-item-1">
+          <div class="career-flyer">
+            <div class="career-flyer-item flyer-item-1">
               <p>
                 Career Services can provide you with the tools necessary to
                 realize success, both personally and professionally. Whether you
@@ -452,7 +701,7 @@
                 >
               </p>
             </div>
-            <div class="career-services-flyer-item flyer-item-2">
+            <div class="career-flyer-item flyer-item-2">
               <h3>Job Search Academy with Indeed and LIT</h3>
               <ul>
                 <li>
@@ -466,7 +715,7 @@
                 </li>
               </ul>
             </div>
-            <div class="career-services-flyer-item flyer-item-3">
+            <div class="career-flyer-item flyer-item-3">
               <img
                 alt="Copy-of-Copy-of-ACTION-PLAN-(500-×-500-px).png"
                 class="img-fluid"
@@ -476,14 +725,11 @@
             </div>
           </div>
 
-          <div class="career-services-grid">
-            <div class="career-services-grid-item item1">
-              <div class="career-services-card">
+          <div class="career-grid">
+            <div class="career-grid-item item1">
+              <div class="career-card">
                 <h3>
-                  <a
-                    href="/"
-                    class="career-services-link"
-                    aria-label="On Campus"
+                  <a href="/" class="career-link" aria-label="On Campus"
                     >CareerLink</a
                   >
                 </h3>
@@ -500,7 +746,7 @@
                       target="_blank"
                       aria-label="Student Log-In"
                       alt="Student Log-In"
-                      class="career-services-link"
+                      class="career-link"
                       >Student Log-In</a
                     >
                     (you're registered!)
@@ -511,7 +757,7 @@
                       target="_blank"
                       aria-label="Alumni - Register Today!"
                       alt="Alumni - Register Today!"
-                      class="career-services-link"
+                      class="career-link"
                       >Alumni - Register Today!</a
                     >
                     (if you have graduated less than a year ago use the students
@@ -523,20 +769,17 @@
                       target="_blank"
                       aria-label="Employers - Register / Post A Job Today!"
                       alt="Employers - Register / Post A Job Today!"
-                      class="career-services-link"
+                      class="career-link"
                       >Employers - Register / Post A Job Today!</a
                     >
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="career-services-grid-item item2">
-              <div class="career-services-card">
+            <div class="career-grid-item item2">
+              <div class="career-card">
                 <h3>
-                  <a
-                    href="/"
-                    class="career-services-link"
-                    aria-label="Dual Credit"
+                  <a href="/" class="career-link" aria-label="Dual Credit"
                     >Career Resources</a
                   >
                 </h3>
@@ -559,13 +802,10 @@
                 </ul>
               </div>
             </div>
-            <div class="career-services-grid-item item3">
-              <div class="career-services-card">
+            <div class="career-grid-item item3">
+              <div class="career-card">
                 <h3>
-                  <a
-                    href="/"
-                    class="career-services-link"
-                    aria-label="LIT Online"
+                  <a href="/" class="career-link" aria-label="LIT Online"
                     >Career Events
                   </a>
                 </h3>
@@ -575,13 +815,10 @@
                 </p>
               </div>
             </div>
-            <div class="career-services-grid-item item4">
-              <div class="career-services-card">
+            <div class="career-grid-item item4">
+              <div class="career-card">
                 <h3>
-                  <a
-                    href="/"
-                    class="career-services-link"
-                    aria-label="LIT Online"
+                  <a href="/" class="career-link" aria-label="LIT Online"
                     >CareerLink Job Board</a
                   >
                 </h3>
@@ -591,20 +828,17 @@
                 </p>
                 <a
                   href="https://lit-csm.symplicity.com/students/jobboard/cfdf0b149cfe985be1fda170b47c1dad"
-                  class="career-services-link"
+                  class="career-link"
                   aria-label="Job Board"
                   alt="Job Board"
                   >Job Board</a
                 >
               </div>
             </div>
-            <div class="career-services-grid-item item5">
-              <div class="career-services-card">
+            <div class="career-grid-item item5">
+              <div class="career-card">
                 <h3>
-                  <a
-                    href="/"
-                    class="career-services-link"
-                    aria-label="LIT Online"
+                  <a href="/" class="career-link" aria-label="LIT Online"
                     >Employers</a
                   >
                 </h3>
@@ -626,20 +860,17 @@
                 </p>
                 <a
                   href="https://lit-csm.symplicity.com/employers/"
-                  class="career-services-link"
+                  class="career-link"
                   aria-label="Employers Register / Post A Job Today!"
                   alt="Employers Register / Post A Job Today!"
                   >Employers Register / Post A Job Today!</a
                 >
               </div>
             </div>
-            <div class="career-services-grid-item item6">
-              <div class="career-services-card">
+            <div class="career-grid-item item6">
+              <div class="career-card">
                 <h3>
-                  <a
-                    href="/"
-                    class="career-services-link"
-                    aria-label="LIT Online"
+                  <a href="/" class="career-link" aria-label="LIT Online"
                     >Career That Works</a
                   >
                 </h3>
@@ -725,7 +956,7 @@
           });
         </script>
         <!-- /////////////////////////////////////////////////////////////-->
-        <!-- END CAREER SERVICES /////////////////////////////////////////-->
+        <!-- END CAREER OLD //////////////////////////////////////////////-->
         <!-- /////////////////////////////////////////////////////////////-->
       </div>
       <!-- ////////////////// COLUMN ASIDE ////////////////////////// -->
