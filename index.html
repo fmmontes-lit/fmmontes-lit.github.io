@@ -413,6 +413,7 @@
             padding: 0.8em 1.5em;
             overflow: hidden;
             border-radius: 0.5em;
+            margin-top: 1.5em;
           }
 
           .layout0-hero {
@@ -512,12 +513,27 @@
             place-items: center;
             gap: 1.5rem;
             line-height: 1.8;
+            padding: 1.5em 0;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
           }
 
           .layout0-flyer-item {
-            border: 1px solid black;
+            border: 1px solid white;
             border-radius: 0.5em;
             padding: 1em;
+          }
+
+          .layout0-flyer-item a:link,
+          .layout0-flyer-item a:visited {
+            color: white;
+            text-decoration: none;
+          }
+
+          .layout0-flyer-item a:hover,
+          .layout0-flyer-item a:active {
+            text-decoration: underline;
+            color: #ec2027;
           }
 
           .layout0-grid {
