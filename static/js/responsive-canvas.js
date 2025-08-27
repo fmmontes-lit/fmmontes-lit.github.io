@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   for (let i = 1; i <= 19; i++) {
     const img = new Image();
-    img.src = "./static/images/career-services/p" + i + ".png";
+    img.src = "static/images/career-services/p" + i + ".png";
     photos.push(img);
   }
 
