@@ -392,6 +392,46 @@
         <!-- END CAREER SERVICES /////////////////////////////////////////-->
         <!-- /////////////////////////////////////////////////////////////-->
 
+        <hr />
+        <style>
+          .photo-slider-careers {
+            max-inline-size: 800px;
+            margin-inline: auto;
+          }
+
+          .main {
+            padding: 1em 1.5rem;
+            background-color: #fff;
+            border-radius: 0.5em;
+          }
+
+          canvas {
+            border-radius: 0.5em;
+            width: 100%;
+          }
+
+          .photo-slider {
+            width: 100%;
+          }
+        </style>
+        <div class="photo-slider-careers">
+          <div class="main">
+            <canvas id="canvas" class="photo-canvas"></canvas>
+
+            <input
+              type="range"
+              id="slider"
+              class="photo-slider"
+              min="0"
+              max="14400"
+              step="1"
+              value="0"
+            />
+          </div>
+        </div>
+        <script src="static/js/responsive-canvas.js"></script>
+        <hr />
+
         <!-- /////////////////////////////////////////////////////////////-->
         <!-- BEGIN LAYOUT 0 //////////////////////////////////////////////-->
         <!-- /////////////////////////////////////////////////////////////-->
