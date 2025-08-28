@@ -156,6 +156,13 @@
           .career-services-cards img {
             max-width: 500px;
             height: auto;
+            border-radius: 0.5em;
+          }
+
+          #swap-image-1,
+          #swap-image-2 {
+            transition: opacity 1s ease-in-out;
+            opacity: 1;
           }
 
           /* Two columns on wider screens */
@@ -219,7 +226,8 @@
               </div>
               <div class="card-body">
                 <img
-                  src="https://lit.edu/getmedia/ad7b0a6c-e9de-4bb9-bfc5-33e6be3d425d/card-63-500x300.jpg"
+                  id="swap-image-1"
+                  src="https://lit.edu/getmedia/91581809-f2bf-42d7-a02f-c78e6ffef866/fairs-events1.png"
                   alt="Career Fairs & Events at Lamar Institute of Technology"
                 />
                 <ul>
@@ -251,7 +259,7 @@
               </div>
               <div class="card-body">
                 <img
-                  src="https://lit.edu/getmedia/c8afea6a-63b4-4dc8-83e9-4af2e3d4b4a0/card-660-500x300.jpg"
+                  src="https://lit.edu/getmedia/3bfb1858-e454-44a9-a6b0-290cc6adaa8a/students-alumni.png"
                   alt="Students & Alumni at Lamar Institute of Technology"
                 />
                 <ul>
@@ -302,7 +310,8 @@
               </div>
               <div class="card-body">
                 <img
-                  src="https://lit.edu/getmedia/45699fe5-5a16-4f40-aea6-c52eaab681e6/card-849-500x300.jpg"
+                  id="swap-image-2"
+                  src="https://lit.edu/getmedia/895c0e42-1f65-4f05-bbca-71f137ff119c/resources1.png"
                   alt="Career Resources at Lamar Institute of Technology"
                 />
                 <ul>
@@ -352,7 +361,7 @@
               </div>
               <div class="card-body">
                 <img
-                  src="https://lit.edu/getmedia/dd00e8a1-5620-4e56-9fce-4dd5e6638b4b/card-693-500x300.jpg"
+                  src="https://lit.edu/getmedia/133d51b9-7407-4f0e-be95-bbdd2f2f5003/hire.png"
                   alt="Hire an Eagle - Employers at Lamar Institute of Technology"
                 />
                 <ul>
@@ -387,558 +396,44 @@
               </div>
             </div>
           </div>
-        </div>
-        <!-- /////////////////////////////////////////////////////////////-->
-        <!-- END CAREER SERVICES /////////////////////////////////////////-->
-        <!-- /////////////////////////////////////////////////////////////-->
+          <script>
+            const imgEvents = document.getElementById("swap-image-1");
+            const imgResources = document.getElementById("swap-image-2");
+            const imgEventsSrc1 =
+              "https://lit.edu/getmedia/91581809-f2bf-42d7-a02f-c78e6ffef866/fairs-events1.png";
+            const imgEventsSrc2 =
+              "https://lit.edu/getmedia/8c951fb9-4ceb-4bb2-8fad-09538aa24def/fairs-events2.png";
 
-        <hr />
-        <style>
-          .photo-slider-careers {
-            max-inline-size: 800px;
-            margin-inline: auto;
-          }
+            const imgResourcesSrc1 =
+              "https://lit.edu/getmedia/895c0e42-1f65-4f05-bbca-71f137ff119c/resources1.png";
+            const imgResourcesSrc2 =
+              "https://lit.edu/getmedia/deced01a-cae7-40e5-b3e5-7994b4b65c5c/resources2.png";
 
-          .main {
-            padding: 1em 1.5rem;
-            background-color: #fff;
-            border-radius: 0.5em;
-          }
+            let showingFirst = true;
 
-          canvas {
-            border-radius: 0.5em;
-            width: 100%;
-          }
+            function swapImage() {
+              // Fade out
+              imgEvents.style.opacity = 0;
+              imgResources.style.opacity = 0;
 
-          .photo-slider {
-            width: 100%;
-          }
-        </style>
-        <div class="photo-slider-careers">
-          <div class="main">
-            <canvas id="canvas" class="photo-canvas"></canvas>
+              setTimeout(() => {
+                // Change the source after fade out
+                imgEvents.src = showingFirst ? imgEventsSrc2 : imgEventsSrc1;
+                imgResources.src = showingFirst
+                  ? imgResourcesSrc2
+                  : imgResourcesSrc1;
 
-            <input
-              type="range"
-              id="slider"
-              class="photo-slider"
-              min="0"
-              max="14400"
-              step="1"
-              value="0"
-            />
-          </div>
-        </div>
-        <script src="static/js/responsive-canvas.js"></script>
-        <hr />
+                // Fade in
+                imgEvents.style.opacity = 1;
+                imgResources.style.opacity = 1;
 
-        <!-- /////////////////////////////////////////////////////////////-->
-        <!-- BEGIN LAYOUT 0 //////////////////////////////////////////////-->
-        <!-- /////////////////////////////////////////////////////////////-->
-        <style>
-          .layout0-container > * + * {
-            margin-top: 1.5em;
-          }
-
-          .layout0-hero {
-            position: relative;
-            min-height: 30vh;
-            height: auto;
-            width: 100%;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 0.8em 1.5em;
-            overflow: hidden;
-            border-radius: 0.5em;
-            margin-top: 1.5em;
-          }
-
-          .layout0-hero {
-            position: relative;
-            background: url("https://www.lit.edu/getmedia/4448abc5-20f4-4bdf-8ab7-92cc92183bcb/hero-826-2000x500.jpg")
-              no-repeat top center/cover;
-          }
-
-          .layout0-hero::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.65); /* primary with transparency */
-          }
-
-          .layout0-hero-content {
-            position: relative;
-            z-index: 1;
-            width: 100%;
-            padding: 0 1.5em;
-            box-sizing: border-box;
-          }
-
-          .layout0-hero h1 {
-            font-size: 5rem;
-            font-weight: bold;
-            margin-bottom: 0.8em;
-          }
-
-          .layout0-hero p {
-            font-size: 1.5rem;
-            font-weight: bold;
-            line-height: 2;
-          }
-
-          @media (max-width: 768px) {
-            .layout0-hero {
-              background: url("https://www.lit.edu/getmedia/4b9e30dc-07b3-4576-921c-9d0153c3b49a/card-780-400x600.jpg")
-                no-repeat center center/cover;
-              min-height: 30vh;
-              padding: 30px 15px;
+                // Toggle state
+                showingFirst = !showingFirst;
+              }, 1000); // Matches transition duration, 1s
             }
 
-            .layout0-hero h1 {
-              font-size: 2.5rem;
-            }
-
-            .layout0-hero p {
-              font-size: 1.1rem;
-            }
-          }
-
-          @media (max-width: 480px) {
-            .layout0-hero {
-              min-height: 250px;
-            }
-
-            .layout0-hero h1 {
-              font-size: 2.5rem;
-            }
-
-            .layout0-hero p {
-              font-size: 1rem;
-            }
-          }
-
-          .text-bg {
-            background-color: rgba(
-              0,
-              0,
-              0,
-              0.125
-            ); /* primary alt with transparency */
-            padding: 2.5em;
-            border-radius: 0.5em;
-            display: inline-block;
-            animation: fadeIn 1.2s ease-out;
-            min-width: 100%;
-          }
-
-          @keyframes fadeIn {
-            from {
-              opacity: 0;
-              transform: translateY(10px);
-            }
-            to {
-              opacity: 1;
-              transform: translateY(0);
-            }
-          }
-
-          .layout0-flyer {
-            display: grid;
-            place-items: center;
-            gap: 1.5rem;
-            line-height: 1.8;
-            padding: 1.5em;
-            background: rgba(0, 0, 0, 0.8);
-            color: white;
-          }
-
-          .layout0-flyer-item {
-            border: 1px solid white;
-            border-radius: 0.5em;
-            padding: 1em;
-          }
-
-          .layout0-flyer-item a:link,
-          .layout0-flyer-item a:visited {
-            color: white;
-            text-decoration: none;
-          }
-
-          .layout0-flyer-item a:hover,
-          .layout0-flyer-item a:active {
-            text-decoration: underline;
-            color: #ec2027;
-          }
-
-          .layout0-grid {
-            display: grid;
-            gap: 1.5em;
-          }
-
-          /* Default to single column on small screens */
-          .layout0-flyer {
-            grid-template-columns: repeat(1, 1fr);
-            --color: #f0f0f0;
-          }
-
-          .layout0-grid {
-            grid-template-columns: repeat(1, 1fr);
-            --color: #f0f0f0;
-          }
-
-          /* Two columns on wider screens */
-          @media (min-width: 801px) {
-            .layout0-flyer {
-              grid-template-columns: 1fr 1fr;
-            }
-
-            .layout0-flyer-item p {
-              font-size: 1.2rem;
-            }
-
-            .layout0-item-1 {
-              grid-column: 1;
-              grid-row: 1;
-            }
-
-            .layout0-flyer-item.flyer-item-2 {
-              grid-column: 1;
-              grid-row: 2;
-              width: 100%;
-            }
-
-            .layout0-flyer-item.flyer-item-3 {
-              grid-column: 2;
-              grid-row: 1 / span 2;
-              margin: 0 auto;
-            }
-
-            .layout0-grid {
-              grid-template-columns: 1fr 1fr;
-              grid-template-rows: 1fr;
-            }
-
-            .layout0-grid-item.item1 {
-              grid-column: 1;
-              grid-row: 1 / 3;
-            }
-
-            .layout0-grid-item.item2 {
-              grid-column: 2;
-              grid-row: 1 / 4;
-            }
-
-            .layout0-grid-item.item3 {
-              grid-column: 1;
-              grid-row: 3 / 4;
-            }
-
-            .layout0-grid-item.item4 {
-              grid-column: 1;
-              grid-row: 4 / 5;
-            }
-
-            .layout0-grid-item.item5 {
-              grid-column: 2;
-              grid-row: 4 / 6;
-            }
-
-            .layout0-grid-item.item6 {
-              grid-column: 1;
-              grid-row: 5 / 6;
-            }
-
-            .layout0-grid-item h3 {
-              font-size: 2.2rem;
-              font-weight: bold;
-            }
-          }
-
-          .layout0-grid-item {
-            position: relative;
-            padding: 0.8em;
-            border-radius: 0.5rem;
-            overflow: hidden;
-            color: white;
-          }
-
-          .layout0-grid-item::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-size: cover;
-            background-position: center;
-            z-index: -1;
-            opacity: 0.8;
-          }
-
-          .layout0-grid-item.item1::before {
-            background-image: url("https://www.lit.edu/getmedia/bac1c5e0-1068-44f3-9a5f-d71f3fd32a9d/card-1021-500x300.jpg");
-          }
-
-          .layout0-grid-item.item2::before {
-            background-image: url("https://www.lit.edu/getmedia/899be04c-d6f4-47fc-b955-d6d25918d70c/card-209-500x300.jpg");
-          }
-
-          .layout0-grid-item.item3::before {
-            background-image: url("https://www.lit.edu/getmedia/1cd5129e-ec7a-4335-835e-100c0bc5c293/card-274-500x300.jpg");
-          }
-
-          .layout0-grid-item.item4::before {
-            background-image: url("https://www.lit.edu/getmedia/6f01ef3d-4f1f-4ebd-a37f-739de3d70f8a/card-408-500x300.jpg");
-          }
-
-          .layout0-grid-item.item5::before {
-            background-image: url("https://www.lit.edu/getmedia/06f8fecb-b28b-45a6-9970-9bf7828d2ef5/card-615-500x300.jpg");
-          }
-
-          .layout0-grid-item.item6::before {
-            background-image: url("https://www.lit.edu/getmedia/53ce4b66-4d95-47a1-b755-2d68cdd574cf/card-556-500x300.jpg");
-          }
-
-          .layout0-card {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            background: rgba(0, 0, 0, 0.8);
-            padding: 0.5em 1em;
-            border-radius: 0.5em;
-            height: 100%;
-          }
-
-          .layout0-link {
-            color: var(--color);
-            text-decoration: none;
-            font-weight: bold;
-          }
-
-          .layout0-link:hover {
-            text-decoration: underline;
-            color: var(--color);
-          }
-
-          .layout0-link:visited {
-            color: var(--color);
-          }
-
-          .layout0-grid-item p {
-            margin-top: 0.6em;
-          }
-        </style>
-        <div class="layout0-container">
-          <div class="layout0-hero">
-            <div class="layout0-hero-content">
-              <div class="text-bg">
-                <h1>Layout Zero</h1>
-                <p>
-                  Layout Zero was originally created to use for a career
-                  services page. Maybe it can be used for another project?
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="layout0-flyer">
-            <div class="layout0-flyer-item flyer-item-1">
-              <p>
-                The American Dream is alive and well at Lamar Institute of
-                Technology. The training you receive today can create a better
-                future for you tomorrow.
-              </p>
-              <p>
-                At Lamar Institute of Technology we provide world-class
-                education and hands-on training that prepares students of all
-                backgrounds for long-term rewarding careers in high-demand,
-                high-growth fields.
-              </p>
-            </div>
-            <div class="layout0-flyer-item flyer-item-2">
-              <h3>What is LIT Online?</h3>
-              <ul>
-                <li>
-                  <a
-                    href="https://www.lit.edu/lit-online"
-                    target="_blank"
-                    aria-label="visit LIT Online"
-                    alt="visit LIT Online"
-                    >www.lit.edu/lit-online</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="layout0-flyer-item flyer-item-3">
-              <img
-                alt="LAYOUT ZERO"
-                src="https://www.lit.edu/getmedia/419f1fc0-d664-4adb-811f-5d9408fa9dcd/card-157-800x500.jpg"
-                title="LAYOUT ZERO"
-              />
-            </div>
-          </div>
-
-          <div class="layout0-grid">
-            <div class="layout0-grid-item item1">
-              <div class="layout0-card">
-                <h3>
-                  <a href="/" class="layout0-link" aria-label="On Campus"
-                    >CareerLink</a
-                  >
-                </h3>
-                <p>
-                  CareerLink is the virtual home of our services, providing a
-                  framework for career exploration, gaining experience, and
-                  engaging in the career search process. CareerLink features
-                  resources, job listings, events and more.
-                </p>
-                <ul>
-                  <li>
-                    <a
-                      href="https://shibboleth-lit-csm.symplicity.com/sso/"
-                      target="_blank"
-                      aria-label="Student Log-In"
-                      alt="Student Log-In"
-                      class="layout0-link"
-                      >Student Log-In</a
-                    >
-                    (you're registered!)
-                  </li>
-                  <li>
-                    <a
-                      href="https://lit-csm.symplicity.com/students/index.php?signin_tab=0&amp;signin_tab=0"
-                      target="_blank"
-                      aria-label="Alumni - Register Today!"
-                      alt="Alumni - Register Today!"
-                      class="layout0-link"
-                      >Alumni - Register Today!</a
-                    >
-                    (if you have graduated less than a year ago use the students
-                    log-in)
-                  </li>
-                  <li>
-                    <a
-                      href="https://lit-csm.symplicity.com/employers/"
-                      target="_blank"
-                      aria-label="Employers - Register / Post A Job Today!"
-                      alt="Employers - Register / Post A Job Today!"
-                      class="layout0-link"
-                      >Employers - Register / Post A Job Today!</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="layout0-grid-item item2">
-              <div class="layout0-card">
-                <h3>
-                  <a href="/" class="layout0-link" aria-label="Dual Credit"
-                    >Career Resources</a
-                  >
-                </h3>
-                <h5>Exploratory</h5>
-                <ul>
-                  <li>CareerLink</li>
-                  <li>Glassdoor</li>
-                </ul>
-                <h5>Resume</h5>
-                <ul>
-                  <li>Create & Submit your resume for review</li>
-                  <li>Zety</li>
-                  <li>Indeed</li>
-                </ul>
-                <h5>External Resources</h5>
-                <ul>
-                  <li>LinkedIn</li>
-                  <li>Workforce Solutions</li>
-                  <li>Indeed</li>
-                </ul>
-              </div>
-            </div>
-            <div class="layout0-grid-item item3">
-              <div class="layout0-card">
-                <h3>
-                  <a href="/" class="layout0-link" aria-label="LIT Online"
-                    >Career Events
-                  </a>
-                </h3>
-                <p>
-                  Through programs, partnership, coaching and events, we're
-                  dedicated to helping make opportunities a reality.
-                </p>
-              </div>
-            </div>
-            <div class="layout0-grid-item item4">
-              <div class="layout0-card">
-                <h3>
-                  <a href="/" class="layout0-link" aria-label="LIT Online"
-                    >CareerLink Job Board</a
-                  >
-                </h3>
-                <p>
-                  Students, note that when you click on the job post of
-                  interest, you will be redirected to sign in to CareerLink.
-                </p>
-                <a
-                  href="https://lit-csm.symplicity.com/students/jobboard/cfdf0b149cfe985be1fda170b47c1dad"
-                  class="layout0-link"
-                  aria-label="Job Board"
-                  alt="Job Board"
-                  >Job Board</a
-                >
-              </div>
-            </div>
-            <div class="layout0-grid-item item5">
-              <div class="layout0-card">
-                <h3>
-                  <a href="/" class="layout0-link" aria-label="LIT Online"
-                    >Employers</a
-                  >
-                </h3>
-                <p>
-                  Connect with us directly so we can help proactively build
-                  relationship with our students who could benefit from your
-                  industry knowledge and expertise.
-                </p>
-                <p>
-                  LIT is working on creating a robust employer program. You can
-                  engage in recruitment events, post opportunities on
-                  CareerLink, participate in development activities such as mock
-                  interviews, workshops, career panels, resume reviews,
-                  information sessions and conduct on-campus interviews.
-                </p>
-                <p>
-                  Interested, want to know more? Contact us at careers@lit.edu
-                  or call 409-241-7811!
-                </p>
-                <a
-                  href="https://lit-csm.symplicity.com/employers/"
-                  class="layout0-link"
-                  aria-label="Employers Register / Post A Job Today!"
-                  alt="Employers Register / Post A Job Today!"
-                  >Employers Register / Post A Job Today!</a
-                >
-              </div>
-            </div>
-            <div class="layout0-grid-item item6">
-              <div class="layout0-card">
-                <h3>
-                  <a href="/" class="layout0-link" aria-label="LIT Online"
-                    >Career That Works</a
-                  >
-                </h3>
-                <p>
-                  Want to find a Career That Works? Follow this action plan!
-                </p>
-              </div>
-            </div>
-          </div>
+            setInterval(swapImage, 30000);
+          </script>
         </div>
 
         <!-- CAREER SERVICES -- INJECTED GET MORE INFO CARD -->
@@ -1018,8 +513,10 @@
             }
           });
         </script>
+        <!-- ////////////////////////////////////////////// -->
+
         <!-- /////////////////////////////////////////////////////////////-->
-        <!-- END LAYOUT 0 ////////////////////////////////////////////////-->
+        <!-- END CAREER SERVICES /////////////////////////////////////////-->
         <!-- /////////////////////////////////////////////////////////////-->
       </div>
       <!-- ////////////////// COLUMN ASIDE ////////////////////////// -->
