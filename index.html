@@ -159,12 +159,6 @@
             border-radius: 0.5em;
           }
 
-          #swap-image-1,
-          #swap-image-2 {
-            transition: opacity 1s ease-in-out;
-            opacity: 1;
-          }
-
           /* Two columns on wider screens */
           @media (min-width: 801px) {
             .career-services-cards {
@@ -226,7 +220,6 @@
               </div>
               <div class="card-body">
                 <img
-                  id="swap-image-1"
                   src="https://lit.edu/getmedia/91581809-f2bf-42d7-a02f-c78e6ffef866/fairs-events1.png"
                   alt="Career Fairs & Events at Lamar Institute of Technology"
                 />
@@ -310,7 +303,6 @@
               </div>
               <div class="card-body">
                 <img
-                  id="swap-image-2"
                   src="https://lit.edu/getmedia/895c0e42-1f65-4f05-bbca-71f137ff119c/resources1.png"
                   alt="Career Resources at Lamar Institute of Technology"
                 />
@@ -396,44 +388,6 @@
               </div>
             </div>
           </div>
-          <script>
-            const imgEvents = document.getElementById("swap-image-1");
-            const imgResources = document.getElementById("swap-image-2");
-            const imgEventsSrc1 =
-              "https://lit.edu/getmedia/91581809-f2bf-42d7-a02f-c78e6ffef866/fairs-events1.png";
-            const imgEventsSrc2 =
-              "https://lit.edu/getmedia/8c951fb9-4ceb-4bb2-8fad-09538aa24def/fairs-events2.png";
-
-            const imgResourcesSrc1 =
-              "https://lit.edu/getmedia/895c0e42-1f65-4f05-bbca-71f137ff119c/resources1.png";
-            const imgResourcesSrc2 =
-              "https://lit.edu/getmedia/deced01a-cae7-40e5-b3e5-7994b4b65c5c/resources2.png";
-
-            let showingFirst = true;
-
-            function swapImage() {
-              // Fade out
-              imgEvents.style.opacity = 0;
-              imgResources.style.opacity = 0;
-
-              setTimeout(() => {
-                // Change the source after fade out
-                imgEvents.src = showingFirst ? imgEventsSrc2 : imgEventsSrc1;
-                imgResources.src = showingFirst
-                  ? imgResourcesSrc2
-                  : imgResourcesSrc1;
-
-                // Fade in
-                imgEvents.style.opacity = 1;
-                imgResources.style.opacity = 1;
-
-                // Toggle state
-                showingFirst = !showingFirst;
-              }, 1000); // Matches transition duration, 1s
-            }
-
-            setInterval(swapImage, 30000);
-          </script>
         </div>
 
         <!-- CAREER SERVICES -- INJECTED GET MORE INFO CARD -->
