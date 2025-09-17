@@ -82,7 +82,7 @@
         <style>
           canvas {
             border-radius: 0.5em;
-            margin: 1em 0.5em;
+            margin: 1em 0;
             display: block;
           }
         </style>
@@ -96,21 +96,12 @@
             /** @type {CanvasRenderingContext2D} */
             const ctx = canvas.getContext("2d");
 
-            canvas.width = window.innerWidth - 70;
+            canvas.width = window.innerWidth - 390;
             canvas.height = 400;
 
             function draw() {
               ctx.fillStyle = "#ccc";
               ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-              ctx.beginPath();
-              ctx.arc(100, 100, 25, 0, Math.PI * (5 / 4));
-              ctx.fillStyle = "rgba(255, 255, 0, 0.5)";
-              ctx.fill();
-
-              ctx.strokeStyle = "rgba(0, 0, 0, 1)";
-              ctx.lineWidth = 1;
-              ctx.stroke();
 
               for (let i = 0; i < 5000; i += 1) {
                 const x = randomFromTo(1, canvas.width);
@@ -139,7 +130,7 @@
                 ctx.stroke();
               }
 
-              if (drawingLimit <= 100) {
+              if (drawingLimit <= 80) {
                 drawingLimit++;
                 requestAnimationFrame(draw);
               }
