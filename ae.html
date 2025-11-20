@@ -80,6 +80,136 @@
       <div class="col-sm-12 col-md-10">
         <!-- /////////////////////////////////////////////////////////////-->
 
+        <!-- FLIP BOOK ///////////////////////////////////////////////////-->
+        <style>
+          .book {
+            display: flex;
+            margin: auto;
+            width: 800px;
+            /*1* let pointer event go trough pages of lower Z than .book */
+            pointer-events: none;
+            transform-style: preserve-3d;
+            transition: translate 1s;
+            translate: calc(min(var(--c), 1) * 50%) 0%;
+          }
+
+          .page {
+            --thickness: 5;
+            /* PS: Don't go below thickness 0.4 or the pages might transpare */
+            flex: none;
+            display: flex;
+            width: 100%;
+            /*1* allow pointer events on pages */
+            pointer-events: all;
+            user-select: none;
+            transform-style: preserve-3d;
+            border: 1px solid #0008;
+            transform-origin: left center;
+            transition: transform 1s,
+              rotate 1s ease-in
+                calc((min(var(--i), var(--c)) - max(var(--i), var(--c))) * 50ms);
+            translate: calc(var(--i) * -100%) 0px 0px;
+            transform: translateZ(
+              calc((var(--c) - var(--i) - 0.5) * calc(var(--thickness) * 1px))
+            );
+            rotate: 0 1 0 calc(clamp(0, var(--c) - var(--i), 1) * -180deg);
+          }
+
+          .page img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+
+          .front,
+          .back {
+            flex: none;
+            width: 100%;
+            padding: 2rem;
+            backface-visibility: hidden;
+            background-color: #fff;
+            /* Fix backface visibility Firefox: */
+            translate: 0px;
+          }
+
+          .back {
+            background-image: linear-gradient(to right, #fff 80%, #ddd 100%);
+            translate: -100% 0;
+            rotate: 0 1 0 180deg;
+          }
+        </style>
+
+        <div class="book">
+          <div class="page">
+            <div class="front">
+              <h1>Front Cover</h1>
+              <h3>2025.<br />@lit.edu</h3>
+            </div>
+            <div class="back">
+              <h2>What We Do</h2>
+              <p>
+                As the central hub for university data and analytics, we
+                champion the use of data in strategic decision making to elevate
+                student success and expand research and scholarly productivity
+                at Texas State University.
+              </p>
+            </div>
+          </div>
+
+          <div class="page">
+            <div class="front">
+              <h2>Your Future Starts Here</h2>
+              <p>
+                At Lamar Institute of Technology, our mission is to provide
+                innovative teaching and learning for tomorrow's workforce.
+                Whether you're just starting out, looking to change careers or
+                returning to school after time away, LIT offers the education
+                and training you need to power a better future.
+              </p>
+            </div>
+            <div class="back">
+              <img
+                src="https://f4.bcbits.com/img/0009620675_10.jpg"
+                alt="Don Slepian"
+              />
+            </div>
+          </div>
+
+          <div class="page">
+            <div class="front">
+              <h2>Don Slepian</h2>
+              <p>
+                A computer engineer turned ambient artist, Don Slepian is mostly
+                known for his remarkable, electronic piano pieces. Ethereal,
+                delicate, and intricately commanding, Slepian boasts twirling
+                synths and improvised, whimsical songs.
+              </p>
+            </div>
+            <div class="back">
+              <img
+                src="https://f4.bcbits.com/img/a2975740667_10.jpg"
+                alt="Promises"
+              />
+            </div>
+          </div>
+        </div>
+
+        <script>
+          const flipBook = (elBook) => {
+            elBook.style.setProperty("--c", 0); // Set current page
+            elBook.querySelectorAll(".page").forEach((page, idx) => {
+              page.style.setProperty("--i", idx);
+              page.addEventListener("click", (evt) => {
+                const curr = evt.target.closest(".back") ? idx : idx + 1;
+                elBook.style.setProperty("--c", curr);
+              });
+            });
+          };
+
+          document.querySelectorAll(".book").forEach(flipBook);
+        </script>
+        <!-- ENDING FLIP BOOK ////////////////////////////////////////////-->
+
         <!-- Workforce - HERO -->
         <style>
           .workforce-hero {
