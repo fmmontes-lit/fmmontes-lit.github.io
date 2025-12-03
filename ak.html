@@ -16,6 +16,7 @@
   </head>
 
   <body>
+    <!-- /// NAV //////////////////////////////////////////////////// -->
     <nav
       class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"
     >
@@ -37,22 +38,36 @@
         >
           <ul class="navbar-nav flex-grow-1">
             <li class="nav-item">
-              <a class="nav-link text-dark" href="./al.html">Ambassadors</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="./ai.html">Directory</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="./aj.html">ELE&reg;</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="./ak.html">LIT&reg;</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="./am.html">Nursing</a>
-            </li>
-            <li class="nav-item">
+              <a class="nav-link text-dark" href="./index.html">Home</a>
               <a class="nav-link text-dark" href="./aa.html">Veterans</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./ab.html">LIT Online</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./ac.html"
+                >Online Courses & Programs</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./ad.html"
+                >LIT Online Experience</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./ah.html">LIT Online FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./ae.html">Workforce</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./af.html">Canvas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./ag.html">Library</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./ak.html">IE</a>
             </li>
           </ul>
         </div>
@@ -63,127 +78,230 @@
         </div>
       </div>
     </nav>
-
-    <h2>Items</h2>
-
+    <!-- /// SIDE NAV STYLES //////////////////////////////////////// -->
     <style>
-      .sidebar-right {
-        padding: 20px;
-        border-radius: 1px;
-        box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-      }
-
-      .grid-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 20px;
-        padding: 20px;
-      }
-
-      .grid-item {
-        background-color: #f9f9f9;
-        padding: 20px;
-        border: 1px solid #ddd;
+      .sidebar-sub-drawer {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(0, 0, 0, 0.3);
         border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       }
 
-      .grid-item h2 {
-        color: #1e448d;
-      }
-
-      .grid-item h3 {
+      .sidebar-sub-drawer a {
+        text-decoration: none;
         color: #1c75bc;
+        padding: 1rem 2rem;
+        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
       }
 
-      .grid-item p {
-        color: #333;
+      .sidebar-sub-drawer a:hover {
+        transform: translateX(-10px);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+        color: #1e448d;
+        background-color: #eee;
+        border-radius: 8px;
       }
 
-      .grid-item ul {
-        color: #ec2027;
-        padding-left: 20px;
+      p {
+        animation-duration: 0.2s;
+        animation-name: slide-in;
       }
 
-      .grid-item img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin-bottom: 10px;
+      @keyframes slide-in {
+        from {
+          translate: 150vw 0;
+          scale: 200% 1;
+        }
+
+        to {
+          translate: 0 0;
+          scale: 100% 1;
+        }
       }
     </style>
 
-    <div class="grid-container">
-      <div class="grid-item item1">
-        <h2>Header 1</h2>
-        <p>This is a paragraph for item 1.</p>
-        <h3>Subheader 1</h3>
-        <img
-          class="img-fluid img-thumbnail"
-          src="https://www.lit.edu/getmedia/25612c38-d238-45c1-b61d-ed562dc4e2f0/baldy04.png"
-          alt="LIT"
-        />
-        <p>This is the second paragraph for item 1.</p>
+    <!-- //////////////////////////////////////////////////////////// -->
+    <!-- ////////////////// PAGE BODY /////////////////////////////// -->
+    <!-- //////////////////////////////////////////////////////////// -->
+
+    <div class="row">
+      <!-- ////////////////// COLUMN MAIN /////////////////////////// -->
+      <div class="col-sm-12 col-md-10">
+        <!-- /////////////////////////////////////////////////////////////-->
+        <!-- BEGIN IE ////////////////////////////////////////////////////-->
+        <!-- /////////////////////////////////////////////////////////////-->
+
+        <!-- IE LANDING //////////////////////////////////////////////////-->
+        <style>
+          .ie-main {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            margin: 0 1em;
+            margin-bottom: 1.5em;
+          }
+
+          .ie-left-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            text-align: center;
+            background-color: white;
+            border-radius: 0.5em;
+            box-shadow: 0 7px 1px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            padding: 1.5em;
+            width: 100%;
+          }
+
+          .ie-right-grid {
+            display: grid;
+            gap: 1em;
+            grid-template-columns: 1fr;
+          }
+
+          .ie-grid-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            text-align: center;
+            background-color: white;
+            border-radius: 0.5em;
+            box-shadow: 0 7px 1px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            padding: 1.5em;
+            width: 100%;
+          }
+
+          @media screen and (min-width: 800px) {
+            .ie-main {
+              flex-direction: row;
+            }
+
+            .ie-left-card {
+              flex: 1;
+            }
+
+            .ie-right-grid {
+              flex: 3;
+            }
+
+            .ie-right-grid {
+              grid-template-columns: 1fr 1fr;
+            }
+          }
+
+          a.about-btn {
+            margin: 0.8em 0;
+            margin-block-end: 1.5em;
+          }
+
+          a.about-btn:link,
+          a.about-btn:visited {
+            background-color: #1c75bc;
+            color: white;
+            padding: 0.5em 1.5em;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 0.5em;
+            display: inline-block;
+          }
+
+          a.about-btn:hover,
+          a.about-btn:active {
+            background-color: #ec2027;
+          }
+        </style>
+
+        <div class="ie-main">
+          <div class="ie-left-card">
+            <img src="https://picsum.photos/200/150?random=10" alt="LIT" />
+            <h3>What We Do</h3>
+            <p>
+              As the central hub for university data and analytics, we champion
+              the use of data in strategic decision making to elevate student
+              success and expand research and scholarly productivity at Texas
+              State University.
+            </p>
+            <a
+              href="#"
+              target="_blank"
+              class="about-btn"
+              aria-label="About Us"
+              alt="About Us"
+              >About Us</a
+            >
+          </div>
+
+          <div class="ie-right-grid">
+            <div class="ie-grid-card">
+              <img src="https://picsum.photos/200/150?random=1" alt="LIT" />
+              <h3>Effectiveness</h3>
+              <p>
+                Access our public dashboards to view current and historical data
+                on enrollment, retention rates, graduation rates, and more
+              </p>
+            </div>
+            <div class="ie-grid-card">
+              <img src="https://picsum.photos/200/150?random=2" alt="LIT" />
+              <h3>Assessment</h3>
+              <p>
+                Faculty and staff can access detailed, internal dashboards via
+                CatStats. If accessing from off-campus, a Remote Access VPN
+                connection is required
+              </p>
+            </div>
+            <div class="ie-grid-card">
+              <img src="https://picsum.photos/200/150?random=3" alt="LIT" />
+              <h3>Resources</h3>
+              <p>
+                Discover a variety of reports and survey results, including
+                Federal and State Reports, Campus Climate Survey, Peer Studies,
+                and more
+              </p>
+            </div>
+            <div class="ie-grid-card">
+              <img src="https://picsum.photos/200/150?random=4" alt="LIT" />
+              <h3>Data Request</h3>
+              <p>
+                Learn about the different avenues for requesting data or gaining
+                access to specialized institutional reports by visiting the Data
+                Request Center
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ENDING IE LANDING ///////////////////////////////////////////-->
+
+        <!-- /////////////////////////////////////////////////////////////-->
+        <!-- END IE //////////////////////////////////////////////////////-->
+        <!-- /////////////////////////////////////////////////////////////-->
       </div>
-      <div class="grid-item item2">
-        <h2>Header 2</h2>
-        <img
-          class="img-fluid img-thumbnail"
-          src="https://www.lit.edu/getmedia/ac3007ec-6306-4a4e-886c-545781515592/baldy05.png"
-          alt="LIT"
-        />
-        <p>This is a paragraph for item 2.</p>
-      </div>
-      <div class="grid-item item3">
-        <h2>Header 3</h2>
-        <p>This is the first paragraph for item 3.</p>
-        <h3>Subheader 3</h3>
-        <p>This is the second paragraph for item 3.</p>
-      </div>
-      <div class="grid-item item4">
-        <h2>Header 4</h2>
-        <p>This is a paragraph for item 4.</p>
-        <h3>Subheader 4</h3>
-        <ul>
-          <li>List item 1</li>
-          <li>List item 2</li>
-          <li>List item 3</li>
-        </ul>
-      </div>
-      <div class="grid-item item5">
-        <h2>Header 5</h2>
-        <p>This is a paragraph for item 5.</p>
-        <h3>Subheader 5</h3>
-        <ul>
-          <li>List item 1</li>
-          <li>List item 2</li>
-          <li>List item 3</li>
-        </ul>
-      </div>
-      <div class="grid-item item6">
-        <h2>Header 6</h2>
-        <ul>
-          <li>List item 1</li>
-          <li>List item 2</li>
-          <li>List item 3</li>
-        </ul>
-      </div>
-      <div class="grid-item item7">
-        <h2>Header 7</h2>
-        <img
-          class="img-fluid img-thumbnail"
-          src="https://www.lit.edu/getmedia/c98c01c3-3692-47b1-9f4f-c541a969fd63/baldy02.png"
-          alt="LIT"
-        />
-        <p>This is the first paragraph for item 7.</p>
-      </div>
-      <div class="grid-item item8">
-        <h2>Header 8</h2>
-        <p>This is the first paragraph for item 8.</p>
-        <h3>Subheader 8</h3>
-        <p>This is the second paragraph for item 8.</p>
+      <!-- ////////////////// COLUMN ASIDE ////////////////////////// -->
+      <div class="col-sm-12 col-md-2">
+        <div class="sidebar-sub-drawer">
+          <a href="./aa.html">Veteran Services</a>
+          <a href="./ab.html">LIT Online</a>
+          <a href="./ac.html">Online Courses & Programs</a>
+          <a href="./ad.html">LIT Online Experience</a>
+          <a href="./ah.html">LIT Online FAQ</a>
+          <a href="./ae.html">Workforce</a>
+          <a href="./af.html">Canvas</a>
+          <a href="./ag.html">Library</a>
+          <a href="./ak.html">IE</a>
+        </div>
       </div>
     </div>
+
+    <!-- //////////////////////////////////////////////////////////// -->
+    <!-- ////////////////// SCRIPTS ///////////////////////////////// -->
+    <!-- //////////////////////////////////////////////////////////// -->
     <script src="static/js/site.js" type="module"></script>
     <script src="static/lib/jquery/dist/jquery.min.js" type="module"></script>
     <script
