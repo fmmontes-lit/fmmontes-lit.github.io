@@ -137,6 +137,7 @@
         <!-- /////////////////////////////////////////////////////////////-->
 
         <!-- IE LANDING //////////////////////////////////////////////////-->
+
         <style>
           .ie-main {
             display: flex;
@@ -144,6 +145,10 @@
             gap: 1em;
             margin: 0 1em;
             margin-bottom: 1.5em;
+          }
+
+          .ie-left-card > * + * {
+            margin-top: 0.5em;
           }
 
           .ie-left-card {
@@ -166,6 +171,10 @@
             grid-template-columns: 1fr;
           }
 
+          .ie-grid-card > * + * {
+            margin-top: 0.5em;
+          }
+
           .ie-grid-card {
             display: flex;
             flex-direction: column;
@@ -181,6 +190,17 @@
           }
 
           @media screen and (min-width: 800px) {
+            .ie-main {
+              flex-direction: column;
+            }
+
+            .ie-right-grid {
+              flex-direction: row;
+              grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+          }
+
+          @media screen and (min-width: 1100px) {
             .ie-main {
               flex-direction: row;
             }
@@ -200,7 +220,6 @@
 
           a.about-btn {
             margin: 0.8em 0;
-            margin-block-end: 1.5em;
           }
 
           a.about-btn:link,
