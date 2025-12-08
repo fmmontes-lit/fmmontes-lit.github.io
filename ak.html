@@ -173,10 +173,11 @@
       }
 
       .ie-grid-card {
-        display: flex;
-        flex-direction: column;
-        justify-content: center; /* Center horizontally */
-        align-items: center; /* Center vertically */
+        display: grid;
+        gap: 0;
+        grid-row: span 3;
+        grid-template-rows: subgrid;
+        justify-items: center;
         text-align: center;
         background-color: white;
         border-radius: 0.5em;
@@ -197,7 +198,6 @@
         }
 
         .ie-right-grid {
-          flex-direction: row;
           grid-template-columns: 1fr 1fr 1fr 1fr;
         }
 
