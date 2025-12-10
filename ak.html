@@ -187,6 +187,27 @@
         width: 100%;
       }
 
+      @media screen and (min-width: 880px) {
+        .ie-main {
+          flex-direction: column;
+        }
+
+        .ie-left-card {
+          box-shadow: none;
+          border: none;
+        }
+
+        .ie-right-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .ie-grid-card {
+          border-radius: 0em;
+          box-shadow: none;
+          border: none;
+        }
+      }
+
       @media screen and (min-width: 1080px) {
         .ie-main {
           flex-direction: column;
