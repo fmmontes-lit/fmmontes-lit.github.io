@@ -52,50 +52,6 @@
         </div>
       </div>
     </nav>
-    <!-- /// SIDE NAV STYLES //////////////////////////////////////// -->
-    <style>
-      .sidebar-sub-drawer {
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-        box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.1);
-        border: 1px solid rgba(0, 0, 0, 0.3);
-        border-radius: 8px;
-      }
-
-      .sidebar-sub-drawer a {
-        text-decoration: none;
-        color: #1c75bc;
-        padding: 1rem 2rem;
-        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-      }
-
-      .sidebar-sub-drawer a:hover {
-        transform: translateX(-10px);
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
-        color: #1e448d;
-        background-color: #eee;
-        border-radius: 8px;
-      }
-
-      p {
-        animation-duration: 0.2s;
-        animation-name: slide-in;
-      }
-
-      @keyframes slide-in {
-        from {
-          translate: 150vw 0;
-          scale: 200% 1;
-        }
-
-        to {
-          translate: 0 0;
-          scale: 100% 1;
-        }
-      }
-    </style>
 
     <!-- //////////////////////////////////////////////////////////// -->
     <!-- ////////////////// PAGE BODY /////////////////////////////// -->
@@ -111,8 +67,10 @@
         <style>
           .ie-profile-grid {
             display: grid;
-            gap: 1em;
             grid-template-columns: 1fr;
+            gap: 1em;
+            margin: 0 1em;
+            margin-bottom: 1.5em;
           }
 
           .ie-profile-card > * + * {
@@ -220,6 +178,33 @@
       </div>
       <!-- ////////////////// COLUMN ASIDE ////////////////////////// -->
       <div class="col-sm-12 col-md-3">
+        <!-- /// SIDE NAV STYLES //////////////////////////////////////// -->
+        <style>
+          .sidebar-sub-drawer {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+          }
+
+          .sidebar-sub-drawer a {
+            text-decoration: none;
+            color: #1c75bc;
+            padding: 1rem 2rem;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+          }
+
+          .sidebar-sub-drawer a:hover {
+            transform: translateX(-10px);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+            color: #1e448d;
+            background-color: #eee;
+            border-radius: 8px;
+          }
+        </style>
         <div class="sidebar-sub-drawer">
           <a href="./ak.html">IE Home</a>
           <a href="./ak-about.html">IE About</a>
