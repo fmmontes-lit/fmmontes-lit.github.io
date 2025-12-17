@@ -67,10 +67,7 @@
         <style>
           .ie-profile-grid {
             display: grid;
-            grid-template-columns: 1fr;
             gap: 1em;
-            margin: 0 1em;
-            margin-bottom: 1.5em;
           }
 
           .ie-profile-card > * + * {
@@ -78,40 +75,48 @@
           }
 
           .ie-profile-card {
-            display: grid;
-            gap: 0;
-            grid-row: span 3;
-            grid-template-rows: subgrid;
-            justify-items: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             text-align: center;
             background-color: white;
             border-radius: 0.5em;
             box-shadow: 0 7px 1px rgba(0, 0, 0, 0.1);
             border: 1px solid rgba(0, 0, 0, 0.3);
             padding: 1.5em;
-            width: 100%;
           }
 
-          .ie-profile-card img {
-            max-width: 333px;
-            height: auto;
+          /* Mobile */
+          @media (max-width: 679px) {
+            .ie-profile-grid {
+              grid-template-columns: 1fr;
+            }
           }
 
-          @media screen and (min-width: 680px) {
+          /* Tablet */
+          @media (min-width: 680px) and (max-width: 1279px) {
             .ie-profile-grid {
               grid-template-columns: 1fr 1fr;
             }
-          }
 
-          @media screen and (min-width: 1080px) {
-            .ie-profile-grid {
-              grid-template-columns: 1fr 1fr 1fr 1fr;
+            /* Stagger pattern */
+            .ie-profile-card:nth-child(odd) {
+              justify-self: end;
+            }
+
+            .ie-profile-card:nth-child(even) {
+              justify-self: start;
             }
           }
 
-          @media screen and (min-width: 1280px) {
+          /* Desktop */
+          @media (min-width: 1280px) {
             .ie-profile-grid {
-              grid-template-columns: 1fr 1fr 1fr;
+              grid-template-columns: repeat(3, 1fr);
+            }
+
+            .ie-profile-card {
+              justify-self: stretch;
             }
           }
         </style>
