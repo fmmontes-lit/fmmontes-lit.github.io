@@ -129,234 +129,247 @@
     <!-- ////////////////// PAGE BODY /////////////////////////////// -->
     <!-- //////////////////////////////////////////////////////////// -->
 
-    <!-- /////////////////////////////////////////////////////////////-->
-    <!-- BEGIN IE ////////////////////////////////////////////////////-->
-    <!-- /////////////////////////////////////////////////////////////-->
+    <div class="row">
+      <!-- ////////////////// COLUMN MAIN /////////////////////////// -->
+      <div class="col-sm-12 col-md-9">
+        <!-- /////////////////////////////////////////////////////////////-->
+        <!-- BEGIN IE ////////////////////////////////////////////////////-->
+        <!-- /////////////////////////////////////////////////////////////-->
 
-    <!-- IE LANDING //////////////////////////////////////////////////-->
+        <!-- IE LANDING //////////////////////////////////////////////////-->
 
-    <style>
-      .ie-main {
-        display: flex;
-        flex-direction: column;
-        gap: 1em;
-        margin: 0 1em;
-        margin-bottom: 1.5em;
-      }
+        <style>
+          .ie-main {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            margin: 0 1em;
+            margin-bottom: 1.5em;
+          }
 
-      .ie-left-card > * + * {
-        margin-top: 0.5em;
-      }
+          .ie-left-card > * + * {
+            margin-top: 0.5em;
+          }
 
-      .ie-left-card {
-        display: flex;
-        flex-direction: column;
-        justify-content: center; /* Center horizontally */
-        align-items: center; /* Center vertically */
-        text-align: center;
-        background-color: white;
-        border-radius: 0.5em;
-        box-shadow: 0 7px 1px rgba(0, 0, 0, 0.1);
-        border: 1px solid rgba(0, 0, 0, 0.3);
-        padding: 1.5em;
-        width: 100%;
-      }
+          .ie-left-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            text-align: center;
+            background-color: white;
+            border-radius: 0.5em;
+            box-shadow: 0 7px 1px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            padding: 1.5em;
+            width: 100%;
+          }
 
-      .ie-right-grid {
-        display: grid;
-        gap: 1em;
-        grid-template-columns: 1fr;
-      }
+          .ie-right-grid {
+            display: grid;
+            gap: 1em;
+            grid-template-columns: 1fr;
+          }
 
-      .ie-grid-card > * + * {
-        margin-top: 0.5em;
-      }
+          .ie-grid-card > * + * {
+            margin-top: 0.5em;
+          }
 
-      .ie-grid-card {
-        display: grid;
-        gap: 0;
-        grid-row: span 3;
-        grid-template-rows: subgrid;
-        justify-items: center;
-        text-align: center;
-        background-color: white;
-        border-radius: 0.5em;
-        box-shadow: 0 7px 1px rgba(0, 0, 0, 0.1);
-        border: 1px solid rgba(0, 0, 0, 0.3);
-        padding: 1.5em;
-        width: 100%;
-      }
+          .ie-grid-card {
+            display: grid;
+            gap: 0;
+            grid-row: span 3;
+            grid-template-rows: subgrid;
+            justify-items: center;
+            text-align: center;
+            background-color: white;
+            border-radius: 0.5em;
+            box-shadow: 0 7px 1px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            padding: 1.5em;
+            width: 100%;
+          }
 
-      @media screen and (min-width: 680px) {
-        .ie-main {
-          flex-direction: column;
-        }
+          @media screen and (min-width: 680px) {
+            .ie-main {
+              flex-direction: column;
+            }
 
-        .ie-left-card {
-          box-shadow: none;
-          border: none;
-        }
+            .ie-left-card {
+              box-shadow: none;
+              border: none;
+            }
 
-        .ie-right-grid {
-          grid-template-columns: 1fr 1fr;
-        }
+            .ie-right-grid {
+              grid-template-columns: 1fr 1fr;
+            }
 
-        .ie-grid-card {
-          border-radius: 0em;
-          box-shadow: none;
-          border: none;
-        }
-      }
+            .ie-grid-card {
+              border-radius: 0em;
+              box-shadow: none;
+              border: none;
+            }
+          }
 
-      @media screen and (min-width: 1080px) {
-        .ie-main {
-          flex-direction: column;
-        }
+          @media screen and (min-width: 1080px) {
+            .ie-main {
+              flex-direction: column;
+            }
 
-        .ie-left-card {
-          box-shadow: none;
-          border: none;
-        }
+            .ie-left-card {
+              box-shadow: none;
+              border: none;
+            }
 
-        .ie-right-grid {
-          grid-template-columns: 1fr 1fr 1fr 1fr;
-        }
+            .ie-right-grid {
+              grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
 
-        .ie-grid-card {
-          border-radius: 0em;
-          box-shadow: none;
-          border: none;
-        }
-      }
+            .ie-grid-card {
+              border-radius: 0em;
+              box-shadow: none;
+              border: none;
+            }
+          }
 
-      @media screen and (min-width: 1280px) {
-        .ie-main {
-          flex-direction: row;
-        }
+          @media screen and (min-width: 1280px) {
+            .ie-main {
+              flex-direction: row;
+            }
 
-        .ie-left-card {
-          flex: 1;
-        }
+            .ie-left-card {
+              flex: 1;
+            }
 
-        .ie-left-card {
-          box-shadow: 0 7px 1px rgba(0, 0, 0, 0.1);
-          border: 1px solid rgba(0, 0, 0, 0.3);
-        }
+            .ie-left-card {
+              box-shadow: 0 7px 1px rgba(0, 0, 0, 0.1);
+              border: 1px solid rgba(0, 0, 0, 0.3);
+            }
 
-        .ie-right-grid {
-          flex: 3;
-        }
+            .ie-right-grid {
+              flex: 3;
+            }
 
-        .ie-right-grid {
-          grid-template-columns: 1fr 1fr;
-        }
+            .ie-right-grid {
+              grid-template-columns: 1fr 1fr;
+            }
 
-        .ie-grid-card {
-          border-radius: 0.5em;
-          box-shadow: 0 7px 1px rgba(0, 0, 0, 0.1);
-          border: 1px solid rgba(0, 0, 0, 0.3);
-        }
-      }
+            .ie-grid-card {
+              border-radius: 0.5em;
+              box-shadow: 0 7px 1px rgba(0, 0, 0, 0.1);
+              border: 1px solid rgba(0, 0, 0, 0.3);
+            }
+          }
 
-      a.about-btn {
-        margin: 0.8em 0;
-      }
+          a.about-btn {
+            margin: 0.8em 0;
+          }
 
-      a.about-btn:link,
-      a.about-btn:visited {
-        background-color: #1c75bc;
-        color: white;
-        padding: 0.5em 1.5em;
-        text-align: center;
-        text-decoration: none;
-        border-radius: 0.5em;
-        display: inline-block;
-      }
+          a.about-btn:link,
+          a.about-btn:visited {
+            background-color: #1c75bc;
+            color: white;
+            padding: 0.5em 1.5em;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 0.5em;
+            display: inline-block;
+          }
 
-      a.about-btn:hover,
-      a.about-btn:active {
-        background-color: #ec2027;
-      }
-    </style>
+          a.about-btn:hover,
+          a.about-btn:active {
+            background-color: #ec2027;
+          }
+        </style>
 
-    <div class="ie-main">
-      <div class="ie-left-card">
-        <img src="static/images/ie/890-300x225.jpg" alt="LIT" />
-        <h1>Purpose Statement</h1>
-        <p>
-          The purpose of the Office of Institutional Effectiveness and
-          Assessment at Lamar Institute of Technology (LIT) is to provide
-          information to the LIT community for effective and efficient decision
-          making in order to enhance student learning and to provide a
-          systematic program for institutional effectiveness that will result in
-          planning and improvement of LIT operations, programs, and services to
-          allow for optimum student learning.
-        </p>
-        <a
-          href="./ak-about.html"
-          target="_blank"
-          class="about-btn"
-          aria-label="About Us"
-          alt="About Us"
-          >About Us</a
-        >
+        <div class="ie-main">
+          <div class="ie-left-card">
+            <img src="static/images/ie/890-300x225.jpg" alt="LIT" />
+            <h1>Purpose Statement</h1>
+            <p>
+              The purpose of the Office of Institutional Effectiveness and
+              Assessment at Lamar Institute of Technology (LIT) is to provide
+              information to the LIT community for effective and efficient
+              decision making in order to enhance student learning and to
+              provide a systematic program for institutional effectiveness that
+              will result in planning and improvement of LIT operations,
+              programs, and services to allow for optimum student learning.
+            </p>
+            <a
+              href="./ak-about.html"
+              target="_blank"
+              class="about-btn"
+              aria-label="About Us"
+              alt="About Us"
+              >About Us</a
+            >
+          </div>
+
+          <div class="ie-right-grid">
+            <div class="ie-grid-card">
+              <img
+                src="static/images/ie/741-100x75.jpg"
+                alt="Office of Institutional Effectiveness and Assessment at Lamar Institute of Technology (LIT)"
+              />
+              <h3>Effectiveness</h3>
+              <p>
+                Access our public dashboards to view current and historical data
+                on enrollment, retention rates, graduation rates, and more
+              </p>
+            </div>
+            <div class="ie-grid-card">
+              <img
+                src="static/images/ie/306-100x75.jpg"
+                alt="Office of Institutional Effectiveness and Assessment at Lamar Institute of Technology (LIT)"
+              />
+              <h3>Assessment</h3>
+              <p>
+                Faculty and staff can access detailed, internal dashboards via
+                CatStats. If accessing from off-campus, a Remote Access VPN
+                connection is required
+              </p>
+            </div>
+            <div class="ie-grid-card">
+              <img
+                src="static/images/ie/517-100x75.jpg"
+                alt="Office of Institutional Effectiveness and Assessment at Lamar Institute of Technology (LIT)"
+              />
+              <h3>Resources</h3>
+              <p>
+                Discover a variety of reports and survey results, including
+                Federal and State Reports, Campus Climate Survey, Peer Studies,
+                and more
+              </p>
+            </div>
+            <div class="ie-grid-card">
+              <img
+                src="static/images/ie/824-100x75.jpg"
+                alt="Office of Institutional Effectiveness and Assessment at Lamar Institute of Technology (LIT)"
+              />
+              <h3>Data Request</h3>
+              <p>
+                Learn about the different avenues for requesting data or gaining
+                access to specialized institutional reports by visiting the Data
+                Request Center
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ENDING IE LANDING ///////////////////////////////////////////-->
+
+        <!-- /////////////////////////////////////////////////////////////-->
+        <!-- END IE //////////////////////////////////////////////////////-->
+        <!-- /////////////////////////////////////////////////////////////-->
       </div>
-
-      <div class="ie-right-grid">
-        <div class="ie-grid-card">
-          <img
-            src="static/images/ie/741-100x75.jpg"
-            alt="Office of Institutional Effectiveness and Assessment at Lamar Institute of Technology (LIT)"
-          />
-          <h3>Effectiveness</h3>
-          <p>
-            Access our public dashboards to view current and historical data on
-            enrollment, retention rates, graduation rates, and more
-          </p>
-        </div>
-        <div class="ie-grid-card">
-          <img
-            src="static/images/ie/306-100x75.jpg"
-            alt="Office of Institutional Effectiveness and Assessment at Lamar Institute of Technology (LIT)"
-          />
-          <h3>Assessment</h3>
-          <p>
-            Faculty and staff can access detailed, internal dashboards via
-            CatStats. If accessing from off-campus, a Remote Access VPN
-            connection is required
-          </p>
-        </div>
-        <div class="ie-grid-card">
-          <img
-            src="static/images/ie/517-100x75.jpg"
-            alt="Office of Institutional Effectiveness and Assessment at Lamar Institute of Technology (LIT)"
-          />
-          <h3>Resources</h3>
-          <p>
-            Discover a variety of reports and survey results, including Federal
-            and State Reports, Campus Climate Survey, Peer Studies, and more
-          </p>
-        </div>
-        <div class="ie-grid-card">
-          <img
-            src="static/images/ie/824-100x75.jpg"
-            alt="Office of Institutional Effectiveness and Assessment at Lamar Institute of Technology (LIT)"
-          />
-          <h3>Data Request</h3>
-          <p>
-            Learn about the different avenues for requesting data or gaining
-            access to specialized institutional reports by visiting the Data
-            Request Center
-          </p>
+      <!-- ////////////////// COLUMN ASIDE ////////////////////////// -->
+      <div class="col-sm-12 col-md-3">
+        <div class="sidebar-sub-drawer">
+          <a href="./ak.html">IE Home</a>
+          <a href="./ak-about.html">IE About</a>
         </div>
       </div>
     </div>
-
-    <!-- ENDING IE LANDING ///////////////////////////////////////////-->
-
-    <!-- /////////////////////////////////////////////////////////////-->
-    <!-- END IE //////////////////////////////////////////////////////-->
-    <!-- /////////////////////////////////////////////////////////////-->
 
     <!-- //////////////////////////////////////////////////////////// -->
     <!-- ////////////////// SCRIPTS ///////////////////////////////// -->
