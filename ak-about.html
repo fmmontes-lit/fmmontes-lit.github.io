@@ -115,7 +115,26 @@
             grid-template-columns: 1fr;
           }
 
-          .ie-profile-grid img {
+          .ie-profile-card > * + * {
+            margin-top: 0.5em;
+          }
+
+          .ie-profile-card {
+            display: grid;
+            gap: 0;
+            grid-row: span 3;
+            grid-template-rows: subgrid;
+            justify-items: center;
+            text-align: center;
+            background-color: white;
+            border-radius: 0.5em;
+            box-shadow: 0 7px 1px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            padding: 1.5em;
+            width: 100%;
+          }
+
+          .ie-profile-card img {
             max-width: 333px;
             height: auto;
           }
@@ -143,7 +162,7 @@
           <div class="ie-profile-card">
             <img
               class="img-fluid"
-              src="https://www.lit.edu/db-image/13142/robin-alison-clements"
+              src="https://www.lit.edu/getmedia/924422b4-56d8-473b-9190-9825c7ef4ef9/robin-clements.png"
               alt="Robin Clements"
             />
             <h3>Robin Clements</h3>
@@ -161,7 +180,7 @@
           <div class="ie-profile-card">
             <img
               class="img-fluid"
-              src="https://www.lit.edu/db-image/13193/miguel-victor-rodriguez-garcia"
+              src="https://www.lit.edu/getmedia/2325ab76-5ed3-428d-baeb-de2d82102d8a/miguel-garcia.png"
               alt="Miguel Garcia"
             />
             <h3>Miguel Garcia</h3>
@@ -179,7 +198,7 @@
           <div class="ie-profile-card">
             <img
               class="img-fluid"
-              src="https://www.lit.edu/db-image/13041/dr-bishar-sethna"
+              src="https://www.lit.edu/getmedia/efa7c75f-d002-4101-af18-23c31876a573/bishar-sethna.png"
               alt="Dr. Bishar Sethna"
             />
             <h3>Dr Bishar Sethna</h3>
