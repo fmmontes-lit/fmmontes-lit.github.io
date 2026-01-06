@@ -133,23 +133,224 @@
           .ie-dashboards a:focus {
             color: #ec2027;
           }
+
+          .btn {
+            color: #fff;
+            background-color: #1e448d;
+            border-color: #1e448d;
+          }
+
+          .btn:hover {
+            color: #fff;
+            background-color: #ec2027;
+            border-color: #ec2027;
+          }
         </style>
 
+        <!-- BEGINNING DASHBOARDS GRID -->
         <div class="ie-dashboards">
+          <!-- Course Offering -->
           <div class="ie-dashboard-card">
             <i class="fa fa-graduation-cap fa-stomper" aria-hidden="true"></i>
-            <a
-              href="https://www.lit.edu/Institutional-Data/Course-Offering-Dashboard"
-              ><h3>Course Offering</h3></a
+            <button
+              type="button"
+              class="btn"
+              data-toggle="modal"
+              data-target="#course-offering"
             >
+              Course Offering
+            </button>
+            <div
+              class="modal fade"
+              id="course-offering"
+              tabindex="-1"
+              aria-labelledby="course-offering"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3 class="modal-title" id="#course-offering">
+                      Course Offering
+                    </h3>
+                  </div>
+                  <div class="modal-body">
+                    <div
+                      class="tableauPlaceholder"
+                      id="viz1767642855369"
+                      style="position: relative"
+                    >
+                      <noscript
+                        ><a href="#"
+                          ><img
+                            alt=" "
+                            src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CourseOfferings_17676427510220&#47;CourseOffering&#47;1_rss.png"
+                            style="border: none" /></a></noscript
+                      ><object class="tableauViz" style="display: none">
+                        <param
+                          name="host_url"
+                          value="https%3A%2F%2Fpublic.tableau.com%2F"
+                        />
+                        <param name="embed_code_version" value="3" />
+                        <param name="site_root" value="" />
+                        <param
+                          name="name"
+                          value="CourseOfferings_17676427510220&#47;CourseOffering"
+                        />
+                        <param name="tabs" value="no" />
+                        <param name="toolbar" value="yes" />
+                        <param
+                          name="static_image"
+                          value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CourseOfferings_17676427510220&#47;CourseOffering&#47;1.png"
+                        />
+                        <param name="animate_transition" value="yes" />
+                        <param name="display_static_image" value="yes" />
+                        <param name="display_spinner" value="yes" />
+                        <param name="display_overlay" value="yes" />
+                        <param name="display_count" value="yes" />
+                        <param name="language" value="en-US" />
+                        <param name="filter" value="publish=yes" />
+                      </object>
+                    </div>
+                    <script type="text/javascript">
+                      var divElement =
+                        document.getElementById("viz1767642855369");
+                      var vizElement =
+                        divElement.getElementsByTagName("object")[0];
+                      if (divElement.offsetWidth > 800) {
+                        vizElement.style.width = "1000px";
+                        vizElement.style.height = "827px";
+                      } else if (divElement.offsetWidth > 500) {
+                        vizElement.style.width = "1000px";
+                        vizElement.style.height = "827px";
+                      } else {
+                        vizElement.style.width = "100%";
+                        vizElement.style.height = "827px";
+                      }
+                      var scriptElement = document.createElement("script");
+                      scriptElement.src =
+                        "https://public.tableau.com/javascripts/api/viz_v1.js";
+                      vizElement.parentNode.insertBefore(
+                        scriptElement,
+                        vizElement
+                      );
+                    </script>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+
+          <!-- Course Sequence -->
           <div class="ie-dashboard-card">
             <i class="fa fa-bar-chart fa-stomper" aria-hidden="true"></i>
-            <a
-              href="https://www.lit.edu/Institutional-Data/Course-Offering-Dashboard"
-              ><h3>Course Sequence</h3></a
+            <button
+              type="button"
+              class="btn"
+              data-toggle="modal"
+              data-target="#course-sequence"
             >
+              Course Sequence
+            </button>
+            <div
+              class="modal fade"
+              id="course-sequence"
+              tabindex="-1"
+              aria-labelledby="course-sequence"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3 class="modal-title" id="#course-sequence">
+                      Course Sequence
+                    </h3>
+                  </div>
+                  <div class="modal-body">
+                    <div
+                      class="tableauPlaceholder"
+                      id="viz1756324994364"
+                      style="position: relative"
+                    >
+                      <noscript
+                        ><a href="#"
+                          ><img
+                            alt="Course Sequence "
+                            src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;CourseSequence&#47;CourseSequence&#47;1_rss.png"
+                            style="border: none" /></a></noscript
+                      ><object class="tableauViz" style="display: none">
+                        <param
+                          name="host_url"
+                          value="https%3A%2F%2Fpublic.tableau.com%2F"
+                        />
+                        <param name="embed_code_version" value="3" />
+                        <param name="site_root" value="" />
+                        <param
+                          name="name"
+                          value="CourseSequence/CourseSequence"
+                        />
+                        <param name="tabs" value="no" />
+                        <param name="toolbar" value="yes" />
+                        <param
+                          name="static_image"
+                          value="https://public.tableau.com/static/images/Co/CourseSequence/CourseSequence/1.png"
+                        />
+                        <param name="animate_transition" value="yes" />
+                        <param name="display_static_image" value="yes" />
+                        <param name="display_spinner" value="yes" />
+                        <param name="display_overlay" value="yes" />
+                        <param name="display_count" value="yes" />
+                        <param name="language" value="en-US" />
+                      </object>
+                    </div>
+                    <script type="text/javascript">
+                      var divElement =
+                        document.getElementById("viz1756324994364");
+                      var vizElement =
+                        divElement.getElementsByTagName("object")[0];
+                      if (divElement.offsetWidth > 800) {
+                        vizElement.style.width = "1000px";
+                        vizElement.style.height = "827px";
+                      } else if (divElement.offsetWidth > 500) {
+                        vizElement.style.width = "1000px";
+                        vizElement.style.height = "827px";
+                      } else {
+                        vizElement.style.width = "100%";
+                        vizElement.style.height = "727px";
+                      }
+                      var scriptElement = document.createElement("script");
+                      scriptElement.src =
+                        "https://public.tableau.com/javascripts/api/viz_v1.js";
+                      vizElement.parentNode.insertBefore(
+                        scriptElement,
+                        vizElement
+                      );
+                    </script>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+
+          <!-- Degrees Awarded -->
           <div class="ie-dashboard-card">
             <i class="fa fa-trophy fa-stomper" aria-hidden="true"></i>
             <a
@@ -157,6 +358,8 @@
               ><h3>Degrees Awarded</h3></a
             >
           </div>
+
+          <!-- Grade Distribution -->
           <div class="ie-dashboard-card">
             <i class="fa fa-pie-chart fa-stomper" aria-hidden="true"></i>
             <a
@@ -164,6 +367,8 @@
               ><h3>Grade Distribution</h3></a
             >
           </div>
+
+          <!-- Interactive Enrollment -->
           <div class="ie-dashboard-card">
             <i class="fa fa-line-chart fa-stomper" aria-hidden="true"></i>
             <a
@@ -171,6 +376,8 @@
               ><h3>Interactive Enrollment</h3></a
             >
           </div>
+
+          <!-- LIT Applications -->
           <div class="ie-dashboard-card">
             <i class="fa fa-area-chart fa-stomper" aria-hidden="true"></i>
             <a
@@ -178,6 +385,8 @@
               ><h3>LIT Applications</h3></a
             >
           </div>
+
+          <!-- LIT Applications Comparison -->
           <div class="ie-dashboard-card">
             <i class="fa fa-bolt fa-stomper" aria-hidden="true"></i>
             <a
@@ -186,6 +395,7 @@
             >
           </div>
         </div>
+        <!-- ENDING DASHBOARDS GRID -->
 
         <!-- ENDING IE Dashboards ///////////////////////////////////////////-->
 
