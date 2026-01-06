@@ -99,13 +99,28 @@
 
           /* Desktop */
           @media (min-width: 1080px) {
-            .ie-profile-grid {
+            .ie-effective-grid {
               grid-template-columns: repeat(3, 1fr);
             }
           }
 
           .fa-stomper {
             font-size: 4em;
+          }
+
+          .ie-effective-card a {
+            text-decoration: none;
+            cursor: pointer;
+          }
+
+          .ie-effective-card a:link,
+          .ie-effective-card a:visited {
+            color: #1e448d;
+          }
+
+          .ie-effective-card a:hover,
+          .ie-effective-card a:focus {
+            color: #ec2027;
           }
         </style>
 
