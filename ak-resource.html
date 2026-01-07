@@ -85,17 +85,17 @@
         <!-- /////////////////////////////////////////////////////////////-->
 
         <style>
-          .ie-effective-grid {
+          .ie-resources-grid {
             display: grid;
             gap: 1em;
             grid-template-columns: 1fr;
           }
 
-          .ie-effective-card > * + * {
+          .ie-resources-card > * + * {
             margin-top: 0.5em;
           }
 
-          .ie-effective-card {
+          .ie-resources-card {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -109,7 +109,7 @@
 
           /* Desktop */
           @media (min-width: 1080px) {
-            .ie-effective-grid {
+            .ie-resources-grid {
               grid-template-columns: repeat(3, 1fr);
             }
           }
@@ -118,35 +118,54 @@
             font-size: 4em;
           }
 
-          .ie-effective-card a {
+          .ie-resources-card a {
             text-decoration: none;
             cursor: pointer;
           }
 
-          .ie-effective-card a:link,
-          .ie-effective-card a:visited {
+          .ie-resources-card a:link,
+          .ie-resources-card a:visited {
             color: #1e448d;
           }
 
-          .ie-effective-card a:hover,
-          .ie-effective-card a:focus {
+          .ie-resources-card a:hover,
+          .ie-resources-card a:focus {
             color: #ec2027;
           }
         </style>
 
         <!-- BEGIN IE ABOUT MAIN -->
-        <div class="ie-effective-grid">
-          <div class="ie-effective-card">
+        <div class="ie-resources-grid">
+          <div class="ie-resources-card">
             <i class="fa fa-bar-chart fa-stomper" aria-hidden="true"></i>
-            <a href="#"><h3></h3></a>
+            <a
+              href="https://www.lit.edu/institutional-data/institutional-effectiveness-and-assessment"
+              ><h3>Institutional Effectiveness and Assessment</h3></a
+            >
           </div>
 
-          <div class="ie-effective-card">
+          <div class="ie-resources-card">
             <i class="fa fa-pie-chart fa-stomper" aria-hidden="true"></i>
+            <a
+              href="https://www.lit.edu/institutional-data/student-achievement-data"
+              ><h3>Student Achievement Data</h3></a
+            >
           </div>
 
-          <div class="ie-effective-card">
+          <div class="ie-resources-card">
             <i class="fa fa-line-chart fa-stomper" aria-hidden="true"></i>
+            <a
+              href="https://www.lit.edu/institutional-data/student-right-to-know"
+              ><h3>Student Right-To-Know</h3></a
+            >
+          </div>
+
+          <div class="ie-resources-card">
+            <i class="fa fa-line-chart fa-stomper" aria-hidden="true"></i>
+            <a
+              href="https://www.lit.edu/institutional-data/texas-curriculum-resources"
+              ><h3>Texas Curriculum Resources</h3></a
+            >
           </div>
         </div>
         <!-- BEGIN IE ABOUT MAIN -->
