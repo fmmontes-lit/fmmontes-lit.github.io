@@ -92,55 +92,39 @@
           .ie-profile-grid {
             display: grid;
             gap: 1em;
-          }
-
-          .ie-profile-card > * + * {
-            margin-top: 0.5em;
+            grid-template-columns: 1fr;
           }
 
           .ie-profile-card {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
+            display: grid;
+            gap: 1em;
+            grid-template-columns: 1fr 2fr;
             background-color: white;
             border-radius: 0.5em;
             box-shadow: 0 7px 1px rgba(0, 0, 0, 0.1);
             border: 1px solid rgba(0, 0, 0, 0.3);
-            padding: 1.5em;
+            padding: 0.5em 1.5em 1.5em 1.5em;
+
+            grid-row: span 3;
+            grid-template-rows: max-content auto max-content;
+            grid-template-rows: subgrid;
           }
 
-          /* Mobile */
-          @media (max-width: 679px) {
-            .ie-profile-grid {
-              grid-template-columns: 1fr;
-            }
+          .ie-profile-card .ie-name {
+            grid-column: 1 / span 2;
+            background-color: #1e448d;
+            color: white;
+
+            /* cancel parent padding */
+            margin: -0.5em -1.5em 0 -1.5em;
+            /* re-add internal spacing */
+            padding: 0.75em 1.5em;
+            border-radius: 0.5em 0.5em 0 0;
           }
 
-          /* Tablet */
-          @media (min-width: 680px) and (max-width: 1479px) {
-            .ie-profile-grid {
-              grid-template-columns: 1fr 1fr;
-            }
-
-            /* Stagger pattern */
-            .ie-profile-card:nth-child(odd) {
-              justify-self: end;
-            }
-
-            .ie-profile-card:nth-child(even) {
-              justify-self: start;
-            }
-          }
-
-          /* Desktop */
-          @media (min-width: 1480px) {
+          @media (min-width: 1080px) {
             .ie-profile-grid {
               grid-template-columns: repeat(3, 1fr);
-            }
-
-            .ie-profile-card {
-              justify-self: stretch;
             }
           }
         </style>
@@ -161,106 +145,105 @@
           </p>
           <div class="ie-profile-grid">
             <div class="ie-profile-card">
+              <div class="ie-name">
+                <p><strong>Robin Clements</strong></p>
+              </div>
               <img
                 class="img-fluid"
                 src="https://www.lit.edu/getmedia/924422b4-56d8-473b-9190-9825c7ef4ef9/robin-clements.png"
                 alt="Robin Clements"
               />
-              <h3>Robin Clements</h3>
-              <h5>Assessment and Accreditation Manager</h5>
-              <p>
-                <strong>Robin Clements</strong> serves as Accreditation and
-                Assessment Manager (2023-present), supporting institutional
-                effectiveness, assessment, and accreditation initiatives. She
-                collaborates with academic and administrative units to align
-                assessment practices with strategic priorities, provides
-                guidance on outcomes development and assessment methodologies in
-                accordance with SACSCOC standards, and supports continuous
-                improvement through data-informed analysis and reporting. Her
-                work includes facilitating program reviews, supporting general
-                education assessment focused on student success, and
-                contributing to institutional planning through presentations and
-                reports for internal and external stakeholders.
-              </p>
-              <p>
-                Clements brings 17 years of experience in higher education,
-                including prior roles in institutional research and
-                effectiveness, academic affairs, financial aid, and student
-                support services at Lamar State College Orange and Lamar State
-                College Port Arthur. She holds a Bachelor of Science in Business
-                Management from Colorado State University and an Associate of
-                Applied Science in Management Development Business
-                Administration from Lamar State College-Port Arthur and is a
-                member of the Kappa Beta Delta and Phi Theta Kappa honor
-                societies.
-              </p>
+              <div class="ie-contact">
+                <p><strong>Assessment and Accreditation Manager</strong></p>
+                <address>
+                  <strong>Office:</strong> Cecil Beeson, 233B<br />
+                  <strong>Phone:</strong>
+                  <a
+                    href="tel:4092458902"
+                    aria-label="(409) 245-8902"
+                    alt="(409) 245-8902"
+                    >(409) 245-8902</a
+                  ><br />
+                  <strong>Email:</strong>
+                  <a
+                    href="mailto:raclements@lit.edu"
+                    aria-label="raclements@lit.edu"
+                    alt="raclements@lit.edu"
+                    >raclements@lit.edu</a
+                  >
+                </address>
+              </div>
             </div>
 
             <div class="ie-profile-card">
+              <div class="ie-name">
+                <p><strong>Miguel Garcia</strong></p>
+              </div>
               <img
                 class="img-fluid"
                 src="https://www.lit.edu/getmedia/2325ab76-5ed3-428d-baeb-de2d82102d8a/miguel-garcia.png"
                 alt="Miguel Garcia"
               />
-              <h3>Miguel Garcia</h3>
-              <h5>Institutional Research Analyst</h5>
-              <p>
-                <strong>Miguel Rodriguez</strong> has served as a Reporting
-                Analyst in the Institutional Effectiveness and Assessment
-                Department since January 2024. Originally from Spain, he brings
-                a decade of experience as a Sports Analyst with the Spanish
-                Olympic Committee. He relocated to Beaumont, Texas, five years
-                ago and has since held roles as an Administrative Specialist at
-                St. Elizabeth Hospital and as an elementary school teacher.
-              </p>
-              <p>
-                Miguel holds a degree in Sports Science with a concentration in
-                Sports Management and an MBA in Data Analytics from Lamar
-                University. He also possesses additional certifications in Data
-                Analysis, Microsoft Office, Tableau, and related areas.
-              </p>
+              <div class="ie-contact">
+                <p><strong>Institutional Research Analyst</strong></p>
+                <address>
+                  <strong>Office:</strong> Cecil Beeson, 233A<br />
+                  <strong>Phone:</strong>
+                  <a
+                    href="tel:4092475095"
+                    aria-label="(409) 247-5095"
+                    alt="(409) 247-5095"
+                    >(409) 247-5095</a
+                  ><br />
+                  <strong>Email:</strong>
+                  <a
+                    href="mailto:mrodriguez5@lit.edu"
+                    aria-label="mrodriguez5@lit.edu"
+                    alt="mrodriguez5@lit.edu"
+                    >mrodriguez5@lit.edu</a
+                  >
+                </address>
+              </div>
             </div>
 
             <div class="ie-profile-card">
+              <div class="ie-name">
+                <p><strong>Dr Bishar Sethna</strong></p>
+              </div>
               <img
                 class="img-fluid"
                 src="https://www.lit.edu/getmedia/efa7c75f-d002-4101-af18-23c31876a573/bishar-sethna.png"
                 alt="Dr. Bishar Sethna"
               />
-              <h3>Dr Bishar Sethna</h3>
-              <h5>Exec. Dir. of Institutional Effectiveness & Assessment</h5>
-              <p>
-                <strong>Dr. Bishar Sethna</strong> has served as Executive
-                Director at Lamar Institute of Technology since 2021, where he
-                leads initiatives focused on academic quality, operational
-                effectiveness, accreditation compliance, and data-informed
-                decision-making through interactive Tableau dashboards. He is
-                committed to advancing educational excellence through
-                evidence-based practices and continuous improvement.
-              </p>
-              <p>
-                Dr. Sethna began his career in institutional research in 1994 as
-                Director of Institutional Research at Lamar State
-                College-Orange, a role he held for over 20 years. He later
-                served as Senior Research and Accreditation Analyst at Lamar
-                University before assuming his current leadership position. He
-                is an active member of the Texas Association of Institutional
-                Research and has served on the TAIR Conference Planning
-                Committee.
-              </p>
-              <p>
-                In addition to his administrative leadership, Dr. Sethna has
-                taught mathematics and business courses, including algebra and
-                salesmanship, with teaching interests in personal finance and
-                investments. He holds a Doctor of Education in Educational
-                Leadership from Lamar University, an MBA in Finance from Fort
-                Hays State University, and a Bachelor of Science in Mathematics
-                from the University of Bombay.
-              </p>
+              <div class="ie-contact">
+                <p>
+                  <strong
+                    >Exec. Dir. of Institutional Effectiveness &
+                    Assessment</strong
+                  >
+                </p>
+                <address>
+                  <strong>Office:</strong> Cecil Beeson, 233C<br />
+                  <strong>Phone:</strong>
+                  <a
+                    href="tel:4099515739"
+                    aria-label="(409) 951-5739"
+                    alt="(409) 951-5739"
+                    >(409) 951-5739</a
+                  ><br />
+                  <strong>Email:</strong>
+                  <a
+                    href="mailto:bsethna@lit.edu"
+                    aria-label="bsethna@lit.edu"
+                    alt="bsethna@lit.edu"
+                    >bsethna@lit.edu</a
+                  >
+                </address>
+              </div>
             </div>
           </div>
         </div>
-        <!-- BEGIN IE ABOUT MAIN -->
+        <!-- ENDING IE ABOUT MAIN -->
 
         <!-- /////////////////////////////////////////////////////////////-->
         <!-- END IE ABOUT ////////////////////////////////////////////////-->
