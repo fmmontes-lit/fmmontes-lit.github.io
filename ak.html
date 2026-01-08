@@ -96,8 +96,8 @@
 
         <style>
           .ie-main {
-            display: flex;
-            flex-direction: column;
+            display: grid;
+            grid-template-columns: 1fr;
             gap: 1em;
           }
 
@@ -116,7 +116,6 @@
             box-shadow: 0 7px 1px rgba(0, 0, 0, 0.1);
             border: 1px solid rgba(0, 0, 0, 0.3);
             padding: 1.5em;
-            width: 100%;
           }
 
           .ie-right-grid {
@@ -141,14 +140,9 @@
             box-shadow: 0 7px 1px rgba(0, 0, 0, 0.1);
             border: 1px solid rgba(0, 0, 0, 0.3);
             padding: 1.5em;
-            width: 100%;
           }
 
           @media screen and (min-width: 680px) {
-            .ie-main {
-              flex-direction: column;
-            }
-
             .ie-left-card {
               box-shadow: none;
               border: none;
@@ -165,43 +159,14 @@
             }
           }
 
-          @media screen and (min-width: 1080px) {
-            .ie-main {
-              flex-direction: column;
-            }
-
-            .ie-left-card {
-              box-shadow: none;
-              border: none;
-            }
-
-            .ie-right-grid {
-              grid-template-columns: 1fr 1fr 1fr 1fr;
-            }
-
-            .ie-grid-card {
-              border-radius: 0em;
-              box-shadow: none;
-              border: none;
-            }
-          }
-
           @media screen and (min-width: 1280px) {
             .ie-main {
-              flex-direction: row;
-            }
-
-            .ie-left-card {
-              flex: 1;
+              grid-template-columns: 1fr 2fr;
             }
 
             .ie-left-card {
               box-shadow: 0 7px 1px rgba(0, 0, 0, 0.1);
               border: 1px solid rgba(0, 0, 0, 0.3);
-            }
-
-            .ie-right-grid {
-              flex: 3;
             }
 
             .ie-right-grid {
@@ -258,7 +223,7 @@
         <div class="ie-main">
           <div class="ie-left-card">
             <img
-              src="https://lit.edu/getmedia/c0ab59df-1995-4eb4-bee2-cc023d6c1fb5/on-campus-w400.png"
+              src="https://lit.edu/getmedia/b027e955-a3d1-4a27-a1d1-b80ce40cec74/on-campus-w300.png"
               alt="LIT"
             />
             <h1>Our Role</h1>
