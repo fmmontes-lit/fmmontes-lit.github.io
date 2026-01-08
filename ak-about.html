@@ -99,15 +99,13 @@
             display: grid;
             gap: 1em;
             grid-template-columns: 1fr 2fr;
+            grid-template-rows: subgrid;
+            grid-row: span 3;
             background-color: white;
             border-radius: 0.5em;
             box-shadow: 0 7px 1px rgba(0, 0, 0, 0.1);
             border: 1px solid rgba(0, 0, 0, 0.3);
             padding: 0.5em 1.5em 1.5em 1.5em;
-
-            grid-row: span 3;
-            grid-template-rows: max-content auto max-content;
-            grid-template-rows: subgrid;
           }
 
           .ie-profile-card .ie-name {
