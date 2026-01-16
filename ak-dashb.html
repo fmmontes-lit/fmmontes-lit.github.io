@@ -112,16 +112,6 @@
             width: 100%;
           }
 
-          .modal-body {
-            padding: 0; /* Removes padding so the dashboard hits the edges */
-            overflow-x: hidden;
-          }
-
-          .tableauPlaceholder {
-            margin: 0 auto;
-            width: 100% !important;
-          }
-
           @media screen and (min-width: 680px) {
             .ie-dashboards {
               grid-template-columns: 1fr 1fr;
@@ -187,7 +177,7 @@
               data-toggle="modal"
               data-target="#course-offering"
             >
-              Course Offering vB
+              Course Offering
             </button>
             <div
               class="modal fade"
@@ -239,6 +229,7 @@
                         <param name="display_count" value="yes" />
                         <param name="language" value="en-US" />
                         <param name="filter" value="publish=yes" />
+                        <param name="device" value="desktop" />
                       </object>
                     </div>
                     <script type="text/javascript">
@@ -247,12 +238,9 @@
                       var vizElement =
                         divElement.getElementsByTagName("object")[0];
 
-                      // Force the width to 100% of the modal body
-                      vizElement.style.width = "100%";
-
-                      // Keep your preferred height, or set it to a fixed value
-                      // that fits within the modal-xl height constraints
-                      vizElement.style.minHeight = "827px";
+                      // Force the dimensions to match your Desktop dashboard's fixed size
+                      // This prevents the 'stacked' mobile layout from being triggered by the container
+                      vizElement.style.width = "1000px";
                       vizElement.style.height = "827px";
 
                       var scriptElement = document.createElement("script");
