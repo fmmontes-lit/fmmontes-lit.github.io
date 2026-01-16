@@ -112,6 +112,16 @@
             width: 100%;
           }
 
+          .modal-body {
+            padding: 0; /* Removes padding so the dashboard hits the edges */
+            overflow-x: hidden;
+          }
+
+          .tableauPlaceholder {
+            margin: 0 auto;
+            width: 100% !important;
+          }
+
           @media screen and (min-width: 680px) {
             .ie-dashboards {
               grid-template-columns: 1fr 1fr;
@@ -177,7 +187,7 @@
               data-toggle="modal"
               data-target="#course-offering"
             >
-              Course Offering
+              Course Offering vB
             </button>
             <div
               class="modal fade"
@@ -236,16 +246,15 @@
                         document.getElementById("viz1768582798565");
                       var vizElement =
                         divElement.getElementsByTagName("object")[0];
-                      if (divElement.offsetWidth > 800) {
-                        vizElement.style.width = "1000px";
-                        vizElement.style.height = "827px";
-                      } else if (divElement.offsetWidth > 500) {
-                        vizElement.style.width = "1000px";
-                        vizElement.style.height = "827px";
-                      } else {
-                        vizElement.style.width = "100%";
-                        vizElement.style.height = "827px";
-                      }
+
+                      // Force the width to 100% of the modal body
+                      vizElement.style.width = "100%";
+
+                      // Keep your preferred height, or set it to a fixed value
+                      // that fits within the modal-xl height constraints
+                      vizElement.style.minHeight = "827px";
+                      vizElement.style.height = "827px";
+
                       var scriptElement = document.createElement("script");
                       scriptElement.src =
                         "https://public.tableau.com/javascripts/api/viz_v1.js";
