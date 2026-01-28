@@ -1,0 +1,750 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LitPlayground</title>
+    <link rel="stylesheet" href="static/styles.css" />
+    <link
+      rel="stylesheet"
+      href="static/lib/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="static/css/site.css" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css"
+    />
+  </head>
+
+  <body>
+    <!-- /// NAV //////////////////////////////////////////////////// -->
+    <nav
+      class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"
+    >
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target=".navbar-collapse"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="navbar-collapse collapse d-sm-inline-flex justify-content-between"
+        >
+          <ul class="navbar-nav flex-grow-1">
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./ak.html">IE Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./ak-dashb2.html"
+                >Dashboards</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./ak-effect.html"
+                >IE Effectiveness</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./ak-assess.html"
+                >IE Assessment</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./ak-resource.html"
+                >IE Resources</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./ak-about.html">IE About</a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="nav-corner" style="color: #1b6ec2">
+          (^_^)
+          <div id="current-time"></div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- //////////////////////////////////////////////////////////// -->
+    <!-- ////////////////// PAGE BODY /////////////////////////////// -->
+    <!-- //////////////////////////////////////////////////////////// -->
+
+    <div class="row">
+      <!-- ////////////////// COLUMN MAIN /////////////////////////// -->
+      <div class="col-sm-12 col-md-9">
+        <!-- BEGIN IN-SERVICE TRAINING -->
+        <style>
+          body.no-scroll {
+            overflow: hidden;
+          }
+
+          .ist-container {
+            background-color: white;
+            padding: 0.5em 1em;
+            border-radius: 0.5em;
+            margin-bottom: 1.5em;
+            line-height: 1.6;
+          }
+
+          .ist-container .urgent-note {
+            border-left: 6px solid #ec2027;
+            background-color: #ffe6e9;
+            margin: 0.8em 0;
+            padding: 1em;
+            border-radius: 0.5em;
+            font-weight: 600;
+            color: #721c24;
+          }
+
+          .ist-container .urgent-note p {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #721c24;
+          }
+
+          .classes-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5em;
+          }
+
+          .classes-grid-item {
+            background-color: white;
+            padding: 0;
+            border-radius: 0.5em;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+          }
+
+          .classes-grid-item .card {
+            border: none; /* remove double borders */
+            box-shadow: none; /* let outer grid-item provide shadow */
+          }
+
+          .classes-grid-item .card-header {
+            background-color: #1b6ec2;
+            font-size: 1.25rem;
+            padding: 1rem;
+            color: white;
+            text-align: center;
+          }
+
+          img.img-thumbnail {
+            max-width: 50%;
+            height: auto;
+          }
+
+          img.img-thumbnail:hover {
+            cursor: pointer;
+          }
+
+          .modal {
+            display: none;
+          }
+
+          .modal.is-open {
+            display: block;
+          }
+
+          .modal-close {
+            position: absolute;
+            top: 0.75em;
+            right: 0.75em;
+
+            width: 2.2em;
+            height: 2.2em;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: #1b6ec2;
+            color: white;
+            font-weight: bold;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.1rem;
+
+            transition: background 0.2s ease;
+            z-index: 9999;
+          }
+
+          .modal-close:hover {
+            background: #16356b;
+          }
+
+          .modal-backdrop {
+            position: fixed;
+            inset: 0;
+            background-color: rgb(0 0 0 / 0.5);
+            z-index: 10;
+          }
+
+          .modal-body {
+            position: fixed;
+            inset-block: 3em;
+            inset-inline: 20%;
+            padding: 2em 3em;
+            background-color: white;
+            border-radius: 0.75em;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+            overflow: auto;
+
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+
+            z-index: 20;
+          }
+
+          .modal-body img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10em;
+          }
+
+          @media (min-width: 1000px) {
+            .classes-grid {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              gap: 1.5em;
+            }
+
+            .classes-grid-item .card-body:has(img) {
+              display: grid;
+              grid-template-columns: 1fr auto;
+            }
+
+            img.img-thumbnail {
+              justify-self: center;
+              align-self: center;
+            }
+          }
+
+          @media (max-width: 600px) {
+            .modal-body {
+              position: fixed;
+              inset: 0.5em; /* nearly full screen */
+              border-radius: 0.5em;
+              padding: 0.75em;
+            }
+
+            .modal-body img {
+              margin-top: 0;
+            }
+          }
+        </style>
+        <div class="ist-container">
+          <h3>Regional Police Academy In-service</h3>
+          <p>
+            All training is free to law enforcement in the region unless
+            otherwise noted in the posting. To register, please complete the
+            online form. For any questions, contact us @
+            <a
+              href="mailto:policeacademy@lit.edu"
+              aria-label="Visit Lamar Institute of Technology - Regional Police Academy In-service Training"
+              >policeacademy@lit.edu</a
+            >. You must have your agency's approval before registering for any
+            course listed.
+          </p>
+          <div class="urgent-note">
+            <p>
+              <strong>Important Information:</strong> The Multi-Purpose Center
+              (Paul and Connie Szuch Building) is located at 802 E. Lavaca in
+              Beaumont, Texas. This facility is located across the street from
+              the main campus of LIT. Training is held downstairs in the
+              conference room and upstairs in the in-service classroom #262 and
+              the cadet classroom #252.
+            </p>
+          </div>
+
+          <div class="urgent-note">
+            <p><strong>Please Note New Phone Number:</strong> (409) 257-0049</p>
+          </div>
+
+          <hr />
+
+          <h3>Upcoming In-service Classes</h3>
+
+          <!-- BEGIN CLASSES GRID -->
+          <div class="classes-grid">
+            <!-- BEGIN GRID ITEMS (CLASS DETAILS) /////////////////////////////////////////////////////////////// -->
+
+            <!-- 1014 Basic Instructor Course - 40 hrs. TCOLE Credit - Feb. 9-13, 2026 -->
+            <div class="classes-grid-item">
+              <div class="card">
+                <div class="card-header">
+                  <strong
+                    >1014 Basic Instructor Course - 40 hrs. TCOLE Credit<br />
+                    8 AM to 5 PM<br />
+                    February 9-13, 2026 -
+                    <em>Class size is limited to 20</em></strong
+                  >
+                </div>
+
+                <div class="card-body">
+                  <div class="location-info">
+                    <h5>
+                      Lamar Institute of Technology - Regional Police Academy
+                    </h5>
+
+                    <address>
+                      MPC room 262<br />
+                      805 E. Lavaca St.<br />
+                      Beaumont, Texas 77705
+                    </address>
+
+                    <ul>
+                      <li>40 hours TCOLE Credit</li>
+                      <li>No Cost</li>
+                      <li>
+                        <a
+                          href="https://www.lit.edu/police-officer-in-service-registration-form"
+                          >Click Here to Register</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3189 Update   4 - hrs. TCOLE Credit - February 12, 26 -->
+            <div class="classes-grid-item">
+              <div class="card">
+                <div class="card-header">
+                  <strong
+                    >3189 Update 4 hrs. TCOLE Credit<br />
+                    1 PM to 5 PM<br />
+                    February 12, 26</strong
+                  >
+                </div>
+
+                <div class="card-body">
+                  <div class="location-info">
+                    <h5>
+                      Lamar Institute of Technology - Regional Police Academy
+                    </h5>
+
+                    <address>
+                      MPC room 262<br />
+                      805 E. Lavaca St.<br />
+                      Beaumont, Texas 77705
+                    </address>
+
+                    <ul>
+                      <li>4 hours TCOLE Credit</li>
+                      <li>No Cost</li>
+                      <li>
+                        <a
+                          href="https://www.lit.edu/police-officer-in-service-registration-form"
+                          >Click Here to Register</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3189 Update   4 - hrs. TCOLE Credit - March 19, 26 -->
+            <div class="classes-grid-item">
+              <div class="card">
+                <div class="card-header">
+                  <strong
+                    >3189 Update 4 hrs. TCOLE Credit<br />
+                    1 PM to 5 PM<br />
+                    March 19, 26</strong
+                  >
+                </div>
+
+                <div class="card-body">
+                  <div class="location-info">
+                    <h5>
+                      Lamar Institute of Technology - Regional Police Academy
+                    </h5>
+
+                    <address>
+                      MPC room 262<br />
+                      805 E. Lavaca St.<br />
+                      Beaumont, Texas 77705
+                    </address>
+
+                    <ul>
+                      <li>4 hours TCOLE Credit</li>
+                      <li>No Cost</li>
+                      <li>
+                        <a
+                          href="https://www.lit.edu/police-officer-in-service-registration-form"
+                          >Click Here to Register</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Basic Auto Theft For Patrol - Tuesday, March 31 -->
+            <div class="classes-grid-item">
+              <div class="card">
+                <div class="card-header">
+                  <strong>
+                    Basic Auto Theft For Patrol<br />
+                    8 AM to 5 PM<br />
+                    Tuesday, March 31
+                  </strong>
+                </div>
+                <div class="card-body">
+                  <div class="location-info">
+                    <h5>Lamar Institute of Technology</h5>
+                    <address>
+                      925 E. Lavaca St. Rm 101<br />
+                      Beaumont, Texas 77705
+                    </address>
+                    <ul>
+                      <li>8 hours TCOLE</li>
+                      <li>Licensed Peace Officers Only</li>
+                      <li>
+                        <a
+                          href="https://forms.office.com/Pages/ResponsePage.aspx?id=cJ9xcjM1s0aUVuwSNRQ3aL05moPiYu5NkZqrvQJXNHdUNjlZWFdGSk9IRjVLMVlDUVBSMVpNR1kyUSQlQCN0PWcu&origin=QRCode"
+                          >Click Here to Register</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+
+                  <img
+                    alt="Basic Auto Theft For Patrol - Tuesday, March 31, 2026 - 8 AM to 5 PM"
+                    class="img-fluid img-thumbnail"
+                    id="open"
+                    src="https://www.lit.edu/getmedia/b8b5c45a-e022-488b-96a5-6d2785b1f633/auto-theft-for-patrol-t.png"
+                    title="Basic Auto Theft For Patrol - Tuesday, March 31, 2026 - 8 AM to 5 PM"
+                  />
+
+                  <div class="modal" id="modal" role="dialog" aria-modal="true">
+                    <div class="modal-backdrop"></div>
+                    <div class="modal-body">
+                      <div class="modal-close" id="close">X</div>
+                      <img
+                        alt="Basic Auto Theft For Patrol - Tuesday, March 31, 2026 - 8 AM to 5 PM"
+                        src="https://www.lit.edu/getmedia/06ed87be-b749-498e-9e55-8a8c12f10699/auto-theft-for-patrol-r.png"
+                        title="Basic Auto Theft For Patrol - Tuesday, March 31, 2026 - 8 AM to 5 PM"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3189 Update   4 - hrs. TCOLE Credit - April 9, 23 -->
+            <div class="classes-grid-item">
+              <div class="card">
+                <div class="card-header">
+                  <strong
+                    >3189 Update 4 hrs. TCOLE Credit<br />
+                    1 PM to 5 PM<br />
+                    April 9, 23</strong
+                  >
+                </div>
+
+                <div class="card-body">
+                  <div class="location-info">
+                    <h5>
+                      Lamar Institute of Technology - Regional Police Academy
+                    </h5>
+
+                    <address>
+                      MPC room 262<br />
+                      805 E. Lavaca St.<br />
+                      Beaumont, Texas 77705
+                    </address>
+
+                    <ul>
+                      <li>4 hours TCOLE Credit</li>
+                      <li>No Cost</li>
+                      <li>
+                        <a
+                          href="https://www.lit.edu/police-officer-in-service-registration-form"
+                          >Click Here to Register</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2106 Crime Scene Investigation Core Course - 40 hrs. TCOLE Credit - April 27 to May 1 -->
+            <div class="classes-grid-item">
+              <div class="card">
+                <div class="card-header">
+                  <strong
+                    >2106 Crime Scene Investigation Core Course<br />
+                    8 AM to 5 PM<br />
+                    April 27 - May 1 -
+                    <em>Class size is limited to 20</em></strong
+                  >
+                </div>
+
+                <div class="card-body">
+                  <div class="location-info">
+                    <h5>
+                      Lamar Institute of Technology - Regional Police Academy
+                    </h5>
+
+                    <address>
+                      MPC room 262<br />
+                      805 E. Lavaca St.<br />
+                      Beaumont, Texas 77705
+                    </address>
+
+                    <ul>
+                      <li>40 hours TCOLE Credit</li>
+                      <li>No Cost</li>
+                      <li>
+                        <a
+                          href="https://www.lit.edu/police-officer-in-service-registration-form"
+                          >Click Here to Register</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3296 New Detective Course - 40 hrs. TCOLE Credit - May 4-8 -->
+            <div class="classes-grid-item">
+              <div class="card">
+                <div class="card-header">
+                  <strong
+                    >1014 Basic Instructor Course - 40 hrs. TCOLE Credit<br />
+                    8 AM to 5 PM<br />
+                    May 4-8 - <em>Class size is limited to 30</em></strong
+                  >
+                </div>
+
+                <div class="card-body">
+                  <div class="location-info">
+                    <h5>
+                      Lamar Institute of Technology - Regional Police Academy
+                    </h5>
+
+                    <address>
+                      MPC room 262<br />
+                      805 E. Lavaca St.<br />
+                      Beaumont, Texas 77705
+                    </address>
+
+                    <ul>
+                      <li>40 hours TCOLE Credit</li>
+                      <li>No Cost</li>
+                      <li>
+                        <a
+                          href="https://www.lit.edu/police-officer-in-service-registration-form"
+                          >Click Here to Register</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3189 Update   4 - hrs. TCOLE Credit - May 14, 28 -->
+            <div class="classes-grid-item">
+              <div class="card">
+                <div class="card-header">
+                  <strong
+                    >3189 Update 4 hrs. TCOLE Credit<br />
+                    1 PM to 5 PM<br />
+                    May 14, 28</strong
+                  >
+                </div>
+
+                <div class="card-body">
+                  <div class="location-info">
+                    <h5>
+                      Lamar Institute of Technology - Regional Police Academy
+                    </h5>
+
+                    <address>
+                      MPC room 262<br />
+                      805 E. Lavaca St.<br />
+                      Beaumont, Texas 77705
+                    </address>
+
+                    <ul>
+                      <li>4 hours TCOLE Credit</li>
+                      <li>No Cost</li>
+                      <li>
+                        <a
+                          href="https://www.lit.edu/police-officer-in-service-registration-form"
+                          >Click Here to Register</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Initial Response Strategies and Tactics When Responding to Missing Children Incidents Course - June 19 -->
+            <div class="classes-grid-item">
+              <div class="card">
+                <div class="card-header">
+                  <strong
+                    >Initial Response Strategies and Tactics When Responding<br />
+                    to Missing Children Incidents Course<br />
+                    June 19</strong
+                  >
+                </div>
+                <div class="card-body">
+                  <div class="location-info">
+                    <h5>Lamar Institute of Technology</h5>
+                    <address>
+                      925 E. Lavaca St. Rm 101<br />
+                      Beaumont, Texas 77705
+                    </address>
+                    <ul>
+                      <li>8 hours TCOLE</li>
+                      <li>Licensed Peace Officers Only</li>
+                      <li>
+                        <a
+                          href="https://ncjtc.fvtc.edu/trainings/TR00006487/TRI3136032/initial-response-strategies-and-tactics-when-responding-to-missing-children-incidents"
+                          >Click Here to Register</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+
+                  <img
+                    alt="Initial Response Strategies and Tactics When Responding to Missing Children Incidents Course - June 19, 2026"
+                    class="img-fluid img-thumbnail"
+                    id="open-2"
+                    src="https://www.lit.edu/getmedia/cc2fcf8e-42fc-4496-9134-613648fb37e5/ncjtc-june2026-t.png"
+                    title="Initial Response Strategies and Tactics When Responding to Missing Children Incidents Course - June 19, 2026"
+                  />
+
+                  <div
+                    class="modal"
+                    id="modal-2"
+                    role="dialog"
+                    aria-modal="true"
+                  >
+                    <div class="modal-backdrop"></div>
+                    <div class="modal-body">
+                      <div class="modal-close" id="close-2">X</div>
+                      <img
+                        alt="Initial Response Strategies and Tactics When Responding to Missing Children Incidents Course - June 19, 2026"
+                        src="https://www.lit.edu/getmedia/84690750-ec65-4124-a2db-b39900b51a51/ncjtc-june2026.jpg"
+                        title="Initial Response Strategies and Tactics When Responding to Missing Children Incidents Course - June 19, 2026"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- END GRID ITEMS (CLASS DETAILS) ///////////////////////////////////////////////////////////////// -->
+          </div>
+          <!-- END CLASSES GRID -->
+        </div>
+        <script type="text/javascript">
+          const open = document.getElementById("open");
+          const close = document.getElementById("close");
+          const modal = document.getElementById("modal");
+
+          open.addEventListener("click", function (event) {
+            modal.classList.add("is-open");
+            document.body.classList.add("no-scroll");
+          });
+
+          close.addEventListener("click", function (event) {
+            modal.classList.remove("is-open");
+            document.body.classList.remove("no-scroll");
+          });
+
+          const open2 = document.getElementById("open-2");
+          const close2 = document.getElementById("close-2");
+          const modal2 = document.getElementById("modal-2");
+
+          open2.addEventListener("click", function (event) {
+            modal2.classList.add("is-open");
+            document.body.classList.add("no-scroll");
+          });
+
+          close2.addEventListener("click", function (event) {
+            modal2.classList.remove("is-open");
+            document.body.classList.remove("no-scroll");
+          });
+        </script>
+        <!-- END IN-SERVICE TRAINING -->
+      </div>
+      <!-- ////////////////// COLUMN ASIDE ////////////////////////// -->
+      <div class="col-sm-12 col-md-3">
+        <!-- /// SIDE NAV STYLES //////////////////////////////////////// -->
+        <style>
+          .sidebar-sub-drawer {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+          }
+
+          .sidebar-sub-drawer a {
+            text-decoration: none;
+            color: #1c75bc;
+            padding: 1rem 2rem;
+            transition:
+              transform 0.2s ease-in-out,
+              box-shadow 0.2s ease-in-out;
+          }
+
+          .sidebar-sub-drawer a:hover {
+            transform: translateX(-10px);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+            color: #1e448d;
+            background-color: #eee;
+            border-radius: 8px;
+          }
+        </style>
+        <div class="sidebar-sub-drawer">
+          <a href="./ak.html">IE Home</a>
+          <a href="./ak-dashb2.html">Dashboards</a>
+          <a href="./ak-effect.html">IE Effectiveness</a>
+          <a href="./ak-assess.html">IE Assessment</a>
+          <a href="./ak-resource.html">IE Resources</a>
+          <a href="./ak-about.html">IE About</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- //////////////////////////////////////////////////////////// -->
+    <!-- ////////////////// SCRIPTS ///////////////////////////////// -->
+    <!-- //////////////////////////////////////////////////////////// -->
+    <script src="static/js/site.js" type="module"></script>
+    <script src="static/lib/jquery/dist/jquery.min.js" type="module"></script>
+    <script
+      src="static/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+      type="module"
+    ></script>
+    <script
+      src="static/lit_news_files/scripts/bootstrap.bundle.min.js"
+      type="module"
+    ></script>
+  </body>
+</html>
