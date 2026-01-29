@@ -427,6 +427,63 @@
               </div>
             </div>
 
+            <!-- Fireproofed Leadership - April 15, 8 AM to 5 PM -->
+            <div class="classes-grid-item">
+              <div class="card">
+                <div class="card-header">
+                  <strong
+                    >Fireproofed Leadership<br />
+                    8 AM to 5 PM<br />
+                    April 15, 2026
+                  </strong>
+                </div>
+                <div class="card-body">
+                  <div class="location-info">
+                    <h5>Lamar Institute of Technology</h5>
+                    <address>
+                      925 E Lavaca, Room 101<br />
+                      Beaumont, Texas 77705
+                    </address>
+                    <ul>
+                      <li>8 hours TCOLE</li>
+                      <li>Licensed Peace Officers Only</li>
+                      <li>
+                        <a
+                          href="https://www.lit.edu/police-officer-in-service-registration-form"
+                          >Click Here to Register</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+
+                  <img
+                    alt="Fireproofed Leadership - April 15, 2026"
+                    class="img-fluid img-thumbnail"
+                    id="open-2"
+                    src="https://www.lit.edu/getmedia/d6bba71d-757d-4c70-a993-2eb08b155373/fireproofed-t.png"
+                    title="Fireproofed Leadership - April 15, 2026"
+                  />
+
+                  <div
+                    class="modal"
+                    id="modal-2"
+                    role="dialog"
+                    aria-modal="true"
+                  >
+                    <div class="modal-backdrop"></div>
+                    <div class="modal-body">
+                      <div class="modal-close" id="close-2">X</div>
+                      <img
+                        alt="Fireproofed Leadership - April 15, 2026"
+                        src="https://www.lit.edu/getmedia/ae32ae9d-5d87-4a5e-b9df-c8c6f01d339b/fireproofed.jpg"
+                        title="Fireproofed Leadership - April 15, 2026"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <!-- 2106 Crime Scene Investigation Core Course - 40 hrs. TCOLE Credit - April 27 to May 1 -->
             <div class="classes-grid-item">
               <div class="card">
@@ -574,20 +631,20 @@
                   <img
                     alt="Initial Response Strategies and Tactics When Responding to Missing Children Incidents Course - June 19, 2026"
                     class="img-fluid img-thumbnail"
-                    id="open-2"
+                    id="open-3"
                     src="https://www.lit.edu/getmedia/cc2fcf8e-42fc-4496-9134-613648fb37e5/ncjtc-june2026-t.png"
                     title="Initial Response Strategies and Tactics When Responding to Missing Children Incidents Course - June 19, 2026"
                   />
 
                   <div
                     class="modal"
-                    id="modal-2"
+                    id="modal-3"
                     role="dialog"
                     aria-modal="true"
                   >
                     <div class="modal-backdrop"></div>
                     <div class="modal-body">
-                      <div class="modal-close" id="close-2">X</div>
+                      <div class="modal-close" id="close-3">X</div>
                       <img
                         alt="Initial Response Strategies and Tactics When Responding to Missing Children Incidents Course - June 19, 2026"
                         src="https://www.lit.edu/getmedia/84690750-ec65-4124-a2db-b39900b51a51/ncjtc-june2026.jpg"
@@ -629,6 +686,20 @@
 
           close2.addEventListener("click", function (event) {
             modal2.classList.remove("is-open");
+            document.body.classList.remove("no-scroll");
+          });
+
+          const open3 = document.getElementById("open-3");
+          const close3 = document.getElementById("close-3");
+          const modal3 = document.getElementById("modal-3");
+
+          open3.addEventListener("click", function (event) {
+            modal3.classList.add("is-open");
+            document.body.classList.add("no-scroll");
+          });
+
+          close3.addEventListener("click", function (event) {
+            modal3.classList.remove("is-open");
             document.body.classList.remove("no-scroll");
           });
         </script>
