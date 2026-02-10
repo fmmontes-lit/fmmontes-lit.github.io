@@ -1,0 +1,328 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LitPlayground</title>
+    <link rel="stylesheet" href="static/styles.css" />
+    <link
+      rel="stylesheet"
+      href="static/lib/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="static/css/site.css" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css"
+    />
+  </head>
+
+  <body>
+    <!-- /// NAV //////////////////////////////////////////////////// -->
+    <nav
+      class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"
+    >
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target=".navbar-collapse"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="navbar-collapse collapse d-sm-inline-flex justify-content-between"
+        >
+          <ul class="navbar-nav flex-grow-1">
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./aa.html">Veterans</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./ab.html">LIT Online</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./ac.html"
+                >Online Courses & Programs</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./ad.html"
+                >LIT Online Experience</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./ah.html">LIT Online FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./ae.html">Workforce</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./af.html">Canvas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./ag.html">Library</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="./ak.html">IE</a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="nav-corner" style="color: #1b6ec2">
+          (^_^)
+          <div id="current-time"></div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- //////////////////////////////////////////////////////////// -->
+    <!-- ////////////////// PAGE BODY /////////////////////////////// -->
+    <!-- //////////////////////////////////////////////////////////// -->
+
+    <div class="row">
+      <!-- ////////////////// COLUMN MAIN /////////////////////////// -->
+      <div class="col-sm-12 col-md-9">
+        <!-- /////////////////////////////////////////////////////////////-->
+        <!-- BEGIN IE ////////////////////////////////////////////////////-->
+        <!-- /////////////////////////////////////////////////////////////-->
+
+        <style>
+          .ie-main > * + * {
+            margin-top: 1.5em;
+          }
+
+          img.ie-hero {
+            border-radius: 0.5em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 0.8em;
+          }
+
+          a.request-btn {
+            margin: 0.8em 0;
+          }
+
+          a.request-btn:link,
+          a.request-btn:visited {
+            background-color: #1c75bc;
+            color: white;
+            padding: 0.5em 1.5em;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 0.5em;
+            display: inline-block;
+          }
+
+          a.request-btn:hover,
+          a.request-btn:active {
+            background-color: #ec2027;
+          }
+
+          .ie-landing-card > * + * {
+            margin-top: 0.5em;
+          }
+
+          .ie-landing-grid {
+            display: grid;
+            gap: 1em;
+            grid-template-columns: 1fr;
+          }
+
+          .ie-landing-card > * + * {
+            margin-top: 0.5em;
+          }
+
+          .ie-landing-card {
+            display: grid;
+            gap: 0;
+            grid-row: span 3;
+            grid-template-rows: subgrid;
+            justify-items: center;
+            text-align: center;
+            background-color: white;
+            border-radius: 0.5em;
+            box-shadow: 0 7px 1px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            padding: 1.5em;
+          }
+
+          @media screen and (min-width: 680px) {
+            .ie-landing-grid {
+              grid-template-columns: 1fr 1fr;
+            }
+
+            .ie-landing-card {
+              border-radius: 0em;
+              box-shadow: none;
+              border: none;
+            }
+          }
+
+          @media screen and (min-width: 1280px) {
+            .ie-landing-grid {
+              grid-template-columns: 1fr 1fr;
+            }
+
+            .ie-landing-card {
+              border-radius: 0.5em;
+              box-shadow: 0 7px 1px rgba(0, 0, 0, 0.1);
+              border: 1px solid rgba(0, 0, 0, 0.3);
+            }
+          }
+
+          .fa-stomper {
+            font-size: 4em;
+          }
+
+          .ie-landing-card a:link,
+          .ie-landing-card a:visited {
+            color: #1c75bc;
+          }
+
+          .ie-landing-card a:hover,
+          .ie-landing-card a:focus {
+            color: #ec2027;
+          }
+        </style>
+        <div class="ie-main">
+          <!-- HERO IMG -->
+          <img
+            alt="LIT Career Services"
+            class="img-fluid career-services-hero"
+            src="https://www.lit.edu/getmedia/1b5eeed2-f3a3-49e2-ba5a-ebc4dfe75dc8/careers-herow2000.png"
+          />
+
+          <p>
+            We enable mission-aligned decision-making by translating data into
+            insight that drives institutional quality, effectiveness, and
+            continuous improvement.
+          </p>
+
+          <!-- REQUEST -->
+          <a
+            href="https://www.lit.edu/institutional-data/data-request"
+            target="_blank"
+            class="request-btn"
+            aria-label="Data Request"
+            alt="Data Request"
+            >Data Request</a
+          >
+
+          <!-- IE LANDING GRID -->
+          <div class="ie-landing-grid">
+            <div class="ie-landing-card">
+              <img
+                src="https://lit.edu/getmedia/3b7995f6-0580-408e-91ba-0d290479c4ca/effectiveness64-2.png"
+                alt="Effectiveness - LIT Institutional Effectiveness"
+              />
+              <a href="./ak-effect.html"><h3>Effectiveness</h3></a>
+              <p>
+                Effectiveness, Effectiveness, Effectiveness, Effectiveness,
+                Effectiveness, Effectiveness, Effectiveness, Effectiveness,
+                Effectiveness.
+              </p>
+            </div>
+            <div class="ie-landing-card">
+              <img
+                src="https://lit.edu/getmedia/01889335-02e9-48fe-b52d-0e4e26f837d5/assessment64-2.png"
+                alt="Assessment - LIT Institutional Effectiveness"
+              />
+              <a href="./ak-assess.html"><h3>Assessment</h3></a>
+              <p>
+                Assessment, Assessment, Assessment, Assessment, Assessment,
+                Assessment, Assessment, Assessment, Assessment.
+              </p>
+            </div>
+            <div class="ie-landing-card">
+              <img
+                src="https://lit.edu/getmedia/d572be4d-d1bf-43e7-a5c5-9f69d15e9b5f/dashboards64-2.png"
+                alt="Assessment - LIT Institutional Effectiveness"
+              />
+              <a href="./ak-dashb2.html"><h3>Dashboards</h3></a>
+              <p>
+                Dashboards, Dashboards, Dashboards, Dashboards, Dashboards,
+                Dashboards, Dashboards, Dashboards, Dashboards.
+              </p>
+            </div>
+            <div class="ie-landing-card">
+              <img
+                src="https://lit.edu/getmedia/778c8ad6-9f32-4bde-a2c5-1e1acfed876c/resources64-2.png"
+                alt="Assessment - LIT Institutional Effectiveness"
+              />
+              <a href="./ak-resource.html"><h3>Resources</h3></a>
+              <p>
+                Resources, Resources, Resources, Resources, Resources,
+                Resources, Resources, Resources, Resources.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ENDING IE LANDING ///////////////////////////////////////////-->
+
+        <!-- /////////////////////////////////////////////////////////////-->
+        <!-- END IE //////////////////////////////////////////////////////-->
+        <!-- /////////////////////////////////////////////////////////////-->
+      </div>
+      <!-- ////////////////// COLUMN ASIDE ////////////////////////// -->
+      <div class="col-sm-12 col-md-3">
+        <!-- /// SIDE NAV STYLES //////////////////////////////////////// -->
+        <style>
+          .sidebar-sub-drawer {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+          }
+
+          .sidebar-sub-drawer a {
+            text-decoration: none;
+            color: #1c75bc;
+            padding: 1rem 2rem;
+            transition:
+              transform 0.2s ease-in-out,
+              box-shadow 0.2s ease-in-out;
+          }
+
+          .sidebar-sub-drawer a:hover {
+            transform: translateX(-10px);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+            color: #1e448d;
+            background-color: #eee;
+            border-radius: 8px;
+          }
+        </style>
+        <div class="sidebar-sub-drawer">
+          <a href="./ak.html">IE Home</a>
+          <a href="./ak-dashb2.html">Dashboards</a>
+          <a href="./ak-effect.html">IE Effectiveness</a>
+          <a href="./ak-assess.html">IE Assessment</a>
+          <a href="./ak-resource.html">IE Resources</a>
+          <a href="./ak-about.html">IE About</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- //////////////////////////////////////////////////////////// -->
+    <!-- ////////////////// SCRIPTS ///////////////////////////////// -->
+    <!-- //////////////////////////////////////////////////////////// -->
+    <script src="static/js/site.js" type="module"></script>
+    <script src="static/lib/jquery/dist/jquery.min.js" type="module"></script>
+    <script
+      src="static/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+      type="module"
+    ></script>
+    <script
+      src="static/lit_news_files/scripts/bootstrap.bundle.min.js"
+      type="module"
+    ></script>
+  </body>
+</html>
