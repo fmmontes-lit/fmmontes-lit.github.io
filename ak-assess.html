@@ -38,7 +38,7 @@
         >
           <ul class="navbar-nav flex-grow-1">
             <li class="nav-item">
-              <a class="nav-link text-dark" href="./ak.html">IE Home</a>
+              <a class="nav-link text-dark" href="./ak2.html">IE Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-dark" href="./ak-dashb2.html"
@@ -81,10 +81,18 @@
       <!-- ////////////////// COLUMN MAIN /////////////////////////// -->
       <div class="col-sm-12 col-md-9">
         <!-- /////////////////////////////////////////////////////////////-->
-        <!-- BEGIN IE ABOUT //////////////////////////////////////////////-->
+        <!-- BEGIN IE ASSESSMENT /////////////////////////////////////////-->
         <!-- /////////////////////////////////////////////////////////////-->
 
         <style>
+          .ie-main > * + * {
+            margin-top: 1.5em;
+          }
+
+          p.ie-intro {
+            line-height: 1.8;
+          }
+
           .ie-assessment-grid {
             display: grid;
             gap: 1em;
@@ -134,35 +142,49 @@
           }
         </style>
 
-        <!-- BEGIN IE ABOUT MAIN -->
-        <div class="ie-assessment-grid">
-          <div class="ie-assessment-card">
-            <i class="fa fa-bar-chart fa-stomper" aria-hidden="true"></i>
-            <a
-              href="https://www.lit.edu/Institutional-Data/Core-Curriculum-Assessment"
-              ><h3>Core Curriculum Assessment</h3></a
-            >
-          </div>
+        <!-- IE MAIN -->
+        <div class="ie-main">
+          <h1>Planning and Assessment</h1>
 
-          <div class="ie-assessment-card">
-            <i class="fa fa-pie-chart fa-stomper" aria-hidden="true"></i>
-            <a
-              href="https://www.lit.edu/Institutional-Data/Planning-and-Asssessment"
-              ><h3>Planning and Assessment</h3></a
-            >
-          </div>
+          <!-- IE INTRO -->
+          <p class="ie-intro">
+            Institutional effectiveness at Lamar Institute of Technology (LIT)
+            is an ongoing, comprehensive, and data-driven process through which
+            LIT's divisions, academic programs, and administrative units gather,
+            analyze, and use data to ascertain how well the college is
+            accomplishing its mission and goals. Assessment results are analyzed
+            and evaluated to make continuous improvements throughout the
+            institution.
+          </p>
 
-          <div class="ie-assessment-card">
-            <i class="fa fa-line-chart fa-stomper" aria-hidden="true"></i>
-            <a href="https://www.lit.edu/Institutional-Data/Program-Review"
-              ><h3>Program Review</h3></a
-            >
+          <!-- BEGIN IE ASSESSMENT GRID -->
+          <div class="ie-assessment-grid">
+            <div class="ie-assessment-card">
+              <i class="fa fa-bar-chart fa-stomper" aria-hidden="true"></i>
+              <a
+                href="https://www.lit.edu/Institutional-Data/Core-Curriculum-Assessment"
+                ><h3>Core Curriculum Assessment</h3></a
+              >
+            </div>
+
+            <div class="ie-assessment-card">
+              <i class="fa fa-pie-chart fa-stomper" aria-hidden="true"></i>
+              <a
+                href="https://www.lit.edu/Institutional-Data/Planning-and-Asssessment"
+                ><h3>Planning and Assessment Process</h3></a
+              >
+            </div>
+
+            <div class="ie-assessment-card">
+              <i class="fa fa-line-chart fa-stomper" aria-hidden="true"></i>
+              <a href="https://www.lit.edu/Institutional-Data/Program-Review"
+                ><h3>Program Review</h3></a
+              >
+            </div>
           </div>
         </div>
-        <!-- BEGIN IE ABOUT MAIN -->
-
         <!-- /////////////////////////////////////////////////////////////-->
-        <!-- END IE ABOUT ////////////////////////////////////////////////-->
+        <!-- END IE ASSESSMENT ///////////////////////////////////////////-->
         <!-- /////////////////////////////////////////////////////////////-->
       </div>
       <!-- ////////////////// COLUMN ASIDE ////////////////////////// -->
@@ -197,7 +219,7 @@
           }
         </style>
         <div class="sidebar-sub-drawer">
-          <a href="./ak.html">IE Home</a>
+          <a href="./ak2.html">IE Home</a>
           <a href="./ak-dashb2.html">Dashboards</a>
           <a href="./ak-effect.html">IE Effectiveness</a>
           <a href="./ak-assess.html">IE Assessment</a>
