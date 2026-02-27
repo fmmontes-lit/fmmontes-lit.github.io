@@ -1,1 +1,58 @@
-<p>Something for later.</p>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LitPlayground</title>
+    <style>
+      main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <main>&nbsp;</main>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.min.js"></script>
+    <script>
+      var bugs = [];
+
+      function setup() {
+        createCanvas(displayWidth / 1.5, displayHeight / 1.5);
+        for (var i = 0; i < 100; i++) {
+          var x = random(width);
+          var y = random(height);
+          var r = i * random(0.01, 0.3);
+          bugs[i] = new JitterBug(x, y, r);
+        }
+        background(204);
+        fill("rgba(125, 125, 125, 0.1)");
+      }
+
+      function draw() {
+        for (var i = 0; i < bugs.length; i++) {
+          bugs[i].move();
+          bugs[i].display();
+        }
+      }
+
+      function JitterBug(tempX, tempY, tempDiameter) {
+        this.x = tempX;
+        this.y = tempY;
+        this.diameter = tempDiameter;
+        this.speed = random(-10, 10);
+
+        this.move = function () {
+          this.x += random(-this.speed, this.speed);
+          this.y += random(-this.speed, this.speed);
+        };
+
+        this.display = function () {
+          ellipse(this.x, this.y, this.diameter, this.diameter);
+        };
+      }
+    </script>
+  </body>
+</html>
