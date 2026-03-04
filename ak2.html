@@ -97,10 +97,14 @@
             margin-top: 1.5em;
           }
 
+          .ie-hero-container {
+            display: flex;
+            flex-direction: column;
+          }
+
           img.ie-hero {
             border-radius: 0.5em;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 0.8em;
           }
 
           p.ie-intro {
@@ -192,14 +196,16 @@
         </style>
         <div class="ie-main">
           <!-- HERO IMG -->
-          <img
-            alt="The Office of Institutional Effectiveness and Assessment (IEA) at
+          <div class="ie-hero-container">
+            <img
+              alt="The Office of Institutional Effectiveness and Assessment (IEA) at
             Lamar Institute of Technology"
-            title="The Office of Institutional Effectiveness and Assessment (IEA) at
+              title="The Office of Institutional Effectiveness and Assessment (IEA) at
             Lamar Institute of Technology"
-            class="ie-hero"
-            src="https://www.lit.edu/getmedia/fd4b6b5d-f4a2-4987-9337-15aee9718043/ie-hero-h400.png"
-          />
+              class="ie-hero"
+              src="https://www.lit.edu/getmedia/fd4b6b5d-f4a2-4987-9337-15aee9718043/ie-hero-h400.png"
+            />
+          </div>
 
           <!-- IE INTRO -->
           <p class="ie-intro">
