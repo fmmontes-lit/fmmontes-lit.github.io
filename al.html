@@ -64,6 +64,15 @@
             margin-top: 1.5em;
           }
 
+          .summer-bridge h3,
+          .summer-bridge h5 {
+            font-weight: bold;
+          }
+
+          .summer-bridge li {
+            margin-bottom: 0.5em;
+          }
+
           .pgrm-overview {
             background-color: white;
             border-radius: 0.5em;
@@ -339,7 +348,7 @@
           .sidebar-sub-drawer {
             display: flex;
             flex-direction: column;
-            margin: 0;
+            margin-top: 1.5em;
             padding: 0;
             box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.1);
             border: 1px solid rgba(0, 0, 0, 0.3);
@@ -361,6 +370,12 @@
             color: #1e448d;
             background-color: #eee;
             border-radius: 8px;
+          }
+
+          @media (min-width: 768px) {
+            .sidebar-sub-drawer {
+              margin: 0;
+            }
           }
         </style>
         <div class="sidebar-sub-drawer">
