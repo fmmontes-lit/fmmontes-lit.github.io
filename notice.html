@@ -173,50 +173,50 @@
             East Lavaca<br />Beaumont, TX 77705
           </p>
         </div>
+      </div>
 
-        <!-- ////////////////// COLUMN ASIDE ////////////////////////// -->
-        <div class="col-sm-12 col-md-3">
-          <!-- /// SIDE NAV STYLES //////////////////////////////////////// -->
-          <style>
+      <!-- ////////////////// COLUMN ASIDE ////////////////////////// -->
+      <div class="col-sm-12 col-md-3">
+        <!-- /// SIDE NAV STYLES //////////////////////////////////////// -->
+        <style>
+          .sidebar-sub-drawer {
+            display: flex;
+            flex-direction: column;
+            margin-top: 1.5em;
+            padding: 0;
+            box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+          }
+
+          .sidebar-sub-drawer a {
+            text-decoration: none;
+            color: #1c75bc;
+            padding: 1rem 2rem;
+            transition:
+              transform 0.2s ease-in-out,
+              box-shadow 0.2s ease-in-out;
+          }
+
+          .sidebar-sub-drawer a:hover {
+            transform: translateX(-10px);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+            color: #1e448d;
+            background-color: #eee;
+            border-radius: 8px;
+          }
+
+          @media (min-width: 768px) {
             .sidebar-sub-drawer {
-              display: flex;
-              flex-direction: column;
-              margin-top: 1.5em;
-              padding: 0;
-              box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.1);
-              border: 1px solid rgba(0, 0, 0, 0.3);
-              border-radius: 8px;
+              margin: 0;
             }
-
-            .sidebar-sub-drawer a {
-              text-decoration: none;
-              color: #1c75bc;
-              padding: 1rem 2rem;
-              transition:
-                transform 0.2s ease-in-out,
-                box-shadow 0.2s ease-in-out;
-            }
-
-            .sidebar-sub-drawer a:hover {
-              transform: translateX(-10px);
-              box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
-              color: #1e448d;
-              background-color: #eee;
-              border-radius: 8px;
-            }
-
-            @media (min-width: 768px) {
-              .sidebar-sub-drawer {
-                margin: 0;
-              }
-            }
-          </style>
-          <div class="sidebar-sub-drawer">
-            <a href="#">These</a>
-            <a href="#">Are</a>
-            <a href="#">Placeholder</a>
-            <a href="#">Links</a>
-          </div>
+          }
+        </style>
+        <div class="sidebar-sub-drawer">
+          <a href="#">These</a>
+          <a href="#">Are</a>
+          <a href="#">Placeholder</a>
+          <a href="#">Links</a>
         </div>
       </div>
     </div>
