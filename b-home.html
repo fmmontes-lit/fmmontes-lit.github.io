@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>LITPlayground</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <style>
       *,
       *::before,
@@ -195,6 +199,59 @@
           per inceptos himenaeos. Nam non felis
           <a href="/c.html">quis sem lobortis</a> sodales vel id libero.
         </p>
+      </section>
+
+      <section>
+        <!-- (^_^) BUTTONS -->
+        <style>
+          .tags-list {
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 10px;
+            column-gap: 25px;
+          }
+
+          a.tags-item {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid black;
+            border-radius: 5px;
+            box-shadow: 2px 2px 0 black;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition-duration: 0.1s;
+            transition-property: all;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            min-height: 64px;
+            min-width: 64px;
+            color: #1476b8;
+          }
+
+          a.tags-item:hover {
+            color: #ec2027;
+          }
+
+          a.tags-item:active {
+            box-shadow: 0 0 0 black;
+            transform: translate(1px, 1px);
+          }
+
+          .fa-stomper {
+            font-size: 2em;
+          }
+        </style>
+        <div class="tags-list">
+          <a class="tags-item">
+            <i class="fa fa-hand-paper-o fa-stomper" aria-hidden="true"></i>
+          </a>
+          <a class="tags-item">
+            <i class="fa fa-hand-rock-o fa-stomper" aria-hidden="true"></i>
+          </a>
+          <a class="tags-item">
+            <i class="fa fa-hand-scissors-o fa-stomper" aria-hidden="true"></i>
+          </a>
+        </div>
       </section>
     </main>
   </body>
