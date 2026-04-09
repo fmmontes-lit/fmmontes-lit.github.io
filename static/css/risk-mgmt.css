@@ -1,0 +1,53 @@
+.risk-mgmt-docs {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  background-color: white;
+  border-radius: 0.8em;
+  margin-bottom: 1.5em;
+  align-items: stretch;
+}
+li {
+  margin-bottom: 0.8em;
+}
+li > ul {
+  margin-top: 0.8em;
+}
+.risk-mgmt-item {
+  display: flex;
+  flex: 1 1 300px;
+}
+.risk-mgmt-item .risk-card {
+  display: flex;
+  flex: 1; /* Ensures the card takes full height of the parent */
+  flex-direction: column;
+  border-radius: 0.8em;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.risk-mgmt-item .risk-card-header {
+  background-color: #1b6ec2;
+  font-size: 1.25em;
+  padding: 0.8em 1em;
+  margin-bottom: 0;
+  color: white;
+  text-align: center;
+}
+.risk-card-header:first-child {
+  border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+}
+.risk-mgmt-item .risk-card-body {
+  display: flex;
+  flex-grow: 1; /* Let the body grow to fill remaining space */
+  flex-direction: column;
+  padding: 1em;
+}
+.risk-mgmt-item .final-doc {
+  border-left: 6px solid #ec2027;
+  background-color: #ffe6e9;
+  margin: 0.8em 0;
+  padding: 0.8em;
+  border-radius: 0.8em;
+  font-weight: 600;
+  color: #721c24;
+}
