@@ -1,4 +1,7 @@
 /* ehs */
+.ehs > * + * {
+  margin-top: 1.5em;
+}
 .ehs-mgmt-docs {
   display: flex;
   gap: 20px;
@@ -50,16 +53,15 @@
 }
 
 /* clery */
+.clery > * + * {
+  margin-top: 1.5em;
+}
 .clery-details {
   background-color: white;
   border-radius: 0.8em;
   box-shadow: 0 7px 1px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(0, 0, 0, 0.3);
   padding: 1.5em;
-  margin-top: 1.5em;
-}
-.clery-details h4 {
-  font-weight: bold;
 }
 .clery-details li {
   margin-bottom: 0.8em;
