@@ -1,4 +1,5 @@
-.risk-mgmt-docs {
+/* ehs */
+.ehs-mgmt-docs {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
@@ -7,16 +8,7 @@
   margin-bottom: 1.5em;
   align-items: stretch;
 }
-span.fa-li {
-  margin-top: 0.4em;
-}
-li {
-  margin-bottom: 0.8em;
-}
-li > ul {
-  margin-top: 0.8em;
-}
-.risk-card {
+.ehs-card {
   display: flex;
   flex: 1 1 300px;
   flex-direction: column;
@@ -24,7 +16,7 @@ li > ul {
   overflow: hidden;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
-.risk-card-header {
+.ehs-card-header {
   background-color: #1b6ec2;
   font-size: 1.25em;
   padding: 0.8em 1em;
@@ -32,14 +24,20 @@ li > ul {
   color: white;
   text-align: center;
 }
-.risk-card-header:first-child {
+.ehs-card-header:first-child {
   border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
 }
-.risk-card-body {
+.ehs-card-body {
   display: flex;
   flex-grow: 1; /* Let the body grow to fill remaining space */
   flex-direction: column;
   padding: 1em;
+}
+.ehs-card-body span.fa-li {
+  margin-top: 0.3em;
+}
+.ehs-card-body li {
+  margin-bottom: 0.5em;
 }
 .final-doc {
   border-left: 6px solid #ec2027;
@@ -49,4 +47,34 @@ li > ul {
   border-radius: 0.8em;
   font-weight: 600;
   color: #721c24;
+}
+
+/* clery */
+.clery-details {
+  background-color: white;
+  border-radius: 0.5em;
+  box-shadow: 0 7px 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 1.5em;
+}
+.clery-details h4 {
+  font-weight: bold;
+}
+.clery-details li {
+  margin-bottom: 0.8em;
+}
+.clery-details li > ul {
+  margin-top: 0.8em;
+}
+.clery-details a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.clery-details a:link,
+.clery-details a:visited {
+  color: #1c75bc;
+}
+.clery-details a:hover,
+.clery-details a:focus {
+  color: #ec2027;
 }
