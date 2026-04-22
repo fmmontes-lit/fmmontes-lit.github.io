@@ -1,131 +1,130 @@
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LitPlayground</title>
-    <link rel="stylesheet" href="static/styles.css" />
-    <link rel="stylesheet" href="static/css/risk-mgmt.css" />
-    <link
-      rel="stylesheet"
-      href="static/lib/bootstrap/dist/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="static/css/site.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
-  </head>
 
-  <body>
-    <nav
-      class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"
-    >
-      <div class="container-fluid">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target=".navbar-collapse"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LitPlayground</title>
+  <link rel="stylesheet" href="static/styles.css" />
+  <link rel="stylesheet" href="static/css/risk-mgmt.css" />
+  <link rel="stylesheet" href="static/lib/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="static/css/site.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
 
-        <div
-          class="navbar-collapse collapse d-sm-inline-flex justify-content-between"
-        >
-          <ul class="navbar-nav flex-grow-1">
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="./risk-mgmt.html"
-                >Risk Management</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="./risk-clery.html"
-                >Clery Compliance</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="./risk-ehs.html">EHS</a>
-            </li>
-          </ul>
-        </div>
+<body>
+  <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div id="nav-corner" style="color: #1b6ec2">
-          (^_^)
-          <div id="current-time">00:00</div>
-        </div>
-      </div>
-    </nav>
-
-    <!-- //////////////////////////////////////////////////////////// -->
-    <!-- ////////////////// PAGE BODY /////////////////////////////// -->
-    <!-- //////////////////////////////////////////////////////////// -->
-
-    <div class="row">
-      <!-- ////////////////// COLUMN MAIN /////////////////////////// -->
-      <div class="col-sm-12 col-md-9">
-        <h2 style="margin-bottom: 1em">Risk Management</h2>
+      <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+        <ul class="navbar-nav flex-grow-1">
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="./risk-mgmt.html">Risk Management</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="./risk-clery.html">Clery Compliance</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="./risk-ehs.html">EHS</a>
+          </li>
+        </ul>
       </div>
 
-      <!-- ////////////////// COLUMN ASIDE ////////////////////////// -->
-      <div class="col-sm-12 col-md-3">
-        <!-- /// SIDE NAV STYLES //////////////////////////////////////// -->
-        <style>
-          .sidebar-sub-drawer {
-            display: flex;
-            flex-direction: column;
-            margin-top: 1.5em;
-            padding: 0;
-            box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.1);
-            border: 1px solid rgba(0, 0, 0, 0.3);
-            border-radius: 8px;
-          }
-
-          .sidebar-sub-drawer a {
-            text-decoration: none;
-            color: #1c75bc;
-            padding: 1rem 2rem;
-            transition:
-              transform 0.2s ease-in-out,
-              box-shadow 0.2s ease-in-out;
-          }
-
-          .sidebar-sub-drawer a:hover {
-            transform: translateX(-10px);
-            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
-            color: #1e448d;
-            background-color: #eee;
-            border-radius: 8px;
-          }
-
-          @media (min-width: 768px) {
-            .sidebar-sub-drawer {
-              margin: 0;
-            }
-          }
-        </style>
-        <div class="sidebar-sub-drawer">
-          <a href="./risk-clery.html">Clery Compliance</a>
-          <a href="./risk-ehs.html">EHS</a>
-        </div>
+      <div id="nav-corner" style="color: #1b6ec2">
+        (^_^)
+        <div id="current-time">00:00</div>
       </div>
     </div>
+  </nav>
 
-    <!-- //////////////////////////////////////////////////////////// -->
-    <!-- ////////////////// SCRIPTS ///////////////////////////////// -->
-    <!-- //////////////////////////////////////////////////////////// -->
-    <script src="static/js/site.js" type="module"></script>
-    <script src="static/lib/jquery/dist/jquery.min.js" type="module"></script>
-    <script
-      src="static/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
-      type="module"
-    ></script>
-    <script
-      src="static/lit_news_files/scripts/bootstrap.bundle.min.js"
-      type="module"
-    ></script>
-  </body>
+  <!-- //////////////////////////////////////////////////////////// -->
+  <!-- ////////////////// PAGE BODY /////////////////////////////// -->
+  <!-- //////////////////////////////////////////////////////////// -->
+
+  <div class="row">
+    <!-- ////////////////// COLUMN MAIN /////////////////////////// -->
+    <div class="col-sm-12 col-md-9">
+      <h2 style="margin-bottom: 1em">Risk Management</h2>
+      <ul class="risk-mgmt-docs">
+        <li><a
+            href="https://www.lit.edu/getmedia/25ad06ae-dad2-451a-81bf-e4c96132ef50/off-site-experiential-learning-safety-plan-lu-lit-lsco-lscpa.pdf">Off-Site
+            Experiential Learning Safety
+            Plan</a></li>
+        <li><a
+            href="https://www.lit.edu/getmedia/c5b4754c-eda3-40d5-af4f-cad94f49e6a8/off-site-risk-management-checklist-clery-aligned-fillable.pdf">Off-Site
+            Risk Management Checklist</a></li>
+        <li><a
+            href="https://www.lit.edu/getmedia/ea4556d2-3816-4e00-819f-f2db3ed8d37d/student-visitor-injury-report.pdf">Student
+            / Visitor Injury or Incident Report</a></li>
+        <li><a
+            href="https://www.lit.edu/getmedia/b4e57d25-9c36-44bc-b38b-2e45c32a9adc/tsus-driver-authorization-policy-final-fy-2024-jan-2024.pdf">Driver
+            Authorization Policy</a></li>
+        <li><a
+            href="https://www.lit.edu/getmedia/0fb82b27-aefd-4345-b2f1-faf4e5cba7e4/university-collegeinsurance-sharedservices-04-02-26.pdf">Insurance
+            Procedures</a></li>
+        <li><a
+            href="https://www.lit.edu/getmedia/5e2d643b-648b-47de-83db-bca0096ff2b0/vendor-insurance-coverage-requirement-letter-02-06-26.pdf">Insurance
+            Requirements for Vendors and Outside Groups</a></li>
+        <li><a
+            href="https://www.lit.edu/getmedia/1d283f26-a4c9-4e83-b198-042cd09c01aa/what-to-do-if-this-vehicle-in-involved-in-an-accident-01-09-26.pdf">What
+            To Do If this Vehicle is Involved in an Accident</a></li>
+      </ul>
+    </div>
+
+    <!-- ////////////////// COLUMN ASIDE ////////////////////////// -->
+    <div class="col-sm-12 col-md-3">
+      <!-- /// SIDE NAV STYLES //////////////////////////////////////// -->
+      <style>
+        .sidebar-sub-drawer {
+          display: flex;
+          flex-direction: column;
+          margin-top: 1.5em;
+          padding: 0;
+          box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.1);
+          border: 1px solid rgba(0, 0, 0, 0.3);
+          border-radius: 8px;
+        }
+
+        .sidebar-sub-drawer a {
+          text-decoration: none;
+          color: #1c75bc;
+          padding: 1rem 2rem;
+          transition:
+            transform 0.2s ease-in-out,
+            box-shadow 0.2s ease-in-out;
+        }
+
+        .sidebar-sub-drawer a:hover {
+          transform: translateX(-10px);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+          color: #1e448d;
+          background-color: #eee;
+          border-radius: 8px;
+        }
+
+        @media (min-width: 768px) {
+          .sidebar-sub-drawer {
+            margin: 0;
+          }
+        }
+      </style>
+      <div class="sidebar-sub-drawer">
+        <a href="./risk-clery.html">Clery Compliance</a>
+        <a href="./risk-ehs.html">EHS</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- //////////////////////////////////////////////////////////// -->
+  <!-- ////////////////// SCRIPTS ///////////////////////////////// -->
+  <!-- //////////////////////////////////////////////////////////// -->
+  <script src="static/js/site.js" type="module"></script>
+  <script src="static/lib/jquery/dist/jquery.min.js" type="module"></script>
+  <script src="static/lib/bootstrap/dist/js/bootstrap.bundle.min.js" type="module"></script>
+  <script src="static/lit_news_files/scripts/bootstrap.bundle.min.js" type="module"></script>
+</body>
+
 </html>
