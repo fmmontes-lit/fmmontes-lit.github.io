@@ -18,6 +18,7 @@ ul.risk-mgmt-docs li:nth-child(even) {
 
 ul.risk-mgmt-docs li:last-child {
   border-bottom: none;
+  border-radius: 0 0 0.8em 0.8em;
 }
 
 ul.risk-mgmt-docs a {
@@ -98,6 +99,90 @@ ul.risk-mgmt-docs a:focus {
   color: #721c24;
 }
 
+/* ehs - risk-mgmt newsletter */
+.risk-mgmt-news>*+* {
+  margin-top: 1.5em;
+}
+
+ul.risk-mgmt-newsletters {
+  list-style: none;
+  padding: 0;
+  border-radius: 0.8em;
+  box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+ul.risk-mgmt-newsletters li {
+  padding: 0.8em;
+  border-bottom: 1px solid #ddd;
+}
+
+ul.risk-mgmt-newsletters li:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+ul.risk-mgmt-newsletters li:last-child {
+  border-bottom: none;
+  border-radius: 0 0 0.8em 0.8em;
+}
+
+ul.risk-mgmt-newsletters a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul.risk-mgmt-newsletters a:link,
+ul.risk-mgmt-newsletters a:visited {
+  color: #1c75bc;
+}
+
+ul.risk-mgmt-newsletters a:hover,
+ul.risk-mgmt-newsletters a:focus {
+  color: #ec2027;
+}
+
+/* ehs - campus safety committee minutes */
+.safety-committee>*+* {
+  margin-top: 1.5em;
+}
+
+ul.safety-committee-minutes {
+  list-style: none;
+  padding: 0;
+  border-radius: 0.8em;
+  box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+ul.safety-committee-minutes li {
+  padding: 0.8em;
+  border-bottom: 1px solid #ddd;
+}
+
+ul.safety-committee-minutes li:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+ul.safety-committee-minutes li:last-child {
+  border-bottom: none;
+  border-radius: 0 0 0.8em 0.8em;
+}
+
+ul.safety-committee-minutes a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul.safety-committee-minutes a:link,
+ul.safety-committee-minutes a:visited {
+  color: #1c75bc;
+}
+
+ul.safety-committee-minutes a:hover,
+ul.safety-committee-minutes a:focus {
+  color: #ec2027;
+}
+
 /* clery */
 .clery>*+* {
   margin-top: 1.5em;
@@ -131,5 +216,46 @@ ul.risk-mgmt-docs a:focus {
 
 .clery-details a:hover,
 .clery-details a:focus {
+  color: #ec2027;
+}
+
+.clery-crime-logs>*+* {
+  margin-top: 1.5em;
+}
+
+ul.crime-logs {
+  list-style: none;
+  padding: 0;
+  border-radius: 0.8em;
+  box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+ul.crime-logs li {
+  padding: 0.8em;
+  border-bottom: 1px solid #ddd;
+}
+
+ul.crime-logs li:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+ul.crime-logs li:last-child {
+  border-bottom: none;
+  border-radius: 0 0 0.8em 0.8em;
+}
+
+ul.crime-logs a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul.crime-logs a:link,
+ul.crime-logs a:visited {
+  color: #1c75bc;
+}
+
+ul.crime-logs a:hover,
+ul.crime-logs a:focus {
   color: #ec2027;
 }
