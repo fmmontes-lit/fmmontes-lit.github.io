@@ -219,6 +219,7 @@ ul.safety-committee-minutes a:focus {
   color: #ec2027;
 }
 
+/* clery - crime logs */
 .clery-crime-logs>*+* {
   margin-top: 1.5em;
 }
