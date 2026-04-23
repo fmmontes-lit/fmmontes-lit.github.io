@@ -81,13 +81,13 @@ ul.risk-mgmt-docs a:focus {
   padding: 1em;
 }
 
-.ehs-card-body span.fa-li {
+/*.ehs-card-body span.fa-li {
   margin-top: 0.3em;
 }
 
 .ehs-card-body li {
   margin-bottom: 0.5em;
-}
+}*/
 
 .final-doc {
   border-left: 6px solid #ec2027;
