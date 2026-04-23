@@ -3,7 +3,7 @@ ul.risk-mgmt-docs {
   list-style: none;
   padding: 0;
   border-radius: 0.8em;
-  box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
@@ -108,7 +108,7 @@ ul.risk-mgmt-newsletters {
   list-style: none;
   padding: 0;
   border-radius: 0.8em;
-  box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
@@ -150,7 +150,7 @@ ul.safety-committee-minutes {
   list-style: none;
   padding: 0;
   border-radius: 0.8em;
-  box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
@@ -191,7 +191,7 @@ ul.safety-committee-minutes a:focus {
 .clery-details {
   background-color: white;
   border-radius: 0.8em;
-  box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(0, 0, 0, 0.3);
   padding: 1.5em;
 }
@@ -228,7 +228,7 @@ ul.crime-logs {
   list-style: none;
   padding: 0;
   border-radius: 0.8em;
-  box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
