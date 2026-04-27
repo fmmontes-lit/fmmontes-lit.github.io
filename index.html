@@ -1,454 +1,342 @@
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LitPlayground</title>
-    <link rel="stylesheet" href="static/styles.css" />
-    <link
-      rel="stylesheet"
-      href="static/lib/bootstrap/dist/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="static/css/site.css" />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css"
-    />
-  </head>
 
-  <body>
-    <!-- /// NAV //////////////////////////////////////////////////// -->
-    <nav
-      class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"
-    >
-      <div class="container-fluid">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target=".navbar-collapse"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LitPlayground</title>
+  <link rel="stylesheet" href="static/styles.css" />
+  <link rel="stylesheet" href="static/lib/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="static/css/site.css" />
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css" />
+</head>
 
-        <div
-          class="navbar-collapse collapse d-sm-inline-flex justify-content-between"
-        >
-          <ul class="navbar-nav flex-grow-1">
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="./index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="./aa.html">Veterans</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="./ab.html">LIT Online</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="./ac.html"
-                >Online Courses & Programs</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="./ad.html"
-                >LIT Online Experience</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="./ah.html">LIT Online FAQ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="./ae.html">Workforce</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="./af.html">Canvas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="./ag.html">Library</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="./ak.html">IE</a>
-            </li>
-          </ul>
-        </div>
+<body>
+  <!-- /// NAV //////////////////////////////////////////////////// -->
+  <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div id="nav-corner" style="color: #1b6ec2">
-          (^_^)
-          <div id="current-time"></div>
-        </div>
+      <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+        <ul class="navbar-nav flex-grow-1">
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="./particles.html">Particles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="./ak.html">IE</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!-- /// SIDE NAV STYLES //////////////////////////////////////// -->
-    <style>
-      .sidebar-sub-drawer {
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-        box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.1);
-        border: 1px solid rgba(0, 0, 0, 0.3);
-        border-radius: 8px;
+
+      <div id="nav-corner" style="color: #1b6ec2">
+        (^_^)
+        <div id="current-time"></div>
+      </div>
+    </div>
+  </nav>
+  <!-- /// SIDE NAV STYLES //////////////////////////////////////// -->
+  <style>
+    .sidebar-sub-drawer {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+      box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      border-radius: 8px;
+    }
+
+    .sidebar-sub-drawer a {
+      text-decoration: none;
+      color: #1c75bc;
+      padding: 1rem 2rem;
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
+
+    .sidebar-sub-drawer a:hover {
+      transform: translateX(-10px);
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+      color: #1e448d;
+      background-color: #eee;
+      border-radius: 8px;
+    }
+
+    p {
+      animation-duration: 0.2s;
+      animation-name: slide-in;
+    }
+
+    @keyframes slide-in {
+      from {
+        translate: 150vw 0;
+        scale: 200% 1;
       }
 
-      .sidebar-sub-drawer a {
-        text-decoration: none;
-        color: #1c75bc;
-        padding: 1rem 2rem;
-        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+      to {
+        translate: 0 0;
+        scale: 100% 1;
       }
+    }
+  </style>
 
-      .sidebar-sub-drawer a:hover {
-        transform: translateX(-10px);
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
-        color: #1e448d;
-        background-color: #eee;
-        border-radius: 8px;
-      }
+  <!-- //////////////////////////////////////////////////////////// -->
+  <!-- ////////////////// PAGE BODY /////////////////////////////// -->
+  <!-- //////////////////////////////////////////////////////////// -->
 
-      p {
-        animation-duration: 0.2s;
-        animation-name: slide-in;
-      }
-
-      @keyframes slide-in {
-        from {
-          translate: 150vw 0;
-          scale: 200% 1;
+  <div class="row">
+    <!-- ////////////////// COLUMN MAIN /////////////////////////// -->
+    <div class="col-sm-12 col-md-10">
+      <!-- /////////////////////////////////////////////////////////////-->
+      <!-- BEGIN CAREER SERVICES ///////////////////////////////////////-->
+      <!-- /////////////////////////////////////////////////////////////-->
+      <style>
+        .career-services-container>*+* {
+          margin-top: 1.5em;
         }
 
-        to {
-          translate: 0 0;
-          scale: 100% 1;
+        img.career-services-hero {
+          border-radius: 0.5em;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          padding: 0.8em;
         }
-      }
-    </style>
 
-    <!-- //////////////////////////////////////////////////////////// -->
-    <!-- ////////////////// PAGE BODY /////////////////////////////// -->
-    <!-- //////////////////////////////////////////////////////////// -->
+        .career-services-container p {
+          font-size: 1.2rem;
+          line-height: 2;
+        }
 
-    <div class="row">
-      <!-- ////////////////// COLUMN MAIN /////////////////////////// -->
-      <div class="col-sm-12 col-md-10">
-        <!-- /////////////////////////////////////////////////////////////-->
-        <!-- BEGIN CAREER SERVICES ///////////////////////////////////////-->
-        <!-- /////////////////////////////////////////////////////////////-->
-        <style>
-          .career-services-container > * + * {
-            margin-top: 1.5em;
-          }
+        .career-services-cards {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          gap: 1.5em;
+        }
 
-          img.career-services-hero {
-            border-radius: 0.5em;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 0.8em;
-          }
+        .career-services-cards img {
+          max-width: 500px;
+          height: auto;
+          border-radius: 0.5em;
+        }
 
-          .career-services-container p {
-            font-size: 1.2rem;
-            line-height: 2;
-          }
-
+        /* Two columns on wider screens */
+        @media (min-width: 801px) {
           .career-services-cards {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            gap: 1.5em;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
           }
+        }
 
-          .career-services-cards img {
-            max-width: 500px;
-            height: auto;
-            border-radius: 0.5em;
-          }
+        .career-services-cards .card-header {
+          color: #1e448d;
+        }
 
-          /* Two columns on wider screens */
-          @media (min-width: 801px) {
-            .career-services-cards {
-              grid-template-columns: 1fr 1fr 1fr 1fr;
-              grid-template-rows: 1fr;
-            }
-          }
+        .career-services-cards .card-body {
+          display: flex;
+          flex-direction: column;
+        }
 
-          .career-services-cards .card-header {
-            color: #1e448d;
-          }
+        .career-services-cards .card-body>*+* {
+          margin-top: 1.5em;
+        }
 
-          .career-services-cards .card-body {
-            display: flex;
-            flex-direction: column;
-          }
+        .career-services-container a:link,
+        .career-services-container a:visited {
+          color: #0366d6;
+          text-decoration: none;
+        }
 
-          .career-services-cards .card-body > * + * {
-            margin-top: 1.5em;
-          }
+        .career-services-container a:hover,
+        .career-services-container a:active {
+          text-decoration: underline;
+          color: #ec2027;
+        }
+      </style>
+      <div class="career-services-container page-content">
+        <img alt="LIT Career Services" class="img-fluid career-services-hero"
+          src="https://www.lit.edu/getmedia/1b5eeed2-f3a3-49e2-ba5a-ebc4dfe75dc8/careers-herow2000.png" />
+        <p>
+          Career Services provides the tools and support you need to achieve
+          success—personally and professionally. Whether you're exploring
+          careers, preparing for life after graduation, or searching for the
+          right internship, we're here to help.
+        </p>
+        <p>
+          From career development resources and events to mock interviews and
+          personalized guidance, we've got you covered. If you're looking for
+          something not listed below, feel free to reach out to us at
+          <a href="mailto:careers@lit.edu">careers@lit.edu</a>.
+        </p>
 
-          .career-services-container a:link,
-          .career-services-container a:visited {
-            color: #0366d6;
-            text-decoration: none;
-          }
-
-          .career-services-container a:hover,
-          .career-services-container a:active {
-            text-decoration: underline;
-            color: #ec2027;
-          }
-        </style>
-        <div class="career-services-container page-content">
-          <img
-            alt="LIT Career Services"
-            class="img-fluid career-services-hero"
-            src="https://www.lit.edu/getmedia/1b5eeed2-f3a3-49e2-ba5a-ebc4dfe75dc8/careers-herow2000.png"
-          />
-          <p>
-            Career Services provides the tools and support you need to achieve
-            success—personally and professionally. Whether you're exploring
-            careers, preparing for life after graduation, or searching for the
-            right internship, we're here to help.
-          </p>
-          <p>
-            From career development resources and events to mock interviews and
-            personalized guidance, we've got you covered. If you're looking for
-            something not listed below, feel free to reach out to us at
-            <a href="mailto:careers@lit.edu">careers@lit.edu</a>.
-          </p>
-
-          <!-- Career Services --- CARDS GRID -->
-          <div class="career-services-cards">
-            <!-- Career Fairs & Events -->
-            <div class="card">
-              <div class="card-header">
-                <strong>Career Fairs & Events</strong>
-              </div>
-              <div class="card-body">
-                <img
-                  src="https://lit.edu/getmedia/91581809-f2bf-42d7-a02f-c78e6ffef866/fairs-events1.png"
-                  alt="Career Fairs & Events at Lamar Institute of Technology"
-                />
-                <ul>
-                  <li>
-                    <a
-                      href="https://lit-csm.symplicity.com/events/Fall_2025_Career"
-                      aria-label="Visit LIT Career Fairs"
-                      alt="Career Fairs at Lamar Institute of Technology"
-                      target="_blank"
-                      >Career Fairs</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.lit.edu/academic-calendar"
-                      aria-label="Visit the Lamar Institute of Technology Academic Calendar"
-                      alt="Lamar Institute of Technology Academic Calendar"
-                      >Academic Calendar</a
-                    >
-                  </li>
-                </ul>
-              </div>
+        <!-- Career Services --- CARDS GRID -->
+        <div class="career-services-cards">
+          <!-- Career Fairs & Events -->
+          <div class="card">
+            <div class="card-header">
+              <strong>Career Fairs & Events</strong>
             </div>
-
-            <!-- Students & Alumni -->
-            <div class="card">
-              <div class="card-header">
-                <strong>Students & Alumni</strong>
-              </div>
-              <div class="card-body">
-                <img
-                  src="https://lit.edu/getmedia/3bfb1858-e454-44a9-a6b0-290cc6adaa8a/students-alumni.png"
-                  alt="Students & Alumni at Lamar Institute of Technology"
-                />
-                <ul>
-                  <li>
-                    <a
-                      href="https://lit-csm.symplicity.com/students/index.php?au=_register"
-                      aria-label="Visit Career Link"
-                      alt="Career Link at Lamar Institute of Technology"
-                      target="_blank"
-                      >Career Link</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://lit-csm.symplicity.com/students/jobboard/cfdf0b149cfe985be1fda170b47c1dad"
-                      aria-label="Visit the Lamar Institute of Technology Job board"
-                      alt="Visit the Lamar Institute of Technology Job board"
-                      target="_blank"
-                      >Job board</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://jobs.lit.edu/"
-                      aria-label="Visit LIT Jobs"
-                      alt="Visit LIT Jobs"
-                      target="_blank"
-                      >LIT Jobs</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://lit.starfishsolutions.com/starfish-ops/dl/instructor/serviceCatalog.html?bookmark=service/2247363/schedule"
-                      aria-label="Make a Starfish Appointment"
-                      alt="Make a Starfish Appointment"
-                      target="_blank"
-                      >Starfish Appointment</a
-                    >
-                  </li>
-                </ul>
-              </div>
+            <div class="card-body">
+              <img src="https://lit.edu/getmedia/91581809-f2bf-42d7-a02f-c78e6ffef866/fairs-events1.png"
+                alt="Career Fairs & Events at Lamar Institute of Technology" />
+              <ul>
+                <li>
+                  <a href="https://lit-csm.symplicity.com/events/Fall_2025_Career" aria-label="Visit LIT Career Fairs"
+                    alt="Career Fairs at Lamar Institute of Technology" target="_blank">Career Fairs</a>
+                </li>
+                <li>
+                  <a href="https://www.lit.edu/academic-calendar"
+                    aria-label="Visit the Lamar Institute of Technology Academic Calendar"
+                    alt="Lamar Institute of Technology Academic Calendar">Academic Calendar</a>
+                </li>
+              </ul>
             </div>
+          </div>
 
-            <!-- Career Resources -->
-            <div class="card">
-              <div class="card-header">
-                <strong>Career Resources</strong>
-              </div>
-              <div class="card-body">
-                <img
-                  src="https://lit.edu/getmedia/895c0e42-1f65-4f05-bbca-71f137ff119c/resources1.png"
-                  alt="Career Resources at Lamar Institute of Technology"
-                />
-                <ul>
-                  <li>
-                    <a
-                      href="https://shsu.blackboard.com/ultra/organizations/_313874_1/outline"
-                      aria-label="Visit 5G Career Readiness Training "
-                      alt="5G Career Readiness Training  at Lamar Institute of Technology"
-                      target="_blank"
-                      >5G Career Readiness Training
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.theforage.com/landing/lamar-institute-of-ovcwh/career-services-81t4"
-                      aria-label="Visit Forage - Lamar Institute of Technology"
-                      alt="Forage - Lamar Institute of Technology"
-                      target="_blank"
-                      >Forage</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.indeed.com/job-search-services/job-search-academy-lamar-institute-of-technology?hl=en%3Ffrom%3Djobseeker_marketing"
-                      aria-label="Visit Job Search Academy - Lamar Institute of Technology"
-                      alt="Job Search Academy - Lamar Institute of Technology"
-                      target="_blank"
-                      >Job Search Academy</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.lit.edu/workforce-continuing-education"
-                      aria-label="Visit Workforce Solutions - Lamar Institute of Technology"
-                      alt="Workforce Solutions - Lamar Institute of Technology"
-                      >Workforce Solutions</a
-                    >
-                  </li>
-                </ul>
-              </div>
+          <!-- Students & Alumni -->
+          <div class="card">
+            <div class="card-header">
+              <strong>Students & Alumni</strong>
             </div>
+            <div class="card-body">
+              <img src="https://lit.edu/getmedia/3bfb1858-e454-44a9-a6b0-290cc6adaa8a/students-alumni.png"
+                alt="Students & Alumni at Lamar Institute of Technology" />
+              <ul>
+                <li>
+                  <a href="https://lit-csm.symplicity.com/students/index.php?au=_register"
+                    aria-label="Visit Career Link" alt="Career Link at Lamar Institute of Technology"
+                    target="_blank">Career Link</a>
+                </li>
+                <li>
+                  <a href="https://lit-csm.symplicity.com/students/jobboard/cfdf0b149cfe985be1fda170b47c1dad"
+                    aria-label="Visit the Lamar Institute of Technology Job board"
+                    alt="Visit the Lamar Institute of Technology Job board" target="_blank">Job board</a>
+                </li>
+                <li>
+                  <a href="https://jobs.lit.edu/" aria-label="Visit LIT Jobs" alt="Visit LIT Jobs" target="_blank">LIT
+                    Jobs</a>
+                </li>
+                <li>
+                  <a href="https://lit.starfishsolutions.com/starfish-ops/dl/instructor/serviceCatalog.html?bookmark=service/2247363/schedule"
+                    aria-label="Make a Starfish Appointment" alt="Make a Starfish Appointment" target="_blank">Starfish
+                    Appointment</a>
+                </li>
+              </ul>
+            </div>
+          </div>
 
-            <!-- Hire an Eagle - Employers -->
-            <div class="card">
-              <div class="card-header">
-                <strong>Hire an Eagle - Employers</strong>
-              </div>
-              <div class="card-body">
-                <img
-                  src="https://lit.edu/getmedia/133d51b9-7407-4f0e-be95-bbdd2f2f5003/hire.png"
-                  alt="Hire an Eagle - Employers at Lamar Institute of Technology"
-                />
-                <ul>
-                  <li>
-                    <strong>Employers:</strong>
-                    <a
-                      href="https://lit-csm.symplicity.com/employers/?signin_tab=3"
-                      aria-label="Sign Up and Post Job"
-                      alt="Sign Up and Post Job at Lamar Institute of Technology"
-                      target="_blank"
-                      >Register/Post a job</a
-                    >
-                  </li>
-                  <li>
-                    <strong>Want to know more?</strong><br />
-                    <strong>Contact us at:</strong>
-                    <a
-                      href="mailto:careers@lit.edu"
-                      aria-label="mailto: careers@lit.edu"
-                      alt="mailto: careers@lit.edu"
-                      >careers@lit.edu</a
-                    ><br />
-                    <strong>or call:</strong>
-                    <a
-                      href="tel:4092417811"
-                      aria-label="Call (409) 241-7811"
-                      alt="Call (409) 241-7811"
-                      >(409) 241-7811</a
-                    >
-                  </li>
-                </ul>
-              </div>
+          <!-- Career Resources -->
+          <div class="card">
+            <div class="card-header">
+              <strong>Career Resources</strong>
+            </div>
+            <div class="card-body">
+              <img src="https://lit.edu/getmedia/895c0e42-1f65-4f05-bbca-71f137ff119c/resources1.png"
+                alt="Career Resources at Lamar Institute of Technology" />
+              <ul>
+                <li>
+                  <a href="https://shsu.blackboard.com/ultra/organizations/_313874_1/outline"
+                    aria-label="Visit 5G Career Readiness Training "
+                    alt="5G Career Readiness Training  at Lamar Institute of Technology" target="_blank">5G Career
+                    Readiness Training
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.theforage.com/landing/lamar-institute-of-ovcwh/career-services-81t4"
+                    aria-label="Visit Forage - Lamar Institute of Technology"
+                    alt="Forage - Lamar Institute of Technology" target="_blank">Forage</a>
+                </li>
+                <li>
+                  <a href="https://www.indeed.com/job-search-services/job-search-academy-lamar-institute-of-technology?hl=en%3Ffrom%3Djobseeker_marketing"
+                    aria-label="Visit Job Search Academy - Lamar Institute of Technology"
+                    alt="Job Search Academy - Lamar Institute of Technology" target="_blank">Job Search Academy</a>
+                </li>
+                <li>
+                  <a href="https://www.lit.edu/workforce-continuing-education"
+                    aria-label="Visit Workforce Solutions - Lamar Institute of Technology"
+                    alt="Workforce Solutions - Lamar Institute of Technology">Workforce Solutions</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Hire an Eagle - Employers -->
+          <div class="card">
+            <div class="card-header">
+              <strong>Hire an Eagle - Employers</strong>
+            </div>
+            <div class="card-body">
+              <img src="https://lit.edu/getmedia/133d51b9-7407-4f0e-be95-bbdd2f2f5003/hire.png"
+                alt="Hire an Eagle - Employers at Lamar Institute of Technology" />
+              <ul>
+                <li>
+                  <strong>Employers:</strong>
+                  <a href="https://lit-csm.symplicity.com/employers/?signin_tab=3" aria-label="Sign Up and Post Job"
+                    alt="Sign Up and Post Job at Lamar Institute of Technology" target="_blank">Register/Post a job</a>
+                </li>
+                <li>
+                  <strong>Want to know more?</strong><br />
+                  <strong>Contact us at:</strong>
+                  <a href="mailto:careers@lit.edu" aria-label="mailto: careers@lit.edu"
+                    alt="mailto: careers@lit.edu">careers@lit.edu</a><br />
+                  <strong>or call:</strong>
+                  <a href="tel:4092417811" aria-label="Call (409) 241-7811" alt="Call (409) 241-7811">(409) 241-7811</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- CAREER SERVICES -- INJECTED GET MORE INFO CARD -->
-        <style>
-          .injected-container {
-            margin-top: 1.5em;
-          }
+      <!-- CAREER SERVICES -- INJECTED GET MORE INFO CARD -->
+      <style>
+        .injected-container {
+          margin-top: 1.5em;
+        }
 
-          .injected-container h2.text-primary {
-            color: #1e448d !important;
-          }
-        </style>
-        <div class="injected-container" style="display: none">
-          <div class="row">
-            <div class="col-sm-12 col-lg-6">&nbsp;</div>
-            <div class="col-sm-12 col-lg-6">
-              <div class="info-wrap">
-                <div class="card">
-                  <div class="card-header">
-                    <h2 class="text-primary">Get More Information</h2>
-                  </div>
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-sm-12 col-md-4 xxprog-img-frame rounded">
-                        <img
-                          class="img-fluid"
-                          src="https://lit.edu/db-image/13364/jennifer-marie-chambers"
-                          alt="Angela Clark - Director of Online Learning"
-                          title="Angela Clark - Director of Online Learning"
-                        />
-                      </div>
-                      <div class="col-sm-12 col-md-8">
-                        <div class="info-box">
-                          <h3>Jennifer Chambers</h3>
-                          <strong class="subtitle blue">
-                            <span>Coordinator of Career Services</span>
-                          </strong>
-                          <div class="holder">
-                            <address>
-                              <strong>Office:</strong> Eagles' Nest, Suite
-                              119<br />
-                              <strong>Physical Address:</strong> 855 East
-                              Lavaca, Beaumont, TX 77705<br />
-                              <strong>Mailing Address:</strong> PO Box 10043,
-                              Beaumont, TX 77710<br />
-                              <strong>Phone:</strong>
-                              <a href="tel:4092422047">(409) 242-2047</a><br />
-                              <strong>Email:</strong>
-                              <a href="mailto:jchambers3@lit.edu"
-                                >jchambers3@lit.edu</a
-                              ><br />
-                              <strong>Email (main):</strong>
-                              <a href="mailto:careers@lit.edu"
-                                >careers@lit.edu</a
-                              >
-                            </address>
-                          </div>
+        .injected-container h2.text-primary {
+          color: #1e448d !important;
+        }
+      </style>
+      <div class="injected-container" style="display: none">
+        <div class="row">
+          <div class="col-sm-12 col-lg-6">&nbsp;</div>
+          <div class="col-sm-12 col-lg-6">
+            <div class="info-wrap">
+              <div class="card">
+                <div class="card-header">
+                  <h2 class="text-primary">Get More Information</h2>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-12 col-md-4 xxprog-img-frame rounded">
+                      <img class="img-fluid" src="https://lit.edu/db-image/13364/jennifer-marie-chambers"
+                        alt="Angela Clark - Director of Online Learning"
+                        title="Angela Clark - Director of Online Learning" />
+                    </div>
+                    <div class="col-sm-12 col-md-8">
+                      <div class="info-box">
+                        <h3>Jennifer Chambers</h3>
+                        <strong class="subtitle blue">
+                          <span>Coordinator of Career Services</span>
+                        </strong>
+                        <div class="holder">
+                          <address>
+                            <strong>Office:</strong> Eagles' Nest, Suite
+                            119<br />
+                            <strong>Physical Address:</strong> 855 East
+                            Lavaca, Beaumont, TX 77705<br />
+                            <strong>Mailing Address:</strong> PO Box 10043,
+                            Beaumont, TX 77710<br />
+                            <strong>Phone:</strong>
+                            <a href="tel:4092422047">(409) 242-2047</a><br />
+                            <strong>Email:</strong>
+                            <a href="mailto:jchambers3@lit.edu">jchambers3@lit.edu</a><br />
+                            <strong>Email (main):</strong>
+                            <a href="mailto:careers@lit.edu">careers@lit.edu</a>
+                          </address>
                         </div>
                       </div>
                     </div>
@@ -458,53 +346,42 @@
             </div>
           </div>
         </div>
-        <script>
-          document.addEventListener("DOMContentLoaded", function () {
-            var pageContent = document.querySelector(".page-content");
-            var injectedContainer = document.querySelector(
-              ".injected-container"
-            );
-
-            if (pageContent && injectedContainer) {
-              pageContent.insertAdjacentElement("afterend", injectedContainer);
-              injectedContainer.style.display = "block";
-            }
-          });
-        </script>
-        <!-- ////////////////////////////////////////////// -->
-
-        <!-- /////////////////////////////////////////////////////////////-->
-        <!-- END CAREER SERVICES /////////////////////////////////////////-->
-        <!-- /////////////////////////////////////////////////////////////-->
       </div>
-      <!-- ////////////////// COLUMN ASIDE ////////////////////////// -->
-      <div class="col-sm-12 col-md-2">
-        <div class="sidebar-sub-drawer">
-          <a href="./aa.html">Veteran Services</a>
-          <a href="./ab.html">LIT Online</a>
-          <a href="./ac.html">Online Courses & Programs</a>
-          <a href="./ad.html">LIT Online Experience</a>
-          <a href="./ah.html">LIT Online FAQ</a>
-          <a href="./ae.html">Workforce</a>
-          <a href="./af.html">Canvas</a>
-          <a href="./ag.html">Library</a>
-          <a href="./ak.html">IE</a>
-        </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var pageContent = document.querySelector(".page-content");
+          var injectedContainer = document.querySelector(
+            ".injected-container"
+          );
+
+          if (pageContent && injectedContainer) {
+            pageContent.insertAdjacentElement("afterend", injectedContainer);
+            injectedContainer.style.display = "block";
+          }
+        });
+      </script>
+      <!-- ////////////////////////////////////////////// -->
+
+      <!-- /////////////////////////////////////////////////////////////-->
+      <!-- END CAREER SERVICES /////////////////////////////////////////-->
+      <!-- /////////////////////////////////////////////////////////////-->
+    </div>
+    <!-- ////////////////// COLUMN ASIDE ////////////////////////// -->
+    <div class="col-sm-12 col-md-2">
+      <div class="sidebar-sub-drawer">
+        <a href="./particles.html">Particles</a>
+        <a href="./ak.html">IE</a>
       </div>
     </div>
+  </div>
 
-    <!-- //////////////////////////////////////////////////////////// -->
-    <!-- ////////////////// SCRIPTS ///////////////////////////////// -->
-    <!-- //////////////////////////////////////////////////////////// -->
-    <script src="static/js/site.js" type="module"></script>
-    <script src="static/lib/jquery/dist/jquery.min.js" type="module"></script>
-    <script
-      src="static/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
-      type="module"
-    ></script>
-    <script
-      src="static/lit_news_files/scripts/bootstrap.bundle.min.js"
-      type="module"
-    ></script>
-  </body>
+  <!-- //////////////////////////////////////////////////////////// -->
+  <!-- ////////////////// SCRIPTS ///////////////////////////////// -->
+  <!-- //////////////////////////////////////////////////////////// -->
+  <script src="static/js/site.js" type="module"></script>
+  <script src="static/lib/jquery/dist/jquery.min.js" type="module"></script>
+  <script src="static/lib/bootstrap/dist/js/bootstrap.bundle.min.js" type="module"></script>
+  <script src="static/lit_news_files/scripts/bootstrap.bundle.min.js" type="module"></script>
+</body>
+
 </html>
