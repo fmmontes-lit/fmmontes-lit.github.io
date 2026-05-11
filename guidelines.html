@@ -40,7 +40,190 @@
   <div class="row">
     <!-- ////////////////// COLUMN MAIN /////////////////////////// -->
     <div class="col-sm-12 col-md-9">
-      <h1>Guidelines</h1>
+      <style>
+        .responsive-image-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background-color: white;
+        }
+
+        .responsive-image-container img {
+          max-width: 100%;
+          height: auto;
+          border-radius: 0.5em;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+      </style>
+      <div class="campus-events-container">
+        <img alt="Campus Events for May 2026 at LIT"
+          src="https://www.lit.edu/getmedia/2f9be509-9e77-46dd-b8b9-805ee566c815/campus-events-may.jpg"
+          title="Campus Events for May 2026 at LIT">
+      </div>
+
+      <style>
+        .container-ars {
+          background-color: azure;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 0 auto;
+          padding: 20px;
+          border: 1px solid #ddd;
+          border-radius: 8px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          max-width: 25%;
+        }
+
+        .image-wrapper {
+          border: 1px solid #ccc;
+        }
+
+        .image-wrapper img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+        }
+
+        .controls {
+          display: flex;
+          gap: 10px;
+          margin-bottom: 20px;
+        }
+
+        .controls label {
+          font-weight: bold;
+        }
+      </style>
+      <div class="container">
+        <div class="container-ars">
+          <div class="controls">
+            <label for="aspect-ratio">Aspect Ratio:</label>
+            <select id="aspect-ratio">
+              <option value="16/9">16:9</option>
+              <option value="4/3">4:3</option>
+              <option value="1/1">1:1</option>
+              <option value="3/4">3:4</option>
+              <option value="9/16">9:16</option>
+            </select>
+          </div>
+
+          <div class="image-wrapper" id="image-wrapper" style="aspect-ratio: 16 / 9">
+            <img src="https://picsum.photos/1600/900?random=0.938362189058531" alt="Sample Image" id="image">
+          </div>
+
+          <style>
+            .container-ars {
+              background-color: azure;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              margin: 0 auto;
+              padding: 20px;
+              border: 1px solid #ddd;
+              border-radius: 8px;
+              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+              max-width: 25%;
+            }
+
+            .image-wrapper {
+              border: 1px solid #ccc;
+            }
+
+            .image-wrapper img {
+              width: 100%;
+              height: auto;
+              object-fit: cover;
+            }
+
+            .controls {
+              display: flex;
+              gap: 10px;
+              margin-bottom: 20px;
+            }
+
+            .controls label {
+              font-weight: bold;
+            }
+          </style>
+          <table id="dimension-table">
+            <thead>
+              <tr>
+                <th>Width (pixels)</th>
+                <th>Height (pixels)</th>
+                <th>Width (inches)</th>
+                <th>Height (inches)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="width-px">1600</td>
+                <td id="height-px">900</td>
+                <td id="width-in">16.67</td>
+                <td id="height-in">9.38</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="container-ars">
+          <table id="display-dimension-table">
+            <thead>
+              <tr>
+                <th>Desktop Displays (pixels)</th>
+                <th>Mobile Displays (pixels)</th>
+                <th>Tablet Displays (pixels)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1280X720 - 1920X1080</td>
+                <td>360x640 - 414X896</td>
+                <td>601x962 - 1280X800</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <script>
+        const imageWrapper = document.getElementById("image-wrapper");
+        const aspectRatioSelector = document.getElementById("aspect-ratio");
+        const image = document.getElementById("image");
+        const widthPx = document.getElementById("width-px");
+        const heightPx = document.getElementById("height-px");
+        const widthIn = document.getElementById("width-in");
+        const heightIn = document.getElementById("height-in");
+
+        function updateImageAndTable() {
+          const selectedRatio = aspectRatioSelector.value;
+          const [widthRatio, heightRatio] = selectedRatio.split("/").map(Number);
+
+          // Calculate width and height based on the width of the container (300px for preview)
+          const width = 1600;
+          const height = Math.round((width * heightRatio) / widthRatio);
+
+          // Set new image source
+          image.src = `https://picsum.photos/${width}/${height}?random=${Math.random()}`;
+
+          // Update aspect ratio style
+          imageWrapper.style.aspectRatio = `${widthRatio} / ${heightRatio}`;
+
+          const designWidthPx = 1600;
+          const designHeightPx = Math.round(
+            (designWidthPx * heightRatio) / widthRatio
+          );
+          const designWidthIn = (designWidthPx / 96).toFixed(2);
+          const designHeightIn = (designHeightPx / 96).toFixed(2);
+
+          widthPx.textContent = designWidthPx;
+          heightPx.textContent = designHeightPx;
+          widthIn.textContent = designWidthIn;
+          heightIn.textContent = designHeightIn;
+        }
+
+        aspectRatioSelector.addEventListener("change", updateImageAndTable);
+        updateImageAndTable();
+      </script>
     </div>
 
     <!-- ////////////////// COLUMN ASIDE ////////////////////////// -->
