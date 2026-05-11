@@ -63,6 +63,42 @@
       </div>
 
       <style>
+        .image-guide-tbl {
+          width: 100%;
+          border-collapse: collapse;
+        }
+
+        .image-guide-tbl th {
+          background-color: #1c75bc;
+          color: white;
+          text-align: left;
+          padding: 0.5em;
+          border: 1px solid #ddd;
+        }
+
+        .image-guide-tbl td {
+          padding: 0.5em;
+          border: 1px solid #ddd;
+        }
+      </style>
+      <table class="image-guide-tbl">
+        <thead>
+          <tr>
+            <th>Desktop</th>
+            <th>Tablet</th>
+            <th>Mobile</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1280X720 - 1920X1080</td>
+            <td>601x962 - 1280X800</td>
+            <td>360x640 - 414X896</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <style>
         .container-ars {
           display: flex;
           flex-direction: column;
@@ -92,40 +128,19 @@
           font-weight: bold;
         }
       </style>
-      <div class="container">
-        <div class="container-ars">
-          <div class="controls">
-            <label for="aspect-ratio">Aspect Ratio:</label>
-            <select id="aspect-ratio">
-              <option value="16/9">16:9</option>
-              <option value="4/3">4:3</option>
-              <option value="1/1">1:1</option>
-              <option value="3/4">3:4</option>
-              <option value="9/16">9:16</option>
-            </select>
-          </div>
-
-          <div class="image-wrapper" id="image-wrapper">
-            <img src="https://picsum.photos/800/600?random=1" alt="Sample Image" id="image">
-          </div>
+      <div class="container-ars">
+        <div class="controls">
+          <label for="aspect-ratio">Aspect Ratio:</label>
+          <select id="aspect-ratio">
+            <option value="16/9">16:9</option>
+            <option value="4/3">4:3</option>
+            <option value="1/1">1:1</option>
+            <option value="3/4">3:4</option>
+            <option value="9/16">9:16</option>
+          </select>
         </div>
-        <div class="container-ars">
-          <table id="display-dimension-table">
-            <thead>
-              <tr>
-                <th>Desktop Displays (pixels)</th>
-                <th>Mobile Displays (pixels)</th>
-                <th>Tablet Displays (pixels)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1280X720 - 1920X1080</td>
-                <td>360x640 - 414X896</td>
-                <td>601x962 - 1280X800</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="image-wrapper" id="image-wrapper">
+          <img src="https://picsum.photos/800/600?random=1" alt="Sample Image" id="image">
         </div>
       </div>
       <script>
