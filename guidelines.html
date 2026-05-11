@@ -64,16 +64,12 @@
 
       <style>
         .container-ars {
-          background-color: azure;
           display: flex;
           flex-direction: column;
           align-items: center;
-          margin: 0 auto;
-          padding: 20px;
-          border: 1px solid #ddd;
+          background-color: azure;
           border-radius: 8px;
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-          max-width: 25%;
         }
 
         .image-wrapper {
@@ -109,62 +105,9 @@
             </select>
           </div>
 
-          <div class="image-wrapper" id="image-wrapper" style="aspect-ratio: 16 / 9">
-            <img src="https://picsum.photos/1600/900?random=0.938362189058531" alt="Sample Image" id="image">
+          <div class="image-wrapper" id="image-wrapper">
+            <img src="https://picsum.photos/800/600?random=1" alt="Sample Image" id="image">
           </div>
-
-          <style>
-            .container-ars {
-              background-color: azure;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              margin: 0 auto;
-              padding: 20px;
-              border: 1px solid #ddd;
-              border-radius: 8px;
-              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-              max-width: 25%;
-            }
-
-            .image-wrapper {
-              border: 1px solid #ccc;
-            }
-
-            .image-wrapper img {
-              width: 100%;
-              height: auto;
-              object-fit: cover;
-            }
-
-            .controls {
-              display: flex;
-              gap: 10px;
-              margin-bottom: 20px;
-            }
-
-            .controls label {
-              font-weight: bold;
-            }
-          </style>
-          <table id="dimension-table">
-            <thead>
-              <tr>
-                <th>Width (pixels)</th>
-                <th>Height (pixels)</th>
-                <th>Width (inches)</th>
-                <th>Height (inches)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td id="width-px">1600</td>
-                <td id="height-px">900</td>
-                <td id="width-in">16.67</td>
-                <td id="height-in">9.38</td>
-              </tr>
-            </tbody>
-          </table>
         </div>
         <div class="container-ars">
           <table id="display-dimension-table">
@@ -199,7 +142,7 @@
           const [widthRatio, heightRatio] = selectedRatio.split("/").map(Number);
 
           // Calculate width and height based on the width of the container (300px for preview)
-          const width = 1600;
+          const width = 800;
           const height = Math.round((width * heightRatio) / widthRatio);
 
           // Set new image source
@@ -208,7 +151,7 @@
           // Update aspect ratio style
           imageWrapper.style.aspectRatio = `${widthRatio} / ${heightRatio}`;
 
-          const designWidthPx = 1600;
+          const designWidthPx = 800;
           const designHeightPx = Math.round(
             (designWidthPx * heightRatio) / widthRatio
           );
