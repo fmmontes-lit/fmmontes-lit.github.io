@@ -92,6 +92,31 @@
           .content-details a:focus {
             color: #ec2027;
           }
+
+          .logo-grid {
+            display: grid;
+            gap: 1em;
+            grid-template-columns: 1fr;
+          }
+
+          .logo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 2.5em 0;
+            background-color: darkolivegreen;
+          }
+
+          .logo-container img {
+            border-radius: 0.5em;
+          }
+
+          @media screen and (min-width: 680px) {
+            .logo-grid {
+              grid-template-columns: 1fr 1fr 1fr;
+            }
+          }
         </style>
 
         <div class="main-container">
@@ -241,32 +266,6 @@
 
           <div class="content-details">
             <h2>Admissions Links</h2>
-
-            <style>
-              .logo-grid {
-                display: grid;
-                gap: 1em;
-                grid-template-columns: 1fr;
-              }
-
-              .logo-container {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                margin: 2.5em 0;
-              }
-
-              .logo-container img {
-                border-radius: 0.5em;
-              }
-
-              @media screen and (min-width: 680px) {
-                .logo-grid {
-                  grid-template-columns: 1fr 1fr 1fr;
-                }
-              }
-            </style>
 
             <div class="logo-grid">
               <div class="logo-container">
