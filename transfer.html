@@ -121,6 +121,34 @@
               grid-template-columns: 1fr 1fr 1fr;
             }
           }
+
+          .btn-container {
+            display: flex;
+            justify-content: left;
+          }
+
+          a.btn-submit {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            padding: 0.5em 1em;
+            min-height: 44px;
+            font-size: larger;
+            text-decoration: none;
+            border-radius: 0.5em;
+            box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
+          }
+
+          a.btn-submit:link,
+          a.btn-submit:visited {
+            background-color: #1c75bc;
+          }
+
+          a.btn-submit:hover,
+          a.btn-submit:active {
+            background-color: #ec2027;
+          }
         </style>
 
         <div class="main-container">
@@ -175,7 +203,7 @@
                 <a href="https://catalog.lit.edu/">LIT College Catalog</a>
               </li>
               <li>
-                <a href="https://tccns.org/index.php?param="
+                <a href="https://tccns.org/index.php"
                   >Texas Common Course Numbering System</a
                 >
               </li>
@@ -239,6 +267,16 @@
               advisor before registration to ensure courses apply to their
               selected transfer major.
             </p>
+
+            <div class="btn-container">
+              <a
+                alt="Submit an Application"
+                aria-label="Submit an Application"
+                class="btn-submit"
+                href="https://tccns.org/index.php"
+                >Check Course Compatibility</a
+              >
+            </div>
           </div>
 
           <div class="content-details">
